@@ -1,0 +1,527 @@
+
+.two_shows_one_move .cloneditem-1, .two_shows_one_move .cloneditem-2 {
+	display: none
+}
+
+.three_shows_one_move .cloneditem-1, .three_shows_one_move .cloneditem-2, .three_shows_one_move .cloneditem-3{
+	display: none
+}
+.four_shows_one_move .cloneditem-1, .four_shows_one_move .cloneditem-2, .four_shows_one_move .cloneditem-3, .four_shows_one_move .cloneditem-4 {
+	display: none
+}
+.four_shows_one_move_big .cloneditem-1, .four_shows_one_move_big .cloneditem-2, .four_shows_one_move_big .cloneditem-3, .four_shows_one_move_big .cloneditem-4 {
+	display: none
+}
+
+.five_shows_one_move .cloneditem-1, .five_shows_one_move .cloneditem-2, .five_shows_one_move .cloneditem-3, .five_shows_one_move .cloneditem-4 , .five_shows_one_move .cloneditem-5{display:none}
+
+.six_shows_one_move .cloneditem-1, .six_shows_one_move .cloneditem-2, .six_shows_one_move .cloneditem-3, .six_shows_one_move .cloneditem-4 , .six_shows_one_move .cloneditem-5 , .six_shows_one_move .cloneditem-6 {
+	display: none
+}
+
+
+
+
+
+
+@media all and (min-width:768px) {
+	
+/*===*****====TwoShowColumn Start==*****====	*/
+	
+.two_shows_one_move .carousel-inner>.active.left, .two_shows_one_move .carousel-inner>.prev {
+	left: -50%
+}
+.two_shows_one_move .carousel-inner>.active.right, .two_shows_one_move .carousel-inner>.next {
+	left: 50%
+}
+.two_shows_one_move .carousel-inner>.left, .two_shows_one_move .carousel-inner>.prev.right, .two_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.two_shows_one_move .cloneditem-1 {
+	display: block
+}
+
+/*===*****====TwoShowColumn End==*****====	*/
+	
+/*===*****====ThreeShowColumn Start==*****====	*/
+	
+.three_shows_one_move .carousel-inner>.active.left, .three_shows_one_move .carousel-inner>.prev {
+	left: -50%
+}
+.three_shows_one_move .carousel-inner>.active.right, .three_shows_one_move .carousel-inner>.next {
+	left: 50%
+}
+.three_shows_one_move .carousel-inner>.left, .three_shows_one_move .carousel-inner>.prev.right, .three_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.three_shows_one_move .cloneditem-1 {
+	display: block
+}
+
+/*===*****====ThreeShowColumn End==*****====	*/
+
+/*===*****====FourShowColumn Start==*****====	*/
+
+.four_shows_one_move .carousel-inner>.active.left, .four_shows_one_move .carousel-inner>.prev {
+	left: -50%
+}
+.four_shows_one_move .carousel-inner>.active.right, .four_shows_one_move .carousel-inner>.next {
+	left: 50%
+}
+.four_shows_one_move .carousel-inner>.left, .four_shows_one_move .carousel-inner>.prev.right, .four_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.four_shows_one_move .cloneditem-1 {
+	display: block
+}
+
+.four_shows_one_move_big .carousel-inner>.active.left, .four_shows_one_move_big .carousel-inner>.prev {
+	left: -50%
+}
+.four_shows_one_move_big .carousel-inner>.active.right, .four_shows_one_move_big .carousel-inner>.next {
+	left: 50%
+}
+.four_shows_one_move_big .carousel-inner>.left, .four_shows_one_move_big .carousel-inner>.prev.right, .four_shows_one_move_big .carousel-inner>.active {
+	left: 0
+}
+.four_shows_one_move_big .cloneditem-1 {
+	display: block
+}
+
+
+
+/*===*****====FourShowColumn End==*****====	*/
+
+/*===*****====FifthShowColumn Start==*****====	*/
+
+.five_shows_one_move .carousel-inner>.active.left, .five_shows_one_move .carousel-inner>.prev {
+	left: -25%
+}
+.five_shows_one_move .carousel-inner>.active.right, .five_shows_one_move .carousel-inner>.next {
+	left: 25%
+}
+.five_shows_one_move .carousel-inner>.left, .five_shows_one_move .carousel-inner>.prev.right, .five_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.five_shows_one_move .cloneditem-1, .five_shows_one_move .cloneditem-2, .five_shows_one_move .cloneditem-3{display:block}
+
+/*===*****====FifthShowColumn End==*****====	*/
+
+/*===*****====SixShowColumn Start==*****====	*/
+
+.six_shows_one_move .carousel-inner>.active.left, .six_shows_one_move .carousel-inner>.prev {
+	left: -25%
+}
+.six_shows_one_move .carousel-inner>.active.right, .six_shows_one_move .carousel-inner>.next {
+	left: 25%
+}
+.six_shows_one_move .carousel-inner>.left, .six_shows_one_move .carousel-inner>.prev.right, .six_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.six_shows_one_move .cloneditem-1, .six_shows_one_move .cloneditem-2, .six_shows_one_move .cloneditem-3 {
+	display: block
+}
+
+
+/*===*****====SixShowColumn End==*****====	*/
+
+}
+
+
+@media all and (min-width:768px) and (transform-3d), all and (min-width:768px) and (-webkit-transform-3d) {
+	
+/*===*****====twoShowColumn Start==*****====	*/
+	
+.two_shows_one_move .carousel-inner>.item.active.right, .two_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(50%, 0, 0);
+	transform: translate3d(50%, 0, 0);
+	left: 0
+}
+.two_shows_one_move .carousel-inner>.item.active.left, .two_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+	left: 0
+}
+.two_shows_one_move .carousel-inner>.item.left, .two_shows_one_move .carousel-inner>.item.prev.right, .two_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+/*===*****====twoShowColumn End==*****====	*/	
+	
+/*===*****====ThreeShowColumn Start==*****====	*/
+	
+.three_shows_one_move .carousel-inner>.item.active.right, .three_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(50%, 0, 0);
+	transform: translate3d(50%, 0, 0);
+	left: 0
+}
+.three_shows_one_move .carousel-inner>.item.active.left, .three_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+	left: 0
+}
+.three_shows_one_move .carousel-inner>.item.left, .three_shows_one_move .carousel-inner>.item.prev.right, .three_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+/*===*****====ThreeShowColumn End==*****====	*/
+
+/*===*****====FourShowColumn Start==*****====	*/
+
+	
+.four_shows_one_move .carousel-inner>.item.active.right, .four_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(50%, 0, 0);
+	transform: translate3d(50%, 0, 0);
+	left: 0
+}
+.four_shows_one_move .carousel-inner>.item.active.left, .four_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+	left: 0
+}
+.four_shows_one_move .carousel-inner>.item.left, .four_shows_one_move .carousel-inner>.item.prev.right, .four_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+.four_shows_one_move_big .carousel-inner>.item.active.right, .four_shows_one_move_big .carousel-inner>.item.next {
+	-webkit-transform: translate3d(50%, 0, 0);
+	transform: translate3d(50%, 0, 0);
+	left: 0
+}
+.four_shows_one_move_big .carousel-inner>.item.active.left, .four_shows_one_move_big .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+	left: 0
+}
+.four_shows_one_move_big .carousel-inner>.item.left, .four_shows_one_move_big .carousel-inner>.item.prev.right, .four_shows_one_move_big .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+/*===*****====FourShowColumn End==*****====	*/
+
+
+/*===*****====FifthShowColumn Start==*****====	*/
+
+	
+.five_shows_one_move .carousel-inner>.item.active.right, .five_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(25%, 0, 0);
+	transform: translate3d(25%, 0, 0);
+	left: 0
+}
+.five_shows_one_move .carousel-inner>.item.active.left, .five_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-25%, 0, 0);
+	transform: translate3d(-25%, 0, 0);
+	left: 0
+}
+.five_shows_one_move .carousel-inner>.item.left, .five_shows_one_move .carousel-inner>.item.prev.right, .five_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+
+}
+
+/*===*****====FifthShowColumn End==*****====	*/
+
+/*===*****====SixShowColumn Start==*****====	*/
+
+.six_shows_one_move .carousel-inner>.item.active.right, .six_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(25%, 0, 0);
+	transform: translate3d(25%, 0, 0);
+	left: 0
+}
+.six_shows_one_move .carousel-inner>.item.active.left, .six_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-25%, 0, 0);
+	transform: translate3d(-25%, 0, 0);
+	left: 0
+}
+.six_shows_one_move .carousel-inner>.item.left, .six_shows_one_move .carousel-inner>.item.prev.right, .six_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+
+/*===*****====SixShowColumn End==*****====	*/
+}
+@media all and (min-width:992px) {
+	
+	
+/*===*****====TwoShowColumn Start==*****====	*/
+	
+.two_shows_one_move .carousel-inner>.active.left, .two_shows_one_move .carousel-inner>.prev {
+	left: -50%
+}
+.three_shows_one_move .carousel-inner>.active.right, .two_shows_one_move .carousel-inner>.next {
+	left: -50%
+}
+.two_shows_one_move .carousel-inner>.left, .two_shows_one_move .carousel-inner>.prev.right, .two_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.two_shows_one_move .cloneditem-1, .two_shows_one_move .cloneditem-2, .two_shows_one_move .cloneditem-3 {
+	display: block
+}
+
+/*===*****====ThreeShowColumn End==*****====	*/
+
+	
+/*===*****====ThreeShowColumn Start==*****====	*/
+	
+.three_shows_one_move .carousel-inner>.active.left, .three_shows_one_move .carousel-inner>.prev {
+	left: -33.33%
+}
+.three_shows_one_move .carousel-inner>.active.right, .three_shows_one_move .carousel-inner>.next {
+	left: 33.33%
+}
+.three_shows_one_move .carousel-inner>.left, .three_shows_one_move .carousel-inner>.prev.right, .three_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.three_shows_one_move .cloneditem-1, .three_shows_one_move .cloneditem-2, .three_shows_one_move .cloneditem-3 {
+	display: block
+}
+
+/*===*****====ThreeShowColumn End==*****====	*/
+
+/*===*****====FourShowColumn Start==*****====	*/
+	
+.four_shows_one_move .carousel-inner>.active.left, .four_shows_one_move .carousel-inner>.prev {
+	left: -25%
+}
+.four_shows_one_move .carousel-inner>.active.right, .four_shows_one_move .carousel-inner>.next {
+	left: 25%
+}
+.four_shows_one_move .carousel-inner>.left, .four_shows_one_move .carousel-inner>.prev.right, .four_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+
+.four_shows_one_move .cloneditem-1, .four_shows_one_move .cloneditem-2, .four_shows_one_move .cloneditem-3 {
+	display: block
+}
+
+.four_shows_one_move_big .carousel-inner>.active.left, .four_shows_one_move_big .carousel-inner>.prev {
+	left: -33.33%
+}
+.four_shows_one_move_big .carousel-inner>.active.right, .four_shows_one_move_big .carousel-inner>.next {
+	left: 33.33%
+}
+.four_shows_one_move_big .carousel-inner>.left, .four_shows_one_move_big .carousel-inner>.prev.right, .four_shows_one_move_big .carousel-inner>.active {
+	left: 0
+}
+.four_shows_one_move_big .carousel-inner .cloneditem-1, .four_shows_one_move_big .carousel-inner .cloneditem-2 {
+	display: block
+}
+
+/*===*****====FourShowColumn End==*****====	*/
+
+
+/*===*****====FifthShowColumn Start==*****====	*/
+	
+.five_shows_one_move .carousel-inner>.active.left, .five_shows_one_move .carousel-inner>.prev {
+	left: -20%
+}
+.five_shows_one_move .carousel-inner>.active.right, .five_shows_one_move .carousel-inner>.next {
+	left: 20%
+}
+.five_shows_one_move .carousel-inner>.left, .five_shows_one_move .carousel-inner>.prev.right, .five_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.five_shows_one_move .carousel-inner .cloneditem-1, .five_shows_one_move .carousel-inner .cloneditem-2, .five_shows_one_move .carousel-inner .cloneditem-3, .five_shows_one_move .carousel-inner .cloneditem-4, .five_shows_one_move .carousel-inner .cloneditem-5 {
+	display: block
+}
+
+/*===*****====FifthShowColumn End==*****====	*/
+
+/*===*****====SixShowColumn Start==*****====	*/
+
+.six_shows_one_move .carousel-inner>.active.left, .six_shows_one_move .carousel-inner>.prev {
+	left: -16.66%
+}
+.six_shows_one_move .carousel-inner>.active.right, .six_shows_one_move .carousel-inner>.next {
+	left: 16.66%
+}
+.six_shows_one_move .carousel-inner>.left, .six_shows_one_move .carousel-inner>.prev.right, .six_shows_one_move .carousel-inner>.active {
+	left: 0
+}
+.six_shows_one_move .cloneditem-1, .six_shows_one_move .cloneditem-2, .six_shows_one_move .cloneditem-3, .six_shows_one_move .cloneditem-4 , .six_shows_one_move .cloneditem-5 , .six_shows_one_move .cloneditem-6 {
+	display: block
+}
+
+
+/*===*****====SixShowColumn End==*****====	*/
+}
+@media all and (min-width:992px) and (transform-3d), all and (min-width:992px) and (-webkit-transform-3d) {
+
+
+
+/*===*****====TwoShowColumn Start==*****====	*/
+	
+.two_shows_one_move .carousel-inner>.item.active.right, .two_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(50%, 0, 0);
+	transform: translate3d(50%, 0, 0);
+	left: 0
+}
+.two_shows_one_move .carousel-inner>.item.active.left, .two_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+	left: 0
+}
+.two_shows_one_move .carousel-inner>.item.left, .three_shtwo_shows_one_moveows_one_move .carousel-inner>.item.prev.right, .two_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+/*===*****====TwoShowColumn End==*****====	*/
+
+	
+/*===*****====ThreeShowColumn Start==*****====	*/
+	
+.three_shows_one_move .carousel-inner>.item.active.right, .three_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(33.33%, 0, 0);
+	transform: translate3d(33.33%, 0, 0);
+	left: 0
+}
+.three_shows_one_move .carousel-inner>.item.active.left, .three_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-33.33%, 0, 0);
+	transform: translate3d(-33.33%, 0, 0);
+	left: 0
+}
+.three_shows_one_move .carousel-inner>.item.left, .three_shows_one_move .carousel-inner>.item.prev.right, .three_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+/*===*****====ThreeShowColumn End==*****====	*/
+
+/*===*****====FourShowColumn Start==*****====	*/
+	
+.four_shows_one_move .carousel-inner>.item.active.right, .four_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(25%, 0, 0);
+	transform: translate3d(25%, 0, 0);
+	left: 0
+}
+.four_shows_one_move .carousel-inner>.item.active.left, .four_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-25%, 0, 0);
+	transform: translate3d(-25%, 0, 0);
+	left: 0
+}
+.four_shows_one_move .carousel-inner>.item.left, .four_shows_one_move .carousel-inner>.item.prev.right, .four_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+
+.four_shows_one_move_big .carousel-inner>.item.active.right, .four_shows_one_move_big .carousel-inner>.item.next {
+	-webkit-transform: translate3d(33.33%%, 0, 0);
+	transform: translate3d(33.33%%, 0, 0);
+	left: 0
+}
+.four_shows_one_move_big .carousel-inner>.item.active.left, .four_shows_one_move_big .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-33.33%%, 0, 0);
+	transform: translate3d(-33.33%%, 0, 0);
+	left: 0
+}
+.four_shows_one_move_big .carousel-inner>.item.left, .four_shows_one_move_big .carousel-inner>.item.prev.right, .four_shows_one_move_big .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+/*===*****====FourShowColumn End==*****====	*/
+
+/*===*****====FiveShowColumn Start==*****====	*/
+	
+.five_shows_one_move .carousel-inner>.item.active.right, .five_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(20%, 0, 0);
+	transform: translate3d(20%, 0, 0);
+	left: 0
+}
+.five_shows_one_move .carousel-inner>.item.active.left, .five_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-20%, 0, 0);
+	transform: translate3d(-20%, 0, 0);
+	left: 0
+}
+.five_shows_one_move .carousel-inner>.item.left, .five_shows_one_move .carousel-inner>.item.prev.right, .five_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+/*===*****====FiveShowColumn End==*****====	*/
+
+
+
+/*===*****====SixShowColumn Start==*****====	*/
+
+.six_shows_one_move .carousel-inner>.item.active.right, .six_shows_one_move .carousel-inner>.item.next {
+	-webkit-transform: translate3d(16.66%, 0, 0);
+	transform: translate3d(16.66%, 0, 0);
+	left: 0
+}
+.six_shows_one_move .carousel-inner>.item.active.left, .six_shows_one_move .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-16.66%, 0, 0);
+	transform: translate3d(-16.66%, 0, 0);
+	left: 0
+}
+.six_shows_one_move .carousel-inner>.item.left, .six_shows_one_move .carousel-inner>.item.prev.right, .six_shows_one_move .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+
+/*===*****====SixShowColumn End==*****====	*/
+}
+
+
+
+@media all and (min-width:1280px) {
+	
+
+/*===*****====FourShowColumn Start==*****====	*/
+	
+.four_shows_one_move_big .carousel-inner>.active.left, .four_shows_one_move_big .carousel-inner>.prev {
+	left: -25%
+}
+.four_shows_one_move_big .carousel-inner>.active.right, .four_shows_one_move_big .carousel-inner>.next {
+	left: 25%
+}
+.four_shows_one_move_big .carousel-inner>.left, .four_shows_one_move_big .carousel-inner>.prev.right, .four_shows_one_move_big .carousel-inner>.active {
+	left: 0
+}
+
+
+/*===*****====FourShowColumn End==*****====	*/
+
+}
+@media all and (min-width:1280px) and (transform-3d), all and (min-width:1280px) and (-webkit-transform-3d) {
+
+
+
+/*===*****====FourShowColumn Start==*****====	*/
+	
+.four_shows_one_move_big .carousel-inner>.item.active.right, .four_shows_one_move_big .carousel-inner>.item.next {
+	-webkit-transform: translate3d(25%, 0, 0);
+	transform: translate3d(25%, 0, 0);
+	left: 0
+}
+.four_shows_one_move_big .carousel-inner>.item.active.left, .four_shows_one_move_big .carousel-inner>.item.prev {
+	-webkit-transform: translate3d(-25%, 0, 0);
+	transform: translate3d(-25%, 0, 0);
+	left: 0
+}
+.four_shows_one_move_big .carousel-inner>.item.left, .four_shows_one_move_big .carousel-inner>.item.prev.right, .four_shows_one_move_big .carousel-inner>.item.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	left: 0
+}
+
+}

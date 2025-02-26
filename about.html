@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from www.themechampion.com/templates/indofact_html_landing_page/theme/index6.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Apr 2023 05:58:44 GMT -->
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <title>Raviraj Hi-Tech</title>
+   <!-- Bootstrap -->
+   <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+   <!-- <link href="css/style.css" rel="stylesheet"> -->
+   <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+   <!-- <link href="css/responsive_bootstrap_carousel.css" rel="stylesheet" media="all"> -->
+
+
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/responsive-style.css" rel="stylesheet">
+   <link href="css/effect_style.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link href="css/responsive_bootstrap_carousel.css" rel="stylesheet" media="all">
+   <link rel="stylesheet" type="text/css" href="css/demo.css" />
+   <link rel="stylesheet" type="text/css" href="css/set1.css" />
+   <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
+   <style>
+      :root {
+         --primary-bg: #1e2342;
+         --primary-white: #ffffff;
+         --secondary-bg: #f5f5f5;
+         --secondary-color: #242c56;
+         --accent-color: #22c55e;
+         --text-color: #011327;
+         --border-color: #e5e7eb;
+         --hover-color: #1a1f3d;
+         --accent-green: #22c55e;
+         --dark-blue: #011327;
+         --light-gray: #f5f5f5;
+         --medium-gray: #e5e7eb;
+         --navy-blue: #242c56;
+         --success-green: #22c55e;
+         --hover-navy: #1a1f3d;
+      }
+
+      body {
+         /* background-color: var(--primary-bg); */
+         color: white;
+         font-family: Arial, sans-serif;
+      }
+
+      h2 {
+         color: #1d1d1d;
+         font-size: 28px;
+      }
+
+      .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a:hover {
+         color: green;
+      }
+
+      .sub-text {
+         font-size: 18px;
+         color: #555;
+         max-width: 800px;
+         margin: 20px auto;
+      }
+
+      .clients {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 30px;
+         margin-top: 30px;
+      }
+
+      .client-logo {
+         height: 170px;
+         max-width: 170px;
+      }
+
+
+      .icon-box img {
+         width: 120px;
+      }
+
+      .bgimg {
+
+         height: 765px;
+         width: 758px;
+         background-size: cover;
+      }
+
+
+
+
+      .let-btn {
+         margin: 25px 38px;
+         padding: 16px 20px;
+         color: #ffffff;
+         background-color: green;
+      }
+
+
+
+      .contact-icon {
+         color: var(--accent-green);
+         width: 24px;
+         height: 24px;
+      }
+
+      .form-control {
+         padding: 12px;
+         margin-bottom: 20px;
+      }
+
+      .btn-callback {
+         background-color: var(--accent-green);
+         color: white;
+         padding: 12px 30px;
+         border: none;
+         font-size: 18px;
+         transition: all 0.3s ease;
+      }
+
+      .btn-callback:hover {
+         background-color: #1ba34b;
+         color: white;
+      }
+
+      .contact-info {
+         margin-bottom: 30px;
+      }
+
+      .contact-info p {
+         color: #e5e5e5;
+         margin-bottom: 5px;
+      }
+
+      .contact-heading {
+         font-size: 48px;
+         font-weight: bold;
+         margin-bottom: 40px;
+         color: #ffffff;
+      }
+
+      .form-label {
+         font-size: 18px;
+         margin-bottom: 10px;
+      }
+
+
+      .product-section {
+         /* min-height: 100vh; */
+         /* Full screen height */
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         padding: 50px 0;
+      }
+
+      .product-title {
+         font-size: 2rem;
+         font-weight: bold;
+         color: #1d2b53;
+      }
+
+
+
+
+      .product-card-01 {
+         background-image: url('img/our-product-01.svg');
+         border-radius: 15px;
+
+      }
+
+      .product-card-02 {
+         background-image: url('img/our-product-02.svg');
+         border-radius: 15px;
+      }
+
+      .product-card-03 {
+         background-image: url('img/our-product-03.svg');
+         border-radius: 15px;
+      }
+
+      .product-card:hover {
+         transform: scale(1.05);
+      }
+
+      .product-card img {
+         width: 100%;
+         width: 370px;
+         height: 220px;
+         object-fit: cover;
+      }
+
+
+      .card-body {
+         padding: 15px;
+      }
+
+      .card-body h5 {
+         font-weight: bold;
+         color: #333;
+      }
+
+      .card-body p {
+         font-size: 14px;
+         color: var(--primary-white);
+         /* border-radius: 15px; */
+      }
+
+      .card-body+p {
+         font-size: 14px;
+         color: #777;
+         margin-top: 270px;
+      }
+
+      .header4 {
+         position: fixed;
+         width: 100%;
+         z-index: 999;
+         background: #fff;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar {
+         margin-bottom: 0;
+         border: none;
+         border-radius: 0;
+      }
+
+      .navbar-default {
+         background: transparent;
+      }
+
+      .logo-menu {
+         padding: 15px 0;
+      }
+
+      .logo-menu img {
+         max-height: 50px;
+      }
+
+      .navbar-nav>li>a {
+         padding: 30px 15px;
+         color: #242c56;
+         font-weight: 500;
+         transition: all 0.3s ease;
+      }
+
+      .navbar-nav>li>a:hover,
+      .navbar-nav>li>a.active {
+         color: #0056b3;
+      }
+
+      .navbar-toggle {
+         margin-top: 20px;
+      }
+
+      .product-section {
+         padding: 60px 0;
+         background-color: #f9f9f9;
+      }
+
+
+
+      .product-title {
+         color: #242c56;
+         font-size: 38px;
+         font-weight: 700;
+         font-family: 'Poppins', sans-serif;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+
+      .product-subtitle {
+         color: #333333;
+         font-size: 16px;
+         line-height: 1.5;
+         font-family: 'Open Sans', sans-serif;
+         padding: 0 15px 30px 15px;
+         margin: 0px 220px;
+      }
+
+      .product-card {
+         padding: 10px;
+         margin-top: 10px;
+      }
+
+      .product-card-title {
+         color: whitesmoke;
+         font-size: 22px;
+         font-weight: 600;
+         padding: 10px;
+         margin-top: 180px;
+         font-family: 'Poppins', sans-serif;
+         border-left: 10px solid green;
+      }
+
+      .home6 h5,
+      .home6 p+h5 {
+         color: whitesmoke;
+      }
+
+      /* .home6 p {
+            color: whitesmoke;
+         } */
+
+      .product-card-text {
+         border-left: 10px solid green;
+         color: #fff;
+         font-size: 15px;
+         padding: 0 0px 4px 4px;
+         font-family: 'Open Sans', sans-serif;
+         margin: 0;
+      }
+
+      .header4 {
+         position: fixed;
+         width: 100%;
+         z-index: 999;
+         background: #ffffff;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+         padding: 10px 0;
+      }
+
+      .header4 .navbar {
+         padding: 0;
+         margin: 0;
+      }
+
+      /* .header4 .navbar-brand {
+            padding: 0;
+            margin: 0;
+         } */
+
+      .header4 .nav-link {
+         color: #1a1a1a;
+         font-family: 'Poppins', sans-serif;
+         font-weight: 500;
+         padding: 20px 15px;
+         transition: color 0.3s ease;
+      }
+
+      .header4 .nav-link:hover {
+         color: #007bff;
+      }
+
+      header.header4 .logo {
+         float: left;
+         margin: -1px 0px;
+         mix-blend-mode: transparent;
+         width: 100%;
+
+      }
+
+      .certifications-section {
+         background: #e2e7ff;
+         padding: 40px;
+         border-radius: 10px;
+      }
+
+      .certifications-header {
+         border-left: 5px solid #2BA84A;
+         padding-left: 10px;
+         font-weight: bold;
+         font-size: 3rem;
+      }
+
+      .text-certification-heading {
+         font-size: 2.5rem;
+         color: #011327;
+         font-weight: bold;
+      }
+
+      .Committed {
+         font-size: 4.4rem;
+         font-weight: bold;
+
+      }
+
+      .cert-item {
+         display: flex;
+         align-items: flex-start;
+         gap: 10px;
+         padding-left: 20px;
+      }
+
+      .mgb {
+         margin-bottom: 20px;
+      }
+
+      .mg {
+         margin: 36px 0px;
+
+      }
+
+      .cert-icon {
+         background: #1C1C50;
+         color: white;
+         border-radius: 50%;
+         width: 40px;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.2rem;
+      }
+
+      .cert-content h6 {
+         margin-bottom: 5px;
+         font-weight: bold;
+      }
+
+      .highlight {
+         color: #2BA84A;
+         font-weight: bold;
+      }
+
+      .btn-custom {
+         background: #1C1C50;
+         color: white;
+         border-radius: 5px;
+         padding: 14px 26px;
+         font-weight: bold;
+      }
+
+      .news-section {
+         background-color: #fff;
+         padding: 60px 10%;
+      }
+
+      .news-header {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         margin-bottom: 10px;
+      }
+
+      .news-header div {
+         width: 5px;
+         height: 40px;
+         background-color: #2ca44d;
+      }
+
+      .news-title {
+         font-size: 36px;
+         font-weight: bold;
+         color: #1a1a1a;
+      }
+
+      .news-content {
+         max-width: 600px;
+         color: #333;
+         font-size: 16px;
+         line-height: 1.6;
+      }
+
+      .news-cards {
+         margin-top: 30px;
+      }
+
+      .news-card {
+         position: relative;
+         border: none;
+         overflow: hidden;
+         border-radius: 10px;
+         transition: transform 0.3s ease-in-out;
+      }
+
+      .news-card img {
+         width: 100%;
+         height: auto;
+         border-radius: 10px 10px 0 0;
+      }
+
+      .news-card:hover {
+         transform: translateY(-5px);
+      }
+
+      .news-card-body {
+         background: #eef0ff;
+         padding: 15px;
+         border-radius: 0 0 10px 10px;
+      }
+
+      .news-card-title {
+         font-weight: bold;
+         font-size: 18px;
+         color: #1a1a1a;
+      }
+
+      .news-card-text {
+         font-size: 14px;
+         color: #444;
+      }
+
+      .news-button {
+         background-color: #2ca44d;
+         color: white;
+         border: none;
+         padding: 12px 25px;
+         font-size: 16px;
+         border-radius: 5px;
+         margin-top: 20px;
+         display: inline-block;
+      }
+
+      .news-button:hover {
+         background-color: #1e8a3c;
+      }
+
+      .my-lg-4 {
+
+         margin: 30px 0px;
+
+      }
+
+      .projectSec {
+         background-color: var(--primary-bg);
+         color: #ffffff;
+      }
+
+      .packing-title {
+         font-weight: bolder;
+         font-size: 45px;
+         color: #f9f9f9;
+      }
+
+      .Industries-Served {
+         color: white;
+         font-size: 20px;
+         font-weight: 800;
+         margin-left: 100px;
+         margin-top: 50px;
+         position: relative;
+         z-index: 1;
+         font-size: 20px;
+         font-weight: 800;
+         margin-left: 100px;
+         color: #ffffff;
+         padding: 2px;
+         border-left: 6px solid green;
+      }
+
+      .company_mission {
+         background-image: url(img/bg-img.svg);
+         background-size: cover;
+         background-position: center;
+         background-repeat:
+            no-repeat;
+         box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+         position: relative;
+         padding-top: 50px;
+         min-height: 600px;
+      }
+
+      .product-card-01 {
+         background-image: url("/img/our-product-01.svg");
+         background-size: contain;
+         background-position: center;
+         background-repeat: no-repeat;
+         border-radius: 15px;
+      }
+
+
+
+      .product-card-02 {
+         background-image: url('img/our-product-02.svg');
+         background-size: contain;
+         background-position: center;
+         background-repeat: no-repeat;
+         border-radius: 15px;
+
+      }
+
+      .product-card-03 {
+         background-image: url('img/our-product-03.svg');
+         background-size: contain;
+         background-position: center;
+         background-repeat: no-repeat;
+         border-radius: 15px;
+      }
+
+      .reviews-section {
+         text-align: center;
+         margin-bottom: 30px;
+      }
+
+      .reviews-section h2 {
+         font-size: 38px;
+         font-weight: 600;
+         color: var(--primary-bg);
+      }
+
+      .reviews-section p {
+         font-size: 16px;
+         color: #555;
+         margin: 30px 0px;
+         text-align: center;
+      }
+
+      .reviews-section .product-title {
+         color: #242c56;
+         font-size: 38px;
+         font-weight: 700;
+         font-family: 'Poppins',
+            sans-serif;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+
+      .reviews-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 20px;
+         max-width: 1100px;
+         margin: auto;
+      }
+
+      .review-card {
+         background: #fff;
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         padding: 20px 20px 20px 0px;
+         text-align: center;
+         /* border: 1px solid var(--primary-bg); */
+         /* position: relative; */
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .review-card .clinetname {
+         background: #28a745;
+         color: #fff;
+         /* display: inline-block; */
+         padding: 4px 5px;
+         border-radius: 5px;
+         font-size: 18px;
+         /* position: absolute; */
+         top: -18px;
+         /* left: 50%;  */
+         transform: translateX(-50%);
+         margin-bottom: 10px;
+         margin-left: 106px;
+      }
+
+      /* .review-card {
+               text-align: center;
+               font-size: 15px;
+               color: #333;
+               margin: 15px 0;
+               padding: 10px;
+           } */
+
+      .review-image {
+         width: 100px;
+         height: 130px;
+         /* border-radius: 50%; */
+         object-fit: cover;
+         margin-top: 10px;
+         left: 0;
+      }
+
+      .company-tag {
+         display: inline-block;
+         background: #1d3557;
+         color: #fff;
+         padding: 6px 12px;
+         font-size: 14px;
+         border-radius: 4px;
+         margin-top: 10px;
+         margin-left: 56px;
+      }
+
+      .new-pak {
+         margin: 20px 0px;
+         margin-left: 30px;
+         font-size: 28px;
+      }
+
+      @media (min-width: 360px) and (max-width: 800px) {
+         .new-pak {
+            margin: 20px 0px;
+            margin-left: 0px;
+            font-size: 18px;
+         }
+
+         .btn {
+            font-size: 11px;
+            padding: 10px 10px;
+
+         }
+
+         .cert-icon {
+            background: #1C1C50;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+         }
+
+         .cert-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding-left: 0px;
+         }
+
+         .Committed {
+            font-size: 2.7rem;
+            font-weight: bold;
+         }
+
+         .news-card-text {
+            font-size: 14px;
+            color: #444;
+            margin-top: 0px;
+         }
+
+         .text-certification-heading {
+            font-size: 2rem;
+            color: #011327;
+            font-weight: bold;
+         }
+
+         .home6 h1 {
+            color: var(--primary-bg);
+         }
+
+         #productimg01 {
+            background-image: url('img/our-product-01.svg');
+
+         }
+
+         #productimg02 {
+            background-image: url('img/our-product-02.svg');
+
+         }
+
+         #productimg03 {
+            background-image: url('img/our-product-03.svg');
+
+         }
+
+         .product-subtitle {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 30px;
+            margin: 0px 0px;
+            margin-bottom: 12px;
+         }
+
+
+
+
+         .company_mission {
+            background-image: url(img/bg-img.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat:
+               no-repeat;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            position: relative;
+            padding-top: 50px;
+            min-height: 600px;
+         }
+
+         #Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            /* margin-left: 100px; */
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid green;
+         }
+
+         .packing-title {
+            font-weight: bolder;
+            font-size: 28px;
+            color: #f9f9f9;
+         }
+
+         .header-section {
+            margin-top: 20px;
+         }
+
+
+         .Latest-Innovations {
+            padding: 10px 10px;
+         }
+
+         .product-card-title {
+            color: var(--primary-bg);
+            font-size: 22px;
+            font-weight: 600;
+            padding: 10px;
+            margin-top: 180px;
+            font-family: 'Poppins', sans-serif;
+            border-left: 10px solid green;
+         }
+
+
+
+         .Trusted-clients {
+            color: #242c56;
+            margin-top: 0px;
+            font-weight: 600;
+            font-size: 24px;
+         }
+
+         .Trusted-clientshidden {
+            display: none;
+         }
+
+
+         .mil-banner-personal {
+            margin-top: 20px;
+         }
+
+         #h1-text {
+            color: #ffffff;
+            padding: 0px 0px;
+            margin-top: 125px;
+            color: #ffffff;
+            font-size: 60px;
+         }
+
+         #h1-text {
+            line-height: 1.7pc;
+            font-size: 20px;
+            margin-top: 27px;
+            padding: 0 -5px;
+
+         }
+
+         #h1-text+p {
+            font-size: 12px;
+            padding: 20px 0px;
+            color: #ffffff;
+         }
+
+         .let-btn {
+            padding: 8px 0px;
+            color: #ffffff;
+            background-color: green;
+            margin: 0px 0px;
+         }
+
+         .quality-assurance-section {
+            background-color: var(--primary-bg);
+         }
+
+         .certifications-header {
+            color: var(--primary-bg);
+            font-size: 29px;
+         }
+
+         .product-card {
+            height: 367px;
+            width: 333px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3sease-in-out;
+            /* background-color: black; */
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: var(--primary-white);
+            /* border-radius: 15px; */
+         }
+
+         #Our-Clients {
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 10px;
+            color: #242c56;
+            padding: 2px;
+            border-left:
+               6px solid green;
+         }
+
+         .certifications-section {
+            background: #e2e7ff;
+            padding: 20px;
+            border-radius: 10px;
+         }
+      }
+
+      @media (min-width: 375px) and (max-width: 667px) {
+         .new-pak {
+            margin: 20px 0px;
+            margin-left: 0px;
+            font-size: 18px;
+         }
+
+         .btn {
+            font-size: 11px;
+            padding: 10px 10px;
+
+         }
+
+         .cert-icon {
+            background: #1C1C50;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+         }
+
+         .cert-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding-left: 0px;
+         }
+
+         .Committed {
+            font-size: 2.7rem;
+            font-weight: bold;
+         }
+
+         .news-card-text {
+            font-size: 14px;
+            color: #444;
+            margin-top: 0px;
+         }
+
+         .text-certification-heading {
+            font-size: 2rem;
+            color: #011327;
+            font-weight: bold;
+         }
+
+         .home6 h1 {
+            color: var(--primary-bg);
+         }
+
+         #productimg01 {
+            background-image: url('img/our-product-01.svg');
+
+         }
+
+         #productimg02 {
+            background-image: url('img/our-product-02.svg');
+
+         }
+
+         #productimg03 {
+            background-image: url('img/our-product-03.svg');
+
+         }
+
+         .product-subtitle {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 30px;
+            margin: 0px 0px;
+            margin-bottom: 12px;
+         }
+
+
+
+
+         .company_mission {
+            background-image: url(img/bg-img.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat:
+               no-repeat;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            position: relative;
+            padding-top: 50px;
+            min-height: 600px;
+         }
+
+         #Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            /* margin-left: 100px; */
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid green;
+         }
+
+         .packing-title {
+            font-weight: bolder;
+            font-size: 28px;
+            color: #f9f9f9;
+         }
+
+         .header-section {
+            margin-top: 20px;
+         }
+
+
+         .Latest-Innovations {
+            padding: 10px 10px;
+         }
+
+         .product-card-title {
+            color: var(--primary-bg);
+            font-size: 22px;
+            font-weight: 600;
+            padding: 10px;
+            margin-top: 180px;
+            font-family: 'Poppins', sans-serif;
+            border-left: 10px solid green;
+         }
+
+
+
+         .Trusted-clients {
+            color: #242c56;
+            margin-top: 0px;
+            font-weight: 600;
+            font-size: 24px;
+         }
+
+         .Trusted-clientshidden {
+            display: none;
+         }
+
+
+         .mil-banner-personal {
+            margin-top: 20px;
+         }
+
+         #h1-text {
+            color: #ffffff;
+            padding: 0px 0px;
+            margin-top: 125px;
+            color: #ffffff;
+            font-size: 60px;
+         }
+
+         #h1-text {
+            line-height: 1.7pc;
+            font-size: 20px;
+            margin-top: 27px;
+            padding: 0 -5px;
+
+         }
+
+         #h1-text+p {
+            font-size: 12px;
+            padding: 20px 0px;
+            color: #ffffff;
+         }
+
+         .let-btn {
+            padding: 8px 0px;
+            color: #ffffff;
+            background-color: green;
+            margin: 0px 0px;
+         }
+
+         .quality-assurance-section {
+            background-color: var(--primary-bg);
+         }
+
+         .certifications-header {
+            color: var(--primary-bg);
+            font-size: 29px;
+         }
+
+         .product-card {
+            height: 367px;
+            width: 333px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3sease-in-out;
+            /* background-color: black; */
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: var(--primary-white);
+            /* border-radius: 15px; */
+         }
+
+         #Our-Clients {
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 10px;
+            color: #242c56;
+            padding: 2px;
+            border-left:
+               6px solid green;
+         }
+
+         .certifications-section {
+            background: #e2e7ff;
+            padding: 20px;
+            border-radius: 10px;
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: #242c56;
+            /* color: var(--primary-white); */
+            /* border-radius: 15px; */
+         }
+
+         .news-button {
+            background-color: #2ca44d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+         }
+      }
+
+      /* Media Queries for Responsive Design */
+
+      /* Mobile devices (less than 576px) */
+      @media (max-width: 575.98px) {
+         .new-pak {
+            margin: 20px 0px;
+            margin-left: 0px;
+            font-size: 18px;
+         }
+
+         .reviews-container {
+            grid-template-columns: 1fr;
+         }
+
+         #Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            /* margin-left: 100px; */
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid green;
+         }
+
+         .news-card-text {
+            font-size: 14px;
+            color: #444;
+            margin-top: 0px;
+         }
+
+         .Trusted-clients {
+            color: #242c56;
+            margin-top: 0px;
+            font-weight: 600;
+            font-size: 24px;
+         }
+
+         #h1-text {
+            line-height: 1.7pc;
+            font-size: 20px;
+            margin-top: 27px;
+            padding: 0 -5px;
+         }
+
+         #Our-Clients {
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 10px;
+            color: #242c56;
+            padding: 2px;
+            border-left:
+               6px solid green;
+         }
+
+         .bgimg {
+            height: 400px;
+            width: 100%;
+         }
+
+         .let-btn {
+            margin: 15px;
+         }
+
+         .img-responsive {
+            margin: 16px auto;
+            width: 80%;
+         }
+
+         .news-section {
+            padding: 40px 5%;
+         }
+
+         .news-title {
+            font-size: 24px;
+         }
+
+         .news-card {
+            margin-bottom: 15px;
+         }
+
+
+      }
+
+      /* Tablets (576px to 991px) */
+      @media (min-width: 576px) and (max-width: 991px) {
+
+         .nav-item .active {
+            border-bottom: 1px solid green;
+
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: #242c56;
+            /* color: var(--primary-white); */
+            /* border-radius: 15px; */
+         }
+
+         .new-pak {
+
+            font-size: 18px;
+            margin: 20px 0px;
+            margin-left: 35px;
+         }
+
+         #Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 30px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            /* margin-left: 100px; */
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid green;
+         }
+
+         .news-card-text {
+            font-size: 14px;
+            color: #444;
+            margin-top: 50px;
+         }
+
+         .Trusted-clients {
+            color: #242c56;
+            margin-top: 66px;
+            font-weight: 600;
+            font-size: 30px;
+         }
+
+         #h1-text {
+            font-size: 36px;
+            margin-top: 80px;
+            color: #ffffff;
+            padding: 0 20px;
+         }
+
+         .text-certification-heading {
+            color: var(--primary-bg);
+         }
+
+         #Our-Clients {
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 30px;
+            color: #242c56;
+            padding: 2px;
+            border-left:
+               6px solid green;
+            margin-left: 100px;
+         }
+
+         .product-subtitle {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 15px 30px 15px;
+            margin: 0px 90px;
+         }
+
+         #h1-text+p {
+            padding: 20px 38px;
+            color: #ffffff;
+         }
+
+         .bgimg {
+            height: 100%;
+            width: 100%;
+         }
+
+         .clients {
+            flex-direction: column;
+            align-items: center;
+         }
+
+         .contact-section {
+            padding: 40px 0;
+            background-color: var(--primary-bg);
+         }
+
+         .contact-heading {
+            font-size: 36px;
+         }
+
+         .navbar-nav>li>a {
+            padding: 15px;
+         }
+
+         .logo-menu img {
+            max-height: 38px;
+         }
+
+         .img-responsive {
+            margin: 16px auto;
+            width: 60%;
+         }
+
+         .product-title {
+            font-size: 1.8rem;
+         }
+
+         .news-card-body h5,
+         .news-card-title {
+            color: #1C1C50;
+            font-size: 16px;
+         }
+
+         .clients {
+            flex-direction: column;
+            align-items: center;
+            display: table;
+         }
+
+
+      }
+
+      /* Desktops (992px and up) */
+      @media (min-width: 992px) {
+
+
+
+         .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+            /* color: black; */
+            border-bottom: 3px solid green;
+         }
+
+         .navbar-nav>li>.new-pak {
+
+            font-size: 32px;
+            margin: 10px 0px;
+            margin-left: 78px;
+            margin-bottom: 100px;
+         }
+
+         .review-card .clinetname {
+            background: #28a745;
+            color: #fff;
+            /* display: inline-block; */
+            padding: 4px 5px;
+            border-radius: 5px;
+            font-size: 18px;
+            /* position: absolute; */
+            top: -18px;
+            /* left: 50%;  */
+            transform: translateX(-50%);
+            margin-bottom: 10px;
+            margin-left: 110px;
+         }
+
+
+         .custom-btn .let-btn {
+            margin-top: 120px;
+         }
+
+         #Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 164px;
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid green;
+         }
+
+         .Trusted-clients {
+            color: #242c56;
+            margin-top: 66px;
+            font-weight: 600;
+            font-size: 30px;
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: var(--primary-white);
+            /* border-radius: 15px; */
+         }
+
+         .product-card-title {
+            color: whitesmoke;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 10px;
+            margin-top: 180px;
+            font-family: 'Poppins', sans-serif;
+            border-left: 10px solid green;
+         }
+
+         /* 
+               .home6 p,
+               .home8 p {
+                   font-family: 'Open Sans', sans-serif;
+                   color: var(--primary-bg);
+                   font-size: 20px;
+                   font-weight: 800;
+                   line-height: normal;
+                   margin-left: 100px;
+           }
+   
+           */
+         #h1-text {
+            font-size: 40px;
+            color: #ffffff;
+            padding: 0 21px;
+            margin-top: 52px;
+         }
+
+
+         .bgimg {
+            height: 663px;
+            width: 843px;
+         }
+
+         .img-responsive {
+            margin-top: 16px;
+            margin-left: 116px;
+            width: 60%;
+         }
+
+         .navbar-collapse.collapse {
+            padding: 0;
+            margin-top: 8px;
+         }
+
+         header.header4 #main-navigation-wrapper .nav>li {
+            padding: 22px 0;
+         }
+
+         .let-btn {
+            margin: 10px 30px;
+            padding: 12px;
+            color: #ffffff;
+            background-color: green;
+         }
+
+         #h1-text {
+            color: #ffffff;
+            padding: 30px 0px 0px 78px;
+            margin-top: 112px;
+            color: #ffffff;
+            font-size: 51px;
+         }
+
+         /* #h1-text {
+                   color: #ffffff;
+                   padding: 0px 35px;
+                   margin-top: 112px;
+                   color: #ffffff;
+                   font-size: 51px;
+               } */
+
+         #h1-text+p {
+            padding: 20px 38px;
+            color: #ffffff;
+         }
+
+         .let-btn {
+            margin: 50px 38px 0px 80px;
+            padding: 16px 20px;
+            color: #ffffff;
+            background-color: green;
+         }
+
+         #Our-Clients {
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 164px;
+            color: #242c56;
+            padding: 2px;
+            border-left:
+               6px solid green;
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: #242c56;
+            /* color: var(--primary-white); */
+            /* border-radius: 15px; */
+         }
+
+         .Latest-Innovations {
+            padding: 60px 0px 72px 20px;
+         }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1366px) {
+         .card-body p {
+            font-size: 14px;
+            color: var(--primary-bg);
+            /* border-radius: 15px; */
+         }
+
+         .clients {
+            display: table;
+            flex-direction: column;
+            /* align-items: center; */
+         }
+
+         #Our-Clients {
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 100px;
+            color: #242c56;
+            padding: 2px;
+            border-left:
+               6px solid green;
+         }
+
+         #Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 100px;
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid green;
+         }
+
+         .Trusted-clients {
+            color: #242c56;
+            margin-top: 66px;
+            font-weight: 600;
+            font-size: 30px;
+         }
+
+         #h1-text {
+            font-size: 36px;
+            margin-top: 80px;
+            color: #ffffff;
+            padding: 0 20px;
+         }
+
+         .Latest-Innovations {
+            padding: 40px 40px;
+         }
+
+         .bgimg {
+            height: 100%;
+            width: 100%;
+         }
+
+         .clients {
+            flex-direction: column;
+            align-items: center;
+         }
+
+         .contact-section {
+            padding: 40px 0;
+            background-color: var(--primary-bg);
+         }
+
+         .contact-heading {
+            font-size: 36px;
+         }
+
+         .navbar-nav>li>a {
+            padding: 15px;
+         }
+
+         .logo-menu img {
+            max-height: 38px;
+         }
+
+         .img-responsive {
+            margin: 16px auto;
+            width: 60%;
+         }
+
+         .product-title {
+            font-size: 1.8rem;
+         }
+
+         .news-card-body h5,
+         .news-card-title {
+            color: #1C1C50;
+            font-size: 16px;
+         }
+      }
+
+      @media (min-width: 1366px) and (max-width: 2400px) {}
+   </style>
+</head>
+
+<body class="home6">
+   <!--=========header start============-->
+   <header class="header4">
+      <nav id="main-navigation-wrapper" class="navbar navbar-default">
+         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 display-block d-none d-lg-block">
+            <a href="index.html" class="logo"><img src="img/munda-logo-final.svg" class="img-responsive" alt="logo"></a>
+         </div>
+         <div class="container">
+            <div class="navbar-header">
+               <div class="logo-menu">
+                  <a href="index.html">
+                     <img src="img/munda-logo-final.svg" alt="Logo">
+                  </a>
+               </div>
+               <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false"
+                  class="navbar-toggle collapsed">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div id="main-navigation" class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                     <a href="index.html">Home</a>
+                     <i class="fa fa-chevron-down"></i>
+                  </li>
+                  <li class="dropdown">
+                     <a href="about.html" class=" nav-item active">About Us</a>
+                     <i class="fa fa-chevron-down"></i>
+                  </li>
+                  <li class="dropdown">
+                     <a href="services.html">Products</a>
+                     <i class="fa fa-chevron-down"></i>
+                  </li>
+                  <li class="dropdown">
+                     <a href="portfolio-2.html">Clientele</a>
+                     <i class="fa fa-chevron-down"></i>
+                  </li>
+                  <li>
+                     <a href="#">Download Brochure</a>
+                  </li>
+                  <li>
+                     <a href="request-quote.html" class="btn btn-custom"
+                        style="background-color: var(--hover-navy); color: #ffffff; border-radius: 18px; font-family: 'Montserrat', sans-serif;  text-align: center; height: inherit; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 15px;">Get
+                        a Quote</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!--=========header end============-->
+
+
+   <!--=========Banner Start============-->
+   <div class="inner-pages-bnr" style="height:400PX;background-color: black;">
+      <img src="">
+      <div class="banner-caption">
+         <h1>About Us</h1>
+         <ul class="breadcumb">
+            <li><a href="index.html">Home</a> - </li>
+            <li>About Us</li>
+         </ul>
+      </div>
+   </div>
+   <!--=========Banner end============-->
+
+
+
+
+
+
+   <!--=========Abouts Section Start============-->
+   <section class=" hm8paddingSection experienceSec">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7 col-sm-6 col-xs-12 experienceLeft">
+               <div class="home8Title">
+                  <h3>About Mundada Polymer</h3>
+               </div>
+               <div class="iconText">
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  <p>Welcome to Mundada Polymer, where we bring innovation and excellence to your packaging needs. With
+                     the successful
+                     journey of Baikakaji Polymers, Bai-Kakaji Group proudly presents our latest venture - Mundada
+                     Polymer, your ultimate
+                     destination for all things packaging!</p>
+               </div>
+               <br>
+               <div class="iconText">
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  <p>We offer a wide range of top-quality packaging solutions, including Surface Protection Film, Guard
+                     Film, Masking Film,
+                     LDPE Shrink Film, Stretch Hood Film, Stretch Wrap Film, LDPE Tubing Film Roll, Shrink Hood Film, PE
+                     Milk Film, VCI –
+                     Stretch Wrap Film, and Silage Wrap Film. Our products are designed to meet the highest industry
+                     standards, ensuring that
+                     your packaging requirements are met with utmost satisfaction.</p>
+               </div>
+               <br>
+               <div class="iconText">
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  <p>But that's not all! At Mundada Polymer, we believe in going beyond just providing products. Our
+                     mission is to create an
+                     environment where our customers are not just customers, but valued partners. Our team of experts is
+                     always ready to
+                     assist you with your queries and problems, providing comprehensive solutions and exceptional
+                     customer service. We are
+                     committed to building long-lasting relationships with our customers, based on trust, reliability,
+                     and mutual success.</p>
+               </div>
+
+               <br>
+               <div class="iconText">
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  <p>ISO, join us at Mundada Polymer and experience packaging solutions. Let us be your trusted partner
+                     in meeting all your
+                     packaging needs with unparalleled quality, service, and commitment.</p>
+               </div>
+
+
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 experienceRight">
+               <img src="Image/About/company.JPG" class="img-responsive" alt="img" style="width: 83%;">
+               <!-- <div class="expImgTitle">
+                     <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                           <h1>25</h1>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-9">
+                           <h3>Years Experience</h3>
+                        </div>
+                     </div>
+                  </div> -->
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--=========About Section end============-->
+
+   <!--=========Why Choose Start============-->
+   <!-- <section class="bestthing-section why-choose-section why-choose-section_01">
+         <div class="container">
+            <div class="row ">
+               <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12 bestthing-text-column">
+                  <h3>About Raviraj Hi-Tech</h3>
+                  <p class="fnt-17">Raviraj Hi-tech is one of the leading manufactures, suppliers and exporters of ferrous
+                     and non-ferrous metal parts, PDC & GDC casting components.
+                     Apart from this, we also cater to the requirements of our customer for precision turn
+                     components, assemblies for switchgear for auto-electrical industries. Designed in
+                     strict conformation with international quality standards, these are known for features
+                     like resistance to corrosion, enhance durability and application specific design. </p>
+                  <p class="fnt-17">Our Hi-Tech manufacturing unit comprising machines like Mazak-CNC turning,
+                     HASS make VMC, Citizen (Japan) Bar-feed, Swiss Automats and various press
+                     machines enables us to make various components within promised time.</p>
+                  <p class="fnt-17">Owing to the efforts of our professionals, we have been able to build close business
+                     relationships with our customers spread across the globe.</p>
+                  <p class="fnt-17">In addition we are having Alkaline and Hard-Chrome plating plant in-house.
+                  </p>
+                  <p class="fnt-17">Quality awareness coupled with the timely delivery has helped us cater to the
+                     demands of Auto-Mobile, Auto-Electrical and Switchgear industries.</p>
+                 
+               </div>
+            </div>
+         </div>
+         <div class="bestthing-img whychoos-img">
+            <img src="images/why-choose-bg.png" class="img-responsive" alt="choose-image">
+         </div>
+      </section> -->
+   <!--=========Why Choose end============-->
+
+
+   <!--=========Company History Start============-->
+   <!-- <section class="history-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3>Milestones</h3>
+            </div>
+            <div class="col-md-2 col-sm-6 history-list text-center">
+               <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="humble-image"></span> -->
+   <!-- <div class="history-list-middle">
+                  <div class="white-circle">
+                     <div class="white-circle-border">
+                        <div class="yellow-circle">1989</div>
+                     </div>
+                  </div>
+                  <span class="year-circle"></span>
+               </div>
+               <h5>Years</h5>
+               <p class="line-height26">Company founded by <br>Mr. Rajendra Pawar with <br>single press machine
+               </p>
+            </div>
+            <div class="col-md-2 col-sm-6 history-list text-center">
+               <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="headquarter-image"></span> -->
+   <!-- <div class="history-list-middle">
+      <div class="white-circle">
+         <div class="white-circle-border">
+            <div class="yellow-circle">1994</div>
+         </div>
+      </div>
+      <span class="year-circle"></span>
+   </div>
+   <h5>Years</h5>
+   <p class="line-height26">Single Source to OEM <br>for 275 Types of <br>Press Parts</p>
+   </div>
+   <div class="col-md-2 col-sm-6 history-list text-center">
+      <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="humble-image"></span>
+   <div class="history-list-middle">
+      <div class="white-circle">
+         <div class="white-circle-border">
+            <div class="yellow-circle">1998</div>
+         </div>
+      </div>
+      <span class="year-circle"></span>
+   </div>
+   <h5>Years</h5>
+   <p class="line-height26">Precision Machining <br>Started with CAM <br>operated machines</p>
+   </div>
+   <div class="col-md-2 col-sm-6 history-list text-center">
+      <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="humble-image"></span> 
+      <div class="history-list-middle">
+         <div class="white-circle">
+            <div class="white-circle-border">
+               <div class="yellow-circle">2004</div>
+            </div>
+         </div>
+         <span class="year-circle"></span>
+      </div>
+      <h5>Years</h5>
+      <p class="line-height26">Expanded Business <br>with First Major <br>Direct Export</p>
+   </div>
+
+   <div class="col-md-2 col-sm-6 history-list text-center">
+      <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="headquarter-image"></span>
+   <div class="history-list-middle">
+      <div class="white-circle">
+         <div class="white-circle-border">
+            <div class="yellow-circle">2011</div>
+         </div>
+      </div>
+      <span class="year-circle"></span>
+   </div>
+   <h5>Years</h5>
+   <p class="line-height26">Expanded to <br>State of Art <br>FacilityMarunji.</p>
+   </div>
+   <div class="col-md-2 col-sm-6 history-list text-center">
+      <div class="history-list-middle">
+         <div class="white-circle">
+            <div class="white-circle-border">
+               <div class="yellow-circle">2021</div>
+            </div>
+         </div>
+         <span class="year-circle"></span>
+      </div>
+      <h5>Years</h5>
+      <p class="line-height26">New Business Take <br>Over- Brake System <br>Assemblies.</p>
+   </div>
+
+   </div>
+   </div>
+   </section> -->
+   <!--=========Company History end============-->
+
+
+   <!--=========Wordpress Bestthing Start============-->
+   <!-- <section class="home2 bestthing-section">
+      <div class="container">
+         <div class="row ">
+            <div class="col-lg-12 col-md-4 col-sm-12 col-xs-12 bestthing-text-column">
+               <h2 class="text-center">
+                  <span>Manufacturing <br>capability and capacity</span>
+               </h2>
+               <!--p class="fnt-17 text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi dicta sunt explicabo. </p-->
+   <!-- <center>
+                  <a href="CapabilityAndCapacity.html" class="home6Button hvr-bounce-to-right">Read More</a>
+               </center>
+            </div>
+         </div>
+      </div>
+   </section> -->
+   <!--=========Wordpress Bestthing end============-->
+
+   <!--=========Our Services Start============-->
+   <!-- <section class="pad95-50-top-bottom">
+         <div class="container">
+            <h3 class="text-center">Manufacturing Capability</h3>
+            <div class="row">
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="manufacturing.html" >
+                     <span class="image_hover"> <img src="Image/About/Capability/Cap1.PNG" class="img-responsive zoom_img_effect" alt="Manufacture-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>CITIZEN-CNC BAR-FEED MACHINES</h5>
+                        
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="cnc-industry.html">
+                     <span class="image_hover"> <img src="Image/About/Capability/Cap2.PNG" class="img-responsive zoom_img_effect" alt="CNC-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>MIYANO TWIN TURRET TWIN SPINDLE MACHINE</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="chemical-industry.html">
+                     <span class="image_hover"><img src="Image/About/Capability/Cap3.PNG" class="img-responsive zoom_img_effect" alt="Chemical-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>MAZAK-CNC TURNING CENTERS</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="energy-engineering.html">
+                     <span class="image_hover"> <img src="Image/About/Capability/Cap4.PNG" class="img-responsive zoom_img_effect" alt="Energy-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>CNC TURNING CENTERS</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="oil-industry.html">
+                     <span class="image_hover"><img src="Image/About/Capability/Cap5.PNG" class="img-responsive zoom_img_effect" alt="Oil-image">
+                     </span>
+                     <div class="service-heading service-energyicon">
+                        <h5>LONG TURNING MACHINE</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="material-engineering.html">
+                     <span class="image_hover"><img src="Image/About/Capability/cap6.PNG" class="img-responsive zoom_img_effect" alt="Material-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>CNC CIRCULAR SAW</h5>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="oil-industry.html">
+                     <span class="image_hover"><img src="Image/About/Capability/Cap11.PNG" class="img-responsive zoom_img_effect" alt="Oil-image">
+                     </span>
+                     <div class="service-heading service-energyicon">
+                        <h5>CNC CENTERLESS GRINDING MACHINE</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="material-engineering.html">
+                     <span class="image_hover"><img src="Image/About/Capability/Cap12.PNG" class="img-responsive zoom_img_effect" alt="Material-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>CNC CYLINDRICAL GRINDING MACHINE</h5>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="manufacturing.html" >
+                     <span class="image_hover"> <img src="Image/About/Capability/Cap7.PNG" class="img-responsive zoom_img_effect" alt="Manufacture-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>VERTICAL MACHINING CENTER HASS-USA VF-2</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="cnc-industry.html">
+                     <span class="image_hover"> <img src="Image/About/Capability/Cap8.PNG" class="img-responsive zoom_img_effect" alt="CNC-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>VERTICAL MACHINING CENTER HASS-USA <br>VF-3</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="chemical-industry.html">
+                     <span class="image_hover"><img src="Image/About/Capability/Cap9.PNG" class="img-responsive zoom_img_effect" alt="Chemical-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>VERTICAL MACHINING CENTER BROTHER PALLETS CHANGERS MACHINES</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="energy-engineering.html">
+                     <span class="image_hover"> <img src="Image/About/Capability/Cap10.PNG" class="img-responsive zoom_img_effect" alt="Energy-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>LAPMASTER-WOLTERS DUPLEX SUPERFINISHING MACHINE</h5>
+                     </div>
+                  </a>
+               </div>
+
+
+               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
+                  <a href="material-engineering.html">
+                     <span class="image_hover"><img src="Image/About/Capability/Cap13.PNG" class="img-responsive zoom_img_effect" alt="Material-image"></span>
+                     <div class="service-heading service-energyicon">
+                        <h5>CUSTOMER WISE ASSEMBLY LINE</h5>
+                     </div>
+                  </a>
+               </div>
+
+            </div>
+         </div>
+      </section> -->
+   <!--=========Our Services end============-->
+
+
+   <!--=========Statistics Start============-->
+   <!-- <section class="static-section yellow-background">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <h2><span>Important Static</span></h2>
+                  <p class="fnt-18">A wonderful serenity has taken possession of my entire soul, like these sweet mornings <br/>
+                     of spring which I enjoy with my whole heart. I am alone
+                  </p>
+               </div>
+               <ul>
+                  <li>
+                     <h2>20000</h2>
+                     <p> Customers</p>
+                  </li>
+                  <li>
+                     <h2>1400</h2>
+                     <p> Projects</p>
+                  </li>
+                  <li>
+                     <h2>16800</h2>
+                     <p> Working Hours</p>
+                  </li>
+                  <li>
+                     <h2>17000</h2>
+                     <p> SKUs</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section> -->
+   <!--=========Statistics end============-->
+
+
+
+   <!--=========Banner end============-->
+   <!-- <section class="pad100-top-bottom">
+               <div class="container">
+                  <div class="row">
+               
+                     
+                     <div class="col-md-8 right-column">
+                        <div class="service-right-desc">
+                           <span class="image_hover ">
+                           <img src="Image/About/Image.JPG" class="img-responsive zoom_img_effect" alt="material-image">
+                           </span>
+                           
+                        </div>
+                        <div class="specialization-cl">
+                           <div class="special-text project-mission">
+                              <h3>PROJECT MISSION</h3>
+                              <p class="mar-btm20">Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                              <p>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia.</p>
+                           </div>
+                        </div>
+                        
+                     </div>
+                     
+
+
+                     <div class="col-md-4 left-column">
+                        <ul class="category-list">
+                           <li><a href="about.html" class="active-category">About us</a></li>
+                           <li><a href="Products.html">Products</a></li>
+                           <li><a href="QualityControl.html">Quality Control</a></li>
+                           <li><a href="Metrology.html">Metrology Department</a></li>
+                           <li><a href="manufacturing.html">Manufacturing Plant</a></li>
+                           
+                        </ul>
+                        <div class="contact-help">
+                           <div class="office-info-col wdt-100">
+                              <h4>CONTACT US </h4>
+                              <ul class="office-information">
+                                 <li class="office-loc">
+                                    <span class="info-txt">S NO. 5/1/1/4, Marunji, Tal- Mulshi,Pune - 411057</span>
+                                 </li>
+                                
+                                 <li class="office-msg">
+                                    <span class="info-txt fnt_17">rajendrapawar@ravirajhitech.com</span>
+                                 </li>
+                                 <li class="office-phn">
+                                    <span class="info-txt fnt_17">+91-93250-77177</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <a class="pdf-button" href="#">DOWNLOAD BROCHURE</a>
+                     </div>
+
+                    
+                  </div>
+               </div>
+            </section> -->
+
+
+
+
+   <!--=========Testimonial end============-->
+   <section class=" paddingSection home7News">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+               <div class="home7Title">
+                  <h3>What We Build</h3>
+                  <h1>Mundada Polymer AS ON 2022</h1>
+                  <!-- <p>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p> -->
+               </div>
+            </div>
+         </div>
+         <div class="home7News">
+            <div class="row">
+
+               <div class="col-xs-12 col-sm-6 col-md-12 ">
+                  <div class="home7SingleNews">
+                     <div class="shadow_effect effect-apollo">
+                        <img width="370" height="253" src="Image/About/Unit2.PNG" class="img-responsive wp-post-image"
+                           alt="img">
+                     </div>
+                     <div class="home7_news_content">
+                        <!-- <div class="dateArea">
+                                  <p class="date"><i class="fa fa-calendar"></i>May 06, 2019</p>
+                                  <p class="auth"><i class="fa fa-user"></i>admin</p>
+                               </div> -->
+                        <h6>
+                           <a href="Unit_Two.html">Mundada Polymers UNIT 2</a>
+                        </h6>
+                        <p>LOCATION - Mundada Polymers
+                           Plot No. : C-46, Near Latur Packing,
+                           MIDC Ausa, Latur - 413520 Maharashtra, India </p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--=========Testimonial end============-->
+
+
+
+
+
+
+
+   <!--=========Footer Start============-->
+   <footer>
+
+      <div class="ftr-section">
+         <div class="container">
+            <ul class="footer-info">
+               <li class="ftr-loc">S NO. 5/1/1/4, Marunji,<br> Tal-Mulshi, Pune - 411057</li>
+               <li class="ftr-phn">+91-93250-77177</li>
+               <li class="ftr-msg">rajendrapawar@ravirajhitech.com</li>
+               <li class="ftr-support">24 / 7 Working </li>
+            </ul>
+            <div class="row">
+               <div class="col-md-4 col-sm-6 col-xs-12  ftr-about-text">
+                  <h6>About Us</h6>
+                  <p class="marbtm20 line-height26">Raviraj Hi-tech is one of the leading manufactures, suppliers and
+                     exporters of ferrous
+                     and non-ferrous metal parts, PDC & GDC casting components.
+                     Apart from this, we also cater to the requirements of our customer for precision turn
+                     components, assemblies for switchgear for auto-electrical industries.</p>
+                  <a class="ftr-read-more" href="about.html">Read More</a>
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12 ftr-sol-column">
+                  <h6>Our Solutions</h6>
+                  <ul class="footer-link">
+                     <li><a href="manufacturing.html">- Manufacturing </a></li>
+                     <li><a href="Products.html">- Products</a></li>
+                     <li><a href="QualityControl.html">- Quality Control</a></li>
+                     <li><a href="Metrology.html">- Metrology Department</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-sm-6 col-xs-12 ftr-link-column">
+                  <h6>Quick Links</h6>
+                  <ul class="footer-link">
+                     <li><a href="about.html">- About Us</a></li>
+                     <!-- <li><a href="testimonials.html">- Testimonials</a></li> -->
+                     <li><a href="request-quote.html">- Request A Quote</a></li>
+                     <li><a href="faq.html">- FAQ</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-3 col-sm-6 col-xs-12 ftr-follow-column pull-right">
+                  <h6>Follow Us</h6>
+                  <div class="header-socials footer-socials">
+                     <a href="https://m.facebook.com/login"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     <a href="https://myaccount.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                     <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </div>
+                  <!-- <span class="ftr-logo img"><img src="images/logo.png" class="img-responsive" alt="logo-image"></span> -->
+               </div>
+            </div>
+            <div class="footer-btm">
+               <div class="col-md-6 col-sm-6 col-xs-12 pad-left_zero pad-right_zero">
+                  <p>Copyright © 2023 raviraj hi-tech Pvt. Ltd. All Rights Reserved.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 pad-left_zero pad-right_zero pull-right">
+                  <!-- <p class="text-right">Developed by: <a href="https://themeforest.net/user/themechampion">ThemeChampion</a></p> -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-body">
+               <h3>Search</h3>
+               <div class="search-form">
+                  <input type="text" class="search_lightbox_input" placeholder="Search...">
+                  <input type="text" class="search_lghtbox_btn">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--=========Footer end============-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.touchSwipe.min.js"></script>
+   <script src="js/responsive_bootstrap_carousel.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="js/theme.js"></script>
+   <script src="js/slick.js"></script>
+</body>
+
+<!-- Mirrored from www.themechampion.com/templates/indofact_html_landing_page/theme/index6.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Apr 2023 05:58:51 GMT -->
+
+</html>
