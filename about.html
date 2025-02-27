@@ -27,9 +27,15 @@
    <link rel="stylesheet" type="text/css" href="css/set1.css" />
    <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+   <!-- Bootstrap 5 CSS -->
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+   <!-- Custom CSS -->
    <style>
       :root {
+         --navy-blue: #1e2756;
+         --light-blue: #f0f5ff;
+         --green-accent: #2a9d5c;
          --primary-bg: #1e2342;
          --primary-white: #ffffff;
          --secondary-bg: #f5f5f5;
@@ -750,1385 +756,822 @@
          align-items: center;
       }
 
-      @media (min-width: 360px) and (max-width: 800px) {
-         .new-pak {
-            margin: 20px 0px;
-            margin-left: 0px;
-            font-size: 18px;
-         }
+      /* Extra Small Devices (Portrait Phones) */
+      @media (max-width: 360px) {
+         /* Styles for very small phones */
+      }
 
-         .btn {
-            font-size: 11px;
-            padding: 10px 10px;
+      @media (min-width: 360px) and (max-width: 375px) {
 
-         }
-
-         .cert-icon {
-            background: #1C1C50;
-            color: white;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-         }
-
-         .cert-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding-left: 0px;
-         }
-
-         .Committed {
-            font-size: 2.7rem;
-            font-weight: bold;
-         }
-
-         .news-card-text {
-            font-size: 14px;
-            color: #444;
-            margin-top: 0px;
-         }
-
-         .text-certification-heading {
-            font-size: 2rem;
-            color: #011327;
-            font-weight: bold;
-         }
-
-         .contact-heading {
-            font-size: 28px;
-         }
-
-         .home6 h1 {
-            color: var(--primary-bg);
-         }
-
-         #productimg01 {
-            background-image: url('img/our-product-01.svg');
-
-         }
-
-         #productimg02 {
-            background-image: url('img/our-product-02.svg');
-
-         }
-
-         #productimg03 {
-            background-image: url('img/our-product-03.svg');
-
-         }
-
-         .product-subtitle {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 30px;
-            margin: 0px 0px;
-            margin-bottom: 12px;
-         }
-
-
-
-
-         .company_mission {
-            background-image: url(img/bg-img.svg);
-            background-size: cover;
-            background-position: center;
-            background-repeat:
-               no-repeat;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
-            position: relative;
-            padding-top: 50px;
-            min-height: 600px;
-         }
-
-         #Industries-Served {
-            color: white;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 4px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            /* margin-left: 100px; */
-            color: #ffffff;
-            padding: 2px;
-            border-left: 6px solid green;
-         }
-
-         .packing-title {
-            font-weight: bolder;
-            font-size: 28px;
-            color: #f9f9f9;
-         }
-
-         .header-section {
-            margin-top: 20px;
-         }
-
-
-         .Latest-Innovations {
-            padding: 10px 10px;
-         }
-
-         .product-card-title {
-            color: var(--primary-bg);
-            font-size: 22px;
-            font-weight: 600;
-            padding: 10px;
-            margin-top: 180px;
-            font-family: 'Poppins', sans-serif;
-            /* border-left: 10px solid green; */
-         }
-
-
-
-         .Trusted-clients {
-            color: #242c56;
-            margin-top: 0px;
-            font-weight: 600;
-            font-size: 24px;
-         }
-
-         .Trusted-clientshidden {
-            display: none;
-         }
-
-
-         .mil-banner-personal {
-            margin-top: 20px;
-         }
-
-         #h1-text {
-            color: #ffffff;
-            padding: 0px 0px;
-            margin-top: 125px;
-            color: #ffffff;
-            font-size: 60px;
-         }
-
-         #h1-text {
-            line-height: 1.7pc;
-            font-size: 20px;
-            margin-top: 27px;
-            padding: 0 -5px;
-
-         }
-
-         #h1-text+p {
-            font-size: 12px;
-            padding: 20px 0px;
-            color: #ffffff;
-         }
-
-         .let-btn {
-            padding: 8px 0px;
-            color: #ffffff;
-            background-color: green;
-            margin: 0px 0px;
-         }
-
-         .quality-assurance-section {
-            background-color: var(--primary-bg);
-         }
-
-         .certifications-header {
-            color: var(--primary-bg);
-            font-size: 29px;
-         }
-
-         .product-card {
-            height: 367px;
-            width: 333px;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3sease-in-out;
-            /* background-color: black; */
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* border-radius: 15px; */
-         }
-
-         #Our-Clients {
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 10px;
-            color: #242c56;
-            padding: 2px;
-            border-left:
-               6px solid green;
-         }
-
-         .certifications-section {
-            background: #e2e7ff;
-            padding: 20px;
-            border-radius: 10px;
+         /* Styles for small phones */
+         section.experienceSec {
+            background-color: #1a1f3d;
          }
       }
 
-      @media (min-width: 375px) and (max-width: 667px) {
-         .new-pak {
-            margin: 20px 0px;
-            margin-left: 0px;
-            font-size: 18px;
-         }
+      /* Small Devices (Phones) */
+      @media (min-width: 375px) and (max-width: 767px) {
 
-         .btn {
-            font-size: 11px;
-            padding: 10px 10px;
-
-         }
-
-         .cert-icon {
-            background: #1C1C50;
-            color: white;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-         }
-
-         .cert-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding-left: 0px;
-         }
-
-         .Committed {
-            font-size: 2.7rem;
-            font-weight: bold;
-         }
-
-         .news-card-text {
-            font-size: 14px;
-            color: #444;
-            margin-top: 0px;
-         }
-
-         .text-certification-heading {
-            font-size: 2rem;
-            color: #011327;
-            font-weight: bold;
-         }
-
-         .home6 h1 {
-            color: var(--primary-bg);
-         }
-
-         #productimg01 {
-            background-image: url('img/our-product-01.svg');
-
-         }
-
-         #productimg02 {
-            background-image: url('img/our-product-02.svg');
-
-         }
-
-         #productimg03 {
-            background-image: url('img/our-product-03.svg');
-
-         }
-
-         .product-subtitle {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 30px;
-            margin: 0px 0px;
-            margin-bottom: 12px;
-         }
-
-
-
-
-         .company_mission {
-            background-image: url(img/bg-img.svg);
-            background-size: cover;
-            background-position: center;
-            background-repeat:
-               no-repeat;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
-            position: relative;
-            padding-top: 50px;
-            min-height: 600px;
-         }
-
-         #Industries-Served {
-            color: white;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 4px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            /* margin-left: 100px; */
-            color: #ffffff;
-            padding: 2px;
-            border-left: 6px solid green;
-         }
-
-         .packing-title {
-            font-weight: bolder;
-            font-size: 28px;
-            color: #f9f9f9;
-
-         }
-
-         .header-section {
-            margin-top: 20px;
-         }
-
-
-         .Latest-Innovations {
-            padding: 10px 10px;
-         }
-
-         .product-card-title {
-            color: var(--primary-bg);
-            font-size: 22px;
-            font-weight: 600;
-            padding: 10px;
-            margin-top: 180px;
-            font-family: 'Poppins', sans-serif;
-            /* border-left: 10px solid green; */
-         }
-
-
-
-         .Trusted-clients {
-            color: #242c56;
-            margin-top: 0px;
-            font-weight: 600;
-            font-size: 24px;
-         }
-
-         .Trusted-clientshidden {
-            display: none;
-         }
-
-
-         .mil-banner-personal {
-            margin-top: 20px;
-         }
-
-         #h1-text {
-            color: #ffffff;
-            padding: 0px 0px;
-            margin-top: 125px;
-            color: #ffffff;
-            font-size: 60px;
-         }
-
-         #h1-text {
-            line-height: 1.7pc;
-            font-size: 20px;
-            margin-top: 27px;
-            padding: 0 -5px;
-
-         }
-
-         #h1-text+p {
-            font-size: 12px;
-            padding: 20px 0px;
-            color: #ffffff;
-         }
-
-         .let-btn {
-            padding: 8px 0px;
-            color: #ffffff;
-            background-color: green;
-            margin: 0px 0px;
-         }
-
-         .quality-assurance-section {
-            background-color: var(--primary-bg);
-         }
-
-         .certifications-header {
-            color: var(--primary-bg);
-            font-size: 29px;
-         }
-
-         .product-card {
-            height: 364px;
-            width: 343px;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3sease-in-out;
-            /* background-color: black; */
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* border-radius: 15px; */
-         }
-
-         #Our-Clients {
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 10px;
-            color: #242c56;
-            padding: 2px;
-            border-left:
-               6px solid green;
-         }
-
-         .certifications-section {
-            background: #e2e7ff;
-            padding: 20px;
-            border-radius: 10px;
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* color: var(--primary-white); */
-            /* border-radius: 15px; */
-         }
-
-         .news-button {
-            background-color: #2ca44d;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
+         /* Styles for standard mobile devices */
+         section.experienceSec {
+            background-color: #007bff;
          }
       }
 
-      /* Media Queries for Responsive Design */
-
-      /* Mobile devices (less than 576px) */
-      @media (max-width: 575.98px) {
-         .new-pak {
-            margin: 20px 0px;
-            margin-left: 0px;
-            font-size: 18px;
-         }
-
-         .reviews-container {
-            grid-template-columns: 1fr;
-         }
-
-         #Industries-Served {
-            color: white;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 4px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            /* margin-left: 100px; */
-            color: #ffffff;
-            padding: 2px;
-            border-left: 6px solid green;
-         }
-
-         .news-card-text {
-            font-size: 14px;
-            color: #444;
-            margin-top: 0px;
-         }
-
-         .Trusted-clients {
-            color: #242c56;
-            margin-top: 0px;
-            font-weight: 600;
-            font-size: 24px;
-         }
-
-         #h1-text {
-            line-height: 1.7pc;
-            font-size: 20px;
-            margin-top: 27px;
-            padding: 0 -5px;
-         }
-
-         #Our-Clients {
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 10px;
-            color: #242c56;
-            padding: 2px;
-            border-left:
-               6px solid green;
-         }
-
-         .bgimg {
-            height: 400px;
-            width: 100%;
-         }
-
-         .let-btn {
-            margin: 15px;
-         }
-
-         .img-responsive {
-            margin: 16px auto;
-            width: 80%;
-         }
-
-         .news-section {
-            padding: 40px 5%;
-         }
-
-         .news-title {
-            font-size: 24px;
-         }
-
-         .news-card {
-            margin-bottom: 15px;
-         }
-
-
-      }
-
-      /* Tablets (576px to 991px) */
-      @media (min-width: 576px) and (max-width: 991px) {
-         .grid {
-            grid-template-columns: 1fr;
-            /* Change to a single-column layout */
-         }
-
-         .item1,
-         .item2 {
-            width: 100%;
-            /* Full width */
-         }
-
-         .nav-item .active {
-            border-bottom: 1px solid green;
-
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* color: var(--primary-white); */
-            /* border-radius: 15px; */
-         }
-
-         .new-pak {
-
-            font-size: 18px;
-            margin: 20px 0px;
-            margin-left: 35px;
-         }
-
-         #Industries-Served {
-            color: white;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 30px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            /* margin-left: 100px; */
-            color: #ffffff;
-            padding: 2px;
-            border-left: 6px solid green;
-         }
-
-         .news-card-text {
-            font-size: 14px;
-            color: #444;
-            margin-top: 50px;
-         }
-
-         .Trusted-clients {
-            color: #242c56;
-            margin-top: 66px;
-            font-weight: 600;
-            font-size: 30px;
-         }
-
-         #h1-text {
-            font-size: 36px;
-            margin-top: 80px;
-            color: #ffffff;
-            padding: 0 20px;
-         }
-
-         .text-certification-heading {
-            color: var(--primary-bg);
-         }
-
-         #Our-Clients {
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 30px;
-            color: #242c56;
-            padding: 2px;
-            border-left:
-               6px solid green;
-            margin-left: 100px;
-         }
-
-         .product-subtitle {
-            color: #333333;
-            font-size: 16px;
-            line-height: 1.5;
-            font-family: 'Open Sans', sans-serif;
-            padding: 0 15px 30px 15px;
-            margin: 0px 90px;
-         }
-
-         #h1-text+p {
-            padding: 20px 38px;
-            color: #ffffff;
-         }
-
-         .bgimg {
-            height: 100%;
-            width: 100%;
-         }
-
-         .clients {
-            flex-direction: column;
-            align-items: center;
-         }
-
-         .contact-section {
-            padding: 40px 0;
-            background-color: var(--primary-bg);
-         }
-
-         .contact-heading {
-            font-size: 36px;
-         }
-
-         .navbar-nav>li>a {
-            padding: 15px;
-         }
-
-         .logo-menu img {
-            max-height: 38px;
-         }
-
-         .img-responsive {
-            margin: 16px auto;
-            width: 60%;
-         }
-
-         .product-title {
-            font-size: 1.8rem;
-         }
-
-         .news-card-body h5,
-         .news-card-title {
-            color: #1C1C50;
-            font-size: 16px;
-         }
-
-         .clients {
-            flex-direction: column;
-            align-items: center;
-            display: table;
-         }
-
-         .contact-heading-text {
-            font-size: 20px;
-         }
-
-         .contact-text {
-            font-size: 14px;
-         }
-
-      }
-
-      /* Desktops (992px and up) */
-      @media (min-width: 992px) {
-
-
-         .packing-title {
-            font-weight: bolder;
-            font-size: 45px;
-            color: #f9f9f9;
-            margin-bottom: 100px;
-         }
-
-         .new-pak {
-            margin: 20px 0px 100px;
-            margin-left: 78px;
-            font-size: 28px;
-         }
-
-         .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
-            /* color: black; */
-            border-bottom: 3px solid green;
-         }
-
-         .navbar-nav>li>.new-pak {
-
-            font-size: 32px;
-            margin: 10px 0px;
-            margin-left: 78px;
-            margin-bottom: 100px;
-         }
-
-         .review-card .clinetname {
-            background: #28a745;
-            color: #fff;
-            /* display: inline-block; */
-            padding: 4px 5px;
-            border-radius: 5px;
-            font-size: 18px;
-            /* position: absolute; */
-            top: -18px;
-            /* left: 50%;  */
-            transform: translateX(-50%);
-            margin-bottom: 10px;
-            margin-left: 110px;
-         }
-
-
-         .custom-btn .let-btn {
-            margin-top: 120px;
-         }
-
-         #Industries-Served {
-            color: white;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 4px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 164px;
-            color: #ffffff;
-            padding: 2px;
-            border-left: 6px solid green;
-         }
-
-         .Trusted-clients {
-            color: #242c56;
-            margin-top: 66px;
-            font-weight: 600;
-            font-size: 30px;
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* border-radius: 15px; */
-         }
-
-         .product-card-title {
-            color: whitesmoke;
-            font-size: 18px;
-            font-weight: 600;
-            padding: 10px;
-            min-height: 50px;
-            font-family: 'Poppins', sans-serif;
-            /* border-left: 10px solid green; */
-            display: inline-block;
-         }
-
-
-         /* 
-               .home6 p,
-               .home8 p {
-                   font-family: 'Open Sans', sans-serif;
-                   color: var(--primary-bg);
-                   font-size: 20px;
-                   font-weight: 800;
-                   line-height: normal;
-                   margin-left: 100px;
-           }
-   
-           */
-         #h1-text {
-            font-size: 40px;
-            color: #ffffff;
-            padding: 0 21px;
-            margin-top: 52px;
-         }
-
-
-         .bgimg {
-            height: 663px;
-            width: 843px;
-         }
-
-         .img-responsive {
-            margin-top: 16px;
-            margin-left: 116px;
-            width: 60%;
-         }
-
-         .navbar-collapse.collapse {
-            padding: 0;
-            margin-top: 8px;
-         }
-
-         header.header4 #main-navigation-wrapper .nav>li {
-            padding: 22px 0;
-         }
-
-         .let-btn {
-            margin: 10px 30px;
-            padding: 12px;
-            color: #ffffff;
-            background-color: green;
-         }
-
-         #h1-text {
-            color: #ffffff;
-            padding: 30px 0px 0px 78px;
-            margin-top: 112px;
-            color: #ffffff;
-            font-size: 51px;
-         }
-
-         /* #h1-text {
-                   color: #ffffff;
-                   padding: 0px 35px;
-                   margin-top: 112px;
-                   color: #ffffff;
-                   font-size: 51px;
-               } */
-
-         #h1-text+p {
-            padding: 20px 38px;
-            color: #ffffff;
-         }
-
-         .contact-heading-text {
-            font-size: 28px;
-         }
-
-         .contact-text {
-            font-size: 14px;
-         }
-
-         .let-btn {
-            margin: 50px 38px 40px 80px;
-            padding: 16px 20px;
-            color: #ffffff;
-            background-color: green;
-         }
-
-         #Our-Clients {
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 164px;
-            color: #242c56;
-            padding: 2px;
-            border-left:
-               6px solid green;
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* color: var(--primary-white); */
-            /* border-radius: 15px; */
-         }
-
-         .Latest-Innovations {
-            padding: 60px 0px 72px 20px;
-         }
-
-         .features-section>.container {
-            text-align: center;
-            background-color: #1a2a5e;
-            color: white;
-            border-radius: 10px;
-            padding: 36px;
-         }
-
-         .features-section>.container>h2 {
-            color: whitesmoke;
-         }
-
-
-      }
-
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-         #main-navigation-wrapper .nav>li>a {
-            padding-right: 15px;
-            padding-left: 15px;
-            font-size: 12px;
-         }
-
-         .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* Two equal columns */
-            gap: 20px;
-         }
-
-         /* Ensuring both items take 50% width on desktop */
-         .item1,
-         .item2 {
-            width: 100%;
-         }
-
-      }
-
-      @media (min-width: 1024px) and (max-width: 1366px) {
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-bg);
-            /* border-radius: 15px; */
-         }
-
-         .clients {
-            display: table;
-            flex-direction: column;
-            /* align-items: center; */
-         }
-
-         #Our-Clients {
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 100px;
-            color: #242c56;
-            padding: 2px;
-            border-left:
-               6px solid green;
-         }
-
-         #Industries-Served {
-            color: white;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 4px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 100px;
-            color: #ffffff;
-            padding: 2px;
-            border-left: 6px solid green;
-         }
-
-         .Trusted-clients {
-            color: #242c56;
-            margin-top: 66px;
-            font-weight: 600;
-            font-size: 30px;
-         }
-
-         #h1-text {
-            font-size: 36px;
-            margin-top: 80px;
-            color: #ffffff;
-            padding: 0 20px;
-         }
-
-         .Latest-Innovations {
-            padding: 40px 40px;
-         }
-
-         .bgimg {
-            height: 100%;
-            width: 100%;
-         }
-
-         .clients {
-            flex-direction: column;
-            align-items: center;
-         }
-
-         .contact-section {
-            padding: 40px 0;
-            background-color: var(--primary-bg);
-         }
-
-         .contact-heading {
-            font-size: 36px;
-         }
-
-         .navbar-nav>li>a {
-            padding: 15px;
-         }
-
-         .logo-menu img {
-            max-height: 38px;
-         }
-
-         .img-responsive {
-            margin: 16px auto;
-            width: 60%;
-         }
-
-         .product-title {
-            font-size: 1.8rem;
-         }
-
-         .news-card-body h5,
-         .news-card-title {
-            color: #1C1C50;
-            font-size: 16px;
-         }
-      }
-
-      /* HD (1366 × 768) */
-      @media screen and (max-width: 1366px) {
-
-         .packing-title {
-            font-weight: bolder;
-            font-size: 45px;
-            color: #f9f9f9;
-            margin-bottom: 100px;
-         }
-
-         .new-pak {
-            margin: 20px 0px 100px;
-            margin-left: 78px;
-            font-size: 28px;
-         }
-
-         .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
-            /* color: black; */
-            border-bottom: 3px solid green;
-         }
-
-         .navbar-nav>li>.new-pak {
-
-            font-size: 32px;
-            margin: 10px 0px;
-            margin-left: 78px;
-            margin-bottom: 100px;
-         }
-
-         .review-card .clinetname {
-            background: #28a745;
-            color: #fff;
-            /* display: inline-block; */
-            padding: 4px 5px;
-            border-radius: 5px;
-            font-size: 18px;
-            /* position: absolute; */
-            top: -18px;
-            /* left: 50%;  */
-            transform: translateX(-50%);
-            margin-bottom: 10px;
-            margin-left: 110px;
-         }
-
-
-         .custom-btn .let-btn {
-            margin-top: 120px;
-         }
-
-         #Industries-Served {
-            color: white;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 4px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 164px;
-            color: #ffffff;
-            padding: 2px;
-            border-left: 6px solid green;
-         }
-
-         .Trusted-clients {
-            color: #242c56;
-            margin-top: 66px;
-            font-weight: 600;
-            font-size: 30px;
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* border-radius: 15px; */
-         }
-
-         .product-card-title {
-            color: whitesmoke;
-            font-size: 18px;
-            font-weight: 600;
-            padding: 10px;
-            min-height: 50px;
-            font-family: 'Poppins', sans-serif;
-            /* border-left: 10px solid green; */
-            display: inline-block;
-         }
-
-
-         /* 
-               .home6 p,
-               .home8 p {
-                   font-family: 'Open Sans', sans-serif;
-                   color: var(--primary-bg);
-                   font-size: 20px;
-                   font-weight: 800;
-                   line-height: normal;
-                   margin-left: 100px;
-           }
-   
-           */
-         #h1-text {
-            font-size: 40px;
-            color: #ffffff;
-            padding: 0 21px;
-            margin-top: 52px;
-         }
-
-
-         .bgimg {
-            height: 663px;
-            width: 843px;
-         }
-
-         .img-responsive {
-            margin-top: 16px;
-            margin-left: 116px;
-            width: 60%;
-         }
-
-         .navbar-collapse.collapse {
-            padding: 0;
-            margin-top: 8px;
-         }
-
-         header.header4 #main-navigation-wrapper .nav>li {
-            padding: 22px 0;
-         }
-
-         .contact-heading-text {
-            font-size: 28px;
-         }
-
-         .contact-text {
-            font-size: 14px;
-         }
-
-         .let-btn {
-            margin: 10px 30px;
-            padding: 12px;
-            color: #ffffff;
-            background-color: green;
-         }
-
-         #h1-text {
-            color: #ffffff;
-            padding: 30px 0px 0px 78px;
-            margin-top: 112px;
-            color: #ffffff;
-            font-size: 51px;
-         }
-
-         /* #h1-text {
-                   color: #ffffff;
-                   padding: 0px 35px;
-                   margin-top: 112px;
-                   color: #ffffff;
-                   font-size: 51px;
-               } */
-
-         #h1-text+p {
-            padding: 20px 38px;
-            color: #ffffff;
-         }
-
-         .let-btn {
-            margin: 50px 38px 80px 80px;
-            padding: 16px 20px;
-            color: #ffffff;
-            background-color: green;
-         }
-
-         #Our-Clients {
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 164px;
-            color: #242c56;
-            padding: 2px;
-            border-left:
-               6px solid green;
-         }
-
-         .card-body p {
-            font-size: 14px;
-            color: var(--primary-white);
-            /* color: var(--primary-white); */
-            /* border-radius: 15px; */
-         }
-
-         .Latest-Innovations {
-            padding: 60px 0px 72px 20px;
-         }
-      }
-
-
-      /* Full HD (1920 × 1080) */
-      @media screen and (max-width: 1920px) {
-         .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* Two equal columns */
-            gap: 20px;
-         }
-
-         /* Ensuring both items take 50% width on desktop */
-         .item1,
-         .item2 {
-            width: 100%;
-         }
-
-
-
-         .grid-item .item2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-         }
-
-         .img-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* Two equal columns */
-            gap: 10px;
-         }
-
-         .img-container img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            /* Ensures images maintain aspect ratio */
-         }
-
-         .img-container img:nth-child(3) {
-            grid-column: span 2;
-            /* Makes the third image span both columns */
-            height: 100%;
-            /* Takes full height */
-         }
-
-
-         .item1 img {
-            width: 100px;
-            margin: 10px;
-         }
-
-         .item2 {
-            /* background-color: white; */
-            padding: 20px;
-            text-align: center;
+      /* Medium Devices (Tablets) */
+      @media (min-width: 768px) and (max-width: 1024px) {
+         .leadership-content {
+            margin-top: 2rem;
          }
 
-         .item2 h2 {
-            margin-bottom: 10px;
+         .value-card {
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
          }
 
-         .img-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin-top: 20px;
+         .leadership-title {
+            font-size: 1.5rem;
          }
 
-         .img-container img {
-            width: 100%;
-            height: auto;
+         section.experienceSec {
+            background-color: red;
          }
 
          .about-text-head {
             text-align: left;
+            color: var(--primary-white);
             border-left: 6px solid green;
             margin: 33px 33px 33px 0px;
-            font-size: 24px;
-            height: 30px;
+            font-size: 36px;
+            height: 36px;
             padding-left: 10px;
          }
 
          .about-text {
             text-align: left;
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 20px;
+            color: var(--primary-white);
          }
 
-
-         .Innovative {
-            text-align: left;
+         .iconText h6 {
+            margin-left: 24px;
             font-size: 38px;
-            font-weight: 700;
+            color: #1a2a5e;
+            line-height: 1.3;
+         }
+      }
+
+      /* Large Devices (Laptops, Small Desktops) */
+      @media (min-width: 1025px) and (max-width: 1366px) {
+
+         /* Styles for laptops and small desktops */
+         .about-text-head {
+            text-align: left;
+            color: var(--primary-white);
+            border-left: 6px solid green;
+            margin: 33px 33px 33px 0px;
+            font-size: 36px;
+            height: 36px;
+            padding-left: 10px;
+         }
+
+         .about-text {
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 20px;
+            color: var(--primary-white);
+         }
+
+         .iconText h6 {
+            margin-left: 24px;
+            font-size: 38px;
+            color: #1a2a5e;
+            line-height: 1.3;
+         }
+      }
+
+      /* Extra Large Devices (Large Screens, TVs) */
+      @media (min-width: 1367px) and (max-width: 1920px) {
+
+
+         .aboutimg01 {
+            height: 186px;
+            margin: 22px 0px 0px 110px;
 
          }
+
+         .aboutimg02 {
+            height: 186px;
+            margin: 22px 0px 0px 90px;
+         }
+
+         .aboutimg03 {
+            margin-top: 56px;
+            height: 350px
+         }
+
+         .img-fluid .aboutimg03 {
+            height: 350px;
+
+         }
+
+         .about-text-head {
+            text-align: left;
+            color: var(--primary-white);
+            border-left: 6px solid green;
+            margin: 33px 33px 33px 0px;
+            font-size: 36px;
+            height: 36px;
+            padding-left: 10px;
+         }
+
+         .about-text {
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
+            padding: 20px;
+            color: var(--primary-white);
+         }
+
+         .iconText h6 {
+            margin-left: 24px;
+            font-size: 38px;
+            color: #1a2a5e;
+            line-height: 1.3;
+         }
+
+         header.header4 #main-navigation-wrapper .nav>li {
+            padding: 22px 0;
+         }
+
+         .navbar-collapse.collapse {
+            padding: 0px;
+         }
+
+         .img-responsive {
+            margin-top: 19px;
+            margin-left: 28%;
+            width: 57%;
+         }
+
+
+         /* Styles for ultra-wide monitors & 4K screens */
+         .about-text-head {
+            text-align: left;
+            color: var(--primary-white);
+            border-left: 6px solid green;
+            margin: 33px 33px 33px 0px;
+            font-size: 36px;
+            height: 36px;
+            padding-left: 10px;
+         }
+
+         .about-text {
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 20px;
+            color: var(--primary-white);
+         }
+
+         .iconText p {
+            margin-left: 24px;
+            font-size: 38px;
+            color: #1a2a5e;
+            line-height: 1.3;
+         }
+
+         .iconText h6 {
+            margin-left: 24px;
+            font-size: 38px;
+            color: #1a2a5e;
+            line-height: 1.3;
+         }
+
+
+         .journey-section {
+            background-color: var(--navy-blue);
+            color: white;
+            padding: 4rem 0;
+         }
+
+         .journey-title {
+            position: relative;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+         }
+
+         .journey-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background-color: var(--green-accent);
+         }
+
+         .journey-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+         }
+
+         .image-gallery {
+            position: relative;
+         }
+
+         .image-container {
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+         }
+
+         .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+
+         .inner-pages-bnr img {
+            width: 125%;
+         }
+
+         .experience-badge {
+            position: absolute;
+            right: 38%;
+            top: 55%;
+            transform: translateY(-50%);
+            background-color: white;
+            color: var(--navy-blue);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+         }
+
+         .experience-badge .number {
+            color: #4db238;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1;
+         }
+
+         .experience-badge .text {
+            font-size: 1.4rem;
+            line-height: 1.1;
+         }
+
+
+         .section-title {
+            color: #1e2756;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+         }
+
+         .section-subtitle {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+         .values-section {
+            padding: 60px 0;
+            background-color: #fff;
+         }
+
+         .value-card {
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+
+         .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+         }
+
+         .value-icon {
+            width: 233px;
+            background-color: #1e2756;
+            border-radius: 0px 20px 20px 0px;
+            padding: 21px 10px;
+            font-size: 24px;
+            margin-bottom: 10px;
+         }
+
+         .value-icon img {
+            height: 75px;
+         }
+
+         .value-title {
+            font-weight: bold;
+            margin-top: 0;
+         }
+
+         .value-body {
+            border: 1px solid #011327;
+            border-radius: 15px;
+            padding: 20px 20px 20px 0px;
+         }
+
+         .value-text {
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1.6;
+         }
+
+
+
 
          .features-section {
+            padding: 60px 0;
+         }
 
-            padding: 40px 0;
+
+
+         .leader-image {
+            max-width: 100%;
+            border-radius: 5px;
+         }
+
+         .features-section .container .row {
+            display: flex;
+            align-items: stretch;
+            /* Makes both columns the same height */
+         }
+
+         .features-section .container .row .col-md-5,
+         .features-section .container .row .col-md-7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+
+         .leader-name {
+            background-color: #34a853;
+            color: #1e2756;
+            padding: 10px;
             text-align: center;
-         }
-
-         .features-section h2 {
-            margin: 20px 0px;
-            font-weight: 700;
-            font-size: 30px;
-            color: white;
-         }
-
-         .features-section>.container {
-            background-color: #1a2a5e;
-            color: white;
+            font-weight: bold;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-bottom: 20px;
+            margin: 0px 50px 0px 95px;
             border-radius: 10px;
          }
 
-         .features-section>.container>.feature-box {
+         .leadership-content {
+            background-color: #1e2756;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+         }
 
+         .leadership-title {
+            position: relative;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: white;
+         }
+
+         .leadership-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background-color: #2a9d5c;
+         }
+
+         .leadership-text p {
+            color: white;
+            font-size: 20px;
+            line-height: 1.6;
+         }
+
+         .sustainability-section {
+            padding: 60px 0;
+         }
+
+         .sustainability-title {
+            color: #1e2756;
+            font-weight: bold;
+            border-left: 6px solid #2a9d5c;
+            padding-left: 15px;
             margin-bottom: 20px;
          }
 
-         .feature-box {
-            padding: 10px;
-            margin: 30px 0px 40px 0px;
+         .sustainability-text {
+            margin-bottom: 30px;
+            margin-left: 20px;
+            text-align: left;
          }
 
-         .feature-box img {
-            width: 100px;
+         .eco-icon {
+            font-size: 36px;
+            color: #1e2756;
             margin-bottom: 15px;
          }
 
-         .feature-box h5 {
-            margin-top: 10px;
+         .eco-title {
+            font-size: 14px;
+            text-align: center;
+            color: #1e2756;
+            font-weight: bold;
+         }
+
+         .sustainability-section {
+            padding: 50px 0;
+         }
+
+         .section-title {
+            color: #1e2756;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            /* Centers the text */
+            position: relative;
+            margin-bottom: 20px;
+         }
+
+         .section-title::after {
+            content: "";
+            display: block;
+            width: 250px;
+            /* Fixed width for border */
+            height: 6px;
+            /* Thickness of border */
+            background-color: green;
+            margin: 10px auto 0;
+            /* Centers the border */
+         }
+
+
+         .sustainability-text {
+            font-size: 25px;
+            color: #333;
+            line-height: 1.6;
+            margin-top: 50px;
+         }
+
+         .sustainability-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+         }
+
+         .icon-text {
+            font-size: 14px;
+            color: #555;
          }
 
       }
 
+      /* 4K & Ultra-Wide Screens */
+      @media (min-width: 1921px) {
+         header.header4 #main-navigation-wrapper .nav>li {
+            padding: 22px 0;
+         }
 
-      /* .img1 {
-         grid-row: 1 /2;
-      } */
+         .navbar-collapse.collapse {
+            padding: 0px;
+         }
+
+         .img-responsive {
+            margin-top: 19px;
+            margin-left: 140%;
+            width: 25%;
+         }
+
+
+         /* Styles for ultra-wide monitors & 4K screens */
+         .about-text-head {
+            text-align: left;
+            color: var(--primary-white);
+            border-left: 6px solid green;
+            margin: 33px 33px 33px 0px;
+            font-size: 36px;
+            height: 36px;
+            padding-left: 10px;
+         }
+
+         .about-text {
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 20px;
+            color: var(--primary-white);
+         }
+
+         .iconText h6 {
+            margin-left: 24px;
+            font-size: 38px;
+            color: #1a2a5e;
+            line-height: 1.3;
+         }
+
+         .journey-section {
+            background-color: var(--navy-blue);
+            color: white;
+            padding: 4rem 0;
+         }
+
+         .journey-title {
+            position: relative;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+         }
+
+         .journey-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background-color: var(--green-accent);
+         }
+
+         .journey-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+         }
+
+         .image-gallery {
+            position: relative;
+         }
+
+         .image-container {
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+         }
+
+         .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+
+         .inner-pages-bnr img {
+            width: 125%;
+         }
+
+         .experience-badge {
+            position: absolute;
+            right: 38%;
+            top: 55%;
+            transform: translateY(-50%);
+            background-color: white;
+            color: var(--navy-blue);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+         }
+
+         .experience-badge .number {
+            color: #4db238;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1;
+         }
+
+         .experience-badge .text {
+            font-size: 0.9rem;
+            line-height: 1.1;
+         }
+
+
+         .section-title {
+            color: #1e2756;
+            font-size: 40px;
+            font-weight: bold;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            border-bottom: 6px solid green;
+
+         }
+
+         .section-subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+         .values-section {
+            padding: 60px 0;
+            background-color: #fff;
+         }
+
+         .value-card {
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+
+         .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+         }
+
+         .value-icon {
+            width: 233px;
+            background-color: #1e2756;
+            border-radius: 0px 20px 20px 0px;
+            padding: 21px 10px;
+            font-size: 24px;
+            margin-bottom: 10px;
+         }
+
+         .value-icon img {
+            height: 75px;
+         }
+
+         .value-title {
+            font-weight: bold;
+            margin-top: 0;
+         }
+
+         .value-body {
+            border: 1px solid #011327;
+            border-radius: 15px;
+            padding: 20px 20px 20px 0px;
+         }
+
+         .value-text {
+            padding: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+         }
+
+
+
+
+         .features-section {
+            padding: 60px 0;
+         }
+
+
+
+         .leader-image {
+            max-width: 100%;
+            border-radius: 5px;
+         }
+
+         .features-section .container .row {
+            display: flex;
+            align-items: stretch;
+            /* Makes both columns the same height */
+         }
+
+         .features-section .container .row .col-md-5,
+         .features-section .container .row .col-md-7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+
+         .leader-name {
+            background-color: #34a853;
+            color: #1e2756;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-bottom: 20px;
+            margin: 0px 50px 0px 100px;
+            border-radius: 10px;
+         }
+
+         .leadership-content {
+            background-color: #1e2756;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+         }
+
+         .leadership-title {
+            position: relative;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: white;
+         }
+
+         .leadership-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background-color: #2a9d5c;
+         }
+
+         .leadership-text p {
+            color: white;
+            font-size: 14px;
+            line-height: 1.6;
+         }
+
+         .sustainability-section {
+            padding: 60px 0;
+         }
+
+         .sustainability-title {
+            color: #1e2756;
+            font-weight: bold;
+            border-left: 6px solid #2a9d5c;
+            padding-left: 15px;
+            margin-bottom: 20px;
+         }
+
+         .sustainability-text {
+            margin-bottom: 30px;
+            margin-left: 20px;
+            text-align: left;
+         }
+
+         .eco-icon {
+            font-size: 36px;
+            color: #1e2756;
+            margin-bottom: 15px;
+         }
+
+         .eco-title {
+            font-size: 14px;
+            text-align: center;
+            color: #1e2756;
+            font-weight: bold;
+         }
+
+         .sustainability-section {
+            padding: 50px 0;
+         }
+
+         .section-title {
+            color: #1e2756;
+            font-size: 40px;
+            font-weight: bold;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            border-bottom: 6px solid green;
+         }
+
+         .sustainability-text {
+            font-size: 25px;
+            color: #333;
+            line-height: 1.6;
+            margin-top: 50px;
+         }
+
+         .sustainability-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+         }
+
+         .icon-text {
+            font-size: 14px;
+            color: #555;
+         }
+      }
    </style>
 </head>
 
@@ -2189,36 +1632,51 @@
 
    <section>
       <div class="inner-pages-bnr">
-         <div class="container container-about " style="height:520PX;background-color: #d8ebff;margin-top: 80px; ">
-            <div class="grid">
-               <!-- First Column (Three Images) -->
+         <div class="container container-about " style="height:520PX;background-color: #242c56;margin-top: 80px; ">
+            <div class="row">
+               <div class="col-lg-6">
 
+                  <div class="row border text-white p-3" style="margin-top: 25px;">
 
-               <!-- Second Column (Heading, Paragraph, and Three Images) -->
-               <div class="grid-item item2">
+                     <!-- First Column: Unique IDs -->
+                     <div class="col-md-4 d-flex flex-column">
+                        <div class="p-2 border">
+                           <img src="img/products/aboutimg01.svg" class="img-fluid aboutimg01" alt="Image">
+                        </div>
+                        <div class="p-2 border"><img src="img/products/aboutimg02.svg" class="aboutimg02" alt="Image">
+                        </div>
 
-                  <div class="img-container">
-                     <img src="img/bg-img.svg" class="img1" alt="1">
-                     <img src="img/bg-img.svg" class="img2" alt="2">
-                     <img src="img/bg-img.svg" class="img3" alt="3"> <!-- This image spans both rows -->
+                     </div>
+
+                     <!-- Second Column: Merged Name (Rowspan Effect) -->
+                     <div class="col-md-8 d-flex align-items-center justify-content-center bg-light text-dark">
+                        <img src="img/products/aboutimg03.svg" class=" aboutimg03" alt="Image">
+
+                     </div>
+                     <div class="experience-badge">
+                        <div class="number">10+</div>
+                        <div class="text">Year Experience</div>
+                     </div>
+
                   </div>
 
                </div>
-               <div class="grid-item item1">
-                  <h6 class="about-text-head">About Mundada Polymer</h6>
-                  <h2 class="fs-5 fw-bold Innovative">Innovative
-                     Packaging
-                     Solutions for a
-                     Sustainable
-                     Future</h2>
-                  <p class="about-text">At Mundada Polymers, a proud member of the
-                     Bai-Kakaji Group, we are
-                     dedicated to delivering
-                     cutting-edge packaging
-                     solutions that cater to a wide array of industries. Building upon the successful legacy of
-                     Baikakaji
-                     Polymers, we strive
-                     to set new benchmarks in quality and customer satisfaction.</p>
+               <div class="col-12 col-lg-6">
+                  <h6 class="about-text-head">Our Journey</h6>
+                  <p class="about-text">
+                     Founded in 2022 as part of the Bai-Kakaji Group’s expansion, Mundada Polymers builds on a legacy of
+                     excellence that
+                     dates back to the group’s inception in 2000. As a new venture backed by decades of industry
+                     expertise, we have rapidly
+                     grown into a trusted provider of protective and specialty polymer films. Headquartered in Latur,
+                     Maharashtra, we combine
+                     innovation and quality to redefine your packaging experience. Today, with a production capacity of
+                     over 400 metric tons,
+                     Mundada Polymers offers a diverse range of flexible packaging solutions to meet the needs of
+                     various industries. From
+                     humble beginnings to a fast-emerging industry player, our journey reflects continuous growth,
+                     customer trust, and a
+                     commitment to setting new benchmarks in packaging excellence.</p>
                </div>
             </div>
          </div>
@@ -2229,57 +1687,187 @@
 
 
 
-
-
    <!--=========Abouts Section Start============-->
    <section class=" experienceSec">
       <div class="container">
          <div class="row">
-            <div class=" col-12 col-md-12 col-xs-12 experienceLeft">
+            <div class="col-12 col-md-6 col-lg-6 experienceLeft">
                <div class="home8Title">
                   <h3 class="about-text-head">Our Commitment to You</h3>
                </div>
                <div class="iconText">
-                  <p class="ml-4" style="margin-left: 24px;">At Mundada Polymers, we view our clients as valued
-                     partners. Our mission extends
-                     beyond supplying
-                     packaging materials;
-                     we aim to foster collaborative relationships built on trust and mutual success. Our dedicated team
-                     of experts is always
-                     ready to provide personalized assistance, addressing your unique challenges with tailored
-                     solutions.</p>
+                  <h6 class="ml-4">
+                     We strive to be the global leader in protective packaging, ensuring sustainability and customer
+                     focus.
+                  </h6>
+               </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 experienceLeft">
+               <div class="home8Title ">
+                  <h3 class="about-text-head" style="color: #ffffff;border-left: none; background-color: #ffffff;">
+                     Our Commitment to You
+                  </h3>
+               </div>
+               <div class="iconText">
+                  <p class="ml-4">Our mission is to deliver innovative, high-quality
+                     packaging solutions while treating every customer as a valued
+                     partner. We strive to build long-lasting relationships based on trust, reliability, and mutual
+                     success. This mission
+                     drives us to continuously improve the way we work and to develop our team’s capabilities in order
+                     to meet the evolving
+                     needs of our customers and the market. Ultimately, we exist to help our clients protect what
+                     matters – by providing
+                     packaging films that preserve products, ensure safety, and add value at every step.</p>
                </div>
 
             </div>
          </div>
    </section>
-   <section class="features-section">
+   <section class="values-section">
       <div class="container">
-         <h2 class="mb-4">Why Choose Mundada Polymers?</h2>
+         <h3 class="section-title">Our Values</h3>
+         <div class="custom-border"></div>
+         <p class="section-subtitle">Our core values define who we are and guide how we do business. Every team member
+            at
+            Mundada Polymers embodies these principles.</p>
+
          <div class="row">
-            <div class="col-md-3 col-sm-6 feature-box">
-               <img src="img/icons/noun-quality-assurance-7557920 1.svg" alt="Quality Assurance">
-               <h5>Quality Assurance</h5>
+            <!-- Value Card 1 -->
+            <div class="col-md-6">
+               <div class="value-card">
+                  <div class="value-body">
+                     <div class="value-icon">
+                        <img src="img/photo/noun-partnership-7572862 1.svg" <span class="value-title">
+                        Customer </span>
+
+                     </div>
+                     <p class="value-text">We view our customers as partners and put their success at the center of what
+                        we
+                        do. We believe in long-term relationships built on trust and mutual commitment to help our
+                        clients
+                        achieve their goals.<br><br></p>
+                  </div>
+               </div>
             </div>
-            <div class="col-md-3 col-sm-6 feature-box">
-               <img src="img/icons/noun-customer-5789497 1.svg" alt="Quality Assurance">
-               <h5>Customer-Centric Approach</h5>
+
+            <!-- Value Card 2 -->
+            <div class="col-md-6">
+               <div class="value-card">
+                  <div class="value-body">
+                     <div class="value-icon">
+                        <img src="img/photo/noun-excellence-6704062 1.svg" />
+                        <span class="value-title">Excellence</span>
+                     </div>
+                     <p class="value-text">We pursue excellence in all aspects of our work, from manufacturing to
+                        customer
+                        service. We maintain high-quality standards and continuously improve our processes. We strive
+                        for
+                        nothing less than the best in product performance and reliability.</p>
+                  </div>
+               </div>
             </div>
-            <div class="col-md-3 col-sm-6 feature-box">
-               <img src="img/icons/noun-innovation-447435 1.svg" alt="Innovative Solutions">
-               <h5>Innovative Solutions</h5>
+
+            <!-- Value Card 3 -->
+            <div class="col-md-6">
+               <div class="value-card">
+                  <div class="value-body">
+                     <div class="value-icon">
+                        <img src="img/photo/noun-innovation-7576332 1.svg" <span class="value-title">
+                        <span class="value-title">Innovation</span>
+                     </div>
+                     <p class="value-text">Innovation is in our DNA. We encourage creative thinking and invest in
+                        research
+                        and development to create forward-thinking solutions. Our entrepreneurial mindset and agile
+                        approach consistently yield breakthrough products and processes.</p>
+                  </div>
+               </div>
             </div>
-            <div class="col-md-3 col-sm-6 feature-box">
-               <img src="img/icons/noun-recycling-symbol-5949761 1.svg" alt="Sustainable Practices">
-               <h5>Sustainable Practices</h5>
+
+            <!-- Value Card 4 -->
+            <div class="col-md-6">
+               <div class="value-card">
+                  <div class="value-body">
+                     <div class="value-icon">
+                        <img src="img/photo/noun-sustainability-7361005 1.svg" <span class="value-title">
+                        <span class="value-title">Integrity</span>
+                     </div>
+                     <p class="value-text">We pursue excellence in all aspects of our work, from maintaining
+                        high-quality
+                        standards and continuously improving our processes. We strive for nothing less than the best in
+                        product performance and reliability.<br><br></p>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
    </section>
 
 
+   <section class="features-section">
+      <div class="container">
+         <div class="row">
+            <!-- Leader Image -->
+            <div class="col-md-5" style="background-color: #e5f2ff;">
+               <img src="img/photo/maxresdefault 1.svg" alt="Mr. Pramod Mundada" class="leader-image img-responsive">
+               <div class="leader-name">Mr. Pramod Mundada</div>
+            </div>
+
+            <!-- Leadership Content -->
+            <div class="col-md-7" style="background-color: #242c56;">
+               <div class="leadership-content">
+                  <h2 class="leadership-title">Leadership</h2>
+                  <div class="leadership-text">
+                     <p>Mundada Polymers is guided by experienced leadership with a vision for excellence. The
+                        company is led by Mr. Pramod Mundada, whose entrepreneurial journey began in 2000 with
+                        the establishment of Bai-Kakaji Plastics. Under his guidance, the business has grown
+                        from a small-scale operation to a diversified group with a focus on innovation,
+                        sustainability, and customer service.</p>
+                     <p>With over two decades of industry experience, Mr. Mundada brings a wealth of knowledge
+                        and expertise to share with our repeat customers. Our leaders are driven by a commitment
+                        to quality, transparency, and the continuous improvement of both our products and the
+                        decision-making that makes customers trust our packaging solutions and partnerships.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
 
 
+   <section class="sustainability-section">
+      <div class="container">
+         <div class="col-md-6 col-lg-6">
+            <h3 class="sustainability-title">Sustainability Commitment</h3>
+            <p class="sustainability-text">
+               At Mundada Polymers, sustainability is at the core of our business. We manufacture 100% recyclable
+               polyethylene films,
+               helping customers reduce their environmental impact.
+            </p>
+
+         </div>
+
+         <!-- Right Icons Section -->
+         <div class="col-md-6 col-lg-6">
+            <div class="row my-lg-5">
+               <div class="col-md-4 text-center">
+                  <img src="img/icons/Eneergy.svg" alt="Energy Efficient" class="sustainability-icon">
+                  <p class="icon-text">Energy-efficient manufacturing to reduce emissions.</p>
+               </div>
+               <div class="col-md-4 text-center">
+                  <img src="img/icons/sustainaible.svg" alt="Sustainable Materials" class="sustainability-icon">
+                  <p class="icon-text">Sustainable materials that support global recycling goals.</p>
+               </div>
+               <div class="col-md-4 text-center">
+                  <img src="img/icons/wast.svg" alt="Waste Reduction" class="sustainability-icon">
+                  <p class="icon-text">Waste reduction initiatives to ensure minimal resource wastage.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
 
 
 
