@@ -8,13 +8,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-   <title>Raviraj Hi-Tech</title>
+   <title>Mundada Polymer</title>
    <!-- Bootstrap -->
-   <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-   <!-- <link href="css/style.css" rel="stylesheet"> -->
-   <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
-   <!-- <link href="css/responsive_bootstrap_carousel.css" rel="stylesheet" media="all"> -->
-
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link href="css/responsive_bootstrap_carousel.css" rel="stylesheet" media="all">
+   <link rel="stylesheet" type="text/css" href="css/file.css" />
 
    <link href="css/bootstrap.min.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
@@ -26,6 +26,8 @@
    <link rel="stylesheet" type="text/css" href="css/demo.css" />
    <link rel="stylesheet" type="text/css" href="css/set1.css" />
    <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
    <style>
       :root {
          --primary-bg: #1e2342;
@@ -49,6 +51,41 @@
          /* background-color: var(--primary-bg); */
          color: white;
          font-family: Arial, sans-serif;
+      }
+
+      .container {
+         max-width: 90%;
+         min-width: 300px;
+      }
+
+      section {
+         background-color: #ffffff;
+      }
+
+      #productimg01,
+      #productimg02,
+      #productimg03 {
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 390px;
+         /* Adjust as needed */
+         display: flex;
+         align-items: flex-end;
+         justify-content: start;
+         text-align: start;
+      }
+
+      .product-card-title,
+      .product-card-text {
+         text-align: left;
+         border-left: 10px solid green;
+         padding-left: 10px;
+         /* Adds space between border and text */
+         /* background: rgba(255, 255, 255, 0.8); */
+         /* Light background for readability */
+         display: inline-block;
+         /* Ensures border only spans the text width */
       }
 
       h2 {
@@ -102,12 +139,18 @@
          background-color: green;
       }
 
-
+      .text-success {
+         color: green;
+      }
 
       .contact-icon {
          color: var(--accent-green);
-         width: 24px;
-         height: 24px;
+         width: 28px;
+         height: 45px;
+      }
+
+      .contact-icon span {
+         font-size: 14px;
       }
 
       .form-control {
@@ -298,7 +341,7 @@
          padding: 10px;
          margin-top: 180px;
          font-family: 'Poppins', sans-serif;
-         border-left: 10px solid green;
+         /* border-left: 10px solid green; */
       }
 
       .home6 h5,
@@ -677,9 +720,34 @@
       }
 
       .new-pak {
-         margin: 20px 0px;
-         margin-left: 30px;
+         margin: 20px 0px 100px;
+         margin-left: 78px;
          font-size: 28px;
+      }
+
+      .contact-info {
+         margin-bottom: 30px;
+      }
+
+      .contact-heading-text {
+         font-size: 24px;
+         margin-bottom: 15px;
+      }
+
+      .contact-text {
+         margin: 8px 3px;
+         font-size: 16px;
+         color: #ffffff;
+         line-height: 1.5;
+      }
+
+      .contact-icon {
+         color: var(--accent-green);
+         width: 28px;
+         height: 45px;
+         font-size: 20px;
+         display: flex;
+         align-items: center;
       }
 
       @media (min-width: 360px) and (max-width: 800px) {
@@ -729,6 +797,10 @@
             font-size: 2rem;
             color: #011327;
             font-weight: bold;
+         }
+
+         .contact-heading {
+            font-size: 28px;
          }
 
          .home6 h1 {
@@ -811,7 +883,7 @@
             padding: 10px;
             margin-top: 180px;
             font-family: 'Poppins', sans-serif;
-            border-left: 10px solid green;
+            /* border-left: 10px solid green; */
          }
 
 
@@ -1015,6 +1087,7 @@
             font-weight: bolder;
             font-size: 28px;
             color: #f9f9f9;
+
          }
 
          .header-section {
@@ -1033,7 +1106,7 @@
             padding: 10px;
             margin-top: 180px;
             font-family: 'Poppins', sans-serif;
-            border-left: 10px solid green;
+            /* border-left: 10px solid green; */
          }
 
 
@@ -1093,8 +1166,8 @@
          }
 
          .product-card {
-            height: 367px;
-            width: 333px;
+            height: 364px;
+            width: 343px;
             background-repeat: no-repeat;
             border-radius: 10px;
             overflow: hidden;
@@ -1127,7 +1200,7 @@
 
          .card-body p {
             font-size: 14px;
-            color: #242c56;
+            color: var(--primary-white);
             /* color: var(--primary-white); */
             /* border-radius: 15px; */
          }
@@ -1235,6 +1308,16 @@
 
       /* Tablets (576px to 991px) */
       @media (min-width: 576px) and (max-width: 991px) {
+         .grid {
+            grid-template-columns: 1fr;
+            /* Change to a single-column layout */
+         }
+
+         .item1,
+         .item2 {
+            width: 100%;
+            /* Full width */
+         }
 
          .nav-item .active {
             border-bottom: 1px solid green;
@@ -1243,7 +1326,7 @@
 
          .card-body p {
             font-size: 14px;
-            color: #242c56;
+            color: var(--primary-white);
             /* color: var(--primary-white); */
             /* border-radius: 15px; */
          }
@@ -1368,6 +1451,13 @@
             display: table;
          }
 
+         .contact-heading-text {
+            font-size: 20px;
+         }
+
+         .contact-text {
+            font-size: 14px;
+         }
 
       }
 
@@ -1375,6 +1465,18 @@
       @media (min-width: 992px) {
 
 
+         .packing-title {
+            font-weight: bolder;
+            font-size: 45px;
+            color: #f9f9f9;
+            margin-bottom: 100px;
+         }
+
+         .new-pak {
+            margin: 20px 0px 100px;
+            margin-left: 78px;
+            font-size: 28px;
+         }
 
          .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
             /* color: black; */
@@ -1440,13 +1542,15 @@
 
          .product-card-title {
             color: whitesmoke;
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 600;
             padding: 10px;
-            margin-top: 180px;
+            min-height: 50px;
             font-family: 'Poppins', sans-serif;
-            border-left: 10px solid green;
+            /* border-left: 10px solid green; */
+            display: inline-block;
          }
+
 
          /* 
                .home6 p,
@@ -1516,8 +1620,16 @@
             color: #ffffff;
          }
 
+         .contact-heading-text {
+            font-size: 28px;
+         }
+
+         .contact-text {
+            font-size: 14px;
+         }
+
          .let-btn {
-            margin: 50px 38px 0px 80px;
+            margin: 50px 38px 40px 80px;
             padding: 16px 20px;
             color: #ffffff;
             background-color: green;
@@ -1535,7 +1647,7 @@
 
          .card-body p {
             font-size: 14px;
-            color: #242c56;
+            color: var(--primary-white);
             /* color: var(--primary-white); */
             /* border-radius: 15px; */
          }
@@ -1543,6 +1655,42 @@
          .Latest-Innovations {
             padding: 60px 0px 72px 20px;
          }
+
+         .features-section>.container {
+            text-align: center;
+            background-color: #1a2a5e;
+            color: white;
+            border-radius: 10px;
+            padding: 36px;
+         }
+
+         .features-section>.container>h2 {
+            color: whitesmoke;
+         }
+
+
+      }
+
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+         #main-navigation-wrapper .nav>li>a {
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 12px;
+         }
+
+         .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two equal columns */
+            gap: 20px;
+         }
+
+         /* Ensuring both items take 50% width on desktop */
+         .item1,
+         .item2 {
+            width: 100%;
+         }
+
       }
 
       @media (min-width: 1024px) and (max-width: 1366px) {
@@ -1645,7 +1793,342 @@
          }
       }
 
-      @media (min-width: 1366px) and (max-width: 2400px) {}
+      /* HD (1366 × 768) */
+      @media screen and (max-width: 1366px) {
+
+         .packing-title {
+            font-weight: bolder;
+            font-size: 45px;
+            color: #f9f9f9;
+            margin-bottom: 100px;
+         }
+
+         .new-pak {
+            margin: 20px 0px 100px;
+            margin-left: 78px;
+            font-size: 28px;
+         }
+
+         .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+            /* color: black; */
+            border-bottom: 3px solid green;
+         }
+
+         .navbar-nav>li>.new-pak {
+
+            font-size: 32px;
+            margin: 10px 0px;
+            margin-left: 78px;
+            margin-bottom: 100px;
+         }
+
+         .review-card .clinetname {
+            background: #28a745;
+            color: #fff;
+            /* display: inline-block; */
+            padding: 4px 5px;
+            border-radius: 5px;
+            font-size: 18px;
+            /* position: absolute; */
+            top: -18px;
+            /* left: 50%;  */
+            transform: translateX(-50%);
+            margin-bottom: 10px;
+            margin-left: 110px;
+         }
+
+
+         .custom-btn .let-btn {
+            margin-top: 120px;
+         }
+
+         #Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 164px;
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid green;
+         }
+
+         .Trusted-clients {
+            color: #242c56;
+            margin-top: 66px;
+            font-weight: 600;
+            font-size: 30px;
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: var(--primary-white);
+            /* border-radius: 15px; */
+         }
+
+         .product-card-title {
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+            min-height: 50px;
+            font-family: 'Poppins', sans-serif;
+            /* border-left: 10px solid green; */
+            display: inline-block;
+         }
+
+
+         /* 
+               .home6 p,
+               .home8 p {
+                   font-family: 'Open Sans', sans-serif;
+                   color: var(--primary-bg);
+                   font-size: 20px;
+                   font-weight: 800;
+                   line-height: normal;
+                   margin-left: 100px;
+           }
+   
+           */
+         #h1-text {
+            font-size: 40px;
+            color: #ffffff;
+            padding: 0 21px;
+            margin-top: 52px;
+         }
+
+
+         .bgimg {
+            height: 663px;
+            width: 843px;
+         }
+
+         .img-responsive {
+            margin-top: 16px;
+            margin-left: 116px;
+            width: 60%;
+         }
+
+         .navbar-collapse.collapse {
+            padding: 0;
+            margin-top: 8px;
+         }
+
+         header.header4 #main-navigation-wrapper .nav>li {
+            padding: 22px 0;
+         }
+
+         .contact-heading-text {
+            font-size: 28px;
+         }
+
+         .contact-text {
+            font-size: 14px;
+         }
+
+         .let-btn {
+            margin: 10px 30px;
+            padding: 12px;
+            color: #ffffff;
+            background-color: green;
+         }
+
+         #h1-text {
+            color: #ffffff;
+            padding: 30px 0px 0px 78px;
+            margin-top: 112px;
+            color: #ffffff;
+            font-size: 51px;
+         }
+
+         /* #h1-text {
+                   color: #ffffff;
+                   padding: 0px 35px;
+                   margin-top: 112px;
+                   color: #ffffff;
+                   font-size: 51px;
+               } */
+
+         #h1-text+p {
+            padding: 20px 38px;
+            color: #ffffff;
+         }
+
+         .let-btn {
+            margin: 50px 38px 80px 80px;
+            padding: 16px 20px;
+            color: #ffffff;
+            background-color: green;
+         }
+
+         #Our-Clients {
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 164px;
+            color: #242c56;
+            padding: 2px;
+            border-left:
+               6px solid green;
+         }
+
+         .card-body p {
+            font-size: 14px;
+            color: var(--primary-white);
+            /* color: var(--primary-white); */
+            /* border-radius: 15px; */
+         }
+
+         .Latest-Innovations {
+            padding: 60px 0px 72px 20px;
+         }
+      }
+
+
+      /* Full HD (1920 × 1080) */
+      @media screen and (max-width: 1920px) {
+         .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two equal columns */
+            gap: 20px;
+         }
+
+         /* Ensuring both items take 50% width on desktop */
+         .item1,
+         .item2 {
+            width: 100%;
+         }
+
+
+
+         .grid-item .item2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .img-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two equal columns */
+            gap: 10px;
+         }
+
+         .img-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            /* Ensures images maintain aspect ratio */
+         }
+
+         .img-container img:nth-child(3) {
+            grid-column: span 2;
+            /* Makes the third image span both columns */
+            height: 100%;
+            /* Takes full height */
+         }
+
+
+         .item1 img {
+            width: 100px;
+            margin: 10px;
+         }
+
+         .item2 {
+            /* background-color: white; */
+            padding: 20px;
+            text-align: center;
+         }
+
+         .item2 h2 {
+            margin-bottom: 10px;
+         }
+
+         .img-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+         }
+
+         .img-container img {
+            width: 100%;
+            height: auto;
+         }
+
+         .about-text-head {
+            text-align: left;
+            border-left: 6px solid green;
+            margin: 33px 33px 33px 0px;
+            font-size: 24px;
+            height: 30px;
+            padding-left: 10px;
+         }
+
+         .about-text {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+         }
+
+
+         .Innovative {
+            text-align: left;
+            font-size: 38px;
+            font-weight: 700;
+
+         }
+
+         .features-section {
+
+            padding: 40px 0;
+            text-align: center;
+         }
+
+         .features-section h2 {
+            margin: 20px 0px;
+            font-weight: 700;
+            font-size: 30px;
+            color: white;
+         }
+
+         .features-section>.container {
+            background-color: #1a2a5e;
+            color: white;
+            border-radius: 10px;
+         }
+
+         .features-section>.container>.feature-box {
+
+            margin-bottom: 20px;
+         }
+
+         .feature-box {
+            padding: 10px;
+            margin: 30px 0px 40px 0px;
+         }
+
+         .feature-box img {
+            width: 100px;
+            margin-bottom: 15px;
+         }
+
+         .feature-box h5 {
+            margin-top: 10px;
+         }
+
+      }
+
+
+      /* .img1 {
+         grid-row: 1 /2;
+      } */
    </style>
 </head>
 
@@ -1682,7 +2165,7 @@
                      <i class="fa fa-chevron-down"></i>
                   </li>
                   <li class="dropdown">
-                     <a href="services.html">Products</a>
+                     <a href="Products.html">Products</a>
                      <i class="fa fa-chevron-down"></i>
                   </li>
                   <li class="dropdown">
@@ -1704,497 +2187,96 @@
    </header>
    <!--=========header end============-->
 
+   <section>
+      <div class="inner-pages-bnr">
+         <div class="container container-about " style="height:520PX;background-color: #d8ebff;margin-top: 80px; ">
+            <div class="grid">
+               <!-- First Column (Three Images) -->
 
-   <!--=========Banner Start============-->
-   <div class="inner-pages-bnr" style="height:400PX;background-color: black;">
-      <img src="">
-      <div class="banner-caption">
-         <h1>About Us</h1>
-         <ul class="breadcumb">
-            <li><a href="index.html">Home</a> - </li>
-            <li>About Us</li>
-         </ul>
+
+               <!-- Second Column (Heading, Paragraph, and Three Images) -->
+               <div class="grid-item item2">
+
+                  <div class="img-container">
+                     <img src="img/bg-img.svg" class="img1" alt="1">
+                     <img src="img/bg-img.svg" class="img2" alt="2">
+                     <img src="img/bg-img.svg" class="img3" alt="3"> <!-- This image spans both rows -->
+                  </div>
+
+               </div>
+               <div class="grid-item item1">
+                  <h6 class="about-text-head">About Mundada Polymer</h6>
+                  <h2 class="fs-5 fw-bold Innovative">Innovative
+                     Packaging
+                     Solutions for a
+                     Sustainable
+                     Future</h2>
+                  <p class="about-text">At Mundada Polymers, a proud member of the
+                     Bai-Kakaji Group, we are
+                     dedicated to delivering
+                     cutting-edge packaging
+                     solutions that cater to a wide array of industries. Building upon the successful legacy of
+                     Baikakaji
+                     Polymers, we strive
+                     to set new benchmarks in quality and customer satisfaction.</p>
+               </div>
+            </div>
+         </div>
+
       </div>
-   </div>
-   <!--=========Banner end============-->
-
+   </section>
+   <!--=========Banner Start============-->
 
 
 
 
 
    <!--=========Abouts Section Start============-->
-   <section class=" hm8paddingSection experienceSec">
+   <section class=" experienceSec">
       <div class="container">
          <div class="row">
-            <div class="col-md-7 col-sm-6 col-xs-12 experienceLeft">
+            <div class=" col-12 col-md-12 col-xs-12 experienceLeft">
                <div class="home8Title">
-                  <h3>About Mundada Polymer</h3>
+                  <h3 class="about-text-head">Our Commitment to You</h3>
                </div>
                <div class="iconText">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                  <p>Welcome to Mundada Polymer, where we bring innovation and excellence to your packaging needs. With
-                     the successful
-                     journey of Baikakaji Polymers, Bai-Kakaji Group proudly presents our latest venture - Mundada
-                     Polymer, your ultimate
-                     destination for all things packaging!</p>
+                  <p class="ml-4" style="margin-left: 24px;">At Mundada Polymers, we view our clients as valued
+                     partners. Our mission extends
+                     beyond supplying
+                     packaging materials;
+                     we aim to foster collaborative relationships built on trust and mutual success. Our dedicated team
+                     of experts is always
+                     ready to provide personalized assistance, addressing your unique challenges with tailored
+                     solutions.</p>
                </div>
-               <br>
-               <div class="iconText">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                  <p>We offer a wide range of top-quality packaging solutions, including Surface Protection Film, Guard
-                     Film, Masking Film,
-                     LDPE Shrink Film, Stretch Hood Film, Stretch Wrap Film, LDPE Tubing Film Roll, Shrink Hood Film, PE
-                     Milk Film, VCI –
-                     Stretch Wrap Film, and Silage Wrap Film. Our products are designed to meet the highest industry
-                     standards, ensuring that
-                     your packaging requirements are met with utmost satisfaction.</p>
-               </div>
-               <br>
-               <div class="iconText">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                  <p>But that's not all! At Mundada Polymer, we believe in going beyond just providing products. Our
-                     mission is to create an
-                     environment where our customers are not just customers, but valued partners. Our team of experts is
-                     always ready to
-                     assist you with your queries and problems, providing comprehensive solutions and exceptional
-                     customer service. We are
-                     committed to building long-lasting relationships with our customers, based on trust, reliability,
-                     and mutual success.</p>
-               </div>
-
-               <br>
-               <div class="iconText">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                  <p>ISO, join us at Mundada Polymer and experience packaging solutions. Let us be your trusted partner
-                     in meeting all your
-                     packaging needs with unparalleled quality, service, and commitment.</p>
-               </div>
-
 
             </div>
-            <div class="col-md-5 col-sm-6 col-xs-12 experienceRight">
-               <img src="Image/About/company.JPG" class="img-responsive" alt="img" style="width: 83%;">
-               <!-- <div class="expImgTitle">
-                     <div class="row">
-                        <div class="col-md-3 col-sm-3 col-xs-3">
-                           <h1>25</h1>
-                        </div>
-                        <div class="col-md-9 col-sm-9 col-xs-9">
-                           <h3>Years Experience</h3>
-                        </div>
-                     </div>
-                  </div> -->
+         </div>
+   </section>
+   <section class="features-section">
+      <div class="container">
+         <h2 class="mb-4">Why Choose Mundada Polymers?</h2>
+         <div class="row">
+            <div class="col-md-3 col-sm-6 feature-box">
+               <img src="img/icons/noun-quality-assurance-7557920 1.svg" alt="Quality Assurance">
+               <h5>Quality Assurance</h5>
+            </div>
+            <div class="col-md-3 col-sm-6 feature-box">
+               <img src="img/icons/noun-customer-5789497 1.svg" alt="Quality Assurance">
+               <h5>Customer-Centric Approach</h5>
+            </div>
+            <div class="col-md-3 col-sm-6 feature-box">
+               <img src="img/icons/noun-innovation-447435 1.svg" alt="Innovative Solutions">
+               <h5>Innovative Solutions</h5>
+            </div>
+            <div class="col-md-3 col-sm-6 feature-box">
+               <img src="img/icons/noun-recycling-symbol-5949761 1.svg" alt="Sustainable Practices">
+               <h5>Sustainable Practices</h5>
             </div>
          </div>
       </div>
    </section>
-   <!--=========About Section end============-->
 
-   <!--=========Why Choose Start============-->
-   <!-- <section class="bestthing-section why-choose-section why-choose-section_01">
-         <div class="container">
-            <div class="row ">
-               <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12 bestthing-text-column">
-                  <h3>About Raviraj Hi-Tech</h3>
-                  <p class="fnt-17">Raviraj Hi-tech is one of the leading manufactures, suppliers and exporters of ferrous
-                     and non-ferrous metal parts, PDC & GDC casting components.
-                     Apart from this, we also cater to the requirements of our customer for precision turn
-                     components, assemblies for switchgear for auto-electrical industries. Designed in
-                     strict conformation with international quality standards, these are known for features
-                     like resistance to corrosion, enhance durability and application specific design. </p>
-                  <p class="fnt-17">Our Hi-Tech manufacturing unit comprising machines like Mazak-CNC turning,
-                     HASS make VMC, Citizen (Japan) Bar-feed, Swiss Automats and various press
-                     machines enables us to make various components within promised time.</p>
-                  <p class="fnt-17">Owing to the efforts of our professionals, we have been able to build close business
-                     relationships with our customers spread across the globe.</p>
-                  <p class="fnt-17">In addition we are having Alkaline and Hard-Chrome plating plant in-house.
-                  </p>
-                  <p class="fnt-17">Quality awareness coupled with the timely delivery has helped us cater to the
-                     demands of Auto-Mobile, Auto-Electrical and Switchgear industries.</p>
-                 
-               </div>
-            </div>
-         </div>
-         <div class="bestthing-img whychoos-img">
-            <img src="images/why-choose-bg.png" class="img-responsive" alt="choose-image">
-         </div>
-      </section> -->
-   <!--=========Why Choose end============-->
-
-
-   <!--=========Company History Start============-->
-   <!-- <section class="history-section">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 text-center">
-               <h3>Milestones</h3>
-            </div>
-            <div class="col-md-2 col-sm-6 history-list text-center">
-               <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="humble-image"></span> -->
-   <!-- <div class="history-list-middle">
-                  <div class="white-circle">
-                     <div class="white-circle-border">
-                        <div class="yellow-circle">1989</div>
-                     </div>
-                  </div>
-                  <span class="year-circle"></span>
-               </div>
-               <h5>Years</h5>
-               <p class="line-height26">Company founded by <br>Mr. Rajendra Pawar with <br>single press machine
-               </p>
-            </div>
-            <div class="col-md-2 col-sm-6 history-list text-center">
-               <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="headquarter-image"></span> -->
-   <!-- <div class="history-list-middle">
-      <div class="white-circle">
-         <div class="white-circle-border">
-            <div class="yellow-circle">1994</div>
-         </div>
-      </div>
-      <span class="year-circle"></span>
-   </div>
-   <h5>Years</h5>
-   <p class="line-height26">Single Source to OEM <br>for 275 Types of <br>Press Parts</p>
-   </div>
-   <div class="col-md-2 col-sm-6 history-list text-center">
-      <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="humble-image"></span>
-   <div class="history-list-middle">
-      <div class="white-circle">
-         <div class="white-circle-border">
-            <div class="yellow-circle">1998</div>
-         </div>
-      </div>
-      <span class="year-circle"></span>
-   </div>
-   <h5>Years</h5>
-   <p class="line-height26">Precision Machining <br>Started with CAM <br>operated machines</p>
-   </div>
-   <div class="col-md-2 col-sm-6 history-list text-center">
-      <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="humble-image"></span> 
-      <div class="history-list-middle">
-         <div class="white-circle">
-            <div class="white-circle-border">
-               <div class="yellow-circle">2004</div>
-            </div>
-         </div>
-         <span class="year-circle"></span>
-      </div>
-      <h5>Years</h5>
-      <p class="line-height26">Expanded Business <br>with First Major <br>Direct Export</p>
-   </div>
-
-   <div class="col-md-2 col-sm-6 history-list text-center">
-      <!-- <span class="top-img"><img src="images/humble-begin-img.png" class="img-responsive" alt="headquarter-image"></span>
-   <div class="history-list-middle">
-      <div class="white-circle">
-         <div class="white-circle-border">
-            <div class="yellow-circle">2011</div>
-         </div>
-      </div>
-      <span class="year-circle"></span>
-   </div>
-   <h5>Years</h5>
-   <p class="line-height26">Expanded to <br>State of Art <br>FacilityMarunji.</p>
-   </div>
-   <div class="col-md-2 col-sm-6 history-list text-center">
-      <div class="history-list-middle">
-         <div class="white-circle">
-            <div class="white-circle-border">
-               <div class="yellow-circle">2021</div>
-            </div>
-         </div>
-         <span class="year-circle"></span>
-      </div>
-      <h5>Years</h5>
-      <p class="line-height26">New Business Take <br>Over- Brake System <br>Assemblies.</p>
-   </div>
-
-   </div>
-   </div>
-   </section> -->
-   <!--=========Company History end============-->
-
-
-   <!--=========Wordpress Bestthing Start============-->
-   <!-- <section class="home2 bestthing-section">
-      <div class="container">
-         <div class="row ">
-            <div class="col-lg-12 col-md-4 col-sm-12 col-xs-12 bestthing-text-column">
-               <h2 class="text-center">
-                  <span>Manufacturing <br>capability and capacity</span>
-               </h2>
-               <!--p class="fnt-17 text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi dicta sunt explicabo. </p-->
-   <!-- <center>
-                  <a href="CapabilityAndCapacity.html" class="home6Button hvr-bounce-to-right">Read More</a>
-               </center>
-            </div>
-         </div>
-      </div>
-   </section> -->
-   <!--=========Wordpress Bestthing end============-->
-
-   <!--=========Our Services Start============-->
-   <!-- <section class="pad95-50-top-bottom">
-         <div class="container">
-            <h3 class="text-center">Manufacturing Capability</h3>
-            <div class="row">
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="manufacturing.html" >
-                     <span class="image_hover"> <img src="Image/About/Capability/Cap1.PNG" class="img-responsive zoom_img_effect" alt="Manufacture-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>CITIZEN-CNC BAR-FEED MACHINES</h5>
-                        
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="cnc-industry.html">
-                     <span class="image_hover"> <img src="Image/About/Capability/Cap2.PNG" class="img-responsive zoom_img_effect" alt="CNC-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>MIYANO TWIN TURRET TWIN SPINDLE MACHINE</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="chemical-industry.html">
-                     <span class="image_hover"><img src="Image/About/Capability/Cap3.PNG" class="img-responsive zoom_img_effect" alt="Chemical-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>MAZAK-CNC TURNING CENTERS</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="energy-engineering.html">
-                     <span class="image_hover"> <img src="Image/About/Capability/Cap4.PNG" class="img-responsive zoom_img_effect" alt="Energy-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>CNC TURNING CENTERS</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="oil-industry.html">
-                     <span class="image_hover"><img src="Image/About/Capability/Cap5.PNG" class="img-responsive zoom_img_effect" alt="Oil-image">
-                     </span>
-                     <div class="service-heading service-energyicon">
-                        <h5>LONG TURNING MACHINE</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="material-engineering.html">
-                     <span class="image_hover"><img src="Image/About/Capability/cap6.PNG" class="img-responsive zoom_img_effect" alt="Material-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>CNC CIRCULAR SAW</h5>
-                     </div>
-                  </a>
-               </div>
-
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="oil-industry.html">
-                     <span class="image_hover"><img src="Image/About/Capability/Cap11.PNG" class="img-responsive zoom_img_effect" alt="Oil-image">
-                     </span>
-                     <div class="service-heading service-energyicon">
-                        <h5>CNC CENTERLESS GRINDING MACHINE</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="material-engineering.html">
-                     <span class="image_hover"><img src="Image/About/Capability/Cap12.PNG" class="img-responsive zoom_img_effect" alt="Material-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>CNC CYLINDRICAL GRINDING MACHINE</h5>
-                     </div>
-                  </a>
-               </div>
-
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="manufacturing.html" >
-                     <span class="image_hover"> <img src="Image/About/Capability/Cap7.PNG" class="img-responsive zoom_img_effect" alt="Manufacture-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>VERTICAL MACHINING CENTER HASS-USA VF-2</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="cnc-industry.html">
-                     <span class="image_hover"> <img src="Image/About/Capability/Cap8.PNG" class="img-responsive zoom_img_effect" alt="CNC-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>VERTICAL MACHINING CENTER HASS-USA <br>VF-3</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="chemical-industry.html">
-                     <span class="image_hover"><img src="Image/About/Capability/Cap9.PNG" class="img-responsive zoom_img_effect" alt="Chemical-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>VERTICAL MACHINING CENTER BROTHER PALLETS CHANGERS MACHINES</h5>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="energy-engineering.html">
-                     <span class="image_hover"> <img src="Image/About/Capability/Cap10.PNG" class="img-responsive zoom_img_effect" alt="Energy-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>LAPMASTER-WOLTERS DUPLEX SUPERFINISHING MACHINE</h5>
-                     </div>
-                  </a>
-               </div>
-
-
-               <div class="col-md-4 col-sm-4 col-xs-12 marbtm50 service-list-column">
-                  <a href="material-engineering.html">
-                     <span class="image_hover"><img src="Image/About/Capability/Cap13.PNG" class="img-responsive zoom_img_effect" alt="Material-image"></span>
-                     <div class="service-heading service-energyicon">
-                        <h5>CUSTOMER WISE ASSEMBLY LINE</h5>
-                     </div>
-                  </a>
-               </div>
-
-            </div>
-         </div>
-      </section> -->
-   <!--=========Our Services end============-->
-
-
-   <!--=========Statistics Start============-->
-   <!-- <section class="static-section yellow-background">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 text-center">
-                  <h2><span>Important Static</span></h2>
-                  <p class="fnt-18">A wonderful serenity has taken possession of my entire soul, like these sweet mornings <br/>
-                     of spring which I enjoy with my whole heart. I am alone
-                  </p>
-               </div>
-               <ul>
-                  <li>
-                     <h2>20000</h2>
-                     <p> Customers</p>
-                  </li>
-                  <li>
-                     <h2>1400</h2>
-                     <p> Projects</p>
-                  </li>
-                  <li>
-                     <h2>16800</h2>
-                     <p> Working Hours</p>
-                  </li>
-                  <li>
-                     <h2>17000</h2>
-                     <p> SKUs</p>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </section> -->
-   <!--=========Statistics end============-->
-
-
-
-   <!--=========Banner end============-->
-   <!-- <section class="pad100-top-bottom">
-               <div class="container">
-                  <div class="row">
-               
-                     
-                     <div class="col-md-8 right-column">
-                        <div class="service-right-desc">
-                           <span class="image_hover ">
-                           <img src="Image/About/Image.JPG" class="img-responsive zoom_img_effect" alt="material-image">
-                           </span>
-                           
-                        </div>
-                        <div class="specialization-cl">
-                           <div class="special-text project-mission">
-                              <h3>PROJECT MISSION</h3>
-                              <p class="mar-btm20">Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                              <p>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia.</p>
-                           </div>
-                        </div>
-                        
-                     </div>
-                     
-
-
-                     <div class="col-md-4 left-column">
-                        <ul class="category-list">
-                           <li><a href="about.html" class="active-category">About us</a></li>
-                           <li><a href="Products.html">Products</a></li>
-                           <li><a href="QualityControl.html">Quality Control</a></li>
-                           <li><a href="Metrology.html">Metrology Department</a></li>
-                           <li><a href="manufacturing.html">Manufacturing Plant</a></li>
-                           
-                        </ul>
-                        <div class="contact-help">
-                           <div class="office-info-col wdt-100">
-                              <h4>CONTACT US </h4>
-                              <ul class="office-information">
-                                 <li class="office-loc">
-                                    <span class="info-txt">S NO. 5/1/1/4, Marunji, Tal- Mulshi,Pune - 411057</span>
-                                 </li>
-                                
-                                 <li class="office-msg">
-                                    <span class="info-txt fnt_17">rajendrapawar@ravirajhitech.com</span>
-                                 </li>
-                                 <li class="office-phn">
-                                    <span class="info-txt fnt_17">+91-93250-77177</span>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                        <a class="pdf-button" href="#">DOWNLOAD BROCHURE</a>
-                     </div>
-
-                    
-                  </div>
-               </div>
-            </section> -->
-
-
-
-
-   <!--=========Testimonial end============-->
-   <section class=" paddingSection home7News">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
-               <div class="home7Title">
-                  <h3>What We Build</h3>
-                  <h1>Mundada Polymer AS ON 2022</h1>
-                  <!-- <p>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p> -->
-               </div>
-            </div>
-         </div>
-         <div class="home7News">
-            <div class="row">
-
-               <div class="col-xs-12 col-sm-6 col-md-12 ">
-                  <div class="home7SingleNews">
-                     <div class="shadow_effect effect-apollo">
-                        <img width="370" height="253" src="Image/About/Unit2.PNG" class="img-responsive wp-post-image"
-                           alt="img">
-                     </div>
-                     <div class="home7_news_content">
-                        <!-- <div class="dateArea">
-                                  <p class="date"><i class="fa fa-calendar"></i>May 06, 2019</p>
-                                  <p class="auth"><i class="fa fa-user"></i>admin</p>
-                               </div> -->
-                        <h6>
-                           <a href="Unit_Two.html">Mundada Polymers UNIT 2</a>
-                        </h6>
-                        <p>LOCATION - Mundada Polymers
-                           Plot No. : C-46, Near Latur Packing,
-                           MIDC Ausa, Latur - 413520 Maharashtra, India </p>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--=========Testimonial end============-->
 
 
 
@@ -2203,66 +2285,63 @@
 
 
    <!--=========Footer Start============-->
-   <footer>
+   <section class="projectSec">
+      <div class="container">
+         <div class="row gy-4">
+            <!-- Left Column -->
+            <div class="col-md-6">
+               <h1 class="contact-heading" style="color: #ffffff;">Get in Touch with Us!</h1>
 
-      <div class="ftr-section">
-         <div class="container">
-            <ul class="footer-info">
-               <li class="ftr-loc">S NO. 5/1/1/4, Marunji,<br> Tal-Mulshi, Pune - 411057</li>
-               <li class="ftr-phn">+91-93250-77177</li>
-               <li class="ftr-msg">rajendrapawar@ravirajhitech.com</li>
-               <li class="ftr-support">24 / 7 Working </li>
-            </ul>
-            <div class="row">
-               <div class="col-md-4 col-sm-6 col-xs-12  ftr-about-text">
-                  <h6>About Us</h6>
-                  <p class="marbtm20 line-height26">Raviraj Hi-tech is one of the leading manufactures, suppliers and
-                     exporters of ferrous
-                     and non-ferrous metal parts, PDC & GDC casting components.
-                     Apart from this, we also cater to the requirements of our customer for precision turn
-                     components, assemblies for switchgear for auto-electrical industries.</p>
-                  <a class="ftr-read-more" href="about.html">Read More</a>
-               </div>
-               <div class="col-md-3 col-sm-6 col-xs-12 ftr-sol-column">
-                  <h6>Our Solutions</h6>
-                  <ul class="footer-link">
-                     <li><a href="manufacturing.html">- Manufacturing </a></li>
-                     <li><a href="Products.html">- Products</a></li>
-                     <li><a href="QualityControl.html">- Quality Control</a></li>
-                     <li><a href="Metrology.html">- Metrology Department</a></li>
-                  </ul>
-               </div>
-               <div class="col-md-2 col-sm-6 col-xs-12 ftr-link-column">
-                  <h6>Quick Links</h6>
-                  <ul class="footer-link">
-                     <li><a href="about.html">- About Us</a></li>
-                     <!-- <li><a href="testimonials.html">- Testimonials</a></li> -->
-                     <li><a href="request-quote.html">- Request A Quote</a></li>
-                     <li><a href="faq.html">- FAQ</a></li>
-                  </ul>
-               </div>
-               <div class="col-md-3 col-sm-6 col-xs-12 ftr-follow-column pull-right">
-                  <h6>Follow Us</h6>
-                  <div class="header-socials footer-socials">
-                     <a href="https://m.facebook.com/login"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                     <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                     <a href="https://myaccount.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                     <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+               <div class="contact-info">
+                  <div class="mb-4">
+                     <h3 class="fw-medium contact-heading-text" style="color: #ffffff;">Mundada Polymers</h3>
+                     <div class="d-flex align-items-start gap-3" style="display: flex;">
+                        <i class="fas fa-map-marker-alt contact-icon mt-1"></i>
+                        <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa, Latur -
+                           413520 Maharashtra,
+                           India</span>
+                     </div>
                   </div>
-                  <!-- <span class="ftr-logo img"><img src="images/logo.png" class="img-responsive" alt="logo-image"></span> -->
+
+                  <div class="d-flex align-items-center gap-3 mb-4" style="display: flex;">
+                     <i class="fas fa-phone contact-icon"></i>
+                     <span class="contact-text mb-0">+91 93229 05378, +91 8956754341</span>
+                  </div>
+
+                  <div class="d-flex align-items-center" style="display: flex;">
+                     <i class="fas fa-envelope contact-icon"></i>
+                     <span class="contact-text">pranav@mundadapolymers.com, aba@mundadapolymers.com</span>
+                  </div>
                </div>
             </div>
-            <div class="footer-btm">
-               <div class="col-md-6 col-sm-6 col-xs-12 pad-left_zero pad-right_zero">
-                  <p>Copyright © 2023 raviraj hi-tech Pvt. Ltd. All Rights Reserved.</p>
-               </div>
-               <div class="col-md-4 col-sm-6 col-xs-12 pad-left_zero pad-right_zero pull-right">
-                  <!-- <p class="text-right">Developed by: <a href="https://themeforest.net/user/themechampion">ThemeChampion</a></p> -->
-               </div>
+
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+               <h2 class="fs-2 mb-4" style="color: #ffffff;">Inquiry Form</h2>
+
+               <form action="your_backend_script.php" method="post">
+                  <div class="mb-3">
+                     <label for="fullName" class="form-label">Full Name</label>
+                     <input type="text" class="form-control" id="fullName" name="fullName" required>
+                  </div>
+
+                  <div class="mb-3">
+                     <label for="email" class="form-label">Email</label>
+                     <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+
+                  <div class="mb-4">
+                     <label for="message" class="form-label">Enter Message</label>
+                     <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-callback">Request a Call Back</button>
+               </form>
             </div>
          </div>
       </div>
-   </footer>
+   </section>
    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-lg">
          <div class="modal-content">
