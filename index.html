@@ -41,6 +41,8 @@
             --hover-navy: #1a1f3d;
         }
 
+
+
         body {
             /* background-color: var(--primary-bg); */
             color: white;
@@ -116,21 +118,22 @@
             width: 120px;
         }
 
-        .bgimg {
+        /* .bgimg {
 
             height: 765px;
             width: 758px;
             background-size: cover;
-        }
-
+        } */
 
 
 
         .let-btn {
-            margin: 25px 38px;
-            padding: 16px 20px;
+            position: absolute;
+            margin: 10px 80px;
+            /* padding: 12px; */
             color: #ffffff;
             background-color: #34a853;
+            bottom: -118px;
         }
 
         .text-success {
@@ -659,31 +662,8 @@
             margin: auto;
         }
 
-        .review-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px 20px 20px 0px;
-            text-align: center;
-            /* border: 1px solid var(--primary-bg); */
-            /* position: relative; */
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
 
-        .review-card .clinetname {
-            background: #28a745;
-            color: #fff;
-            /* display: inline-block; */
-            padding: 4px 5px;
-            border-radius: 5px;
-            font-size: 18px;
-            /* position: absolute; */
-            top: -18px;
-            /* left: 50%;  */
-            transform: translateX(-50%);
-            margin-bottom: 10px;
-            margin-left: 106px;
-        }
+
 
         /* .review-card {
                    text-align: center;
@@ -702,22 +682,8 @@
             left: 0;
         }
 
-        .company-tag {
-            display: inline-block;
-            background: #1d3557;
-            color: #fff;
-            padding: 6px 12px;
-            font-size: 14px;
-            border-radius: 4px;
-            margin-top: 10px;
-            margin-left: 56px;
-        }
 
-        .new-pak {
-            margin: 20px 0px 100px;
-            margin-left: 78px;
-            font-size: 28px;
-        }
+
 
         .contact-info {
             margin-bottom: 30px;
@@ -744,7 +710,105 @@
             align-items: center;
         }
 
+
+        /* cards */
+
+        .review-card {
+            border: 1px solid #242c56;
+        }
+
+        .reviews-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .review-card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            /* Needed for absolute positioning */
+            width: 360px;
+            /* Adjust as needed */
+            border-radius: 10px;
+            min-height: 250px;
+            /* Ensures consistent height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-card img {
+            max-width: 100px;
+            /* border-radius: 50%; */
+            margin: 10px 0;
+        }
+
+        .clinetname {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .clinetname+p {
+            text-align: left;
+        }
+
+        .company-tag {
+            position: absolute;
+            right: 0px;
+            /* Aligns to the right */
+            bottom: 30px;
+            /* Positions at the bottom */
+            background: #1d3557;
+            color: #fff;
+            padding: 6px 8px;
+            font-size: 14px;
+            /* border-radius: 4px; */
+            white-space: nowrap;
+        }
+
+        .review-card .clinetname {
+            background: #28a745;
+            color: #fff;
+            /* display: inline-block; */
+            padding: 4px 5px;
+            border-radius: 0px 0px 0px 0px;
+            font-size: 18px;
+            /* position: absolute; */
+            top: -18px;
+            /* left: 50%;  */
+            transform: translateX(-50%);
+            margin-bottom: 10px;
+            margin-left: 90px;
+        }
+
+
         @media (min-width: 360px) and (max-width: 800px) {
+            .reviews-container {
+                display: none;
+                justify-content: none;
+                gap: 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 300px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
             .new-pak {
                 margin: 20px 0px;
                 margin-left: 0px;
@@ -971,6 +1035,30 @@
         }
 
         @media (min-width: 375px) and (max-width: 667px) {
+
+            .reviews-container {
+                display: none;
+                justify-content: none;
+                gap: 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 300px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
             .new-pak {
                 margin: 20px 0px;
                 margin-left: 0px;
@@ -1215,6 +1303,30 @@
 
         /* Mobile devices (less than 576px) */
         @media (max-width: 575.98px) {
+
+            .reviews-container {
+                display: none;
+                justify-content: none;
+                gap: 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 300px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
             .new-pak {
                 margin: 20px 0px;
                 margin-left: 0px;
@@ -1274,6 +1386,7 @@
             .bgimg {
                 height: 400px;
                 width: 100%;
+                background-size: cover;
             }
 
             .let-btn {
@@ -1447,6 +1560,81 @@
 
         /* Desktops (992px and up) */
         @media (min-width: 992px) {
+
+
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+            .reviews-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 360px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 90px;
+            }
+
             .packing-title {
                 font-weight: bolder;
                 font-size: 45px;
@@ -1455,10 +1643,12 @@
             }
 
             .new-pak {
-                margin: 20px 0px 100px;
+                margin: 20px 0px 0px;
                 margin-left: 78px;
                 font-size: 28px;
             }
+
+
 
             .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
                 /* color: black; */
@@ -1473,20 +1663,7 @@
                 margin-bottom: 100px;
             }
 
-            .review-card .clinetname {
-                background: #28a745;
-                color: #fff;
-                /* display: inline-block; */
-                padding: 4px 5px;
-                border-radius: 5px;
-                font-size: 18px;
-                /* position: absolute; */
-                top: -18px;
-                /* left: 50%;  */
-                transform: translateX(-50%);
-                margin-bottom: 10px;
-                margin-left: 110px;
-            }
+
 
 
             .custom-btn .let-btn {
@@ -1555,8 +1732,8 @@
 
 
             .bgimg {
-                height: 663px;
-                width: 843px;
+                height: 100%;
+                width: 102%;
             }
 
             .img-responsive {
@@ -1574,11 +1751,14 @@
                 padding: 22px 0;
             }
 
+
             .let-btn {
-                margin: 10px 30px;
-                padding: 12px;
+                position: absolute;
+                margin: 10px 80px;
+                padding: 20px;
                 color: #ffffff;
                 background-color: #34a853;
+                bottom: -250px;
             }
 
             #h1-text {
@@ -1610,12 +1790,8 @@
                 font-size: 14px;
             }
 
-            .let-btn {
-                margin: 50px 38px 40px 80px;
-                padding: 16px 20px;
-                color: #ffffff;
-                background-color: #34a853;
-            }
+
+
 
             #Our-Clients {
                 font-size: 20px;
@@ -1640,6 +1816,9 @@
         }
 
         @media (min-width: 1024px) and (max-width: 1366px) {
+
+
+
             .card-body p {
                 font-size: 14px;
                 color: var(--primary-bg);
@@ -1696,10 +1875,6 @@
                 padding: 40px 40px;
             }
 
-            .bgimg {
-                height: 100%;
-                width: 100%;
-            }
 
             .clients {
                 flex-direction: column;
@@ -1737,10 +1912,95 @@
                 color: #1C1C50;
                 font-size: 16px;
             }
+
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+            .reviews-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 360px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 90px;
+            }
+
+
         }
 
         /* HD (1366 × 768) */
         @media screen and (max-width: 1366px) {
+
+
+
+            .bgimg {
+                height: 400px;
+                width: 100%;
+                background-size: cover;
+            }
+
+
             @media (min-width: 992px) {
                 .packing-title {
                     font-weight: bolder;
@@ -1749,11 +2009,11 @@
                     margin-bottom: 100px;
                 }
 
-                .new-pak {
+                /* .new-pak {
                     margin: 20px 0px 100px;
                     margin-left: 78px;
                     font-size: 28px;
-                }
+                } */
 
                 .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
                     /* color: black; */
@@ -1768,20 +2028,7 @@
                     margin-bottom: 100px;
                 }
 
-                .review-card .clinetname {
-                    background: #28a745;
-                    color: #fff;
-                    /* display: inline-block; */
-                    padding: 4px 5px;
-                    border-radius: 5px;
-                    font-size: 18px;
-                    /* position: absolute; */
-                    top: -18px;
-                    /* left: 50%;  */
-                    transform: translateX(-50%);
-                    margin-bottom: 10px;
-                    margin-left: 110px;
-                }
+
 
 
                 .custom-btn .let-btn {
@@ -1850,8 +2097,8 @@
 
 
                 .bgimg {
-                    height: 663px;
-                    width: 843px;
+                    height: 605px;
+                    width: 104%;
                 }
 
                 .img-responsive {
@@ -1878,10 +2125,12 @@
                 }
 
                 .let-btn {
-                    margin: 10px 30px;
+                    position: absolute;
+                    margin: 10px 80px;
                     padding: 12px;
                     color: #ffffff;
                     background-color: #34a853;
+                    bottom: -75px;
                 }
 
                 #h1-text {
@@ -1905,12 +2154,7 @@
                     color: #ffffff;
                 }
 
-                .let-btn {
-                    margin: 50px 38px 80px 80px;
-                    padding: 16px 20px;
-                    color: #ffffff;
-                    background-color: #34a853;
-                }
+
 
                 #Our-Clients {
                     font-size: 20px;
@@ -1932,11 +2176,201 @@
                 .Latest-Innovations {
                     padding: 60px 0px 72px 20px;
                 }
+
+                .reviews-container {
+                    display: flex;
+                    gap: 20px;
+                }
+
+                .review-card {
+                    background: #fff;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    padding: 20px;
+                    text-align: center;
+                    position: relative;
+                    width: 280px;
+                    border-radius: 10px;
+                }
+
+                .review-card img {
+                    max-width: 60px;
+                    border-radius: 50%;
+                    margin: 10px 0;
+                }
+
+                .clinetname {
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+
+                .company-tag {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 5px;
+                    background: #1d3557;
+                    color: #fff;
+                    padding: 6px 8px;
+                    font-size: 14px;
+                    border-radius: 4px;
+                }
+
+                /* cards */
+
+                .review-card {
+                    border: 1px solid #242c56;
+                }
+
+                .reviews-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                }
+
+                .review-card {
+                    background: #fff;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    padding: 20px;
+                    text-align: center;
+                    position: relative;
+                    /* Needed for absolute positioning */
+                    width: 360px;
+                    /* Adjust as needed */
+                    border-radius: 10px;
+                    min-height: 250px;
+                    /* Ensures consistent height */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .review-card img {
+                    max-width: 100px;
+                    /* border-radius: 50%; */
+                    margin: 10px 0;
+                }
+
+                .clinetname {
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+
+                .clinetname+p {
+                    text-align: left;
+                }
+
+                .company-tag {
+                    position: absolute;
+                    right: 0px;
+                    /* Aligns to the right */
+                    bottom: 30px;
+                    /* Positions at the bottom */
+                    background: #1d3557;
+                    color: #fff;
+                    padding: 6px 8px;
+                    font-size: 14px;
+                    /* border-radius: 4px; */
+                    white-space: nowrap;
+                }
+
+                .review-card .clinetname {
+                    background: #28a745;
+                    color: #fff;
+                    /* display: inline-block; */
+                    padding: 4px 5px;
+                    border-radius: 0px 0px 0px 0px;
+                    font-size: 18px;
+                    /* position: absolute; */
+                    top: -18px;
+                    /* left: 50%;  */
+                    transform: translateX(-50%);
+                    margin-bottom: 10px;
+                    margin-left: 90px;
+                }
+
             }
+
+
+
         }
 
         /* Full HD (1920 × 1080) */
-        @media screen and (max-width: 1920px) {}
+        @media screen and (max-width: 1920px) {
+            /* cards */
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+            .reviews-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 360px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 90px;
+            }
+
+
+        }
     </style>
 </head>
 
@@ -2021,8 +2455,6 @@
                         Collaborate
                         →</a>
                 </div>
-
-
                 <!-- Right Image Section -->
                 <div class="col-12 col-md-6 col-lg-6 image-container ">
                     <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">

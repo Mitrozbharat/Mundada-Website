@@ -4,51 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Page</title>
+    <title>Review Cards</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            background-color: #f8f9fa;
-            padding: 20px;
-        }
-
-        .row {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             display: flex;
+            justify-content: center;
             align-items: center;
+            height: 100vh;
         }
 
-        .left-column {
-            flex: 1;
-            text-align: left;
+        .reviews-container {
+            display: flex;
+            gap: 20px;
         }
 
-        .right-column {
-            flex: 1;
-            text-align: right;
+        .review-card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            width: 280px;
+            border-radius: 10px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        .review-card img {
+            max-width: 60px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+
+        .clinetname {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .company-tag {
+            position: absolute;
+            right: 0px;
+            bottom: 5px;
+            background: #1d3557;
+            color: #fff;
+            padding: 6px 8px;
+            font-size: 14px;
+            border-radius: 4px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="row">
-        <div class="left-column">
-            <img src="https://via.placeholder.com/150" alt="Demo Image">
+    <div class="reviews-container">
+        <div class="review-card">
+            <p class="clinetname">Rahul Mehta</p>
+            <p>"Mundada Polymers' stretch hood films have significantly improved our packaging efficiency. The
+                durability and flexibility are unmatched!"</p>
+            <img src="https://via.placeholder.com/60" alt="Rahul Mehta">
+            <div class="company-tag">@TexFab Exports</div>
         </div>
-        <div class="right-column">
-            <h1>Welcome to Our Website</h1>
-            <p>Your satisfaction is our priority. Explore our services and products.</p>
+
+        <div class="review-card">
+            <p class="clinetname">Arun Joshi</p>
+            <p>"Their surface protection films have helped us prevent scratches on high-value glass sheets during
+                transportation. Highly recommended!"</p>
+            <img src="https://via.placeholder.com/60" alt="Arun Joshi">
+            <div class="company-tag">@GlassTech Industries</div>
+        </div>
+
+        <div class="review-card">
+            <p class="clinetname">Vikas Sharma</p>
+            <p>"Mundada Polymers delivers reliable and cost-effective stretch wrap solutions for our textile shipments.
+                Excellent product consistency!"</p>
+            <img src="https://via.placeholder.com/60" alt="Vikas Sharma">
+            <div class="company-tag">@Acropolis Attire</div>
         </div>
     </div>
 
