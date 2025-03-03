@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="css\font-awesome.min.css" />
 
     <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -47,6 +49,81 @@
             /* background-color: var(--primary-bg); */
             color: white;
             font-family: Arial, sans-serif;
+        }
+
+        #hero-carousel {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #hero-carousel .item {
+            height: 100vh;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            max-width: 80%;
+        }
+
+        .carousel-caption h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .custom-btn {
+            background: #34a853;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .carousel-control {
+            background: none !important;
+        }
+
+        #new-carousel {
+            position: relative;
+            width: 100%;
+            height: 40vh;
+        }
+
+        #new-carousel .item {
+            height: 45vh;
+        }
+
+        .new-img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .new-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            max-width: 80%;
         }
 
         .container {
@@ -1416,6 +1493,12 @@
         /* Tablets (576px to 991px) */
         @media (min-width: 576px) and (max-width: 991px) {
 
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 80vh;
+            }
+
             .nav-item .active {
                 border-bottom: 1px solid #34a853;
 
@@ -1561,6 +1644,21 @@
         /* Desktops (992px and up) */
         @media (min-width: 992px) {
 
+            #carousel-indicators-lg {
+                bottom: -23px;
+            }
+
+            #carousel-indicators-lg .active {
+                border: 1px solid black;
+                background-color: #000;
+            }
+
+            #carousel-indicators-lg :not(.active) {
+                border: 1px solid black;
+                /* Change border for inactive indicators */
+                opacity: 0.8;
+                /* Optional: Make inactive indicators less visible */
+            }
 
             /* cards */
 
@@ -1733,7 +1831,7 @@
 
             .bgimg {
                 height: 100%;
-                width: 102%;
+                width: 104%;
             }
 
             .img-responsive {
@@ -1758,7 +1856,7 @@
                 padding: 20px;
                 color: #ffffff;
                 background-color: #34a853;
-                bottom: -250px;
+                bottom: -200px;
             }
 
             #h1-text {
@@ -1817,6 +1915,27 @@
 
         @media (min-width: 1024px) and (max-width: 1366px) {
 
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 50vh;
+            }
+
+            #carousel-indicators-lg {
+                bottom: -23px;
+            }
+
+            #carousel-indicators-lg .active {
+                border: 1px solid black;
+                background-color: #000;
+            }
+
+            #carousel-indicators-lg :not(.active) {
+                border: 1px solid black;
+                /* Change border for inactive indicators */
+                opacity: 0.8;
+                /* Optional: Make inactive indicators less visible */
+            }
 
 
             .card-body p {
@@ -2291,6 +2410,7 @@
 
 
 
+
         }
 
         /* Full HD (1920 × 1080) */
@@ -2429,14 +2549,122 @@
         </nav>
     </header>
 
+    <section id="hero-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#hero-carousel" data-slide-to="1"></li>
+            <li data-target="#hero-carousel" data-slide-to="2"></li>
+        </ol>
 
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container-fluid h-100">
+                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color:#242c56;">
+
+                        <!-- Left Text Section -->
+                        <div
+                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
+                            <h1 class="fw-bold text-white" id="h1-text">Manufacturers and Exporters of
+                                Speciality Films
+                                for
+                                Protective and Packaging
+                                Applications.</h1>
+                            <h2 class="new-pak" style="color: #34a853;">
+                                Your Packaging, Our Commitment
+                            </h2>
+                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
+                                        prolong    product lifecycles. </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
+                        </div>
+                        <!-- Right Image Section -->
+                        <div class="col-12 col-md-6 col-lg-6 image-container ">
+                            <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container-fluid h-100">
+                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color:#242c56;">
+
+                        <!-- Left Text Section -->
+                        <div
+                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
+                            <h1 class="fw-bold text-white" id="h1-text">Manufacturers and Exporters of
+
+                                Applications.</h1>
+                            <h2 class="new-pak" style="color: #34a853;">
+                                Your Packaging, Our Commitment
+                            </h2>
+                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
+                                        prolong
+                                        product lifecycles.
+                                    </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's
+                                Collaborate
+                                →</a>
+                        </div>
+                        <!-- Right Image Section -->
+                        <div class="col-12 col-md-6 col-lg-6 image-container ">
+                            <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container-fluid h-100">
+                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color:#242c56;">
+
+                        <!-- Left Text Section -->
+                        <div
+                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
+                            <h1 class="fw-bold text-white" id="h1-text">Manufacturers and Exporters of
+                            </h1>
+                            <h2 class="new-pak" style="color: #34a853;">
+                                Your Packaging, Our Commitment
+                            </h2>
+                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
+                                        prolong
+                                        product lifecycles.
+                                    </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's
+                                Collaborate
+                                →</a>
+                        </div>
+                        <!-- Right Image Section -->
+                        <div class="col-12 col-md-6 col-lg-6 image-container ">
+                            <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#hero-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </section>
+
+
+    <!-- 
     <section class="custom-section  mil-banner-personal header-section">
 
         <div class="container-fluid h-100">
             <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
                 style="background-color:#242c56;">
 
-                <!-- Left Text Section -->
                 <div
                     class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
                     <h1 class="fw-bold text-white" id="h1-text">Manufacturers and Exporters of
@@ -2447,22 +2675,18 @@
                     <h2 class="new-pak" style="color: #34a853;">
                         Your Packaging, Our Commitment
                     </h2>
-                    <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
-                        prolong
-                        product lifecycles.
-                    </p> -->
+
                     <a href="#" class="btn custom-btn text-white let-btn">Let's
                         Collaborate
                         →</a>
                 </div>
-                <!-- Right Image Section -->
                 <div class="col-12 col-md-6 col-lg-6 image-container ">
                     <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">
                 </div>
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="py-5 " style="background-color: #ffffff;">
         <div class="container text-center">
@@ -2768,7 +2992,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 col-lg-6">
                 <div class="card news-card-text">
                     <h1 class="news-title text-align-left Latest-Innovations ">Latest
                         Innovations<br> and
@@ -2791,30 +3015,87 @@
                 </p>
 
 
-                <div class=" col-12 col-md-6 col-lg-6">
-                    <div class="card news-card">
-                        <img src="img/new-update01.svg" alt="Trade Show">
-                        <div class="card-body news-card-body">
-                            <h5 class="news-card-title" style="color: #011327;">New product launch</h5>
-                            <p class="news-card-text" style="color: #011327;">Advanced high-strength shrink films!</p>
+
+
+
+                <div id="new-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" id="carousel-indicators-lg">
+                        <li data-target="#new-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#new-carousel" data-slide-to="1"></li>
+                        <li data-target="#new-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class=" col-12 col-md-6 col-lg-6">
+                                <div class="card news-card">
+                                    <img src="img/new-update01.svg" alt="Trade Show">
+                                    <div class="card-body news-card-body">
+                                        <h5 class="news-card-title" style="color: #011327;">New product launch</h5>
+                                        <p class="news-card-text" style="color: #011327;">Advanced high-strength shrink
+                                            films!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card news-card">
+                                    <img src="img/new-update02 (2).svg" alt="Trade Show">
+                                    <div class="card-body news-card-body">
+                                        <h5 class="news-card-title" style="color: #011327;">Upcoming trade shows and
+                                            exhibitions
+                                        </h5>
+                                        <p class="news-card-text" style="color: #011327;">Meet us ➝</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card news-card">
-                        <img src="img/new-update02 (2).svg" alt="Trade Show">
-                        <div class="card-body news-card-body">
-                            <h5 class="news-card-title" style="color: #011327;">Upcoming trade shows and exhibitions
-                            </h5>
-                            <p class="news-card-text" style="color: #011327;">Meet us ➝</p>
+                        <div class="item">
+                            <div class=" col-12 col-md-6 col-lg-6">
+                                <div class="card news-card">
+                                    <img src="img/new-update01.svg" alt="Trade Show">
+                                    <div class="card-body news-card-body">
+                                        <h5 class="news-card-title" style="color: #011327;">New product launch</h5>
+                                        <p class="news-card-text" style="color: #011327;">Advanced high-strength shrink
+                                            films!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card news-card">
+                                    <img src="img/new-update02 (2).svg" alt="Trade Show">
+                                    <div class="card-body news-card-body">
+                                        <h5 class="news-card-title" style="color: #011327;">Upcoming trade shows and
+                                            exhibitions
+                                        </h5>
+                                        <p class="news-card-text" style="color: #011327;">Meet us ➝</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
+
+                    <!-- Controls -->
+                    <!-- <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#hero-carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a> -->
                 </div>
+
+
+
+
             </div>
 
         </div>
 
     </section>
+
 
     <section class="projectSec">
         <div class="container">
