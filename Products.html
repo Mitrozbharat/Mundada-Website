@@ -748,11 +748,6 @@
       }
 
       @media (min-width: 360px) and (max-width: 800px) {
-         .inner-pages-bnr img {
-            height: 260px;
-            width: 115%;
-         }
-
          .new-pak {
             margin: 20px 0px;
             margin-left: 0px;
@@ -1347,11 +1342,10 @@
 
          .product-info {
             flex: 1;
-            padding: 15px;
+            /* padding: 15px; */
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #d8ebff;
          }
 
          .product-title {
@@ -1578,7 +1572,6 @@
          }
 
          .product-info {
-            background-color: #d8ebff;
             flex: 1;
             /* padding: 15px; */
             display: flex;
@@ -1865,8 +1858,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #d8ebff;
-
          }
 
          .product-title {
@@ -1886,7 +1877,6 @@
             color: #011327;
             text-align: left;
             text-decoration: none;
-
          }
 
          .btn-know-more {
@@ -2022,7 +2012,6 @@
          }
 
          .product-info {
-
             width: 50%;
          }
 
@@ -2045,8 +2034,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #d8ebff;
-
          }
 
          .product-title {
@@ -2317,7 +2304,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 47vh;
             background-color: #d8ebff;
          }
 
@@ -2373,10 +2359,36 @@
             padding-left: 10px;
 
          }
+
+         .portfolio-wrap {
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+         .portfolio-wrap>.col-lg-6 {
+            display: flex;
+            /* flex-direction: column; */
+            flex: 1;
+            /* Makes both columns equal height */
+         }
+
       }
 
       /* Full HD (1920 × 1080) */
       @media screen and (min-width: 1920px) {
+
+         .portfolio-wrap {
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+         .portfolio-wrap>.col-lg-6 {
+            display: flex;
+            /* flex-direction: column; */
+            flex: 1;
+            /* Makes both columns equal height */
+         }
+
          .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -2542,8 +2554,20 @@
             flex-direction: column;
             justify-content: center;
             background-color: #d8ebff;
-
          }
+
+         .portfolio-wrap {
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+         .portfolio-wrap>.col-lg-6 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            /* Makes both columns equal height */
+         }
+
 
          .product-title {
             background: #198754;
@@ -2674,126 +2698,140 @@
 
                <div class="col-lg-6 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
-                     <div class="col-lg-6" style="padding: 0;">
+                     <div class="col-lg-6" style="padding-right: 0;">
                         <img src="img/products/products/p1.svg" class="img-fluid" alt="">
                      </div>
-                     <div class="col-lg-6" style="background-color: #d8ebff;"></div>
-                     <div class="product-info">
-                        <h6 class="product-title">Stretch Hood Film</h6>
-                        <p><strong>Main Usage Areas</strong></p>
-                        <ul>
-                           <li>Pharmaceutical </li>
-                           <li>Glass bottle etc</li>
-                           <li>Textile / Yarn / Fiber</li>
-                        </ul>
-                        <button class=" btn-know-more">Know More</button>
+                     <div class="col-lg-6" style="background-color: #d8ebff;">
+                        <div class="product-info">
+                           <h6 class="product-title">Stretch Hood Film</h6>
+                           <p><strong>Main Usage Areas</strong></p>
+                           <ul>
+                              <li>Pharmaceutical </li>
+                              <li>Glass bottle etc</li>
+                              <li>Textile / Yarn / Fiber</li>
+                           </ul>
+                           <button class=" btn-know-more">Know More</button>
+                        </div>
                      </div>
+
                   </div>
                </div>
                <div class="col-lg-6 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
-                     <div class="col-lg-6 " style="padding: 0;">
+                     <div class="col-lg-6" style="padding-right: 0;">
                         <img src="img/products/products/p2.svg" class="img-fluid" alt="">
                      </div>
-                     <div class="col-lg-6" style="background-color: #d8ebff;"></div>
-                     <div class="product-info">
-                        <h6 class="product-title">LDPE Shrink Film</h6>
-                        <p><strong>Main Usage Areas</strong></p>
-                        <ul>
-                           <li>Beverages </li>
-                           <li>Food and canned goods</li>
-                           <li>Packaging materials & paper etc</li>
-                        </ul>
-                        <button class=" btn-know-more">Know More</button>
+                     <div class="col-lg-6" style="background-color: #d8ebff;">
+                        <div class="product-info">
+                           <h6 class="product-title">LDPE Shrink Film</h6>
+                           <p><strong>Main Usage Areas</strong></p>
+                           <ul>
+                              <li>Beverages </li>
+                              <li>Food and canned goods</li>
+                              <li>Packaging materials & paper etc</li>
+                           </ul>
+                           <button class=" btn-know-more">Know More</button>
+                        </div>
                      </div>
+
 
                   </div>
                </div>
 
+
+
                <div class="col-lg-6 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
-                     <div class="col-lg-6" style="padding: 0;">
+                     <div class="col-lg-6" style="padding-right: 0;">
                         <img src="img/products/products/p3.svg" class="img-fluid" alt="">
                      </div>
-                     <div class="col-lg-6" style="background-color: #eff7ff;"></div>
-                     <div class="product-info">
-                        <h6 class="product-title">Surface Protection Film</h6>
-                        <p><strong>Main Usage Areas</strong></p>
-                        <ul>
-                           <li>Stainless steel sheets
-                           </li>
-                           <li>Colour coated steel sheets</li>
-                           <li>Glass</li>
-                        </ul>
-                        <button class=" btn-know-more">Know More</button>
+                     <div class="col-lg-6" style="background-color: #d8ebff;">
+                        <div class="product-info .inner-pages-bnr img">
+                           <h6 class="product-title">Surface Protection Film</h6>
+                           <p><strong>Main Usage Areas</strong></p>
+                           <ul>
+                              <li>Stainless steel sheets
+                              </li>
+                              <li>Colour coated steel sheets</li>
+                              <li>Glass</li>
+                           </ul>
+                           <button class=" btn-know-more">Know More</button>
+                        </div>
                      </div>
+
                   </div>
                </div>
                <div class="col-lg-6 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
-                     <div class="col-lg-6" style="padding: 0;">
+                     <div class="col-lg-6" style="padding-right: 0;">
                         <img src="img/products/products/p4.svg" class="img-fluid" alt="">
                      </div>
-                     <div class="col-lg-6"></div>
-                     <div class="product-info">
-                        <h6 class="product-title">Stretch Wrap Film</h6>
-                        <p><strong>Other Products</strong></p>
-                        <ul>
-                           <li>LDPE Tubing Film Roll
-
-
-
-                           </li>
-                           <li>Carpet Protection Film</li>
-                           <li>VCI - Stretch Film</li>
-                        </ul>
-                        <button class=" btn-know-more">Know More</button>
+                     <div class="col-lg-6" style="background-color: #d8ebff;">
+                        <div class="product-info">
+                           <h6 class="product-title">Stretch Wrap Film</h6>
+                           <p><strong>Other Products</strong></p>
+                           <ul>
+                              <li>LDPE Tubing Film Roll</li>
+                              <li>Carpet Protection Film</li>
+                              <li>VCI - Stretch Film</li>
+                           </ul>
+                           <button class=" btn-know-more">Know More</button>
+                        </div>
                      </div>
+
+
                   </div>
                </div>
 
+
                <div class="col-lg-6 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
-                     <div class="col-lg-6" style="padding: 0;">
+                     <div class="col-lg-6" style="padding-right: 0;">
                         <img src="img/products/products/p5.svg" class="img-fluid" alt="">
                      </div>
-                     <div class="col-lg-6" style="background-color: #eff7ff;"></div>
-                     <div class="product-info">
-                        <h6 class="product-title">Surface Protection Film</h6>
-                        <p><strong>Main Usage Areas</strong></p>
-                        <ul>
-                           <li>Stainless steel sheets
-                           </li>
-                           <li>Colour coated steel sheets</li>
-                           <li>Glass</li>
-                        </ul>
-                        <button class=" btn-know-more">Know More</button>
+                     <div class="col-lg-6" style="background-color: #d8ebff;">
+                        <div class="product-info img-fluid">
+                           <h6 class="product-title">Surface Protection Film</h6>
+                           <p><strong>Main Usage Areas</strong></p>
+                           <ul>
+                              <li>Stainless steel sheets
+                              </li>
+                              <li>Colour coated steel sheets</li>
+                              <li>Glass</li>
+                           </ul>
+                           <button class=" btn-know-more">Know More</button>
+                        </div>
                      </div>
+
                   </div>
                </div>
                <div class="col-lg-6 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
-                     <div class="col-lg-6" style="padding: 0;">
+                     <div class="col-lg-6" style="padding-right: 0;">
                         <img src="img/products/products/p6.svg" class="img-fluid" alt="">
                      </div>
-                     <div class="col-lg-6"></div>
-                     <div class="product-info">
-                        <h6 class="product-title">Stretch Wrap Film
-                        </h6>
-                        <p><strong>Other Products</strong></p>
-                        <ul>
-                           <li>LDPE Tubing Film Roll
+                     <div class="col-lg-6" style="background-color: #d8ebff;">
+                        <div class="product-info img-fluid">
+                           <h6 class="product-title">Stretch Wrap Film
+                           </h6>
+                           <p><strong>Other Products</strong></p>
+                           <ul>
+                              <li>LDPE Tubing Film Roll
 
 
 
-                           </li>
-                           <li>Carpet Protection Film</li>
-                           <li>VCI - Stretch Film</li>
-                        </ul>
-                        <button class=" btn-know-more">Know More</button>
+                              </li>
+                              <li>Carpet Protection Film</li>
+                              <li>VCI - Stretch Film</li>
+                           </ul>
+                           <button class=" btn-know-more">Know More</button>
+                        </div>
                      </div>
+
                   </div>
                </div>
+
+
 
 
                <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
