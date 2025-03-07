@@ -43,6 +43,53 @@
             --hover-navy: #1a1f3d;
         }
 
+        .course-card {
+            position: relative;
+            color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            margin: 20px 0px;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .course-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            border-left: 6px solid green;
+            /* background: rgba(0, 0, 0, 0.6); */
+            /* Semi-transparent background for readability */
+        }
+
+        .course-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .course-description {
+            font-size: 14px;
+            opacity: 0.85;
+            text-align: left;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .btn-custom {
+            text-align: left;
+            align-self: flex-start;
+            /* Ensures button is left-aligned */
+        }
+
 
 
         body {
@@ -57,9 +104,7 @@
             height: 100vh;
         }
 
-        #hero-carousel .item {
-            height: 100vh;
-        }
+
 
         .hero-img {
             width: 100%;
@@ -82,12 +127,32 @@
             font-weight: bold;
         }
 
+        #h1-text {
+            color: #ffffff;
+            line-height: 1.7pc;
+            font-size: 20px;
+            margin-top: 52px;
+            padding: 0 -5px;
+        }
+
+        .new-pak {
+            margin: 20px 0px;
+            margin-left: 0px;
+            font-size: 16px;
+        }
+
+        .bgimg {
+            width: 100%;
+        }
+
         .custom-btn {
+            margin-bottom: 20px;
             background: #34a853;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
+            /* margin-left: 20PX; */
         }
 
         .carousel-control {
@@ -195,23 +260,7 @@
             width: 120px;
         }
 
-        /* .bgimg {
 
-            height: 765px;
-            width: 758px;
-            background-size: cover;
-        } */
-
-
-
-        .let-btn {
-            position: absolute;
-            margin: 10px 80px;
-            /* padding: 12px; */
-            color: #ffffff;
-            background-color: #34a853;
-            bottom: -118px;
-        }
 
         .text-success {
             color: #34a853;
@@ -255,12 +304,7 @@
             margin-bottom: 5px;
         }
 
-        .contact-heading {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 40px;
-            color: #ffffff;
-        }
+
 
         .form-label {
             font-size: 18px;
@@ -424,8 +468,8 @@
         }
 
         /* .home6 p {
-                color: whitesmoke;
-             } */
+                    color: whitesmoke;
+                 } */
 
         .product-card-text {
             border-left: 10px solid #34a853;
@@ -451,9 +495,9 @@
         }
 
         /* .header4 .navbar-brand {
-                padding: 0;
-                margin: 0;
-             } */
+                    padding: 0;
+                    margin: 0;
+                 } */
 
         .header4 .nav-link {
             color: #1a1a1a;
@@ -731,24 +775,25 @@
             margin-bottom: 10px;
         }
 
-        .reviews-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+        /* .reviews-container {
+                display: flex;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                max-width: 1100px;
+                margin: auto;
+                flex-direction: column
+            } */
 
 
 
 
         /* .review-card {
-                   text-align: center;
-                   font-size: 15px;
-                   color: #333;
-                   margin: 15px 0;
-                   padding: 10px;
-               } */
+                       text-align: center;
+                       font-size: 15px;
+                       color: #333;
+                       margin: 15px 0;
+                       padding: 10px;
+                   } */
 
         .review-image {
             width: 100px;
@@ -788,39 +833,12 @@
         }
 
 
-        /* cards */
-
-        .review-card {
-            border: 1px solid #242c56;
-        }
-
-        .reviews-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .review-card {
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            /* Needed for absolute positioning */
-            width: 360px;
-            /* Adjust as needed */
-            border-radius: 10px;
-            min-height: 250px;
-            /* Ensures consistent height */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
         .review-card img {
             max-width: 100px;
             /* border-radius: 50%; */
             margin: 10px 0;
+            border: 1px solid #242c56;
+
         }
 
         .clinetname {
@@ -846,6 +864,25 @@
             white-space: nowrap;
         }
 
+
+        .review-card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 13px;
+            text-align: center;
+            position: relative;
+            /* Needed for absolute positioning */
+            /* width: 330px; */
+            /* Adjust as needed */
+            border-radius: 10px;
+            min-height: 250px;
+            /* Ensures consistent height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+
         .review-card .clinetname {
             background: #28a745;
             color: #fff;
@@ -858,39 +895,66 @@
             /* left: 50%;  */
             transform: translateX(-50%);
             margin-bottom: 10px;
-            margin-left: 90px;
+            margin-left: 82px;
+        }
+
+        .contact-heading {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 29px;
+            color: #ffffff;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .product-subtitle {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 15px 30px 15px;
+            margin: 0px 0px;
         }
 
 
-        @media (min-width: 360px) and (max-width: 800px) {
-            .reviews-container {
-                display: none;
-                justify-content: none;
-                gap: 20px;
-            }
+        @media (min-width: 375px) and (max-width: 414px) {
 
-            .review-card {
-                background: #fff;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 20px;
-                text-align: center;
+            /* .reviews-container {
+                    display: none;
+                    justify-content: none;
+                    gap: 20px;
+                } */
+            #new-carousel {
                 position: relative;
-                /* Needed for absolute positioning */
-                width: 300px;
-                /* Adjust as needed */
-                border-radius: 10px;
-                min-height: 250px;
-                /* Ensures consistent height */
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                width: 100%;
+                height: 80vh;
             }
 
-            .new-pak {
-                margin: 20px 0px;
-                margin-left: 0px;
-                font-size: 18px;
+            .carousel-indicators .active {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                background-color: #000;
             }
+
+            .carousel-indicators>li {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+
+                border-radius: 1px solid var(--dark-blue);
+                background-color: #ffffff;
+            }
+
+            .carousel-inner {
+                position: relative;
+                width: 100%;
+                overflow: visible;
+            }
+
 
             .btn {
                 font-size: 11px;
@@ -1039,20 +1103,34 @@
                 margin-top: 20px;
             }
 
-            #h1-text {
-                color: #ffffff;
-                padding: 0px 0px;
-                margin-top: 125px;
-                color: #ffffff;
-                font-size: 60px;
+            .bgimg {
+                height: 400px;
+                width: 100%;
             }
 
             #h1-text {
-                line-height: 1.7pc;
+                line-height: 1.2;
                 font-size: 20px;
-                margin-top: 27px;
+                margin-top: 45px;
                 padding: 0 -5px;
+                color: #ffffff;
+                padding: 0px 0px;
+                font-size: 28px;
+            }
 
+            .new-pak {
+                margin: 20px 0px;
+                margin-left: 0px;
+                font-size: 16px;
+            }
+
+            .let-btn {
+                /* position: absolute; */
+                margin: 0px 0px;
+                /* padding: 12px; */
+                color: #ffffff;
+                background-color: #34a853;
+                bottom: -76px;
             }
 
             #h1-text+p {
@@ -1061,12 +1139,7 @@
                 color: #ffffff;
             }
 
-            .let-btn {
-                padding: 8px 0px;
-                color: #ffffff;
-                background-color: #34a853;
-                margin: 0px 0px;
-            }
+
 
             .quality-assurance-section {
                 background-color: var(--primary-bg);
@@ -1109,24 +1182,28 @@
                 padding: 20px;
                 border-radius: 10px;
             }
-        }
 
-        @media (min-width: 375px) and (max-width: 667px) {
-
-            .reviews-container {
-                display: none;
-                justify-content: none;
-                gap: 20px;
+            #hero-carousel .item {
+                height: 100vh;
             }
+
+
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+            }
+
+
 
             .review-card {
                 background: #fff;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 20px;
+                padding: 13px;
                 text-align: center;
                 position: relative;
                 /* Needed for absolute positioning */
-                width: 300px;
+                /* width: 330px; */
                 /* Adjust as needed */
                 border-radius: 10px;
                 min-height: 250px;
@@ -1134,6 +1211,57 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 82px;
+            }
+
+            .contact-heading {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 29px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 0px;
+            }
+        }
+
+        @media (min-width: 414) and (max-width: 667px) {
+
+
+
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 0px;
             }
 
             .new-pak {
@@ -1286,21 +1414,23 @@
                 margin-top: 20px;
             }
 
+            #hero-carousel .item {
+                height: 72vh;
+            }
+
             #h1-text {
                 color: #ffffff;
                 padding: 0px 0px;
                 margin-top: 125px;
                 color: #ffffff;
                 font-size: 60px;
-            }
-
-            #h1-text {
-                line-height: 1.7pc;
+                line-height: 2.7pc;
                 font-size: 20px;
-                margin-top: 27px;
+                margin-top: 50px;
                 padding: 0 -5px;
-
             }
+
+
 
             #h1-text+p {
                 font-size: 12px;
@@ -1374,27 +1504,26 @@
                 margin-top: 20px;
                 display: inline-block;
             }
-        }
 
-        /* Media Queries for Responsive Design */
+            #hero-carousel .item {
+                height: 72vh;
+            }
 
-        /* Mobile devices (less than 576px) */
-        @media (max-width: 575.98px) {
 
-            .reviews-container {
-                display: none;
-                justify-content: none;
-                gap: 20px;
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 78vh;
             }
 
             .review-card {
                 background: #fff;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 20px;
+                padding: 13px;
                 text-align: center;
                 position: relative;
                 /* Needed for absolute positioning */
-                width: 300px;
+                /* width: 330px; */
                 /* Adjust as needed */
                 border-radius: 10px;
                 min-height: 250px;
@@ -1402,101 +1531,60 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-            }
-
-            .new-pak {
                 margin: 20px 0px;
-                margin-left: 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
                 font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 102px;
             }
 
-            .reviews-container {
-                grid-template-columns: 1fr;
-            }
-
-            #Industries-Served {
-                color: white;
-                font-size: 20px;
-                font-weight: 800;
-                margin-left: 4px;
-                /* margin-top: 50px; */
-                position: relative;
-                z-index: 1;
-                font-size: 20px;
-                font-weight: 800;
-                /* margin-left: 100px; */
+            .contact-heading {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 29px;
                 color: #ffffff;
-                padding: 2px;
-                border-left: 6px solid #34a853;
             }
 
-            .news-card-text {
-                font-size: 14px;
-                color: #444;
-                margin-top: 0px;
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 20px;
             }
 
-            .Trusted-clients {
-                color: #242c56;
-                margin-top: 0px;
-                font-weight: 600;
-                font-size: 24px;
-            }
 
-            #h1-text {
-                line-height: 1.7pc;
-                font-size: 20px;
-                margin-top: 27px;
-                padding: 0 -5px;
-            }
 
-            #Our-Clients {
-                font-size: 20px;
-                font-weight: 800;
-                margin-left: 10px;
-                color: #242c56;
-                padding: 2px;
-                border-left:
-                    6px solid #34a853;
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 0px;
             }
-
-            .bgimg {
-                height: 400px;
-                width: 100%;
-                background-size: cover;
-            }
-
-            .let-btn {
-                margin: 15px;
-            }
-
-            .img-responsive {
-                margin: 16px auto;
-                width: 80%;
-            }
-
-            .news-section {
-                padding: 40px 5%;
-            }
-
-            .news-title {
-                font-size: 24px;
-            }
-
-            .news-card {
-                margin-bottom: 15px;
-            }
-
 
         }
 
+
         /* Tablets (576px to 991px) */
         @media (min-width: 576px) and (max-width: 991px) {
+            #hero-carousel .item {
+                height: 72vh;
+            }
 
             #hero-carousel {
                 position: relative;
                 width: 100%;
-                height: 80vh;
+                height: 78vh;
             }
 
             .nav-item .active {
@@ -1515,7 +1603,7 @@
 
                 font-size: 18px;
                 margin: 20px 0px;
-                margin-left: 35px;
+                margin-left: 20px;
             }
 
             #Industries-Served {
@@ -1548,6 +1636,7 @@
             }
 
             #h1-text {
+                line-height: 2.7;
                 font-size: 36px;
                 margin-top: 80px;
                 color: #ffffff;
@@ -1639,6 +1728,59 @@
                 font-size: 14px;
             }
 
+            #h1-text {
+                line-height: 1.2;
+                font-size: 36px;
+                margin-top: 80px;
+                color: #ffffff;
+                padding: 0 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 195px;
+            }
+
+            .contact-heading {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
         }
 
         /* Desktops (992px and up) */
@@ -1666,28 +1808,6 @@
                 border: 1px solid #242c56;
             }
 
-            .reviews-container {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .review-card {
-                background: #fff;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 20px;
-                text-align: center;
-                position: relative;
-                /* Needed for absolute positioning */
-                width: 360px;
-                /* Adjust as needed */
-                border-radius: 10px;
-                min-height: 250px;
-                /* Ensures consistent height */
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
 
             .review-card img {
                 max-width: 100px;
@@ -1741,7 +1861,7 @@
             }
 
             .new-pak {
-                margin: 20px 0px 0px;
+                margin: 20px 0px 80px;
                 margin-left: 78px;
                 font-size: 28px;
             }
@@ -1810,17 +1930,17 @@
 
 
             /* 
-                   .home6 p,
-                   .home8 p {
-                       font-family: 'Open Sans', sans-serif;
-                       color: var(--primary-bg);
-                       font-size: 20px;
-                       font-weight: 800;
-                       line-height: normal;
-                       margin-left: 100px;
-               }
-       
-               */
+                       .home6 p,
+                       .home8 p {
+                           font-family: 'Open Sans', sans-serif;
+                           color: var(--primary-bg);
+                           font-size: 20px;
+                           font-weight: 800;
+                           line-height: normal;
+                           margin-left: 100px;
+                   }
+           
+                   */
             #h1-text {
                 font-size: 40px;
                 color: #ffffff;
@@ -1867,13 +1987,6 @@
                 font-size: 51px;
             }
 
-            /* #h1-text {
-                       color: #ffffff;
-                       padding: 0px 35px;
-                       margin-top: 112px;
-                       color: #ffffff;
-                       font-size: 51px;
-                   } */
 
             #h1-text+p {
                 padding: 20px 38px;
@@ -1910,6 +2023,46 @@
 
             .Latest-Innovations {
                 padding: 60px 0px 72px 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 102px;
+            }
+
+            .contact-heading {
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
             }
         }
 
@@ -1983,12 +2136,7 @@
                 font-size: 30px;
             }
 
-            #h1-text {
-                font-size: 36px;
-                margin-top: 80px;
-                color: #ffffff;
-                padding: 0 20px;
-            }
+
 
             .Latest-Innovations {
                 padding: 40px 40px;
@@ -2038,20 +2186,16 @@
                 border: 1px solid #242c56;
             }
 
-            .reviews-container {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
+
 
             .review-card {
                 background: #fff;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 20px;
+                padding: 13px;
                 text-align: center;
                 position: relative;
                 /* Needed for absolute positioning */
-                width: 360px;
+                /* width: 330px; */
                 /* Adjust as needed */
                 border-radius: 10px;
                 min-height: 250px;
@@ -2059,6 +2203,22 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 240px;
             }
 
             .review-card img {
@@ -2090,26 +2250,13 @@
                 white-space: nowrap;
             }
 
-            .review-card .clinetname {
-                background: #28a745;
-                color: #fff;
-                /* display: inline-block; */
-                padding: 4px 5px;
-                border-radius: 0px 0px 0px 0px;
-                font-size: 18px;
-                /* position: absolute; */
-                top: -18px;
-                /* left: 50%;  */
-                transform: translateX(-50%);
-                margin-bottom: 10px;
-                margin-left: 90px;
-            }
+
 
 
         }
 
         /* HD (1366 × 768) */
-        @media screen and (max-width: 1366px) {
+        @media screen and (min-width: 1366px) {
 
 
 
@@ -2129,10 +2276,10 @@
                 }
 
                 /* .new-pak {
-                    margin: 20px 0px 100px;
-                    margin-left: 78px;
-                    font-size: 28px;
-                } */
+                        margin: 20px 0px 100px;
+                        margin-left: 78px;
+                        font-size: 28px;
+                    } */
 
                 .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
                     /* color: black; */
@@ -2146,9 +2293,6 @@
                     margin-left: 78px;
                     margin-bottom: 100px;
                 }
-
-
-
 
                 .custom-btn .let-btn {
                     margin-top: 120px;
@@ -2195,29 +2339,10 @@
                 }
 
 
-                /* 
-                   .home6 p,
-                   .home8 p {
-                       font-family: 'Open Sans', sans-serif;
-                       color: var(--primary-bg);
-                       font-size: 20px;
-                       font-weight: 800;
-                       line-height: normal;
-                       margin-left: 100px;
-               }
-       
-               */
-                #h1-text {
-                    font-size: 40px;
-                    color: #ffffff;
-                    padding: 0 21px;
-                    margin-top: 52px;
-                }
-
 
                 .bgimg {
                     height: 605px;
-                    width: 104%;
+                    width: 124%;
                 }
 
                 .img-responsive {
@@ -2245,7 +2370,7 @@
 
                 .let-btn {
                     position: absolute;
-                    margin: 10px 80px;
+                    margin: 20px 80px;
                     padding: 12px;
                     color: #ffffff;
                     background-color: #34a853;
@@ -2254,19 +2379,14 @@
 
                 #h1-text {
                     color: #ffffff;
-                    padding: 30px 0px 0px 78px;
-                    margin-top: 112px;
+                    padding: 28px 0px 0px 78px;
+                    margin-top: 60px;
                     color: #ffffff;
-                    font-size: 51px;
+                    font-size: 48px;
+                    line-height: 1.2;
                 }
 
-                /* #h1-text {
-                       color: #ffffff;
-                       padding: 0px 35px;
-                       margin-top: 112px;
-                       color: #ffffff;
-                       font-size: 51px;
-                   } */
+
 
                 #h1-text+p {
                     padding: 20px 38px;
@@ -2296,10 +2416,6 @@
                     padding: 60px 0px 72px 20px;
                 }
 
-                .reviews-container {
-                    display: flex;
-                    gap: 20px;
-                }
 
                 .review-card {
                     background: #fff;
@@ -2313,7 +2429,7 @@
 
                 .review-card img {
                     max-width: 60px;
-                    border-radius: 50%;
+                    /* border-radius: 50%; */
                     margin: 10px 0;
                 }
 
@@ -2339,11 +2455,6 @@
                     border: 1px solid #242c56;
                 }
 
-                .reviews-container {
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                }
 
                 .review-card {
                     background: #fff;
@@ -2391,51 +2502,19 @@
                     white-space: nowrap;
                 }
 
-                .review-card .clinetname {
-                    background: #28a745;
-                    color: #fff;
-                    /* display: inline-block; */
-                    padding: 4px 5px;
-                    border-radius: 0px 0px 0px 0px;
-                    font-size: 18px;
-                    /* position: absolute; */
-                    top: -18px;
-                    /* left: 50%;  */
-                    transform: translateX(-50%);
-                    margin-bottom: 10px;
-                    margin-left: 90px;
-                }
-
-            }
 
 
 
-
-        }
-
-        /* Full HD (1920 × 1080) */
-        @media screen and (max-width: 1920px) {
-            /* cards */
-            /* cards */
-
-            .review-card {
-                border: 1px solid #242c56;
-            }
-
-            .reviews-container {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
             }
 
             .review-card {
                 background: #fff;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                padding: 20px;
+                padding: 13px;
                 text-align: center;
                 position: relative;
                 /* Needed for absolute positioning */
-                width: 360px;
+                /* width: 330px; */
                 /* Adjust as needed */
                 border-radius: 10px;
                 min-height: 250px;
@@ -2443,6 +2522,96 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 102px;
+
+
+            }
+
+            .contact-heading {
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 28px;
+            }
+
+
+        }
+
+        /* Full HD (1920 × 1080) */
+        @media screen and (min-width: 1920px) {
+
+            /* cards */
+            /* cards */
+            #h1-text {
+                line-height: 1.2;
+                font-size: 36px;
+                margin-top: 80px;
+                color: #ffffff;
+                padding: 0 20px;
+            }
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+            /* .reviews-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                } */
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 102px;
             }
 
             .review-card img {
@@ -2474,20 +2643,7 @@
                 white-space: nowrap;
             }
 
-            .review-card .clinetname {
-                background: #28a745;
-                color: #fff;
-                /* display: inline-block; */
-                padding: 4px 5px;
-                border-radius: 0px 0px 0px 0px;
-                font-size: 18px;
-                /* position: absolute; */
-                top: -18px;
-                /* left: 50%;  */
-                transform: translateX(-50%);
-                margin-bottom: 10px;
-                margin-left: 90px;
-            }
+
 
 
         }
@@ -2657,50 +2813,26 @@
         </a>
     </section>
 
-
-    <!-- 
-    <section class="custom-section  mil-banner-personal header-section">
-
-        <div class="container-fluid h-100">
-            <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
-                style="background-color:#242c56;">
-
-                <div
-                    class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                    <h1 class="fw-bold text-white" id="h1-text">Manufacturers and Exporters of
-                        Speciality Films
-                        for
-                        Protective and Packaging
-                        Applications.</h1>
-                    <h2 class="new-pak" style="color: #34a853;">
-                        Your Packaging, Our Commitment
-                    </h2>
-
-                    <a href="#" class="btn custom-btn text-white let-btn">Let's
-                        Collaborate
-                        →</a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 image-container ">
-                    <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
-    <section class="py-5 " style="background-color: #ffffff;">
-        <div class="container text-center">
+    <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
+        style="background-color: #ffffff;">
+        <div class="container section-title" data-aos="fade-up">
             <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;">Our Product</h1>
             <p class="product-subtitle">
                 Manufacturers and exporters of Specialty Films for Protective and Packaging applications. Show below
                 pics on front page
                 of brochure. </p>
-            <div class="row g-lg-4">
-                <div class="col-md-4 col-sm-6 col-12 ">
-                    <div class="card product-card product-card-01" id="productimg01">
-                        <div class="card-body ">
-                            <h5 class="product-card-title">Stretch Hood Film</h5>
-                            <p class="product-card-text">
+
+
+        </div><!-- End Section Title -->
+
+        <div class="container py-2" id="Mindful-Beginnings">
+            <div class="row d-flex justify-content-center align-items-center "> <!-- Card 1 -->
+                <div class="col-md-4 col-lg-4 card-course my-2 ">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/our-product-01.svg" alt="Mindful Beginnings">
+                        <div class="course-content">
+                            <h5 class="course-title">Stretch Hood Film</h5>
+                            <p class="course-description ">
                                 Engineered for superior load stability and weather resistance, ideal for
                                 pharmaceuticals, glass bottles, and textile
                                 industries.
@@ -2709,33 +2841,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12 ">
-                    <div class="card product-card product-card-02" id="productimg02">
-                        <div class="card-body">
-                            <h5 class="product-card-title">LDPE Shrink Film</h5>
-                            <p class="product-card-text">
+
+                <!-- Card 2 -->
+                <div class="col-md-4 col-lg-4 my-2 card-course" id="Letting-go">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/our-product-02.svg" alt="Art of Letting Go">
+                        <div class="course-content">
+                            <h5 class="course-title">LDPE Shrink Film</h5>
+                            <p class="course-description ">
                                 Ensures tight and secure wrapping for beverages, food packaging, and various industrial
-                                applications.<br><br></p>
+                                applications.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12 ">
-                    <div class="card product-card product-card-03" id="productimg03">
-                        <div class="card-body ">
-                            <h5 class="product-card-title">Surface Protection Film</h5>
-                            <p class="product-card-text">
-                                Protects stainless steel, glass, and appliances from scratches and contamination during
-                                transit and handling.<br><br>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 col-lg-4 card-course my-2" id="Mindful-Beginnings">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img//our-product-03.svg" alt="Mindful Beginnings">
+                        <div class="course-content">
+                            <h5 class="course-title">Surface Protection Film</h5>
+                            <p class="course-description ">
+                                Engineered for superior load stability and weather resistance, ideal for
+                                pharmaceuticals, glass bottles, and textile
+                                industries.
+
                             </p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </section>
-
-
-
 
     <section class=" company_mission">
         <p class="text-white" id="Industries-Served" style="color: white;">
@@ -2955,32 +3096,45 @@
             </div>
 
             <div class="reviews-container">
-                <div class="review-card">
-                    <p class="clinetname">Rahul Mehta</p>
-                    <p>"Mundada Polymers' stretch hood films have significantly improved our packaging efficiency. The
-                        durability
-                        and flexibility are unmatched!"</p>
-                    <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
-                    <div class="company-tag">@TexFab Exports</div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <p class="clinetname">Rahul Mehta</p>
+                            <p>"Mundada Polymers' stretch hood films have significantly improved our packaging
+                                efficiency. The
+                                durability
+                                and flexibility are unmatched!"</p>
+                            <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
+                            <div class="company-tag">@TexFab Exports</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <p class="clinetname">Arun Joshi</p>
+                            <p>"Their surface protection films have helped us prevent scratches on high-value glass
+                                sheets
+                                during
+                                transportation. Highly recommended!"</p>
+                            <img src="img/client/client02.svg" alt="Rahul Mehta" class="review-image">
+                            <div class="company-tag">@GlassTech Industries</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="review-card">
+                            <p class="clinetname">Vikas Sharma</p>
+                            <p>"Mundada Polymers delivers reliable and cost-effective stretch wrap solutions for our
+                                textile
+                                shipments.
+                                Excellent product consistency!"</p>
+                            <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
+                            <div class="company-tag">@Acropolis Attire</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="review-card">
-                    <p class="clinetname">Arun Joshi</p>
-                    <p>"Their surface protection films have helped us prevent scratches on high-value glass sheets
-                        during
-                        transportation. Highly recommended!"</p>
-                    <img src="img/client/client02.svg" alt="Rahul Mehta" class="review-image">
-                    <div class="company-tag">@GlassTech Industries</div>
-                </div>
 
-                <div class="review-card">
-                    <p class="clinetname">Vikas Sharma</p>
-                    <p>"Mundada Polymers delivers reliable and cost-effective stretch wrap solutions for our textile
-                        shipments.
-                        Excellent product consistency!"</p>
-                    <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
-                    <div class="company-tag">@Acropolis Attire</div>
-                </div>
+
+
             </div>
 
         </div>
