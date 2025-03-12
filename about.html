@@ -1712,6 +1712,15 @@
             /* Centers the border */
          }
 
+         .product-info {
+            flex: 1;
+            /* padding: 15px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+
 
          .sustainability-text {
             font-size: 25px;
@@ -2143,17 +2152,19 @@
       }
 
       /* 4K & Ultra-Wide Screens */
-      @media (max-width: 1921px) {
-
+      @media (min-width: 1921px) {
+         header.header4 #main-navigation-wrapper .nav>li {
+            padding: 22px 0;
+         }
 
          .navbar-collapse.collapse {
             padding: 0px;
          }
 
          .img-responsive {
-            margin-top: 32px;
-            margin-left: 90%;
-            width: 46%;
+            margin-top: 19px;
+            margin-left: 140%;
+            width: 25%;
          }
 
 
