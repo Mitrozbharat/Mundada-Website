@@ -43,6 +43,17 @@
             --hover-navy: #1a1f3d;
         }
 
+        .card-course:hover .course-card {
+            transform: scale(1.05);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .review-card:hover .review-card {
+            transform: scale(1.05);
+            transition: transform 0.4s ease-in-out;
+        }
+
+
         .course-card {
             position: relative;
             color: white;
@@ -98,11 +109,11 @@
             font-family: Arial, sans-serif;
         }
 
-        #hero-carousel {
+        /* #hero-carousel {
             position: relative;
             width: 100%;
             height: 100vh;
-        }
+        } */
 
 
 
@@ -136,13 +147,24 @@
         }
 
         .new-pak {
-            margin: 20px 0px;
-            margin-left: 0px;
-            font-size: 16px;
+            margin: 25px 0px;
+            margin-left: 18px;
+            font-size: 28px;
         }
 
+        .let-btn {
+            position: absolute;
+            margin: 20px 20px;
+            padding: 12px;
+            color: #ffffff;
+            background-color: #34a853;
+            bottom: -75px;
+        }
+
+
+
         .bgimg {
-            width: 100%;
+            width: 104%;
         }
 
         .custom-btn {
@@ -1574,7 +1596,6 @@
 
         }
 
-
         /* Tablets (576px to 991px) */
         @media (min-width: 576px) and (max-width: 991px) {
             #hero-carousel .item {
@@ -1783,11 +1804,11 @@
 
         }
 
-        /* Desktops (992px and up) */
-        @media (min-width: 992px) {
+        @media (min-width: 767px) and (max-width: 1023px) {
+
 
             #carousel-indicators-lg {
-                bottom: -23px;
+                bottom: -40px
             }
 
             #carousel-indicators-lg .active {
@@ -2064,14 +2085,18 @@
                 margin-bottom: 40px;
                 color: #ffffff;
             }
+
         }
+
+        /* Desktops (992px and up) */
+
 
         @media (min-width: 1024px) and (max-width: 1366px) {
 
             #hero-carousel {
                 position: relative;
                 width: 100%;
-                height: 50vh;
+                height: 100vh;
             }
 
             #carousel-indicators-lg {
@@ -2380,7 +2405,7 @@
                 #h1-text {
                     color: #ffffff;
                     padding: 28px 0px 0px 78px;
-                    margin-top: 60px;
+                    margin-top: 50px;
                     color: #ffffff;
                     font-size: 48px;
                     line-height: 1.2;
@@ -2555,17 +2580,311 @@
             }
 
 
+
+            .packing-title {
+                font-weight: bolder;
+                font-size: 45px;
+                color: #f9f9f9;
+                margin-bottom: 100px;
+            }
+
+            /* .new-pak {
+                        margin: 20px 0px 100px;
+                        margin-left: 78px;
+                        font-size: 28px;
+                    } */
+
+            .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+                /* color: black; */
+                border-bottom: 3px solid #34a853;
+            }
+
+            .navbar-nav>li>.new-pak {
+
+                font-size: 32px;
+                margin: 10px 0px;
+                margin-left: 78px;
+                margin-bottom: 100px;
+            }
+
+            .custom-btn .let-btn {
+                margin-top: 120px;
+            }
+
+            #Industries-Served {
+                color: white;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 4px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 164px;
+                color: #ffffff;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 66px;
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* border-radius: 15px; */
+            }
+
+            .product-card-title {
+                color: whitesmoke;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px;
+                min-height: 50px;
+                font-family: 'Poppins', sans-serif;
+                /* border-left: 10px solid #34a853; */
+                display: inline-block;
+            }
+
+
+
+            .bgimg {
+                height: 605px;
+                width: 124%;
+            }
+
+            .img-responsive {
+                margin-top: 16px;
+                margin-left: 116px;
+                width: 60%;
+            }
+
+            .navbar-collapse.collapse {
+                padding: 0;
+                margin-top: 8px;
+            }
+
+            header.header4 #main-navigation-wrapper .nav>li {
+                padding: 22px 0;
+            }
+
+            .contact-heading-text {
+                font-size: 28px;
+            }
+
+            .contact-text {
+                font-size: 14px;
+            }
+
+            .let-btn {
+                position: absolute;
+                margin: 20px 20px;
+                padding: 12px;
+                color: #ffffff;
+                background-color: #34a853;
+                bottom: -75px;
+            }
+
+            #h1-text {
+                color: #ffffff;
+                padding: 28px 0px 0px 78px;
+                margin-top: 60px;
+                color: #ffffff;
+                font-size: 48px;
+                line-height: 1.2;
+            }
+
+
+
+            #h1-text+p {
+                padding: 20px 38px;
+                color: #ffffff;
+            }
+
+
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 164px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* color: var(--primary-white); */
+                /* border-radius: 15px; */
+            }
+
+            .Latest-Innovations {
+                padding: 60px 0px 72px 20px;
+            }
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                width: 280px;
+                border-radius: 10px;
+            }
+
+            .review-card img {
+                max-width: 60px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                bottom: 5px;
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 360px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+
+
+
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 102px;
+
+
+            }
+
+            .contact-heading {
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 28px;
+            }
+
+            #h1-text {
+                line-height: 1.2;
+                font-size: 36px;
+                margin-top: 100px;
+                color: #ffffff;
+                padding: 0 20px;
+            }
         }
 
         /* Full HD (1920 × 1080) */
-        @media screen and (min-width: 1920px) {
+        @media screen and (max-width: 1920px) {
 
             /* cards */
             /* cards */
             #h1-text {
                 line-height: 1.2;
-                font-size: 36px;
-                margin-top: 80px;
+                font-size: 45px;
+                margin-top: 100px;
                 color: #ffffff;
                 padding: 0 20px;
             }
@@ -2705,7 +3024,7 @@
         </nav>
     </header>
 
-    <section id="hero-carousel" class="carousel slide" data-ride="carousel">
+    <section id="hero-carousel" class="carousel slide " data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
@@ -2752,18 +3071,16 @@
                         <div
                             class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
                             <h1 class="fw-bold text-white" id="h1-text">Manufacturers and Exporters of
-
+                                Speciality Films
+                                for
+                                Protective and Packaging
                                 Applications.</h1>
                             <h2 class="new-pak" style="color: #34a853;">
                                 Your Packaging, Our Commitment
                             </h2>
                             <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
-                                        prolong
-                                        product lifecycles.
-                                    </p> -->
-                            <a href="#" class="btn custom-btn text-white let-btn">Let's
-                                Collaborate
-                                →</a>
+                                                        prolong    product lifecycles. </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
                         </div>
                         <!-- Right Image Section -->
                         <div class="col-12 col-md-6 col-lg-6 image-container ">
@@ -2782,17 +3099,16 @@
                         <div
                             class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
                             <h1 class="fw-bold text-white" id="h1-text">Manufacturers and Exporters of
-                            </h1>
+                                Speciality Films
+                                for
+                                Protective and Packaging
+                                Applications.</h1>
                             <h2 class="new-pak" style="color: #34a853;">
                                 Your Packaging, Our Commitment
                             </h2>
                             <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
-                                        prolong
-                                        product lifecycles.
-                                    </p> -->
-                            <a href="#" class="btn custom-btn text-white let-btn">Let's
-                                Collaborate
-                                →</a>
+                                                        prolong    product lifecycles. </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
                         </div>
                         <!-- Right Image Section -->
                         <div class="col-12 col-md-6 col-lg-6 image-container ">
