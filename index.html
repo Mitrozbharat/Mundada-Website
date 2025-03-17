@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/set1.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="css\font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -84,7 +85,7 @@
         .course-title {
             font-size: 18px;
             font-weight: bold;
-            color: white;
+            color: #011327;
         }
 
         .course-description {
@@ -92,7 +93,7 @@
             opacity: 0.85;
             text-align: left;
             margin-bottom: 5px;
-            color: white;
+            color: #011327;
         }
 
         .btn-custom {
@@ -712,8 +713,7 @@
 
         .packing-title {
             font-weight: bolder;
-            font-size: 45px;
-            color: #f9f9f9;
+            font-size: 34px;
         }
 
         .Industries-Served {
@@ -733,7 +733,7 @@
         }
 
         .company_mission {
-            background-image: url(img/bg-img.svg);
+            background-color: white;
             background-size: cover;
             background-position: center;
             background-repeat:
@@ -742,6 +742,19 @@
             position: relative;
             padding-top: 50px;
             min-height: 600px;
+        }
+
+
+        .company_mission-number {
+            background-image: url(img/bg-img.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat:
+                no-repeat;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            position: relative;
+            padding-top: 50px;
+            min-height: 400px;
         }
 
         .product-card-01 {
@@ -1273,6 +1286,73 @@
                 padding: 0 15px 30px 15px;
                 margin: 0px 0px;
             }
+
+            .packaging-card {
+                width: 100%;
+                background: linear-gradient(to top right, #a0a1a1 50%, #373d50 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
         }
 
         @media (min-width: 414) and (max-width: 667px) {
@@ -1595,6 +1675,73 @@
                 margin: 0px 0px;
             }
 
+            .packaging-card {
+                width: 100%;
+                background: linear-gradient(to top right, #a0a1a1 50%, #373d50 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
+
         }
 
         /* Tablets (576px to 991px) */
@@ -1803,6 +1950,72 @@
                 margin-top: 20px;
             }
 
+            .packaging-card {
+                width: 100%;
+                background: linear-gradient(to top right, #a0a1a1 50%, #373d50 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
         }
 
         @media (min-width: 767px) and (max-width: 1023px) {
@@ -1878,9 +2091,9 @@
 
             .packing-title {
                 font-weight: bolder;
-                font-size: 45px;
-                color: #f9f9f9;
-                margin-bottom: 100px;
+                font-size: 34px;
+                /* color: #f9f9f9; */
+                /* margin-bottom: 100px; */
             }
 
             .new-pak {
@@ -1912,7 +2125,7 @@
             }
 
             #Industries-Served {
-                color: white;
+                color: #011327;
                 font-size: 20px;
                 font-weight: 800;
                 margin-left: 4px;
@@ -1921,8 +2134,7 @@
                 z-index: 1;
                 font-size: 20px;
                 font-weight: 800;
-                margin-left: 164px;
-                color: #ffffff;
+                margin-left: 45px;
                 padding: 2px;
                 border-left: 6px solid #34a853;
             }
@@ -2078,6 +2290,73 @@
                 color: #ffffff;
             }
 
+            .packaging-card {
+                width: 45%;
+                background: linear-gradient(to top right, #373d50 50%, #a0a1a1 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
+
         }
 
         @media (min-width: 1024px) and (max-width: 1366px) {
@@ -2154,7 +2433,7 @@
                 z-index: 1;
                 font-size: 20px;
                 font-weight: 800;
-                margin-left: 100px;
+                margin-left: 60px;
                 color: #ffffff;
                 padding: 2px;
                 border-left: 6px solid #34a853;
@@ -2281,6 +2560,75 @@
                 white-space: nowrap;
             }
 
+            .packaging-card {
+                width: 30.33%;
+                background: linear-gradient(to top right, #373d50 50%, #a0a1a1 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-main .row .packaging-card {
+                margin-left: 22px;
+            }
+
+
+
         }
 
         /* HD (1366 × 768) */
@@ -2303,6 +2651,22 @@
 
             }
 
+
+
+
+            .packaging-card {
+                width: 30.33%;
+                background-color: #f8f9fa;
+                /* Light gray background */
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                /* Subtle shadow */
+                transition: transform 0.3s ease-in-out;
+                margin: 0 10px;
+                /* Centering the card */
+            }
 
             .carousel-indicators .active {
                 border: 1px solid black;
@@ -2334,11 +2698,15 @@
                 background-size: cover;
             }
 
+            .packaging-main .row .packaging-card {
+                margin-left: 22px;
+            }
+
 
             @media (min-width: 992px) {
                 .packing-title {
                     font-weight: bolder;
-                    font-size: 45px;
+                    font-size: 34px;
                     color: #f9f9f9;
                     margin-bottom: 100px;
                 }
@@ -2367,7 +2735,7 @@
                 }
 
                 #Industries-Served {
-                    color: white;
+                    color: #242c56;
                     font-size: 20px;
                     font-weight: 800;
                     margin-left: 4px;
@@ -2625,8 +2993,8 @@
 
             .packing-title {
                 font-weight: bolder;
-                font-size: 45px;
-                color: #f9f9f9;
+                font-size: 34px;
+                color: #000;
                 margin-bottom: 100px;
             }
 
@@ -2654,7 +3022,7 @@
             }
 
             #Industries-Served {
-                color: white;
+                color: #011327;
                 font-size: 20px;
                 font-weight: 800;
                 margin-left: 4px;
@@ -2664,7 +3032,6 @@
                 font-size: 20px;
                 font-weight: 800;
                 margin-left: 164px;
-                color: #ffffff;
                 padding: 2px;
                 border-left: 6px solid #34a853;
             }
@@ -2921,8 +3288,8 @@
         /* Full HD (1920 × 1080) */
         @media screen and (max-width: 1920px) {
 
-            /* cards */
-            /* cards */
+
+
             #h1-text {
                 line-height: 1.2;
                 font-size: 46px;
@@ -3016,9 +3383,142 @@
                 white-space: nowrap;
             }
 
+            .packaging-card-number {
+                background: linear-gradient(to top right, #1ba34b 50%, #011327 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 10px;
+                color: white;
+            }
+
+            .packaging-card {
+
+                background: linear-gradient(to top right, #011327 50%, #1ba34b 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .packaging-card-number:hover {
+                background-position: top right;
+                transform: scale(1.05);
+
+            }
+
+            .packaging-card-number:hover p {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            /* .packaging-main .row .packaging-card {
+                margin-left: 22px;
+            } */
+
+            .packing-card-number {
+                border-radius: 50%;
+            }
 
 
 
+            .packaging-card-sub {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                height: 145px;
+                width: 150px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+
+
+
+        }
+
+        .counter-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .counter-box {
+
+            font-size: 2em;
+            font-weight: bold;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 260px;
+            display: block;
         }
     </style>
 </head>
@@ -3192,20 +3692,20 @@
         <div class="container section-title" data-aos="fade-up">
             <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;">Our Product</h1>
             <p class="product-subtitle">
-                Manufacturers and exporters of Specialty Films for Protective and Packaging applications. Show below
-                pics on front page
-                of brochure. </p>
-
+                Our materials consist of large molecules made up of repeating structural units. These materials are
+                essential in
+                various industries due to their versatility, durability, and lightweight properties.
+            </p>
 
         </div><!-- End Section Title -->
 
         <div class="container py-2" id="Mindful-Beginnings">
             <div class="row d-flex justify-content-center align-items-center "> <!-- Card 1 -->
-                <div class="col-md-4 col-lg-4 card-course my-2 ">
+                <div class="col-md-3 col-lg-3 card-course my-2 ">
                     <div class="course-card bg-dark text-white">
-                        <img src="img/our-product-01.svg" alt="Mindful Beginnings">
+                        <img src="img/products/Stretch-hood-film.jpg" alt="Mindful Beginnings">
                         <div class="course-content">
-                            <h5 class="course-title">Stretch Hood Film</h5>
+                            <h5 class="course-title" style="color: #011327;">Stretch Hood Film</h5>
                             <p class="course-description ">
                                 Engineered for superior load stability and weather resistance, ideal for
                                 pharmaceuticals, glass bottles, and textile
@@ -3217,11 +3717,11 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-md-4 col-lg-4 my-2 card-course" id="Letting-go">
+                <div class="col-md-3 col-lg-3 my-2 card-course" id="Letting-go">
                     <div class="course-card bg-dark text-white">
-                        <img src="img/our-product-02.svg" alt="Art of Letting Go">
+                        <img src="img/products/product-0101.jpg" alt="Art of Letting Go">
                         <div class="course-content">
-                            <h5 class="course-title">LDPE Shrink Film</h5>
+                            <h5 class="course-title" style="color: #011327;">LDPE Shrink Film</h5>
                             <p class="course-description ">
                                 Ensures tight and secure wrapping for beverages, food packaging, and various industrial
                                 applications.
@@ -3231,11 +3731,11 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md-4 col-lg-4 card-course my-2" id="Mindful-Beginnings">
+                <div class="col-md-4 col-lg-3 card-course my-2" id="Mindful-Beginnings">
                     <div class="course-card bg-dark text-white">
-                        <img src="img//our-product-03.svg" alt="Mindful Beginnings">
+                        <img src="img/products/product-0102.jpg" alt="Mindful Beginnings">
                         <div class="course-content">
-                            <h5 class="course-title">Surface Protection Film</h5>
+                            <h5 class="course-title" style="color: #011327;">Surface Protection Film</h5>
                             <p class="course-description ">
                                 Engineered for superior load stability and weather resistance, ideal for
                                 pharmaceuticals, glass bottles, and textile
@@ -3246,6 +3746,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3 col-lg-3 card-course my-2" id="Mindful-Beginnings">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/products/ARMOR-stretchfilm-image5.jpg" alt="Mindful Beginnings">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #011327;">VCI - STRETCH WRAP FILM</h5>
+                            <p class="course-description " style="color: #011327;"> Designed for superior corrosion
+                                protection and secure
+                                packaging, ideal for metal
+                                components, automotive parts, and industrial machinery. </p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -3254,15 +3767,13 @@
 
 
 
-
-
-    <section class=" company_mission">
-        <p class="text-white" id="Industries-Served" style="color: white;">
+    <section class=" company_mission " data-aos="fade-up" data-aos-duration="3000">
+        <p class="Industries-Served" id="Industries-Served">
             Industries Served
         </p>
 
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:rgba(39, 46, 84, 0.9);">
-        </div>
+        <!-- <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:rgba(39, 46, 84, 0.9);">
+        </div> -->
 
         <div class="container-fluid">
 
@@ -3270,89 +3781,153 @@
             <div class="container position-relative">
                 <div class="row mb-5">
                     <!-- Text Content -->
-                    <div class="col-lg-6 col-md-6 text-white" style="margin-top: 30px;">
+                    <div class="col-lg-6 col-md-12 text-white " style="margin-top: 30px;">
                         <h2 class="mb-4 packing-title ">Tailored <span class="text-success">Packaging
                                 Solutions</span> for Every Industry
                         </h2>
-                        <p class="text-white" style="color: whitesmoke;">We provide advanced packaging and
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-white" style="margin-top: 30px;">
+
+                        <p class="text-dark">We provide advanced packaging and
                             <br>protective film
                             solutions to meet the
                             diverse<br> needs of:
                         </p>
 
                     </div>
-                    <div class="row justify-content-center align-items-center " style="margin-top: 30px;">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="row g-4">
-                                <div class="col-md-4 col-sm-4 text-center">
-                                    <img src="img/pask/noun-pharmaceuticals-7515030 1.svg"
-                                        alt="Pharmaceuticals Industry" class="img-fluid industry-icon">
-                                    <p style="color: var(--primary-white);"> Pharmaceuticals</p>
+                    <div class="row justify-content-center align-items-center" style="margin-top: 30px;">
+                        <div class="col-lg-12 col-md-12 packaging-main">
+
+
+                            <div class="row  g-lg-4">
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-pharmaceuticals-7515030 1.svg"
+                                            alt="Pharmaceuticals Industry" class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Pharmaceuticals</p>
+                                    <p class="packing-card-text">Description: Packaging solutions for medicines,
+                                        ensuring safety and
+                                        compliance.</p>
                                 </div>
-                                <div class="col-md- col-sm-4 text-center">
-                                    <img src="img/pask/noun-clothing-5512867 1.svg" alt="Textile Industry"
-                                        class="img-fluid industry-icon">
-                                    <p style="color: var(--primary-white);">
-                                        Textiles And Fabrics
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img"><img src="img/pask/noun-clothing-5512867 1.svg"
+                                            alt="Textile Industry" class="img-fluid industry-icon"></div>
+                                    <p class="packing-card-title">Textiles And Fabrics</p>
+                                    <p class="packing-card-text">Description: Protective packaging for garments and
+                                        textile storage, and boards.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-automotive-engineering-7093681 1.svg"
+                                            alt="Packaging Industry" class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Automotive and Engineering</p>
+                                    <p class="packing-card-text">Description: Packaging for automobile components to
+                                        prevent damage.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-electronics-7330977 1.svg" alt="Electronics Industry"
+                                            class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Electronics And Appliances</p>
+                                    <p class="packing-card-text">Description: Anti-static and shockproof packaging for
+                                        electronic devices.
                                     </p>
                                 </div>
-                                <div class="col-md-4 col-sm-4 text-center">
-                                    <img src="img/pask/noun-automotive-engineering-7093681 1.svg"
-                                        alt="Packaging Industry" class="img-fluid industry-icon">
-                                    <p style="color: var(--primary-white);">Automotive and Engineering</p>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-food-and-beverages-7096148 1.png"
+                                            alt="Food & Beverages Industry" class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Food & Beverages</p>
+                                    <p class="packing-card-text">Description: Flexible and hygienic packaging to
+                                        preserve food freshness.
+                                    </p>
                                 </div>
-
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-construction-7303425 1.svg" alt="Construction Industry"
+                                            class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Construction And Glass</p>
+                                    <p class="packing-card-text">Description: Protective film solutions for glass and
+                                        construction
+                                        materials.</p>
+                                </div>
                             </div>
-                            <div class="row g-4" style="margin-top: 40px;">
-                                <div class="col-md-4 col-sm-4 text-center">
-                                    <img src="img/pask/noun-food-and-beverages-7096148 1.png"
-                                        alt="Pharmaceuticals Industry" class="img-fluid industry-icon">
-                                    <p style="color: var(--primary-white);">Food & Beverages</p>
-
-                                </div>
-                                <div class="col-md- col-sm-4 text-center">
-                                    <img src="img/pask/noun-construction-7303425 1.svg" alt="Textile Industry"
-                                        class="img-fluid industry-icon">
-                                    <p style="color: var(--primary-white);">Construction And Glass</p>
-
-                                </div>
-                                <div class="col-md-4 col-sm-4 text-center">
-                                    <img src="img/pask/noun-electronics-7330977 1.svg" alt="Packaging Industry"
-                                        class="img-fluid industry-icon">
-                                    <p style="color: var(--primary-white);">Electronics And
-                                        Appliances</p>
-
-                                </div>
-
-                            </div>
-
-
-
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Industry Icons -->
 
             </div>
             <div class="row">
-                <div class="col-lg-8"></div>
-                <div class="col-lg-4">
-                    <p class="text-white Industry-Applications" style=" font-size: 20px; font-weight: 600; position: relative; z-index: 1;
-                                           text-align: center;
-                                           color: #ffffff;
-                                           padding: 10px;
-                                           background-color: #34a853;
-                                           border-left: 6px solid #34a853;margin-top: 50px;">
+                <div class="col-lg-12 text-center" style="display: flex; justify-content: center;">
+                    <p class="text-white Industry-Applications text-center"
+                        style=" font-size: 20px; font-weight: 600; 
+                                                           color: #ffffff;
+                                                           padding: 10px;
+                                                           background-color: #34a853;
+                                                           border-left: 6px solid #34a853;margin-top: 50px;width: 350px;">
                         See Industry Applications >>
                     </p>
                 </div>
+
             </div>
     </section>
 
 
+    <section class="company_mission-number">
 
-    <section class="bg-white">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(39, 46, 84, 0.9);">
+        </div>
+
+        <div class="container position-relative">
+            <div class="row mb-5">
+                <!-- Title -->
+                <div class="col-lg-12 text-center text-white">
+
+                    <div class="row " style="margin-top: 60px;display: flex; justify-content: space-between;">
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="245">0</div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="187">0</div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="310">0</div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="420"> + 0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <section class=" bg-white">
         <p id="Our-Clients"> Our Clients</p>
         <div class="container" style="margin-top: 20px;">
 
@@ -3369,11 +3944,14 @@
                 </div>
                 <div class="col-md-6">
                     <div class="grid-item">
-                        <h2 class="Trusted-clientshidden" style="color: #fff;">Trusted by 300+ clients.</h2>
+                        <h2 class="Trusted-clientshidden" style="color: #fff;">Trusted by 300+
+                            clients.</h2>
                         <p style="color: #000;">
-                            At Mundada Polymers, we are proud to be the trusted choice of 300+ clients across various
+                            At Mundada Polymers, we are proud to be the trusted choice of 300+
+                            clients across various
                             industries. Our commitment to
-                            quality, innovation, and reliability has helped businesses achieve superior performance with
+                            quality, innovation, and reliability has helped businesses achieve
+                            superior performance with
                             our
                             advanced polymer
                             solutions.
@@ -3385,18 +3963,35 @@
 
 
             <div class="clients">
-                <img src="img/partners/Group 5.svg" alt="Nature Delight" class="client-logo">
-                <img src="img/partners/Group 6.svg" alt="Sunrich" class="client-logo">
-                <img src="img/partners/image 10.svg" alt="Canpack" class="client-logo">
-                <img src="img/partners/image 12.svg" alt="AM/NS India" class="client-logo">
-                <img src="img/partners/Group 1856.svg" alt="Carlsberg" class="client-logo">
-                <img src="img/partners/21 1.svg" alt="Campa" class="client-logo">
-                <img src="img/partners/36 1.svg" alt="JSW Steel" class="client-logo">
-                <img src="img/partners/Group 1854.svg" alt="Bailey" class="client-logo">
-                <img src="img/partners/Group 1855.svg" alt="Tata Steel" class="client-logo">
+                <img src="img/partners/client01.svg" class="client-logo">
+                <img src="img/partners/client02.svg" class="client-logo">
+                <img src="img/partners/client03.svg" class="client-logo">
+                <img src="img/partners/client04.svg" class="client-logo">
+                <img src="img/partners/client05.svg" class="client-logo">
+                <img src="img/partners/client06.svg" class="client-logo">
 
-                <!-- <img src="img/partners/customer-10.jpg" alt="Oxyrich" class="client-logo">
-                <img src="img/partners/customer-11.jpg" alt="Asian Beverage" class="client-logo"> -->
+                <img src="img/partners/client07.svg" class="client-logo">
+                <img src="img/partners/client08.svg" class="client-logo">
+                <img src="img/partners/client09.svg" class="client-logo">
+                <img src="img/partners/client10.jpg" class="client-logo">
+                <img src="img/partners/client11.jpg" class="client-logo">
+                <img src="img/partners/client12.jpg" class="client-logo">
+
+                <img src="img/partners/client13.jpg" class="client-logo">
+                <img src="img/partners/client14.jpg" class="client-logo">
+                <img src="img/partners/client15.jpg" class="client-logo">
+                <img src="img/partners/client16.jpg" class="client-logo">
+                <img src="img/partners/client17.jpg" class="client-logo">
+                <img src="img/partners/client18.jpg" class="client-logo">
+
+                <img src="img/partners/client19.jpg" class="client-logo">
+                <img src="img/partners/client20.jpg" class="client-logo">
+                <img src="img/partners/client21.jpg" class="client-logo">
+                <img src="img/partners/client22.jpg" class="client-logo">
+                <img src="img/partners/client23.jpg" class="client-logo">
+                <img src="img/partners/client24.jpg" class="client-logo">
+
+
             </div>
         </div>
     </section>
@@ -3723,6 +4318,31 @@
     <script src="js/theme.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/myjs.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const counters = document.querySelectorAll(".counter-box");
+
+            counters.forEach(counter => {
+                counter.innerText = "0";
+                const target = parseInt(counter.getAttribute("data-target"));
+                let current = 0;
+                const interval = setInterval(() => {
+                    if (current < target) {
+                        current++;
+                        counter.innerText = current;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 30); // Ultra slow (30ms per increment)
+            });
+        });
+    </script>
     <script>function checkZoomLevel() {
             let zoomLevel = Math.round(window.devicePixelRatio * 100); // Get zoom percentage
             let styleTag = document.getElementById("disableMediaQuery");
