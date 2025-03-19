@@ -740,7 +740,7 @@
             background-position: center;
             background-repeat:
                 no-repeat;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
             position: relative;
             padding-top: 50px;
             min-height: 600px;
@@ -756,7 +756,7 @@
             box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
             position: relative;
             padding-top: 50px;
-         height: 400px;
+            height: 400px;
         }
 
         .product-card-01 {
@@ -876,7 +876,7 @@
             max-width: 100px;
             /* border-radius: 50%; */
             margin: 10px 0;
-         
+
 
         }
 
@@ -2025,8 +2025,10 @@
 
 
             #carousel-indicators-lg {
-                bottom: -40px
+                bottom: -45px;
             }
+
+
 
             #carousel-indicators-lg .active {
                 border: 1px solid black;
@@ -2035,14 +2037,9 @@
 
             #carousel-indicators-lg :not(.active) {
                 border: 1px solid black;
-                /* Change border for inactive indicators */
-                opacity: 0.8;
-                /* Optional: Make inactive indicators less visible */
             }
 
-            /* cards */
 
-          
 
 
             .review-card img {
@@ -2368,21 +2365,21 @@
                 /* height: 100vh; */
             }
 
+
             #carousel-indicators-lg {
-                bottom: -23px;
+                bottom: -45px;
             }
 
             #carousel-indicators-lg .active {
                 border: 1px solid black;
-                background-color: #000;
+                background-color: black;
             }
 
             #carousel-indicators-lg :not(.active) {
                 border: 1px solid black;
-                /* Change border for inactive indicators */
-                opacity: 0.8;
-                /* Optional: Make inactive indicators less visible */
+                background-color: white;
             }
+
 
             .review-card .clinetname {
                 background: #28a745;
@@ -2882,7 +2879,7 @@
 
                 /* cards */
 
-               
+
                 .review-card {
                     background: #fff;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -3167,7 +3164,7 @@
 
             /* cards */
 
-        
+
 
             .review-card {
                 background: #fff;
@@ -3289,7 +3286,7 @@
                 padding: 0 20px;
             }
 
-          
+
 
             /* .reviews-container {
                     display: flex;
@@ -3323,12 +3320,12 @@
                 padding: 4px 9px;
                 border-radius: 0px 0px 0px 0px;
                 font-size: 18px;
-                 position: relative; 
+                position: relative;
                 top: -18px;
                 /* left: 50%; */
                 transform: translateX(-23%);
                 margin-bottom: 10px;
-               
+
             }
 
             /* .review-card .clinetname {
@@ -3445,7 +3442,7 @@
                 font-size: 20px;
                 font-weight: 600;
                 color: #242c56;
-                margin:25px 0px 5px;
+                margin: 25px 0px 5px;
                 font-family: 'Lato', sans-serif !important;
             }
 
@@ -3516,23 +3513,23 @@
         }
 
 
-        .subheadtext{
+        .subheadtext {
             font-size: 16px;
             font-weight: 300;
         }
 
 
-        .stats{
-            color:#eee;margin-top:50px;
-        }
-        .stats h2
-        {
-            color:#eee;
+        .stats {
+            color: #eee;
+            margin-top: 50px;
         }
 
-        .stats p
-        {
-            color:#eee;
+        .stats h2 {
+            color: #eee;
+        }
+
+        .stats p {
+            color: #eee;
         }
     </style>
 </head>
@@ -3634,7 +3631,7 @@
             </div>
 
 
-              <div class="item ">
+            <div class="item ">
                 <div class="container-fluid h-100">
                     <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
                         style="background-color:#242c56;">
@@ -3642,7 +3639,7 @@
                         <!-- Left Text Section -->
                         <div
                             class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Cutting-Edge 
+                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Cutting-Edge
                                 <br> Film Manufacturing
                             </h2>
                             <h1 class="new-pak" style="color: #ffffff;">
@@ -3691,7 +3688,7 @@
                     </div>
                 </div>
             </div>
-          
+
 
         </div>
 
@@ -3707,14 +3704,15 @@
     <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
         style="background-color: #ffffff;">
         <div class="container section-title" data-aos="fade-up">
-            <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;font-size: 34px;">Our <span class="text-success">Products</span></h1>
+            <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;font-size: 34px;">Our <span
+                    class="text-success">Products</span></h1>
             <p class="product-subtitle subheadtext">
-                At Mundada Polymers, we offer a wide range of specialty polymer films 
-                designed for various industrial and commercial applications. 
-                <br>Our films ensure protection, durability, 
+                At Mundada Polymers, we offer a wide range of specialty polymer films
+                designed for various industrial and commercial applications.
+                <br>Our films ensure protection, durability,
                 and efficiency, catering to multiple industries.
             </p>
-          
+
 
         </div><!-- End Section Title -->
 
@@ -3731,9 +3729,9 @@
                                 industries.
 
                             </p>
-                            <h4><a href="#"> Read More    <i class="fas fa-long-arrow-right" style="font-size: 17px;
-    padding-left: 15px;padding-top: 20px;"></i> </a></h4> 
-                           
+                            <h4><a href="#"> Read More <i class="fas fa-long-arrow-right" style="font-size: 17px;
+    padding-left: 15px;padding-top: 20px;"></i> </a></h4>
+
                         </div>
                     </div>
                 </div>
@@ -3746,12 +3744,12 @@
                             <h5 class="course-title" style="color: #242c56;">LDPE Shrink Film</h5>
                             <p class="course-description ">
                                 Ensures tight and secure wrapping for beverages,
-                                 food packaging,
-                                 <br> and various industrial
-                                 <br> applications.
+                                food packaging,
+                                <br> and various industrial
+                                <br> applications.
                             </p>
-                            <h4><a href="#"> Read More    <i class="fas fa-long-arrow-right" style="font-size: 17px;
-    padding-left: 15px;padding-top: 20px;"></i> </a></h4> 
+                            <h4><a href="#"> Read More <i class="fas fa-long-arrow-right" style="font-size: 17px;
+    padding-left: 15px;padding-top: 20px;"></i> </a></h4>
                         </div>
                     </div>
                 </div>
@@ -3768,8 +3766,8 @@
                                 industries.
 
                             </p>
-                            <h4><a href="#"> Read More    <i class="fas fa-long-arrow-right" style="font-size: 17px;
-    padding-left: 15px;padding-top: 20px;"></i> </a></h4> 
+                            <h4><a href="#"> Read More <i class="fas fa-long-arrow-right" style="font-size: 17px;
+    padding-left: 15px;padding-top: 20px;"></i> </a></h4>
 
                         </div>
                     </div>
@@ -3783,8 +3781,8 @@
                                 protection and secure
                                 packaging, ideal for metal
                                 components, automotive parts, and industrial machinery. </p>
-                                <h4><a href="#"> Read More    <i class="fas fa-long-arrow-right" style="font-size: 17px;
-    padding-left: 15px;padding-top: 20px;"></i> </a></h4> 
+                            <h4><a href="#"> Read More <i class="fas fa-long-arrow-right" style="font-size: 17px;
+    padding-left: 15px;padding-top: 20px;"></i> </a></h4>
                         </div>
                     </div>
                 </div>
@@ -3831,9 +3829,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 text-white" style="margin-top: 30px;">
 
-                        <p class="text-dark subheadtext">At Mundada Polymers, 
-                            we understand that every industry has unique packaging needs. 
-                            That’s why we offer customized polymer film solutions designed 
+                        <p class="text-dark subheadtext">At Mundada Polymers,
+                            we understand that every industry has unique packaging needs.
+                            That’s why we offer customized polymer film solutions designed
                             to provide maximum protection, durability, and efficiency for your products.
                         </p>
 
@@ -3845,8 +3843,8 @@
                             <div class="row  g-lg-4">
                                 <div class="col-md-6 col-sm-12 packaging-card">
                                     <div class="packaging-img">
-                                        <img src="img/industries/pharmaceuticals.svg"
-                                            alt="Pharmaceuticals Industry" class="img-fluid industry-icon">
+                                        <img src="img/industries/pharmaceuticals.svg" alt="Pharmaceuticals Industry"
+                                            class="img-fluid industry-icon">
                                     </div>
                                     <p class="packing-card-title">Pharmaceuticals</p>
                                     <p class="packing-card-text">Packaging solutions for medicines,
@@ -3862,8 +3860,8 @@
                                 </div>
                                 <div class="col-md-6 col-sm-12 packaging-card">
                                     <div class="packaging-img">
-                                        <img src="img/industries/automotive-engineering.svg"
-                                            alt="Packaging Industry" class="img-fluid industry-icon">
+                                        <img src="img/industries/automotive-engineering.svg" alt="Packaging Industry"
+                                            class="img-fluid industry-icon">
                                     </div>
                                     <p class="packing-card-title">Automotive and Engineering</p>
                                     <p class="packing-card-text">Packaging for automobile components to
@@ -3881,8 +3879,8 @@
                                 </div>
                                 <div class="col-md-6 col-sm-12 packaging-card">
                                     <div class="packaging-img">
-                                        <img src="img/industries/food-and-beverage.svg"
-                                            alt="Food & Beverages Industry" class="img-fluid industry-icon">
+                                        <img src="img/industries/food-and-beverage.svg" alt="Food & Beverages Industry"
+                                            class="img-fluid industry-icon">
                                     </div>
                                     <p class="packing-card-title">Food & Beverages</p>
                                     <p class="packing-card-text">Flexible and hygienic packaging to
@@ -3929,40 +3927,41 @@
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(39, 46, 84, 0.9);">
         </div>
 
-     <!--=========Statistics Start============-->
-    
+        <!--=========Statistics Start============-->
+
         <div class="container" style="z-index: 999;
     position: absolute;margin-left: 7%;">
-           <div class="row text-white" >
-<center>
-            <h3 style="margin-bottom: 10px !important;
-    color: #eee;"><span class="text-success">Powering Industries</span>  with Unmatched Excellence  </h3>
-            <p class="subheadtext text-white" style="color:#eee">  Numbers That Reflect Our Commitment to Quality and Innovation</p>
-      
-            <ul class="stats" style="color:#eee;margin-top:50px;">
-                 <li>
-                    <h2>400 </h2>
-                    <p> Capacity</p>
-                 </li>
-                 <li>
-                    <h2>3</h2>
-                    <p> Years</p>
-                 </li>
-                 <li>
-                    <h2>300</h2>
-                    <p> Clients</p>
-                 </li>
-                 <li>
-                    <h2>10</h2>
-                    <p> Products</p>
-                 </li>
-              </ul>
-            </center>
-           </div>
+            <div class="row text-white">
+                <center>
+                    <h3 style="margin-bottom: 10px !important;
+    color: #eee;"><span class="text-success">Powering Industries</span> with Unmatched Excellence </h3>
+                    <p class="subheadtext text-white" style="color:#eee"> Numbers That Reflect Our Commitment to Quality
+                        and Innovation</p>
+
+                    <ul class="stats" style="color:#eee;margin-top:50px;">
+                        <li>
+                            <h2>400 </h2>
+                            <p> Capacity</p>
+                        </li>
+                        <li>
+                            <h2>3</h2>
+                            <p> Years</p>
+                        </li>
+                        <li>
+                            <h2>300</h2>
+                            <p> Clients</p>
+                        </li>
+                        <li>
+                            <h2>10</h2>
+                            <p> Products</p>
+                        </li>
+                    </ul>
+                </center>
+            </div>
         </div>
-     </section>
-     <!--=========Statistics end============-->
-        </div>
+    </section>
+    <!--=========Statistics end============-->
+    </div>
     </section>
 
     <section class=" bg-white">
@@ -3972,7 +3971,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="grid-item">
-                        <h2 class="Trusted-clients">Trusted by 
+                        <h2 class="Trusted-clients">Trusted by
                             <span class="text-success">300+ clients.</span><br> Join them and grow your<br>
                             business with our
                             Products!
@@ -3982,7 +3981,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="grid-item">
-                    
+
                         <p class="subheadtext" style="color: #000;margin-top:25px;">
                             At Mundada Polymers, we are proud to be the trusted choice of 300+
                             clients across various
@@ -4010,24 +4009,24 @@
                 <img src="img/partners/client07.svg" class="client-logo">
                 <img src="img/partners/client08.svg" class="client-logo">
                 <img src="img/partners/client09.svg" class="client-logo">
+
+                <!-- 
                 <img src="img/partners/client10.jpg" class="client-logo">
                 <img src="img/partners/client11.jpg" class="client-logo">
                 <img src="img/partners/client12.jpg" class="client-logo">
-
                 <img src="img/partners/client13.jpg" class="client-logo">
                 <img src="img/partners/client14.jpg" class="client-logo">
                 <img src="img/partners/client15.jpg" class="client-logo">
                 <img src="img/partners/client16.jpg" class="client-logo">
                 <img src="img/partners/client17.jpg" class="client-logo">
                 <img src="img/partners/client18.jpg" class="client-logo">
-
                 <img src="img/partners/client19.jpg" class="client-logo">
                 <img src="img/partners/client20.jpg" class="client-logo">
                 <img src="img/partners/client21.jpg" class="client-logo">
                 <img src="img/partners/client22.jpg" class="client-logo">
                 <img src="img/partners/client23.jpg" class="client-logo">
                 <img src="img/partners/client24.jpg" class="client-logo">
-
+ -->
 
             </div>
         </div>
@@ -4101,7 +4100,7 @@
             </div>
         </div>
     </section>
-  
+
 
     <section class="news-section">
         <div class="news-header">
@@ -4137,7 +4136,7 @@
 
                 <div id="new-carousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators" id="carousel-indicators-lg">
+                    <ol class="carousel-indicators" id="carousel-indicators-lg" style="bottom: -45px;">
                         <li data-target="#new-carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#new-carousel" data-slide-to="1"></li>
                         <li data-target="#new-carousel" data-slide-to="2"></li>
@@ -4146,6 +4145,29 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
+                            <div class=" col-12 col-md-6 col-lg-6">
+                                <div class="card news-card">
+                                    <img src="img/new-update01.svg" alt="Trade Show">
+                                    <div class="card-body news-card-body">
+                                        <h5 class="news-card-title" style="color: #242c56;">New product launch</h5>
+                                        <p class="news-card-text" style="color: #242c56;">Advanced high-strength shrink
+                                            films!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card news-card">
+                                    <img src="img/new-update02 (2).svg" alt="Trade Show">
+                                    <div class="card-body news-card-body">
+                                        <h5 class="news-card-title" style="color: #242c56;">Upcoming trade shows and
+                                            exhibitions
+                                        </h5>
+                                        <p class="news-card-text" style="color: #242c56;">Meet us ➝</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
                             <div class=" col-12 col-md-6 col-lg-6">
                                 <div class="card news-card">
                                     <img src="img/new-update01.svg" alt="Trade Show">
