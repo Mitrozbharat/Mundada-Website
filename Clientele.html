@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mundada Polymer</title>
-    <link rel="icon" type="image/x-icon" href="img/index-page/favicon.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -63,6 +63,8 @@
             transition: transform 0.2s;
             margin: 20px 0px;
         }
+
+
 
         .course-card img {
             width: 100%;
@@ -738,7 +740,7 @@
             background-position: center;
             background-repeat:
                 no-repeat;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
             position: relative;
             padding-top: 50px;
             min-height: 600px;
@@ -751,7 +753,7 @@
             background-position: center;
             background-repeat:
                 no-repeat;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
             position: relative;
             padding-top: 50px;
             min-height: 400px;
@@ -1075,7 +1077,7 @@
                 background-position: center;
                 background-repeat:
                     no-repeat;
-                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+                /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
                 position: relative;
                 padding-top: 50px;
                 min-height: 600px;
@@ -1452,7 +1454,7 @@
                 background-position: center;
                 background-repeat:
                     no-repeat;
-                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+                /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
                 position: relative;
                 padding-top: 50px;
                 min-height: 600px;
@@ -2033,12 +2035,9 @@
             }
 
 
-            .carousel-indicators li {
-                margin-bottom: 35px;
-
-
+            .carousel-indicators+li {
+                margin-top: 200px;
             }
-
 
 
 
@@ -2057,11 +2056,7 @@
                 /* Centering the card */
             }
 
-            .carousel-indicators .active {
-                border: 1px solid black;
-                background-color: white;
-                margin-bottom: 35px;
-            }
+
 
             #h1-text {
                 margin-left: 56px;
@@ -2139,11 +2134,12 @@
                 border-left: 6px solid #34a853;
             }
 
+
             .Trusted-clients {
                 color: #242c56;
                 margin-top: 66px;
-                font-weight: 600;
-                font-size: 30px;
+                font-weight: 800;
+                font-size: 32px;
             }
 
             .card-body p {
@@ -2421,11 +2417,12 @@
                 border-left: 6px solid #34a853;
             }
 
+
             .Trusted-clients {
                 color: #242c56;
                 margin-top: 66px;
-                font-weight: 600;
-                font-size: 30px;
+                font-weight: 800;
+                font-size: 32px;
             }
 
             .card-body p {
@@ -2754,11 +2751,12 @@
             #carousel-indicators-lg {
 
                 position: absolute;
+
                 bottom: 10px;
                 left: 50%;
                 z-index: 15;
                 width: 60%;
-                top: 278px;
+                top: 350px;
                 padding-left: 0;
                 margin-left: -30%;
                 text-align: center;
@@ -2806,15 +2804,12 @@
             }
 
             .packaging-card-number {
-                background: linear-gradient(to top right, #1ba34b 50%, #011327 50%);
                 /* Gradient fills from gray to dark */
                 background-size: 200% 200%;
                 background-position: bottom left;
                 padding: 20px;
                 border-radius: 10px;
                 text-align: center;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
                 margin: 10px;
                 color: white;
             }
@@ -3001,11 +2996,12 @@
                 border-left: 6px solid #34a853;
             }
 
+
             .Trusted-clients {
                 color: #242c56;
                 margin-top: 66px;
-                font-weight: 600;
-                font-size: 30px;
+                font-weight: 800;
+                font-size: 32px;
             }
 
 
@@ -3327,8 +3323,8 @@
             .Trusted-clients {
                 color: #242c56;
                 margin-top: 66px;
-                font-weight: 600;
-                font-size: 30px;
+                font-weight: 800;
+                font-size: 32px;
             }
 
             .card-body p {
@@ -3504,14 +3500,13 @@
             }
 
             .packaging-card-number {
-                background: linear-gradient(to top right, #1ba34b 50%, #011327 50%);
-                /* Gradient fills from gray to dark */
+
                 background-size: 200% 200%;
                 background-position: bottom left;
                 padding: 40px;
                 border-radius: 50%;
                 text-align: center;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
                 transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
                 margin: 10px;
                 color: white;
@@ -3576,6 +3571,53 @@
 
 
         }
+
+        #Esteemed-Clientele {
+            color: #011327;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            margin: 40px 0px 0px 40px;
+            padding: 2px;
+            border-left: 6px solid #34a853;
+
+        }
+
+
+        .value-text18 {
+            font-size: 18px;
+        }
+
+        .stats-section {
+            background-color: #1a2744;
+            /* Adjust based on your color scheme */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .stats-box {
+            border-right: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stats-box:last-child {
+            border-right: none;
+        }
+
+        .stats-number {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .stats-label {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
     </style>
 </head>
 
@@ -3584,14 +3626,14 @@
     <header class="header4">
         <nav id="main-navigation-wrapper" class="navbar navbar-default">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 display-block d-none d-lg-block">
-                <a href="index.html" class="logo"><img src="img/munda-logo-final.svg" class="img-responsive"
+                <a href="index.html" class="logo"><img src="img/index-page/logo.svg" class="img-responsive"
                         alt="logo"></a>
             </div>
             <div class="container">
                 <div class="navbar-header">
                     <div class="logo-menu">
                         <a href="index.html">
-                            <img src="img/munda-logo-final.svg" alt="Logo">
+                            <img src="img/index-page/logo.svg" alt="Logo">
                         </a>
                     </div>
                     <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false"
@@ -3617,7 +3659,7 @@
                             <i class="fa fa-chevron-down"></i>
                         </li>
                         <li class="dropdown">
-                            <a href="#">Clientele</a>
+                            <a href="Clientele.html">Clientele</a>
                             <i class="fa fa-chevron-down"></i>
                         </li>
                         <li>
@@ -3634,406 +3676,51 @@
         </nav>
     </header>
 
-    <section id="hero-carousel" class="carousel slide " data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#hero-carousel" data-slide-to="1"></li>
-            <li data-target="#hero-carousel" data-slide-to="2"></li>
-        </ol>
+    <section>
+        <div class="container h-100" style="background-color:#d8ebff;margin-top: 80px; height: 75vh;">
+            <p id="Esteemed-Clientele"> Our Esteemed Clientele</p>
+            <div class="container" style="margin-top: 20px;">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="container-fluid h-100">
-                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
-                        style="background-color:#242c56;">
-
-                        <!-- Left Text Section -->
-                        <div
-                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Your Packaging,<br> Our
-                                Commitment</h2>
-                            <h1 class="new-pak" style="color: #ffffff;">
-
-                                Manufacturers and Exporters of <br>
-                                Speciality Films
-                                for
-                                Protective and Packaging
-                                Applications.
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="grid-item">
+                            <h1 class="Trusted-clients">Trusted by Industry <br> Leaders, Driven by<br> Quality and
+                                Innovation
                             </h1>
-                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
-                                        prolong    product lifecycles. </p> -->
-                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
-                        </div>
-                        <!-- Right Image Section -->
-                        <div class="col-12 col-md-6 col-lg-6 image-container ">
-                            <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="item ">
-                <div class="container-fluid h-100">
-                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
-                        style="background-color:#242c56;">
-
-                        <!-- Left Text Section -->
-                        <div
-                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Cutting-Edge Polymer
-                                <br> Film Manufacturing
-                            </h2>
-                            <h1 class="new-pak" style="color: #ffffff;">
-
-                                Using state-of-the-art technology for unmatched quality and durability.
-
-                            </h1>
-                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
-                                                    prolong    product lifecycles. </p> -->
-                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
-                        </div>
-                        <!-- Right Image Section -->
-                        <div class="col-12 col-md-6 col-lg-6 image-container ">
-                            <img src="img/slider04.jpg" alt="Company Image" class="bgimg w-100 h-100">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="item ">
-                <div class="container-fluid h-100">
-                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
-                        style="background-color:#242c56;">
-
-                        <!-- Left Text Section -->
-                        <div
-                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Sustainable packaging
-                                <br> reduces waste.
-                            </h2>
-                            <h1 class="new-pak" style="color: #ffffff;">
-
-                                Committed to eco-friendly <br>
-                                manufacturing with recyclable
-                                and biodegradable films.
-                            </h1>
-                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
-                                                    prolong    product lifecycles. </p> -->
-                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
-                        </div>
-                        <!-- Right Image Section -->
-                        <div class="col-12 col-md-6 col-lg-6 image-container ">
-                            <img src="img/slider03.jpg" alt="Company Image" class="bgimg w-100 h-100">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#hero-carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </section>
-
-    <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
-        style="background-color: #ffffff;">
-        <div class="container section-title" data-aos="fade-up">
-            <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;">Our Product</h1>
-            <p class="product-subtitle">
-                Our materials consist of large molecules made up of repeating structural units. These materials are
-                essential in
-                various industries due to their versatility, durability, and lightweight properties.
-            </p>
-
-        </div><!-- End Section Title -->
-
-        <div class="container py-2" id="Mindful-Beginnings">
-            <div class="row d-flex justify-content-center align-items-center "> <!-- Card 1 -->
-                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2 ">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/products/Stretch-hood-film.jpg" alt="Mindful Beginnings">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: #011327;">Stretch Hood Film</h5>
-                            <p class="course-description ">
-                                Engineered for superior load stability and weather resistance, ideal for
-                                pharmaceuticals, glass bottles, and textile
-                                industries.
-
+                    <div class="col-md-6">
+                        <div class="grid-item">
+                            <h2 class="Trusted-clientshidden" style="color: #d8ebff;">Trusted by 300+
+                                clients.</h2>
+                            <p class="value-text18" style="color: #000;">
+                                At Mundada Polymers, we take pride in serving some of the most renowned brands across
+                                various industries. Our commitment
+                                to quality, innovation, and reliability has earned us the trust of leading companies in
+                                pharmaceuticals, packaging, food
+                                & beverage, textiles, and industrial manufacturing.
                             </p>
                         </div>
                     </div>
                 </div>
+                <p class="container " style="font-size: 18px; margin: 40px ;">
+                    We believe in long-term partnerships and strive to deliver tailor-made solutions that enhance our
+                    clients’ operational
+                    efficiency.
+                </p>
 
-                <!-- Card 2 -->
-                <div class=" col-sm-6 col-md-6 col-lg-3 my-2 card-course" id="Letting-go">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/products/product-0101.jpg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: #011327;">LDPE Shrink Film</h5>
-                            <p class="course-description ">
-                                Ensures tight and secure wrapping for beverages, food packaging, and various industrial
-                                applications.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Card 3 -->
-                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/products/product-0102.jpg" alt="Mindful Beginnings">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: #011327;">Surface Protection Film</h5>
-                            <p class="course-description ">
-                                Engineered for superior load stability and weather resistance, ideal for
-                                pharmaceuticals, glass bottles, and textile
-                                industries.
-
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/products/ARMOR-stretchfilm-image5.jpg" alt="Mindful Beginnings">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: #011327;">VCI - STRETCH WRAP FILM</h5>
-                            <p class="course-description " style="color: #011327;"> Designed for superior corrosion
-                                protection and secure
-                                packaging, ideal for metal
-                                components, automotive parts, and industrial machinery. </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center" style="display: flex; justify-content: center;">
-                    <p class="text-white Industry-Applications text-center"
-                        style=" font-size: 20px; font-weight: 600; 
-                                                                       color: #ffffff;
-                                                                       padding: 10px;
-                                                                       background-color: #34a853;
-                                                                       border-left: 6px solid #34a853;margin-top: 50px;width: 350px;">
-                        See All Products >>
-                    </p>
-                </div>
 
             </div>
-        </div>
-
-
-    </section>
-
-
-
-    <section class=" company_mission " data-aos="fade-up" data-aos-duration="3000">
-        <p class="Industries-Served" id="Industries-Served">
-            Industries Served
-        </p>
-
-        <!-- <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:rgba(39, 46, 84, 0.9);">
-        </div> -->
-
-        <div class="container-fluid">
-
-
-            <div class="container position-relative">
-                <div class="row mb-5">
-                    <!-- Text Content -->
-                    <div class="col-lg-6 col-md-12 text-white " style="margin-top: 30px;">
-                        <h2 class="mb-4 packing-title ">Tailored <span class="text-success">Packaging
-                                Solutions</span> for Every Industry
-                        </h2>
-
-                    </div>
-                    <div class="col-lg-6 col-md-12 text-white" style="margin-top: 30px;">
-
-                        <p class="text-dark">We provide advanced packaging and
-                            <br>protective film
-                            solutions to meet the
-                            diverse<br> needs of:
-                        </p>
-
-                    </div>
-                    <div class="row justify-content-center align-items-center" style="margin-top: 30px;">
-                        <div class="col-lg-12 col-md-12 packaging-main">
-
-
-                            <div class="row  g-lg-4">
-                                <div class="col-md-6 col-sm-12 packaging-card">
-                                    <div class="packaging-img">
-                                        <img src="img/pask/noun-pharmaceuticals-7515030 1.svg"
-                                            alt="Pharmaceuticals Industry" class="img-fluid industry-icon">
-                                    </div>
-                                    <p class="packing-card-title">Pharmaceuticals</p>
-                                    <p class="packing-card-text">Description: Packaging solutions for medicines,
-                                        ensuring safety and
-                                        compliance.</p>
-                                </div>
-                                <div class="col-md-6 col-sm-12 packaging-card">
-                                    <div class="packaging-img"><img src="img/pask/noun-clothing-5512867 1.svg"
-                                            alt="Textile Industry" class="img-fluid industry-icon"></div>
-                                    <p class="packing-card-title">Textiles And Fabrics</p>
-                                    <p class="packing-card-text">Description: Protective packaging for garments and
-                                        textile storage, and boards.</p>
-                                </div>
-                                <div class="col-md-6 col-sm-12 packaging-card">
-                                    <div class="packaging-img">
-                                        <img src="img/pask/noun-automotive-engineering-7093681 1.svg"
-                                            alt="Packaging Industry" class="img-fluid industry-icon">
-                                    </div>
-                                    <p class="packing-card-title">Automotive and Engineering</p>
-                                    <p class="packing-card-text">Description: Packaging for automobile components to
-                                        prevent damage.</p>
-                                </div>
-                                <div class="col-md-6 col-sm-12 packaging-card">
-                                    <div class="packaging-img">
-                                        <img src="img/pask/noun-electronics-7330977 1.svg" alt="Electronics Industry"
-                                            class="img-fluid industry-icon">
-                                    </div>
-                                    <p class="packing-card-title">Electronics And Appliances</p>
-                                    <p class="packing-card-text">Description: Anti-static and shockproof packaging for
-                                        electronic devices.
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-sm-12 packaging-card">
-                                    <div class="packaging-img">
-                                        <img src="img/pask/noun-food-and-beverages-7096148 1.png"
-                                            alt="Food & Beverages Industry" class="img-fluid industry-icon">
-                                    </div>
-                                    <p class="packing-card-title">Food & Beverages</p>
-                                    <p class="packing-card-text">Description: Flexible and hygienic packaging to
-                                        preserve food freshness.
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-sm-12 packaging-card">
-                                    <div class="packaging-img">
-                                        <img src="img/pask/noun-construction-7303425 1.svg" alt="Construction Industry"
-                                            class="img-fluid industry-icon">
-                                    </div>
-                                    <p class="packing-card-title">Construction And Glass</p>
-                                    <p class="packing-card-text">Description: Protective film solutions for glass and
-                                        construction
-                                        materials.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Industry Icons -->
-
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center" style="display: flex; justify-content: center;">
-                    <p class="text-white Industry-Applications text-center"
-                        style=" font-size: 20px; font-weight: 600; 
-                                                           color: #ffffff;
-                                                           padding: 10px;
-                                                           background-color: #34a853;
-                                                           border-left: 6px solid #34a853;margin-top: 50px;width: 350px;">
-                        See Industry Applications >>
-                    </p>
-                </div>
-
-            </div>
-    </section>
-
-
-    <section class="company_mission-number">
-        <p class="Industries-Served" id="Industries-Served" style="color: white;">
-            Our Growth Story
-        </p>
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(39, 46, 84, 0.9);">
-        </div>
-
-        <div class="container position-relative">
-            <div class="row mb-5">
-                <!-- Title -->
-                <div class="col-lg-12 text-center text-white">
-
-                    <div class="row " style="margin-top: 60px;display: flex; justify-content: space-between;">
-
-                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
-                            <div class="packaging-card-sub-border">
-                                <div class="counter-box" data-target="245">0</div>
-                                <p>Clients</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
-                            <div class="packaging-card-sub-border">
-                                <div class="counter-box" data-target="187">0</div>
-                                <p>Products</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
-                            <div class="packaging-card-sub-border">
-                                <div class="counter-box" data-target="40">0</div>
-                                <p>Years</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
-                            <div class="packaging-card-sub-border">
-                                <div class="counter-box" data-target="420"> "+" 0</div>
-                                <p>Employee</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
 
         </div>
-        </div>
-    </section>
+        <div class="container">
+            <div class="text-center mb-4" style="margin: 60px 0px;">
+                <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;">Trusted by Industry
+                    Leaders?</h1>
 
-    <section class=" bg-white">
-        <p id="Our-Clients"> Our Clients</p>
-        <div class="container" style="margin-top: 20px;">
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="grid-item">
-                        <h2 class="Trusted-clients">Trusted by 300+
-                            clients.<br> Join them and grow your<br>
-                            business with our
-                            Products!
-                        </h2>
-
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="grid-item">
-                        <h2 class="Trusted-clientshidden" style="color: #fff;">Trusted by 300+
-                            clients.</h2>
-                        <p style="color: #000;">
-                            At Mundada Polymers, we are proud to be the trusted choice of 300+
-                            clients across various
-                            industries. Our commitment to
-                            quality, innovation, and reliability has helped businesses achieve
-                            superior performance with
-                            our
-                            advanced polymer
-                            solutions.
-                        </p>
-                    </div>
-                </div>
             </div>
-
-
-
             <div class="clients">
                 <img src="img/partners/client01.svg" class="client-logo">
                 <img src="img/partners/client02.svg" class="client-logo">
@@ -4045,264 +3732,269 @@
                 <img src="img/partners/client07.svg" class="client-logo">
                 <img src="img/partners/client08.svg" class="client-logo">
                 <img src="img/partners/client09.svg" class="client-logo">
-                <img src="img/partners/client10.jpg" class="client-logo">
-                <img src="img/partners/client11.jpg" class="client-logo">
-                <img src="img/partners/client12.jpg" class="client-logo">
 
-                <img src="img/partners/client13.jpg" class="client-logo">
-                <img src="img/partners/client14.jpg" class="client-logo">
-                <img src="img/partners/client15.jpg" class="client-logo">
-                <img src="img/partners/client16.jpg" class="client-logo">
-                <img src="img/partners/client17.jpg" class="client-logo">
-                <img src="img/partners/client18.jpg" class="client-logo">
-
-                <img src="img/partners/client19.jpg" class="client-logo">
-                <img src="img/partners/client20.jpg" class="client-logo">
-                <img src="img/partners/client21.jpg" class="client-logo">
-                <img src="img/partners/client22.jpg" class="client-logo">
-                <img src="img/partners/client23.jpg" class="client-logo">
-                <img src="img/partners/client24.jpg" class="client-logo">
-
+                <!-- 
+                            <img src="img/partners/client10.jpg" class="client-logo">
+                            <img src="img/partners/client11.jpg" class="client-logo">
+                            <img src="img/partners/client12.jpg" class="client-logo">
+                            <img src="img/partners/client13.jpg" class="client-logo">
+                            <img src="img/partners/client14.jpg" class="client-logo">
+                            <img src="img/partners/client15.jpg" class="client-logo">
+                            <img src="img/partners/client16.jpg" class="client-logo">
+                            <img src="img/partners/client17.jpg" class="client-logo">
+                            <img src="img/partners/client18.jpg" class="client-logo">
+                            <img src="img/partners/client19.jpg" class="client-logo">
+                            <img src="img/partners/client20.jpg" class="client-logo">
+                            <img src="img/partners/client21.jpg" class="client-logo">
+                            <img src="img/partners/client22.jpg" class="client-logo">
+                            <img src="img/partners/client23.jpg" class="client-logo">
+                            <img src="img/partners/client24.jpg" class="client-logo">
+             -->
 
             </div>
         </div>
     </section>
 
-    <section style="background-color: var(--primary-bg);">
-        <div class="container" style="margin-top: 20px;">
+
+    <section class="values-section">
+        <div class="container"
+            style="background-color: #242c56; color: white;padding: 40px 10px 40px 50px;; border-radius: 8px;">
             <div class="row">
-                <div class=" col-12 col-md-6 col-lg-6">
-                    <h1 style="color: #ffffff;">Get a Custom Packaging Solution Tailored to Your Needs!</h1>
-                </div>
-                <div class=" col-12 col-md-6 col-lg-6">
-                    <p style="color: #ffffff;">
-                        Tell us your packaging requirements, and our experts will provide you with a tailored quote.
-                        Whether it's stretch hood
-                        films, shrink films, or surface protection solutions, we've got you covered!
-                    </p>
-
-                    <a class="ftr-read-more my-lg-4"
-                        style="background-color: #1ba34b; border: none; color: whitesmoke;padding: 15px 20px;"
-                        href="about.html">Get a
-                        Quote >> </a>
-
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-3 stats-box">
+                            <div class="stats-number">300+</div>
+                            <div class="stats-label">Trusted Clients</div>
+                        </div>
+                        <div class="col-md-3 stats-box">
+                            <div class="stats-number">25+</div>
+                            <div class="stats-label">Years of Legacy</div>
+                        </div>
+                        <div class="col-md-3 stats-box">
+                            <div class="stats-number">99%</div>
+                            <div class="stats-label">Client Satisfaction</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stats-number">09+</div>
+                            <div class="stats-label">Industries Served</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+
+        </div>
+
+        </div>
         </div>
     </section>
+    <section class=" company_mission " data-aos="fade-up" data-aos-duration="3000">
+        <p class="Industries-Served" id="Industries-Served">
+            Clients Reviews
+        </p>
 
-    <section class="quality-assurance-section py-5 ">
-        <div class="container my-5 certifications-section">
-            <h2 class="certifications-header">Certifications and Quality Assurance</h2>
 
-            <div class="row " style="margin-top: 72px;">
 
-                <div class="col-lg-6">
-                    <div class="cert-item mgb">
-                        <div class="cert-icon">✔</div>
-                        <div class="cert-content">
-                            <p class="text-white text-certification-heading">ISO 9001 Certified</p>
-                            <p class="text-white">Ensuring top-tier manufacturing <br> processes.</p>
-                        </div>
+        <div class="container-fluid">
+
+
+            <div class="container position-relative">
+                <div class="row mb-5">
+                    <!-- Text Content -->
+                    <div class="col-lg-4 col-md-5 text-white " style="margin-top: 30px;">
+                        <h2 class="mb-4 packing-title ">Hear What OurSatisfied Clients Have to Say About Our Packaging
+                            Solutions
+                        </h2>
+                        <button class="btn btn-custom w-50 mx-auto" fdprocessedid="c4zd8g">Read More Updates</button>
                     </div>
-                    <div class="cert-item mg">
-                        <div class="cert-icon">✔</div>
-                        <div class="cert-content">
-                            <p class=" text-certification-heading">Eco-Friendly Solutions</=>
-                            <p>Sustainable and recyclable materials <br> used in production.</p>
-                        </div>
-                    </div>
-                    <div class="cert-item mg">
-                        <div class="cert-icon">✔</div>
-                        <div class="cert-content">
-                            <p class=" text-certification-heading">Industry-Specific Compliance</p>
-                            <p>Tested for food safety, durability, and <br> chemical resistance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h2 class="fw-bold Committed ">Committed to <span class="highlight">Quality</span>,<br> Certified
-                        for
-                        <span class="highlight">Excellence</span>
-                    </h2>
-                    <p class="fs-5" style="font-size: 18px;">Our packaging films meet global quality <br> standards to
-                        ensure
-                        reliability and
-                        compliance.</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center text-center my-lg-4">
-                <button class="btn btn-custom w-50 mx-auto">Learn More</button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="reviews-section">
-                <p class="title product-title ">Clients Reviews</p>
-                <p>Hear What Our Satisfied Clients Have to Say About Our Packaging Solutions</p>
-            </div>
+                    <div class="col-lg-8 col-md-7 text-white" style="margin-top: 50px;">
 
-            <div class="reviews-container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="review-card">
-                            <p class="clinetname">Rahul Mehta</p>
-                            <p>"Mundada Polymers' stretch hood films have significantly improved our packaging
-                                efficiency. The
-                                durability
-                                and flexibility are unmatched!"</p>
-                            <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
-                            <div class="company-tag">@TexFab Exports</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="review-card">
-                            <p class="clinetname">Arun Joshi</p>
-                            <p>"Their surface protection films have helped us prevent scratches on high-value glass
-                                sheets
-                                during
-                                transportation. Highly recommended!"</p>
-                            <img src="img/client/client02.svg" alt="Rahul Mehta" class="review-image">
-                            <div class="company-tag">@GlassTech Industries</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 ">
-                        <div class="review-card">
-                            <p class="clinetname">Vikas Sharma</p>
-                            <p>"Mundada Polymers delivers reliable and cost-effective stretch wrap solutions for our
-                                textile
-                                shipments.
-                                Excellent product consistency!"</p>
-                            <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
-                            <div class="company-tag">@Acropolis Attire</div>
-                        </div>
-                    </div>
-                </div>
+                        <div id="new-carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators" id="carousel-indicators-lg">
+                                <li data-target="#new-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#new-carousel" data-slide-to="1"></li>
+                                <li data-target="#new-carousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" id="carousel-inner-lg">
+                                <div class="item active">
+                                    <div class="reviews-container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="review-card">
+                                                    <p class="clinetname">Rahul Mehta</p>
+                                                    <p>"Mundada Polymers' stretch hood films have significantly improved
+                                                        our packaging
+                                                        efficiency. The
+                                                        durability
+                                                        and flexibility are unmatched!"</p>
+                                                    <img src="img/client/client01.svg" alt="Rahul Mehta"
+                                                        class="review-image">
+                                                    <div class="company-tag">@TexFab Exports</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="review-card">
+                                                    <p class="clinetname">Arun Joshi</p>
+                                                    <p>"Their surface protection films have helped us prevent scratches
+                                                        on high-value glass
+                                                        sheets
+                                                        during
+                                                        transportation. Highly recommended!"</p>
+                                                    <img src="img/client/client02.svg" alt="Rahul Mehta"
+                                                        class="review-image">
+                                                    <div class="company-tag">@GlassTech Industries</div>
+                                                </div>
+                                            </div>
 
 
 
 
-            </div>
-
-        </div>
-    </section>
-
-    <section class="news-section">
-        <div class="news-header">
-            <h2 class="certifications-header" style="font-size: 2.5rem;">News and Updates</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="card news-card-text">
-                    <h1 class="news-title text-align-left Latest-Innovations ">Latest
-                        Innovations<br> and
-                        Industry
-                        <br>Insights
-                    </h1>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-12  d-flex justify-content-center align-items-center text-start my-lg-4">
-                        <button class="news-button">Read More Updates</button>
-
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-6 col-lg-6">
-                <p class="news-content mgb" style="margin-bottom: 30px;">
-                    Stay updated with groundbreaking innovations and industry trends. Explore how we're revolutionizing
-                    packaging with sustainable and high-performance solutions.
-                </p>
-
-
-
-
-
-                <div id="new-carousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators" id="carousel-indicators-lg">
-                        <li data-target="#new-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#new-carousel" data-slide-to="1"></li>
-                        <li data-target="#new-carousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" id="carousel-inner-lg">
-                        <div class="item active">
-                            <div class="row">
-                                <div class=" col-12 col-md-6 col-lg-6">
-                                    <div class="card news-card">
-                                        <img src="img/new-update01.svg" alt="Trade Show">
-                                        <div class="card-body news-card-body">
-                                            <h5 class="news-card-title" style="color: #011327;">New product launch</h5>
-                                            <p class="news-card-text" style="color: #011327;">Advanced high-strength
-                                                shrink
-                                                films!</p>
                                         </div>
                                     </div>
+
+
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-6">
-                                    <div class="card news-card">
-                                        <img src="img/new-update02 (2).svg" alt="Trade Show">
-                                        <div class="card-body news-card-body">
-                                            <h5 class="news-card-title" style="color: #011327;">Upcoming trade shows and
-                                                exhibitions
-                                            </h5>
-                                            <p class="news-card-text" style="color: #011327;">Meet us ➝</p>
+                                <div class="item ">
+                                    <div class="reviews-container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="review-card">
+                                                    <p class="clinetname">Rahul Mehta</p>
+                                                    <p>"Mundada Polymers' stretch hood films have significantly improved
+                                                        our packaging
+                                                        efficiency. The
+                                                        durability
+                                                        and flexibility are unmatched!"</p>
+                                                    <img src="img/client/client01.svg" alt="Rahul Mehta"
+                                                        class="review-image">
+                                                    <div class="company-tag">@TexFab Exports</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="review-card">
+                                                    <p class="clinetname">Arun Joshi</p>
+                                                    <p>"Their surface protection films have helped us prevent scratches
+                                                        on high-value glass
+                                                        sheets
+                                                        during
+                                                        transportation. Highly recommended!"</p>
+                                                    <img src="img/client/client02.svg" alt="Rahul Mehta"
+                                                        class="review-image">
+                                                    <div class="company-tag">@GlassTech Industries</div>
+                                                </div>
+                                            </div>
+
+
+
+
                                         </div>
                                     </div>
+
+
                                 </div>
+
+                                <!-- Controls -->
+                                <!-- <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#hero-carousel" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a> -->
                             </div>
-                        </div>
 
-                        <div class="item ">
-                            <div class="row" id="mdflex">
-                                <div class=" col-12 col-md-6 col-lg-6">
-                                    <div class="card news-card">
-                                        <img src="img/new-update01.svg" alt="Trade Show">
-                                        <div class="card-body news-card-body">
-                                            <h5 class="news-card-title" style="color: #011327;">New product launch</h5>
-                                            <p class="news-card-text" style="color: #011327;">Advanced high-strength
-                                                shrink
-                                                films!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-6">
-                                    <div class="card news-card">
-                                        <img src="img/new-update02 (2).svg" alt="Trade Show">
-                                        <div class="card-body news-card-body">
-                                            <h5 class="news-card-title" style="color: #011327;">Upcoming trade shows and
-                                                exhibitions
-                                            </h5>
-                                            <p class="news-card-text" style="color: #011327;">Meet us ➝</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
 
-                    <!-- Controls -->
-                    <!-- <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#hero-carousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a> -->
                 </div>
 
+    </section>
 
+    <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
+        style="background-color: #ffffff;">
+        <div class="container section-title" data-aos="fade-up">
+            <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;">Industries We Serve</h1>
+            <p class="product-subtitle">
+                We cater to a diverse range of industries, ensuring high-performance and cost-effective solutions:
+            </p>
 
+        </div><!-- End Section Title -->
+
+        <div class="container py-2" id="Mindful-Beginnings">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="industry-card">
+                        <img src="img/client-page/1.svg" alt="Pharmaceuticals">
+                        <div class="industry-overlay">
+                            <div class="industry-title">Pharmaceuticals</div>
+                            <div class="industry-text">Medical-grade packaging and protective films</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="industry-card">
+                        <img src="img/client-page/2.svg" alt="Food & Beverage">
+                        <div class="industry-overlay">
+                            <div class="industry-title">Food & Beverage</div>
+                            <div class="industry-text">Safe, durable, and eco-friendly packaging solutions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="industry-card">
+                        <img src="img/client-page/3.svg" alt="Textiles & Garments">
+                        <div class="industry-overlay">
+                            <div class="industry-title">Textiles & Garments</div>
+                            <div class="industry-text">Secure stretch films for packaging and transport</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="industry-card">
+                        <img src="img/client-page/4.svg" alt="Automotive and Engineering">
+                        <div class="industry-overlay">
+                            <div class="industry-title">Automotive and Engineering</div>
+                            <div class="industry-text">Industrial protection and transit packaging</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="industry-card">
+                        <img src="img/client-page/5.svg" alt="Construction and Glass">
+                        <div class="industry-overlay">
+                            <div class="industry-title">Construction and Glass</div>
+                            <div class="industry-text">High-strength films for material safety</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="industry-card">
+                        <img src="img/client-page/6.svg" alt="Electronics and Appliances">
+                        <div class="industry-overlay">
+                            <div class="industry-title">Electronics and Appliances</div>
+                            <div class="industry-text">Protective films for safe handling and transit</div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
         </div>
 
+
     </section>
+
+
+
 
 
     <section class="projectSec">
