@@ -798,11 +798,71 @@
             align-items: center;
         }
 
+        .course-card {
+            position: relative;
+            color: white;
+            border-radius: 12px;
+            margin: 10px 0px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+        .course-content {
+            background-color: #1d3557;
+            position: absolute;
+            padding: 20px 0px;
+            bottom: 59px;
+            left: 0px;
+            right: 0px;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .why-content {
+            background-color: #1d3557;
+            position: absolute;
+            padding: 30px 0px;
+            top: 20px;
+            left: 0px;
+            right: 0px;
+            z-index: 10;
+            text-align: center;
+        }
+
         @media (min-width: 360px) and (max-width: 800px) {
             .new-pak {
                 margin: 20px 0px;
                 margin-left: 0px;
                 font-size: 18px;
+            }
+
+            .about-text-head {
+                text-align: left;
+                border-left: 6px solid green;
+                margin: 33px 33px 33px 0px;
+                font-size: 25px;
+                height: 30px;
+                padding-left: 10px;
+            }
+
+            .experienceLeft p {
+                margin-top: 20px;
+                margin-left: 10px;
+                text-align: left;
             }
 
             .btn {
@@ -1019,6 +1079,54 @@
                 padding: 20px;
                 border-radius: 10px;
             }
+
+            .home6 h1 {
+                margin-top: 80px;
+                color: white;
+                font-size: 2.5rem;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
         }
 
         @media (min-width: 375px) and (max-width: 667px) {
@@ -1026,6 +1134,13 @@
                 margin: 20px 0px;
                 margin-left: 0px;
                 font-size: 18px;
+            }
+
+
+            .experienceLeft p {
+                margin-top: 70px;
+                margin-left: 10px;
+                text-align: left;
             }
 
             .btn {
@@ -1071,7 +1186,9 @@
             }
 
             .home6 h1 {
-                color: var(--primary-bg);
+                margin-top: 80px;
+                color: white;
+                font-size: 3rem;
             }
 
             #productimg01 {
@@ -1272,6 +1389,121 @@
             .product-info {
                 width: 50%;
             }
+
+            .course-card-why {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-align: center;
+                color: black;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+                height: 220px;
+                width: 100%;
+                background-color: #e3f0ff;
+                padding: 20px 0px;
+                border: 1px solid #c5d9ff;
+                margin: 10px 0px;
+            }
+
+
+
+            .course-card-why h5 {
+                background-color: #1d3557;
+                /* Dark blue header */
+                color: white;
+                padding: 15px;
+                margin: 0;
+                width: 100%;
+            }
+
+            .course-card-why p {
+                padding: 25px 0px 56px 0px;
+
+            }
+
+
+            /* Adjust spacing between cards */
+            .row.d-flex {
+                gap: 20px;
+                /* Adds spacing between the cards */
+            }
+
+
+
+            .why-product-title {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 3rem;
+                width: 100%;
+            }
+
+            .Innovative {
+                margin: 30px 0px 20px 0px;
+                font-size: 32px;
+                color: #ffffff;
+            }
+
+            .let-btn {
+                color: white;
+                margin: 20px 0px 0px 0px;
+                padding: 10px;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .company_mission-number {
+                background-image: url(img/product-page/products-Hero.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
+                position: relative;
+                padding-top: 50px;
+                height: 50vh;
+            }
         }
 
         /* Media Queries for Responsive Design */
@@ -1283,6 +1515,16 @@
                 margin-left: 0px;
                 font-size: 18px;
             }
+
+            .about-text-head {
+                text-align: left;
+                border-left: 6px solid green;
+                margin: 33px 33px 33px 0px;
+                font-size: 25px;
+                height: 30px;
+                padding-left: 10px;
+            }
+
 
             .reviews-container {
                 grid-template-columns: 1fr;
@@ -1450,6 +1692,120 @@
                 /* border-radius: 4px; */
             }
 
+            .course-card-why {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-align: center;
+                color: black;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+                height: 220px;
+                width: 100%;
+                background-color: #e3f0ff;
+                padding: 20px 0px;
+                border: 1px solid #c5d9ff;
+                margin: 10px 0px;
+            }
+
+
+
+            .course-card-why h5 {
+                background-color: #1d3557;
+                /* Dark blue header */
+                color: white;
+                padding: 15px;
+                margin: 0;
+                width: 100%;
+            }
+
+            .course-card-why p {
+                padding: 25px 0px 56px 0px;
+
+            }
+
+
+            /* Adjust spacing between cards */
+            .row.d-flex {
+                gap: 20px;
+                /* Adds spacing between the cards */
+            }
+
+
+
+            .why-product-title {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 2rem;
+                width: 100%;
+            }
+
+            .Innovative {
+                margin: 30px 0px 20px 0px;
+                font-size: 32px;
+                color: #ffffff;
+            }
+
+            .let-btn {
+                color: white;
+                margin: 20px 0px 0px 0px;
+                padding: 10px;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .company_mission-number {
+                background-image: url(img/product-page/products-Hero.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
+                position: relative;
+                padding-top: 50px;
+                height: 50vh;
+            }
         }
 
         /* Tablets (576px to 991px) */
@@ -1684,7 +2040,8 @@
 
             .Innovative {
                 margin: 30px 0px 20px 0px;
-                font-size: 36px;
+                font-size: 32px;
+                color: #ffffff;
             }
 
             .subheadtext {
@@ -1715,6 +2072,100 @@
                 padding-top: 50px;
                 height: 50vh;
             }
+
+            .course-card-why {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-align: center;
+                color: black;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+                height: 220px;
+                width: 100%;
+                background-color: #e3f0ff;
+                padding: 20px 0px;
+                border: 1px solid #c5d9ff;
+                margin: 10px 16px;
+            }
+
+
+
+            .course-card-why h5 {
+                background-color: #1d3557;
+                /* Dark blue header */
+                color: white;
+                padding: 15px;
+                margin: 0;
+                width: 100%;
+            }
+
+            .course-card-why p {
+                padding: 25px 0px 56px 0px;
+
+            }
+
+
+            /* Adjust spacing between cards */
+            .row.d-flex {
+                gap: 20px;
+                /* Adds spacing between the cards */
+            }
+
+
+
+            .why-product-title {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 2rem;
+                width: 100%;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+
         }
 
         /* Desktops (992px and up) */
@@ -1996,6 +2447,99 @@
                 font-size: 42px;
                 color: #eee;
             }
+
+            .course-card-why {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-align: center;
+                color: black;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+                height: 250px;
+                width: 22%;
+                background-color: #e3f0ff;
+                padding: 20px 10px;
+                border: 1px solid #c5d9ff;
+                margin: 10px 16px;
+            }
+
+
+
+            .course-card-why h5 {
+                background-color: #1d3557;
+                /* Dark blue header */
+                color: white;
+                padding: 15px;
+                margin: 0;
+                width: 100%;
+            }
+
+            .course-card-why p {
+                padding: 25px 0px 56px 0px;
+
+            }
+
+
+            /* Adjust spacing between cards */
+            .row.d-flex {
+                gap: 20px;
+                /* Adds spacing between the cards */
+            }
+
+
+
+            .why-product-title {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 3rem;
+                width: 100%;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
         }
 
         @media (min-width: 1024px) and (max-width: 1366px) {
@@ -2215,6 +2759,56 @@
                 position: relative;
                 padding-top: 50px;
                 height: 50vh;
+            }
+
+            .course-card-why {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-align: center;
+                color: black;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+                height: 250px;
+                width: 22%;
+                background-color: #e3f0ff;
+                padding: 20px 10px;
+                border: 1px solid #c5d9ff;
+                margin: 10px 16px;
+            }
+
+
+
+            .course-card-why h5 {
+                background-color: #1d3557;
+                /* Dark blue header */
+                color: white;
+                padding: 15px;
+                margin: 0;
+                width: 100%;
+            }
+
+            .course-card-why p {
+                padding: 25px 0px 56px 0px;
+
+            }
+
+
+            /* Adjust spacing between cards */
+            .row.d-flex {
+                gap: 20px;
+                /* Adds spacing between the cards */
+            }
+
+
+
+            .why-product-title {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 3rem;
+                width: 100%;
             }
         }
 
@@ -2498,6 +3092,103 @@
                 color: #eee;
                 margin: 0px 0px 50px 50px;
             }
+
+            .course-card-why {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-align: center;
+                color: black;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+                height: 250px;
+                width: 22%;
+                background-color: #e3f0ff;
+                padding: 20px 0px;
+                border: 1px solid #c5d9ff;
+                margin: 10px 16px;
+            }
+
+
+
+            .course-card-why h5 {
+                background-color: #1d3557;
+                /* Dark blue header */
+                color: white;
+                padding: 15px;
+                margin: 0;
+                width: 100%;
+            }
+
+            .course-card-why p {
+                padding: 25px 0px 56px 0px;
+
+            }
+
+
+            /* Adjust spacing between cards */
+            .row.d-flex {
+                gap: 20px;
+                /* Adds spacing between the cards */
+            }
+
+
+
+            .why-product-title {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 3rem;
+                width: 100%;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .course-description {
+                font-size: 0.9rem;
+                opacity: 0.85;
+            }
         }
 
         /* Full HD (1920 × 1080) */
@@ -2778,60 +3469,100 @@
                 color: #eee;
                 margin: 0px 0px 50px 30px;
             }
-        }
 
-
-        .course-card {
-            position: relative;
-            color: white;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
-
-        .course-card-why {
-            position: relative;
-            color: white;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.2s;
-            height: 350px;
-            background-color: #d8ebff;
-            margin: 0px 20px;
-        }
-
-        .course-card img {
-            width: 100%;
-            height: auto;
-        }
-
-        .course-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
+            .course-card-why {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                align-items: center;
+                text-align: center;
+                color: black;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+                height: 250px;
+                width: 22%;
+                background-color: #e3f0ff;
+                padding: 20px 10px;
+                border: 1px solid #c5d9ff;
+                margin: 10px 16px;
+            }
 
 
 
-        .course-content {
-            background-color: #1d3557;
-            position: absolute;
-            padding: 20px 0px;
-            bottom: 59px;
-            left: 0px;
-            right: 0px;
-            z-index: 10;
-            text-align: center;
-        }
+            .course-card-why h5 {
+                background-color: #1d3557;
+                /* Dark blue header */
+                color: white;
+                padding: 15px;
+                margin: 0;
+                width: 100%;
+            }
 
-        .why-content {
-            background-color: #1d3557;
-            position: absolute;
-            padding: 30px 0px;
-            top: 20px;
-            left: 0px;
-            right: 0px;
-            z-index: 10;
-            text-align: center;
+            .course-card-why p {
+                padding: 25px 0px 56px 0px;
+
+            }
+
+
+            /* Adjust spacing between cards */
+            .row.d-flex {
+                gap: 20px;
+                /* Adds spacing between the cards */
+            }
+
+
+
+            .why-product-title {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 3rem;
+                width: 100%;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+
         }
     </style>
 
@@ -2994,7 +3725,7 @@
                                         <div class="course-card bg-dark text-white">
                                             <img src="img/product-page/slide1.svg" alt="Art of Letting Go">
                                             <div class="course-content">
-                                                <h5 class="course-title">Mindful Beginnings</h5>
+                                                <h5 class="course-title">Stretch Hood Film</h5>
 
                                             </div>
                                         </div>
@@ -3003,7 +3734,7 @@
                                         <div class="course-card bg-dark text-white">
                                             <img src="img/product-page/slide2.svg" alt="Art of Letting Go">
                                             <div class="course-content">
-                                                <h5 class="course-title">Mindful Beginnings</h5>
+                                                <h5 class="course-title">LDPE Shrink Film</h5>
 
                                             </div>
                                         </div>
@@ -3012,7 +3743,7 @@
                                         <div class="course-card bg-dark text-white">
                                             <img src="img/product-page/slide3.svg" alt="Art of Letting Go">
                                             <div class="course-content">
-                                                <h5 class="course-title">Mindful Beginnings</h5>
+                                                <h5 class="course-title">Surface Protection Film</h5>
 
                                             </div>
                                         </div>
@@ -3022,9 +3753,10 @@
                                         <div class="course-card bg-dark text-white" style="background-color: #1d3557;">
                                             <img src="img/product-page/p4.svg" alt="Art of Letting Go">
                                             <div class="course-content">
-                                                <h5 class="course-title">Mindful Beginnings</h5>
+                                                <h5 class="course-title">Stretch Wrap Film</h5>
 
                                             </div>
+
                                         </div>
                                     </div>
 
@@ -3244,69 +3976,34 @@
 
     <section class="news-section">
         <div class="container">
-            <div class="news-header">
-                <h2 class="certifications-header " style="font-size: 2.5rem;text-align: center;">Why Choose Mundada
-                    Polymers?</h2>
+            <div class="text-center mb-4">
+                <h2 class="why-product-title fs-1">Why Choose Mundada Polymers?</h2>
             </div>
-
-            <div class="row">
-
-                <div class=" col-12 col-md-12 col-lg-12">
-
-                    <div class="row d-flex justify-content-center align-items-center ">
-
-                        <!-- Card 1 -->
-                        <div class="col-md-4 col-lg-3 course-card-why my-2">
-                            <div class="course-card-why bg-dark text-white">
-                                <!-- <img src="img/product-page/slide1.svg" alt="Art of Letting Go"> -->
-                                <div class="why-content">
-                                    <h5 class="course-title">Stretch Hood Film</h5>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 course-card-why my-2">
-                            <div class="course-card-why bg-dark text-white">
-                                <!-- <img src="img/product-page/slide2.svg" alt="Art of Letting Go"> -->
-                                <div class="why-content">
-                                    <h5 class="course-title">LDPE Shrink Film</h5>
-                                    <p>Our products are 100% recyclable and designed with sustainability in mind.</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 course-card-why my-2">
-                            <div class="course-card-why bg-dark text-white">
-                                <!-- <img src="img/product-page/slide3.svg" alt="Art of Letting Go"> -->
-                                <div class="why-content">
-                                    <h5 class="course-title">Surface Protection Film</h5>
-                                    <p>Our products are 100% recyclable and designed with sustainability in mind.</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-lg-3 course-card-why my-3 ">
+                    <h5 class="course-title">Stretch Hood Film</h5>
+                    <p>Our products are 100% recyclable and designed with sustainability in mind.</p>
                 </div>
-
-
+                <div class="col-md-6 col-lg-3 course-card-why my-3 ">
+                    <h5 class="course-title">LDPE Shrink Film</h5>
+                    <p>We leverage cutting-edge manufacturing techniques to ensure premium quality and performance.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 course-card-why my-3 ">
+                    <h5 class="course-title">Surface Protection Film</h5>
+                    <p>We adhere to strict international benchmarks and quality standards, ensuring exceptional
+                        reliability and consistent
+                        performance.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 course-card-why my-3 ">
+                    <h5 class="course-title">Surface Protection Film</h5>
+                    <p>We have 9000 MT production capacity annually, ensuring a reliable supply for national and
+                        international markets.</p>
+                </div>
             </div>
 
         </div>
-
-
-
-
-        </div>
-
-        </div>
-        </div>
-
-
     </section>
+
 
     <!--=========Footer Start============-->
     <section class="projectSec">
