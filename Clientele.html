@@ -1,0 +1,4449 @@
+<!DOCTYPE html>
+<html lang="zxx" style="font-family: 'Poppins', sans-serif;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mundada Polymer</title>
+    <link rel="icon" type="image/x-icon" href="img/index-page/favicon.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive-style.css" rel="stylesheet">
+    <link href="css/effect_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/responsive_bootstrap_carousel.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/set1.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-bg: #1e2342;
+            --primary-white: #ffffff;
+            --secondary-bg: #f5f5f5;
+            --secondary-color: #242c56;
+            --accent-color: #22c55e;
+            --text-color: #011327;
+            --border-color: #e5e7eb;
+            --hover-color: #1a1f3d;
+
+            --dark-blue: #011327;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e5e7eb;
+            --navy-blue: #242c56;
+            --hover-navy: #1a1f3d;
+        }
+
+        .card-course:hover .course-card {
+            transform: scale(1.05);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .review-card:hover .review-card {
+            transform: scale(1.05);
+            transition: transform 0.4s ease-in-out;
+        }
+
+
+        .course-card {
+            position: relative;
+            color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            margin: 20px 0px;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .course-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            border-left: 6px solid green;
+            /* background: rgba(0, 0, 0, 0.6); */
+            /* Semi-transparent background for readability */
+        }
+
+        .course-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #011327;
+        }
+
+        .course-description {
+            font-size: 14px;
+            opacity: 0.85;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #011327;
+        }
+
+        .btn-custom {
+            text-align: left;
+            align-self: flex-start;
+            /* Ensures button is left-aligned */
+        }
+
+
+
+        body {
+            /* background-color: var(--primary-bg); */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* #hero-carousel {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        } */
+
+
+
+        .hero-img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            max-width: 80%;
+        }
+
+        .carousel-caption h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        #h1-text {
+            color: #1ba34b;
+            line-height: 1.7pc;
+            font-size: 20px;
+            margin-top: 52px;
+            padding: 0 -5px;
+            font-weight: bold;
+        }
+
+        .new-pak {
+            margin: 25px 0px;
+            margin-left: 18px;
+            font-size: 28px;
+            font-weight: 200;
+        }
+
+        .let-btn {
+            position: absolute;
+            margin: 20px 20px;
+            padding: 12px;
+            color: #ffffff;
+            background-color: #34a853;
+            bottom: -75px;
+        }
+
+
+
+        .bgimg {
+            width: 104%;
+        }
+
+        .custom-btn {
+            margin-bottom: 20px;
+            background: #34a853;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            /* margin-left: 20PX; */
+        }
+
+        .carousel-control {
+            background: none !important;
+        }
+
+        #new-carousel {
+            position: relative;
+            width: 100%;
+            height: 40vh;
+        }
+
+        #new-carousel .item {
+            height: 45vh;
+        }
+
+        .new-img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .new-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            max-width: 80%;
+        }
+
+        .container {
+            max-width: 90%;
+            min-width: 300px;
+        }
+
+        section {
+            background-color: #ffffff;
+        }
+
+        #productimg01,
+        #productimg02,
+        #productimg03 {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 390px;
+            /* Adjust as needed */
+            display: flex;
+            align-items: flex-end;
+            justify-content: start;
+            text-align: start;
+        }
+
+        .product-card-title,
+        .product-card-text {
+            text-align: left;
+            border-left: 10px solid #34a853;
+            padding-left: 10px;
+            /* Adds space between border and text */
+            /* background: rgba(255, 255, 255, 0.8); */
+            /* Light background for readability */
+            display: inline-block;
+            /* Ensures border only spans the text width */
+        }
+
+        h2 {
+            color: #1d1d1d;
+            font-size: 28px;
+        }
+
+        .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a:hover {
+            color: #34a853;
+        }
+
+        .sub-text {
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .clients {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .client-logo {
+            height: 170px;
+            max-width: 170px;
+        }
+
+
+        .icon-box img {
+            width: 120px;
+        }
+
+
+
+        .text-success {
+            color: #34a853;
+        }
+
+        .contact-icon {
+            color: #22c55e;
+            width: 28px;
+            height: 45px;
+        }
+
+        .contact-icon span {
+            font-size: 14px;
+        }
+
+        .form-control {
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+        .btn-callback {
+            background-color: #22c55e;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-callback:hover {
+            background-color: #1ba34b;
+            color: white;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            color: #e5e5e5;
+            margin-bottom: 5px;
+        }
+
+
+
+        .form-label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+
+        .product-section {
+            /* min-height: 100vh; */
+            /* Full screen height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .product-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1d2b53;
+        }
+
+
+
+
+        .product-card-01 {
+            background-image: url('img/our-product-01.svg');
+            border-radius: 15px;
+
+        }
+
+        .product-card-02 {
+            background-image: url('img/our-product-02.svg');
+            border-radius: 15px;
+        }
+
+        .product-card-03 {
+            background-image: url('img/our-product-03.svg');
+            border-radius: 15px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            width: 370px;
+            height: 220px;
+            object-fit: cover;
+        }
+
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h5 {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: var(--primary-white);
+            /* border-radius: 15px; */
+        }
+
+        .card-body+p {
+            font-size: 14px;
+            color: #777;
+            margin-top: 270px;
+        }
+
+        .header4 {
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .navbar-default {
+            background: transparent;
+        }
+
+        .logo-menu {
+            padding: 15px 0;
+        }
+
+        .logo-menu img {
+            max-height: 50px;
+        }
+
+        .navbar-nav>li>a {
+            padding: 30px 15px;
+            color: #242c56;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav>li>a:hover,
+        .navbar-nav>li>a.active {
+            color: #0056b3;
+        }
+
+        .navbar-toggle {
+            margin-top: 20px;
+        }
+
+        .product-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+
+
+        .product-title {
+            color: #242c56;
+            font-size: 38px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-subtitle {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 15px 30px 15px;
+            margin: 0px 220px;
+        }
+
+        .product-card {
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .product-card-title {
+            color: whitesmoke;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 10px;
+            margin-top: 180px;
+            font-family: 'Poppins', sans-serif;
+            /* border-left: 10px solid #34a853; */
+        }
+
+        .home6 h5,
+        .home6 p+h5 {
+            color: whitesmoke;
+        }
+
+        /* .home6 p {
+                    color: whitesmoke;
+                 } */
+
+        .product-card-text {
+            border-left: 10px solid #34a853;
+            color: #fff;
+            font-size: 15px;
+            padding: 0 0px 4px 4px;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+
+        .header4 {
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .header4 .navbar {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* .header4 .navbar-brand {
+                    padding: 0;
+                    margin: 0;
+                 } */
+
+        .header4 .nav-link {
+            color: #1a1a1a;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            padding: 20px 15px;
+            transition: color 0.3s ease;
+        }
+
+        .header4 .nav-link:hover {
+            color: #007bff;
+        }
+
+        header.header4 .logo {
+            float: left;
+            margin: -1px 0px;
+            mix-blend-mode: transparent;
+            width: 100%;
+
+        }
+
+        .certifications-section {
+            background: #e2e7ff;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .certifications-header {
+            border-left: 5px solid #2BA84A;
+            padding-left: 10px;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .text-certification-heading {
+            font-size: 2.5rem;
+            color: #011327;
+            font-weight: bold;
+        }
+
+        .Committed {
+            font-size: 4.4rem;
+            font-weight: bold;
+
+        }
+
+        .cert-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding-left: 20px;
+        }
+
+        .mgb {
+            margin-bottom: 20px;
+        }
+
+        .mg {
+            margin: 36px 0px;
+
+        }
+
+        .cert-icon {
+            background: #1C1C50;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .cert-content h6 {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #2BA84A;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            background: #1C1C50;
+            color: white;
+            border-radius: 5px;
+            padding: 14px 26px;
+            font-weight: bold;
+        }
+
+        .news-section {
+            background-color: #fff;
+            padding: 60px 10%;
+        }
+
+        .news-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .news-header div {
+            width: 5px;
+            height: 40px;
+            background-color: #2ca44d;
+        }
+
+        .news-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        .news-content {
+            max-width: 600px;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .news-cards {
+            margin-top: 30px;
+        }
+
+        .news-card {
+            position: relative;
+            border: none;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-card-body {
+            background: #eef0ff;
+            padding: 15px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .news-card-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #1a1a1a;
+        }
+
+        .news-card-text {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .news-button {
+            background-color: #2ca44d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .news-button:hover {
+            background-color: #1e8a3c;
+        }
+
+        .my-lg-4 {
+
+            margin: 30px 0px;
+
+        }
+
+        .projectSec {
+            background-color: var(--primary-bg);
+            color: #ffffff;
+        }
+
+        .packing-title {
+            font-weight: bolder;
+            font-size: 34px;
+        }
+
+        .Industries-Served {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 100px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 100px;
+            color: #ffffff;
+            padding: 2px;
+            border-left: 6px solid #34a853;
+        }
+
+        .company_mission {
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            background-repeat:
+                no-repeat;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            position: relative;
+            padding-top: 50px;
+            min-height: 600px;
+        }
+
+
+        .company_mission-number {
+            background-image: url(img/bg-img.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat:
+                no-repeat;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+            position: relative;
+            padding-top: 50px;
+            min-height: 400px;
+        }
+
+        .product-card-01 {
+            background-image: url("/img/our-product-01.svg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+
+
+        .product-card-02 {
+            background-image: url('img/our-product-02.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+
+        }
+
+        .product-card-03 {
+            background-image: url('img/our-product-03.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .reviews-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .reviews-section h2 {
+            font-size: 38px;
+            font-weight: 600;
+            color: var(--primary-bg);
+        }
+
+        .reviews-section p {
+            font-size: 16px;
+            color: #555;
+            margin: 30px 0px;
+            text-align: center;
+        }
+
+        .reviews-section .product-title {
+            color: #242c56;
+            font-size: 38px;
+            font-weight: 700;
+            font-family: 'Poppins',
+                sans-serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* .reviews-container {
+                display: flex;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                max-width: 1100px;
+                margin: auto;
+                flex-direction: column
+            } */
+
+
+
+
+        /* .review-card {
+                       text-align: center;
+                       font-size: 15px;
+                       color: #333;
+                       margin: 15px 0;
+                       padding: 10px;
+                   } */
+
+        .review-image {
+            width: 100px;
+            height: 130px;
+            /* border-radius: 50%; */
+            object-fit: cover;
+            margin-top: 10px;
+            left: 0;
+        }
+
+
+
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-heading-text {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-text {
+            margin: 8px 3px;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+
+        .contact-icon {
+            color: #22c55e;
+            width: 28px;
+            height: 45px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .review-card img {
+            max-width: 100px;
+            /* border-radius: 50%; */
+            margin: 10px 0;
+            border: 1px solid #242c56;
+
+        }
+
+        .clinetname {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .clinetname+p {
+            text-align: left;
+        }
+
+        .company-tag {
+            position: absolute;
+            right: 0px;
+            /* Aligns to the right */
+            bottom: 30px;
+            /* Positions at the bottom */
+            background: #1d3557;
+            color: #fff;
+            padding: 6px 8px;
+            font-size: 14px;
+            /* border-radius: 4px; */
+            white-space: nowrap;
+        }
+
+
+        .review-card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 13px;
+            text-align: center;
+            position: relative;
+            /* Needed for absolute positioning */
+            /* width: 330px; */
+            /* Adjust as needed */
+            border-radius: 10px;
+            min-height: 250px;
+            /* Ensures consistent height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+
+        .review-card .clinetname {
+            background: #28a745;
+            color: #fff;
+            /* display: inline-block; */
+            padding: 4px 5px;
+            border-radius: 0px 0px 0px 0px;
+            font-size: 18px;
+            /* position: absolute; */
+            top: -18px;
+            /* left: 50%;  */
+            transform: translateX(-50%);
+            margin-bottom: 10px;
+            margin-left: 82px;
+        }
+
+        .contact-heading {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 29px;
+            color: #ffffff;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .product-subtitle {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 15px 30px 15px;
+            margin: 0px 0px;
+        }
+
+
+        @media (min-width: 375px) and (max-width: 414px) {
+
+            /* .reviews-container {
+                    display: none;
+                    justify-content: none;
+                    gap: 20px;
+                } */
+            #new-carousel {
+                position: relative;
+                width: 100%;
+                height: 80vh;
+            }
+
+            .carousel-indicators .active {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                background-color: #000;
+            }
+
+            .carousel-indicators>li {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+
+                border-radius: 1px solid var(--dark-blue);
+                background-color: #ffffff;
+            }
+
+            .carousel-inner {
+                position: relative;
+                width: 100%;
+                overflow: visible;
+            }
+
+
+            .btn {
+                font-size: 11px;
+                padding: 10px 10px;
+
+            }
+
+            .cert-icon {
+                background: #1C1C50;
+                color: white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+            }
+
+            .cert-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                padding-left: 0px;
+            }
+
+            .Committed {
+                font-size: 2.7rem;
+                font-weight: bold;
+            }
+
+            .news-card-text {
+                font-size: 14px;
+                color: #444;
+                margin-top: 0px;
+            }
+
+            .text-certification-heading {
+                font-size: 2rem;
+                color: #011327;
+                font-weight: bold;
+            }
+
+            .contact-heading {
+                font-size: 28px;
+            }
+
+            .home6 h1 {
+                color: var(--primary-bg);
+            }
+
+            #productimg01 {
+                background-image: url('img/our-product-01.svg');
+
+            }
+
+            #productimg02 {
+                background-image: url('img/our-product-02.svg');
+
+            }
+
+            #productimg03 {
+                background-image: url('img/our-product-03.svg');
+
+            }
+
+            .product-subtitle {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 30px;
+                margin: 0px 0px;
+                margin-bottom: 12px;
+            }
+
+
+
+
+            .company_mission {
+                background-image: url(img/bg-img.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat:
+                    no-repeat;
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+                position: relative;
+                padding-top: 50px;
+                min-height: 600px;
+            }
+
+            #Industries-Served {
+                color: white;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 4px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                /* margin-left: 100px; */
+                color: #ffffff;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .packing-title {
+                font-weight: bolder;
+                font-size: 28px;
+                color: #f9f9f9;
+            }
+
+            .header-section {
+                margin-top: 20px;
+            }
+
+
+            .Latest-Innovations {
+                padding: 10px 10px;
+            }
+
+            .product-card-title {
+                color: var(--primary-bg);
+                font-size: 22px;
+                font-weight: 600;
+                padding: 10px;
+                margin-top: 180px;
+                font-family: 'Poppins', sans-serif;
+                /* border-left: 10px solid #34a853; */
+            }
+
+
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 0px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+            .Trusted-clientshidden {
+                display: none;
+            }
+
+
+            .mil-banner-personal {
+                margin-top: 20px;
+            }
+
+            .bgimg {
+                height: 400px;
+                width: 100%;
+            }
+
+            #h1-text {
+                line-height: 1.2;
+                font-size: 20px;
+                margin-top: 45px;
+                padding: 0 -5px;
+                color: #1ba34b;
+                padding: 0px 0px;
+                font-size: 28px;
+            }
+
+            .new-pak {
+                margin: 20px 0px;
+                margin-left: 0px;
+                font-size: 16px;
+            }
+
+            .let-btn {
+                /* position: absolute; */
+                margin: 0px 0px;
+                /* padding: 12px; */
+                color: #ffffff;
+                background-color: #34a853;
+                bottom: -76px;
+            }
+
+            #h1-text+p {
+                font-size: 12px;
+                padding: 20px 0px;
+                color: #1ba34b;
+            }
+
+
+
+            .quality-assurance-section {
+                background-color: var(--primary-bg);
+            }
+
+            .certifications-header {
+                color: var(--primary-bg);
+                font-size: 29px;
+            }
+
+            .product-card {
+                height: 367px;
+                width: 333px;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3sease-in-out;
+                /* background-color: black; */
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* border-radius: 15px; */
+            }
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 10px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            .certifications-section {
+                background: #e2e7ff;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            #hero-carousel .item {
+                height: 100vh;
+            }
+
+
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+            }
+
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 82px;
+            }
+
+            .contact-heading {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 29px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 0px;
+            }
+
+            .packaging-card {
+                width: 100%;
+                background: linear-gradient(to top right, #a0a1a1 50%, #373d50 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
+        }
+
+        @media (min-width: 414) and (max-width: 667px) {
+
+
+
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 0px;
+            }
+
+            .new-pak {
+                margin: 20px 0px;
+                margin-left: 0px;
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: 11px;
+                padding: 10px 10px;
+
+            }
+
+            .cert-icon {
+                background: #1C1C50;
+                color: white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+            }
+
+            .cert-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                padding-left: 0px;
+            }
+
+            .Committed {
+                font-size: 2.7rem;
+                font-weight: bold;
+            }
+
+            .news-card-text {
+                font-size: 14px;
+                color: #444;
+                margin-top: 0px;
+            }
+
+            .text-certification-heading {
+                font-size: 2rem;
+                color: #011327;
+                font-weight: bold;
+            }
+
+            .home6 h1 {
+                color: var(--primary-bg);
+            }
+
+            #productimg01 {
+                background-image: url('img/our-product-01.svg');
+
+            }
+
+            #productimg02 {
+                background-image: url('img/our-product-02.svg');
+
+            }
+
+            #productimg03 {
+                background-image: url('img/our-product-03.svg');
+
+            }
+
+            .product-subtitle {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 30px;
+                margin: 0px 0px;
+                margin-bottom: 12px;
+            }
+
+
+
+
+            .company_mission {
+                background-image: url(img/bg-img.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat:
+                    no-repeat;
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+                position: relative;
+                padding-top: 50px;
+                min-height: 600px;
+            }
+
+            #Industries-Served {
+                color: white;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 4px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                /* margin-left: 100px; */
+                color: #ffffff;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .packing-title {
+                font-weight: bolder;
+                font-size: 28px;
+                color: #f9f9f9;
+
+            }
+
+            .header-section {
+                margin-top: 20px;
+            }
+
+
+            .Latest-Innovations {
+                padding: 10px 10px;
+            }
+
+            .product-card-title {
+                color: var(--primary-bg);
+                font-size: 22px;
+                font-weight: 600;
+                padding: 10px;
+                margin-top: 180px;
+                font-family: 'Poppins', sans-serif;
+                /* border-left: 10px solid #34a853; */
+            }
+
+
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 0px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+            .Trusted-clientshidden {
+                display: none;
+            }
+
+
+            .mil-banner-personal {
+                margin-top: 20px;
+            }
+
+            #hero-carousel .item {
+                height: 72vh;
+            }
+
+            #h1-text {
+                padding: 0px 0px;
+                margin-top: 125px;
+                color: white;
+                font-size: 60px;
+                line-height: 2.7pc;
+                font-size: 20px;
+                margin-top: 50px;
+                padding: 0 -5px;
+            }
+
+
+
+            #h1-text+p {
+                font-size: 12px;
+                padding: 20px 0px;
+                color: #1ba34b;
+            }
+
+            .let-btn {
+                padding: 8px 0px;
+                color: #ffffff;
+                background-color: #34a853;
+                margin: 0px 0px;
+            }
+
+            .quality-assurance-section {
+                background-color: var(--primary-bg);
+            }
+
+            .certifications-header {
+                color: var(--primary-bg);
+                font-size: 29px;
+            }
+
+            .product-card {
+                height: 364px;
+                width: 343px;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3sease-in-out;
+                /* background-color: black; */
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* border-radius: 15px; */
+            }
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 10px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            .certifications-section {
+                background: #e2e7ff;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* color: var(--primary-white); */
+                /* border-radius: 15px; */
+            }
+
+            .news-button {
+                background-color: #2ca44d;
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                font-size: 16px;
+                border-radius: 5px;
+                margin-top: 20px;
+                display: inline-block;
+            }
+
+            #hero-carousel .item {
+                height: 72vh;
+            }
+
+
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 78vh;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 102px;
+            }
+
+            .contact-heading {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 29px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+
+
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 0px;
+            }
+
+            .packaging-card {
+                width: 100%;
+                background: linear-gradient(to top right, #a0a1a1 50%, #373d50 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
+
+        }
+
+        /* Tablets (576px to 991px) */
+        @media (min-width: 576px) and (max-width: 991px) {
+            #hero-carousel .item {
+                height: 72vh;
+            }
+
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 78vh;
+            }
+
+            .nav-item .active {
+                border-bottom: 1px solid #34a853;
+
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* color: var(--primary-white); */
+                /* border-radius: 15px; */
+            }
+
+            .new-pak {
+
+                font-size: 18px;
+                margin: 20px 0px;
+                margin-left: 20px;
+            }
+
+            #Industries-Served {
+                color: white;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 30px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                /* margin-left: 100px; */
+                color: #ffffff;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .news-card-text {
+                font-size: 14px;
+                color: #444;
+                /* margin-top: 50px; */
+            }
+
+
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 66px;
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+            #h1-text {
+                line-height: 2.7;
+                font-size: 36px;
+                margin-top: 80px;
+                color: white;
+                padding: 0 20px;
+            }
+
+            .text-certification-heading {
+                color: var(--primary-bg);
+            }
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 30px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+                margin-left: 100px;
+            }
+
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 90px;
+            }
+
+            #h1-text+p {
+                padding: 20px 38px;
+                color: #1ba34b;
+            }
+
+            .bgimg {
+                height: 100%;
+                width: 100%;
+            }
+
+            .clients {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-section {
+                padding: 40px 0;
+                background-color: var(--primary-bg);
+            }
+
+            .contact-heading {
+                font-size: 36px;
+            }
+
+            .navbar-nav>li>a {
+                padding: 15px;
+            }
+
+            .logo-menu img {
+                max-height: 38px;
+            }
+
+            .img-responsive {
+                margin: 16px auto;
+                width: 60%;
+            }
+
+            .product-title {
+                font-size: 1.8rem;
+            }
+
+            .news-card-body h5,
+            .news-card-title {
+                color: #1C1C50;
+                font-size: 16px;
+            }
+
+            .clients {
+                flex-direction: column;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .contact-heading-text {
+                font-size: 20px;
+            }
+
+            .contact-text {
+                font-size: 14px;
+            }
+
+            #h1-text {
+                line-height: 1.2;
+                font-size: 36px;
+                margin-top: 80px;
+                color: white;
+                padding: 0 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 195px;
+            }
+
+            .contact-heading {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+            .packaging-card {
+                width: 100%;
+                background: linear-gradient(to top right, #a0a1a1 50%, #373d50 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
+        }
+
+        @media screen and (min-width: 1366px) {
+
+            .carousel-control .glyphicon-chevron-left,
+            .carousel-control .icon-prev {
+                margin-left: -100px;
+            }
+
+            .carousel-control .glyphicon-chevron-right,
+            .carousel-control .icon-next {
+                margin-right: -100px;
+            }
+
+
+            .carousel-indicators li {
+                margin-bottom: 35px;
+
+
+            }
+
+
+
+
+
+            .packaging-card {
+                width: 30.33%;
+                background-color: #f8f9fa;
+                /* Light gray background */
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                /* Subtle shadow */
+                transition: transform 0.3s ease-in-out;
+                margin: 0 10px;
+                /* Centering the card */
+            }
+
+            .carousel-indicators .active {
+                border: 1px solid black;
+                background-color: white;
+                margin-bottom: 35px;
+            }
+
+            #h1-text {
+                margin-left: 56px;
+                line-height: 1.2;
+                font-size: 36px;
+                margin-top: 100px;
+                color: white;
+                padding: 0 20px;
+            }
+
+            .new-pak {
+                margin: 24px 0px 157px 0px;
+                margin-left: 76px;
+                font-size: 28px;
+                line-height: 1.4;
+            }
+
+
+
+            .bgimg {
+                height: 400px;
+                width: 104%;
+                background-size: cover;
+            }
+
+            .packaging-main .row .packaging-card {
+                margin-left: 22px;
+            }
+
+
+
+            .packing-title {
+                font-weight: bolder;
+                font-size: 34px;
+                color: #f9f9f9;
+                margin-bottom: 100px;
+            }
+
+            /* .new-pak {
+                        margin: 20px 0px 100px;
+                        margin-left: 78px;
+                        font-size: 28px;
+                    } */
+
+            .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+                /* color: black; */
+                border-bottom: 3px solid #34a853;
+            }
+
+            .navbar-nav>li>.new-pak {
+
+                font-size: 32px;
+                margin: 10px 0px;
+                margin-left: 78px;
+                margin-bottom: 100px;
+            }
+
+            .custom-btn .let-btn {
+                margin-top: 120px;
+            }
+
+            #Industries-Served {
+                color: #242c56;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 4px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 164px;
+                color: #ffffff;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 66px;
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* border-radius: 15px; */
+            }
+
+            .product-card-title {
+                color: whitesmoke;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px;
+                min-height: 50px;
+                font-family: 'Poppins', sans-serif;
+                /* border-left: 10px solid #34a853; */
+                display: inline-block;
+            }
+
+
+
+            .bgimg {
+                height: 605px;
+                width: 124%;
+            }
+
+            .img-responsive {
+                margin-top: 16px;
+                margin-left: 116px;
+                width: 60%;
+            }
+
+            .navbar-collapse.collapse {
+                padding: 0;
+                margin-top: 8px;
+            }
+
+            header.header4 #main-navigation-wrapper .nav>li {
+                padding: 22px 0;
+            }
+
+            .contact-heading-text {
+                font-size: 28px;
+            }
+
+            .contact-text {
+                font-size: 14px;
+            }
+
+            .let-btn {
+                position: absolute;
+                margin-top: 250px;
+                padding: 12px;
+                color: #ffffff;
+                background-color: #34a853;
+                bottom: -75px;
+            }
+
+            #h1-text {
+                padding: 28px 0px 0px 78px;
+                margin-top: 50px;
+                color: white;
+                font-size: 48px;
+                line-height: 1.2;
+            }
+
+
+
+            #h1-text+p {
+                padding: 20px 38px;
+                color: #ffffff;
+            }
+
+
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 164px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* color: var(--primary-white); */
+                /* border-radius: 15px; */
+            }
+
+            .Latest-Innovations {
+                padding: 60px 0px 72px 20px;
+            }
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                width: 280px;
+                border-radius: 10px;
+            }
+
+            .review-card img {
+                max-width: 60px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                bottom: 5px;
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 360px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+
+
+
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                padding: 4px 9px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 195px;
+            }
+
+            .contact-heading {
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 28px;
+            }
+
+
+
+            .packing-title {
+                font-weight: bolder;
+                font-size: 34px;
+                color: #000;
+                margin-bottom: 100px;
+            }
+
+            /* .new-pak {
+                        margin: 20px 0px 100px;
+                        margin-left: 78px;
+                        font-size: 28px;
+                    } */
+
+            .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+                /* color: black; */
+                border-bottom: 3px solid #34a853;
+            }
+
+            .navbar-nav>li>.new-pak {
+
+                font-size: 32px;
+                margin: 10px 0px;
+                margin-left: 78px;
+                margin-bottom: 100px;
+            }
+
+            .custom-btn .let-btn {
+                margin-top: 120px;
+            }
+
+            #Industries-Served {
+                color: #011327;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 4px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 164px;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 66px;
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* border-radius: 15px; */
+            }
+
+            .product-card-title {
+                color: whitesmoke;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px;
+                min-height: 50px;
+                font-family: 'Poppins', sans-serif;
+                /* border-left: 10px solid #34a853; */
+                display: inline-block;
+            }
+
+
+
+            .bgimg {
+                height: 605px;
+                width: 124%;
+            }
+
+            .img-responsive {
+                margin-top: 16px;
+                margin-left: 116px;
+                width: 60%;
+            }
+
+            .navbar-collapse.collapse {
+                padding: 0;
+                margin-top: 8px;
+            }
+
+            header.header4 #main-navigation-wrapper .nav>li {
+                padding: 22px 0;
+            }
+
+            .contact-heading-text {
+                font-size: 28px;
+            }
+
+            .contact-text {
+                font-size: 14px;
+            }
+
+            .let-btn {
+                position: absolute;
+                margin: 20px 80px;
+                padding-top: 200px;
+                padding: 12px;
+                color: #ffffff;
+                background-color: #34a853;
+                bottom: -75px;
+            }
+
+            #h1-text {
+                padding: 28px 0px 0px 78px;
+                margin-top: 60px;
+                color: white;
+                font-size: 46px;
+                line-height: 1.2;
+            }
+
+
+
+            #h1-text+p {
+                padding: 20px 38px;
+                color: #ffffff;
+            }
+
+
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 164px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* color: var(--primary-white); */
+                /* border-radius: 15px; */
+            }
+
+            .Latest-Innovations {
+                padding: 60px 0px 72px 20px;
+            }
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                width: 280px;
+                border-radius: 10px;
+            }
+
+            .review-card img {
+                max-width: 60px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                bottom: 5px;
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                width: 360px;
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+
+
+
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                padding: 4px 9px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 195px;
+            }
+
+            .contact-heading {
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 28px;
+            }
+
+            #h1-text {
+                line-height: 1.2;
+                font-size: 36px;
+                margin-top: 100px;
+                color: white;
+                padding: 0 20px;
+            }
+        }
+    </style>
+
+
+    <style>
+        @media screen and (min-width: 1366px) and (max-width: 1920px) {
+
+
+            #h1-text {
+                line-height: 1.2;
+                font-size: 46px;
+                margin-top: 100px;
+                color: white;
+                padding: 0 20px;
+            }
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+            /* .reviews-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                } */
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                padding: 4px 9px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 102px;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+            #carousel-indicators-lg {
+
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                top: 278px;
+                padding-left: 0;
+                margin-left: -30%;
+                text-align: center;
+                list-style: none;
+
+            }
+
+            #carousel-indicators-lg .active {
+                border: 1px solid black;
+                background-color: #000;
+            }
+
+            #carousel-indicators-lg :not(.active) {
+                border: 1px solid black;
+                /* Change border for inactive indicators */
+                opacity: 0.8;
+                /* Optional: Make inactive indicators less visible */
+            }
+
+            .packaging-card {
+
+                background: linear-gradient(to top right, #011327 50%, #1ba34b 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 10px;
+                color: white;
+            }
+
+
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .packaging-card-number {
+                background: linear-gradient(to top right, #1ba34b 50%, #011327 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 10px;
+                color: white;
+            }
+
+            .packaging-card-number:hover {
+                background-position: top right;
+                transform: scale(1.05);
+
+            }
+
+            .packaging-card-number:hover p {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            /* .packaging-main .row .packaging-card {
+                margin-left: 22px;
+            } */
+
+            .packing-card-number {
+                border-radius: 50%;
+            }
+
+
+
+            .packaging-card-sub {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                height: 145px;
+                width: 150px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+
+
+            .counter-container {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                margin-top: 50px;
+            }
+
+            .counter-box {
+
+                font-size: 2em;
+                font-weight: bold;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .course-card img {
+                width: 100%;
+                height: 260px;
+                display: block;
+            }
+
+            .counter-box+p {
+                color: white;
+            }
+
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1365px) {
+
+
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                /* height: 100vh; */
+            }
+
+            #carousel-indicators-lg {
+
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                top: 100px;
+                padding-left: 0;
+                margin-left: -30%;
+                text-align: center;
+                list-style: none;
+
+            }
+
+
+
+
+            #carousel-indicators-lg .active {
+                border: 1px solid black;
+                background-color: #000;
+            }
+
+            #carousel-indicators-lg :not(.active) {
+                border: 1px solid black;
+                /* Change border for inactive indicators */
+                opacity: 0.8;
+                /* Optional: Make inactive indicators less visible */
+            }
+
+
+
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-bg);
+                /* border-radius: 15px; */
+            }
+
+            .clients {
+                display: table;
+                flex-direction: column;
+                /* align-items: center; */
+            }
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 100px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            #Industries-Served {
+                color: white;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 4px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 60px;
+                color: #ffffff;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 66px;
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+
+
+            .Latest-Innovations {
+                padding: 40px 40px;
+            }
+
+
+            .clients {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-section {
+                padding: 40px 0;
+                background-color: var(--primary-bg);
+            }
+
+            .contact-heading {
+                font-size: 36px;
+            }
+
+            .navbar-nav>li>a {
+                padding: 15px;
+            }
+
+            .logo-menu img {
+                max-height: 38px;
+            }
+
+            .img-responsive {
+                margin: 16px auto;
+                width: 60%;
+            }
+
+            .product-title {
+                font-size: 1.8rem;
+            }
+
+            .news-card-body h5,
+            .news-card-title {
+                color: #1C1C50;
+                font-size: 16px;
+            }
+
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 240px;
+            }
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+            .packaging-card {
+                width: 30.33%;
+                background: linear-gradient(to top right, #373d50 50%, #a0a1a1 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-main .row .packaging-card {
+                margin-left: 22px;
+            }
+
+
+
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+            #carousel-indicators-lg {
+
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                top: 515px;
+                padding-left: 0;
+                margin-left: -30%;
+                text-align: center;
+                list-style: none;
+
+            }
+
+            #carousel-indicators-lg .active {
+                border: 1px solid black;
+                background-color: #000;
+            }
+
+            #carousel-indicators-lg :not(.active) {
+                border: 1px solid black;
+                /* Change border for inactive indicators */
+                opacity: 0.8;
+                /* Optional: Make inactive indicators less visible */
+            }
+
+            /* cards */
+
+            .review-card {
+                border: 1px solid #242c56;
+            }
+
+
+            .review-card img {
+                max-width: 100px;
+                /* border-radius: 50%; */
+                margin: 10px 0;
+            }
+
+            .clinetname {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .clinetname+p {
+                text-align: left;
+            }
+
+            .company-tag {
+                position: absolute;
+                right: 0px;
+                /* Aligns to the right */
+                bottom: 30px;
+                /* Positions at the bottom */
+                background: #1d3557;
+                color: #fff;
+                padding: 6px 8px;
+                font-size: 14px;
+                /* border-radius: 4px; */
+                white-space: nowrap;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 90px;
+            }
+
+            .packing-title {
+                font-weight: bolder;
+                font-size: 34px;
+                /* color: #f9f9f9; */
+                /* margin-bottom: 100px; */
+            }
+
+            .new-pak {
+                margin: 20px 0px 34px;
+                margin-left: 0px;
+                font-size: 28px;
+            }
+
+
+
+            .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+                /* color: black; */
+                border-bottom: 3px solid #34a853;
+            }
+
+            .navbar-nav>li>.new-pak {
+
+                font-size: 32px;
+                margin: 10px 0px;
+                margin-left: 78px;
+                margin-bottom: 100px;
+            }
+
+
+
+
+            .custom-btn .let-btn {
+                margin-top: 120px;
+            }
+
+            #Industries-Served {
+                color: #011327;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 4px;
+                /* margin-top: 50px; */
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 45px;
+                padding: 2px;
+                border-left: 6px solid #34a853;
+            }
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 66px;
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* border-radius: 15px; */
+            }
+
+            .product-card-title {
+                color: whitesmoke;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px;
+                min-height: 50px;
+                font-family: 'Poppins', sans-serif;
+                /* border-left: 10px solid #34a853; */
+                display: inline-block;
+            }
+
+
+
+            #h1-text {
+                font-size: 40px;
+                color: white;
+                padding: 0 21px;
+                margin-top: 52px;
+            }
+
+
+            .bgimg {
+                height: 100%;
+                width: 100%;
+            }
+
+
+
+            .img-responsive {
+                margin-top: 16px;
+                margin-left: 116px;
+                width: 60%;
+            }
+
+            .navbar-collapse.collapse {
+                padding: 0;
+                margin-top: 8px;
+            }
+
+            header.header4 #main-navigation-wrapper .nav>li {
+                padding: 22px 0;
+            }
+
+
+            .let-btn {
+                position: absolute;
+                margin: 10px 80px;
+                padding: 20px;
+                color: #ffffff;
+                background-color: #34a853;
+                bottom: -200px;
+            }
+
+            #h1-text {
+                padding: 30px 0px 0px 0px;
+                margin-top: 0px;
+                color: white;
+                font-size: 51px;
+            }
+
+
+            #h1-text+p {
+                padding: 20px 38px;
+                color: #ffffff;
+            }
+
+            .contact-heading-text {
+                font-size: 28px;
+            }
+
+            .contact-text {
+                font-size: 14px;
+            }
+
+
+
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 164px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* color: var(--primary-white); */
+                /* border-radius: 15px; */
+            }
+
+
+            .Latest-Innovations {
+                padding: 10px 0px 0px 20px;
+            }
+
+            .review-card {
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                padding: 4px 9px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 207px;
+            }
+
+            .contact-heading {
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #ffffff;
+            }
+
+
+
+
+
+            .packaging-card {
+                width: 45%;
+                background: linear-gradient(to top right, #011327 50%, #1ba34b 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .packaging-card-number {
+                background: linear-gradient(to top right, #1ba34b 50%, #011327 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 40px;
+                border-radius: 50%;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 10px;
+                color: white;
+            }
+
+            .packaging-card-number:hover {
+                background-position: top right;
+                transform: scale(1.05);
+
+            }
+
+            .packaging-card-number:hover p {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .counter-box+p {
+                color: white;
+            }
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            #mdflex {
+                display: flex;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body class="home6">
+    <!--=========header start============-->
+    <header class="header4">
+        <nav id="main-navigation-wrapper" class="navbar navbar-default">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 display-block d-none d-lg-block">
+                <a href="index.html" class="logo"><img src="img/munda-logo-final.svg" class="img-responsive"
+                        alt="logo"></a>
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="logo-menu">
+                        <a href="index.html">
+                            <img src="img/munda-logo-final.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false"
+                        class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="main-navigation" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="index.html" class=" nav-item active">Home</a>
+                            <i class="fa fa-chevron-down"></i>
+                        </li>
+                        <li class="dropdown">
+                            <a href="about.html">About Us</a>
+                            <i class="fa fa-chevron-down"></i>
+                        </li>
+                        <li class="dropdown">
+                            <a href="Product.html">Products</a>
+                            <i class="fa fa-chevron-down"></i>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Clientele</a>
+                            <i class="fa fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="#">Download Brochure</a>
+                        </li>
+                        <li>
+                            <a href="request-quote.html" class="btn btn-custom"
+                                style="background-color: var(--hover-navy); color: #ffffff; border-radius: 18px; font-family: 'Montserrat', sans-serif;  text-align: center; height: inherit; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 15px;">Get
+                                a Quote</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero-carousel" class="carousel slide " data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#hero-carousel" data-slide-to="1"></li>
+            <li data-target="#hero-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container-fluid h-100">
+                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color:#242c56;">
+
+                        <!-- Left Text Section -->
+                        <div
+                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
+                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Your Packaging,<br> Our
+                                Commitment</h2>
+                            <h1 class="new-pak" style="color: #ffffff;">
+
+                                Manufacturers and Exporters of <br>
+                                Speciality Films
+                                for
+                                Protective and Packaging
+                                Applications.
+                            </h1>
+                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
+                                        prolong    product lifecycles. </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
+                        </div>
+                        <!-- Right Image Section -->
+                        <div class="col-12 col-md-6 col-lg-6 image-container ">
+                            <img src="img/pak-01.svg" alt="Company Image" class="bgimg w-100 h-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item ">
+                <div class="container-fluid h-100">
+                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color:#242c56;">
+
+                        <!-- Left Text Section -->
+                        <div
+                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
+                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Cutting-Edge Polymer
+                                <br> Film Manufacturing
+                            </h2>
+                            <h1 class="new-pak" style="color: #ffffff;">
+
+                                Using state-of-the-art technology for unmatched quality and durability.
+
+                            </h1>
+                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
+                                                    prolong    product lifecycles. </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
+                        </div>
+                        <!-- Right Image Section -->
+                        <div class="col-12 col-md-6 col-lg-6 image-container ">
+                            <img src="img/slider04.jpg" alt="Company Image" class="bgimg w-100 h-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item ">
+                <div class="container-fluid h-100">
+                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color:#242c56;">
+
+                        <!-- Left Text Section -->
+                        <div
+                            class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
+                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Sustainable packaging
+                                <br> reduces waste.
+                            </h2>
+                            <h1 class="new-pak" style="color: #ffffff;">
+
+                                Committed to eco-friendly <br>
+                                manufacturing with recyclable
+                                and biodegradable films.
+                            </h1>
+                            <!-- <p class="text-white">We provide innovative, sustainable packaging solutions that protect and
+                                                    prolong    product lifecycles. </p> -->
+                            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
+                        </div>
+                        <!-- Right Image Section -->
+                        <div class="col-12 col-md-6 col-lg-6 image-container ">
+                            <img src="img/slider03.jpg" alt="Company Image" class="bgimg w-100 h-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#hero-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </section>
+
+    <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
+        style="background-color: #ffffff;">
+        <div class="container section-title" data-aos="fade-up">
+            <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;">Our Product</h1>
+            <p class="product-subtitle">
+                Our materials consist of large molecules made up of repeating structural units. These materials are
+                essential in
+                various industries due to their versatility, durability, and lightweight properties.
+            </p>
+
+        </div><!-- End Section Title -->
+
+        <div class="container py-2" id="Mindful-Beginnings">
+            <div class="row d-flex justify-content-center align-items-center "> <!-- Card 1 -->
+                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2 ">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/products/Stretch-hood-film.jpg" alt="Mindful Beginnings">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #011327;">Stretch Hood Film</h5>
+                            <p class="course-description ">
+                                Engineered for superior load stability and weather resistance, ideal for
+                                pharmaceuticals, glass bottles, and textile
+                                industries.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class=" col-sm-6 col-md-6 col-lg-3 my-2 card-course" id="Letting-go">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/products/product-0101.jpg" alt="Art of Letting Go">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #011327;">LDPE Shrink Film</h5>
+                            <p class="course-description ">
+                                Ensures tight and secure wrapping for beverages, food packaging, and various industrial
+                                applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/products/product-0102.jpg" alt="Mindful Beginnings">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #011327;">Surface Protection Film</h5>
+                            <p class="course-description ">
+                                Engineered for superior load stability and weather resistance, ideal for
+                                pharmaceuticals, glass bottles, and textile
+                                industries.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/products/ARMOR-stretchfilm-image5.jpg" alt="Mindful Beginnings">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #011327;">VCI - STRETCH WRAP FILM</h5>
+                            <p class="course-description " style="color: #011327;"> Designed for superior corrosion
+                                protection and secure
+                                packaging, ideal for metal
+                                components, automotive parts, and industrial machinery. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center" style="display: flex; justify-content: center;">
+                    <p class="text-white Industry-Applications text-center"
+                        style=" font-size: 20px; font-weight: 600; 
+                                                                       color: #ffffff;
+                                                                       padding: 10px;
+                                                                       background-color: #34a853;
+                                                                       border-left: 6px solid #34a853;margin-top: 50px;width: 350px;">
+                        See All Products >>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <section class=" company_mission " data-aos="fade-up" data-aos-duration="3000">
+        <p class="Industries-Served" id="Industries-Served">
+            Industries Served
+        </p>
+
+        <!-- <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:rgba(39, 46, 84, 0.9);">
+        </div> -->
+
+        <div class="container-fluid">
+
+
+            <div class="container position-relative">
+                <div class="row mb-5">
+                    <!-- Text Content -->
+                    <div class="col-lg-6 col-md-12 text-white " style="margin-top: 30px;">
+                        <h2 class="mb-4 packing-title ">Tailored <span class="text-success">Packaging
+                                Solutions</span> for Every Industry
+                        </h2>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-white" style="margin-top: 30px;">
+
+                        <p class="text-dark">We provide advanced packaging and
+                            <br>protective film
+                            solutions to meet the
+                            diverse<br> needs of:
+                        </p>
+
+                    </div>
+                    <div class="row justify-content-center align-items-center" style="margin-top: 30px;">
+                        <div class="col-lg-12 col-md-12 packaging-main">
+
+
+                            <div class="row  g-lg-4">
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-pharmaceuticals-7515030 1.svg"
+                                            alt="Pharmaceuticals Industry" class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Pharmaceuticals</p>
+                                    <p class="packing-card-text">Description: Packaging solutions for medicines,
+                                        ensuring safety and
+                                        compliance.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img"><img src="img/pask/noun-clothing-5512867 1.svg"
+                                            alt="Textile Industry" class="img-fluid industry-icon"></div>
+                                    <p class="packing-card-title">Textiles And Fabrics</p>
+                                    <p class="packing-card-text">Description: Protective packaging for garments and
+                                        textile storage, and boards.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-automotive-engineering-7093681 1.svg"
+                                            alt="Packaging Industry" class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Automotive and Engineering</p>
+                                    <p class="packing-card-text">Description: Packaging for automobile components to
+                                        prevent damage.</p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-electronics-7330977 1.svg" alt="Electronics Industry"
+                                            class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Electronics And Appliances</p>
+                                    <p class="packing-card-text">Description: Anti-static and shockproof packaging for
+                                        electronic devices.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-food-and-beverages-7096148 1.png"
+                                            alt="Food & Beverages Industry" class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Food & Beverages</p>
+                                    <p class="packing-card-text">Description: Flexible and hygienic packaging to
+                                        preserve food freshness.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-12 packaging-card">
+                                    <div class="packaging-img">
+                                        <img src="img/pask/noun-construction-7303425 1.svg" alt="Construction Industry"
+                                            class="img-fluid industry-icon">
+                                    </div>
+                                    <p class="packing-card-title">Construction And Glass</p>
+                                    <p class="packing-card-text">Description: Protective film solutions for glass and
+                                        construction
+                                        materials.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Industry Icons -->
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center" style="display: flex; justify-content: center;">
+                    <p class="text-white Industry-Applications text-center"
+                        style=" font-size: 20px; font-weight: 600; 
+                                                           color: #ffffff;
+                                                           padding: 10px;
+                                                           background-color: #34a853;
+                                                           border-left: 6px solid #34a853;margin-top: 50px;width: 350px;">
+                        See Industry Applications >>
+                    </p>
+                </div>
+
+            </div>
+    </section>
+
+
+    <section class="company_mission-number">
+        <p class="Industries-Served" id="Industries-Served" style="color: white;">
+            Our Growth Story
+        </p>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(39, 46, 84, 0.9);">
+        </div>
+
+        <div class="container position-relative">
+            <div class="row mb-5">
+                <!-- Title -->
+                <div class="col-lg-12 text-center text-white">
+
+                    <div class="row " style="margin-top: 60px;display: flex; justify-content: space-between;">
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="245">0</div>
+                                <p>Clients</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="187">0</div>
+                                <p>Products</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="40">0</div>
+                                <p>Years</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 packaging-card-number packaging-card-sub">
+                            <div class="packaging-card-sub-border">
+                                <div class="counter-box" data-target="420"> "+" 0</div>
+                                <p>Employee</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <section class=" bg-white">
+        <p id="Our-Clients"> Our Clients</p>
+        <div class="container" style="margin-top: 20px;">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="grid-item">
+                        <h2 class="Trusted-clients">Trusted by 300+
+                            clients.<br> Join them and grow your<br>
+                            business with our
+                            Products!
+                        </h2>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grid-item">
+                        <h2 class="Trusted-clientshidden" style="color: #fff;">Trusted by 300+
+                            clients.</h2>
+                        <p style="color: #000;">
+                            At Mundada Polymers, we are proud to be the trusted choice of 300+
+                            clients across various
+                            industries. Our commitment to
+                            quality, innovation, and reliability has helped businesses achieve
+                            superior performance with
+                            our
+                            advanced polymer
+                            solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="clients">
+                <img src="img/partners/client01.svg" class="client-logo">
+                <img src="img/partners/client02.svg" class="client-logo">
+                <img src="img/partners/client03.svg" class="client-logo">
+                <img src="img/partners/client04.svg" class="client-logo">
+                <img src="img/partners/client05.svg" class="client-logo">
+                <img src="img/partners/client06.svg" class="client-logo">
+
+                <img src="img/partners/client07.svg" class="client-logo">
+                <img src="img/partners/client08.svg" class="client-logo">
+                <img src="img/partners/client09.svg" class="client-logo">
+                <img src="img/partners/client10.jpg" class="client-logo">
+                <img src="img/partners/client11.jpg" class="client-logo">
+                <img src="img/partners/client12.jpg" class="client-logo">
+
+                <img src="img/partners/client13.jpg" class="client-logo">
+                <img src="img/partners/client14.jpg" class="client-logo">
+                <img src="img/partners/client15.jpg" class="client-logo">
+                <img src="img/partners/client16.jpg" class="client-logo">
+                <img src="img/partners/client17.jpg" class="client-logo">
+                <img src="img/partners/client18.jpg" class="client-logo">
+
+                <img src="img/partners/client19.jpg" class="client-logo">
+                <img src="img/partners/client20.jpg" class="client-logo">
+                <img src="img/partners/client21.jpg" class="client-logo">
+                <img src="img/partners/client22.jpg" class="client-logo">
+                <img src="img/partners/client23.jpg" class="client-logo">
+                <img src="img/partners/client24.jpg" class="client-logo">
+
+
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--primary-bg);">
+        <div class="container" style="margin-top: 20px;">
+            <div class="row">
+                <div class=" col-12 col-md-6 col-lg-6">
+                    <h1 style="color: #ffffff;">Get a Custom Packaging Solution Tailored to Your Needs!</h1>
+                </div>
+                <div class=" col-12 col-md-6 col-lg-6">
+                    <p style="color: #ffffff;">
+                        Tell us your packaging requirements, and our experts will provide you with a tailored quote.
+                        Whether it's stretch hood
+                        films, shrink films, or surface protection solutions, we've got you covered!
+                    </p>
+
+                    <a class="ftr-read-more my-lg-4"
+                        style="background-color: #1ba34b; border: none; color: whitesmoke;padding: 15px 20px;"
+                        href="about.html">Get a
+                        Quote >> </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality-assurance-section py-5 ">
+        <div class="container my-5 certifications-section">
+            <h2 class="certifications-header">Certifications and Quality Assurance</h2>
+
+            <div class="row " style="margin-top: 72px;">
+
+                <div class="col-lg-6">
+                    <div class="cert-item mgb">
+                        <div class="cert-icon">✔</div>
+                        <div class="cert-content">
+                            <p class="text-white text-certification-heading">ISO 9001 Certified</p>
+                            <p class="text-white">Ensuring top-tier manufacturing <br> processes.</p>
+                        </div>
+                    </div>
+                    <div class="cert-item mg">
+                        <div class="cert-icon">✔</div>
+                        <div class="cert-content">
+                            <p class=" text-certification-heading">Eco-Friendly Solutions</=>
+                            <p>Sustainable and recyclable materials <br> used in production.</p>
+                        </div>
+                    </div>
+                    <div class="cert-item mg">
+                        <div class="cert-icon">✔</div>
+                        <div class="cert-content">
+                            <p class=" text-certification-heading">Industry-Specific Compliance</p>
+                            <p>Tested for food safety, durability, and <br> chemical resistance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold Committed ">Committed to <span class="highlight">Quality</span>,<br> Certified
+                        for
+                        <span class="highlight">Excellence</span>
+                    </h2>
+                    <p class="fs-5" style="font-size: 18px;">Our packaging films meet global quality <br> standards to
+                        ensure
+                        reliability and
+                        compliance.</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center text-center my-lg-4">
+                <button class="btn btn-custom w-50 mx-auto">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="reviews-section">
+                <p class="title product-title ">Clients Reviews</p>
+                <p>Hear What Our Satisfied Clients Have to Say About Our Packaging Solutions</p>
+            </div>
+
+            <div class="reviews-container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <p class="clinetname">Rahul Mehta</p>
+                            <p>"Mundada Polymers' stretch hood films have significantly improved our packaging
+                                efficiency. The
+                                durability
+                                and flexibility are unmatched!"</p>
+                            <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
+                            <div class="company-tag">@TexFab Exports</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <p class="clinetname">Arun Joshi</p>
+                            <p>"Their surface protection films have helped us prevent scratches on high-value glass
+                                sheets
+                                during
+                                transportation. Highly recommended!"</p>
+                            <img src="img/client/client02.svg" alt="Rahul Mehta" class="review-image">
+                            <div class="company-tag">@GlassTech Industries</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="review-card">
+                            <p class="clinetname">Vikas Sharma</p>
+                            <p>"Mundada Polymers delivers reliable and cost-effective stretch wrap solutions for our
+                                textile
+                                shipments.
+                                Excellent product consistency!"</p>
+                            <img src="img/client/client01.svg" alt="Rahul Mehta" class="review-image">
+                            <div class="company-tag">@Acropolis Attire</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="news-header">
+            <h2 class="certifications-header" style="font-size: 2.5rem;">News and Updates</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card news-card-text">
+                    <h1 class="news-title text-align-left Latest-Innovations ">Latest
+                        Innovations<br> and
+                        Industry
+                        <br>Insights
+                    </h1>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12  d-flex justify-content-center align-items-center text-start my-lg-4">
+                        <button class="news-button">Read More Updates</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-6 col-lg-6">
+                <p class="news-content mgb" style="margin-bottom: 30px;">
+                    Stay updated with groundbreaking innovations and industry trends. Explore how we're revolutionizing
+                    packaging with sustainable and high-performance solutions.
+                </p>
+
+
+
+
+
+                <div id="new-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" id="carousel-indicators-lg">
+                        <li data-target="#new-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#new-carousel" data-slide-to="1"></li>
+                        <li data-target="#new-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" id="carousel-inner-lg">
+                        <div class="item active">
+                            <div class="row">
+                                <div class=" col-12 col-md-6 col-lg-6">
+                                    <div class="card news-card">
+                                        <img src="img/new-update01.svg" alt="Trade Show">
+                                        <div class="card-body news-card-body">
+                                            <h5 class="news-card-title" style="color: #011327;">New product launch</h5>
+                                            <p class="news-card-text" style="color: #011327;">Advanced high-strength
+                                                shrink
+                                                films!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="card news-card">
+                                        <img src="img/new-update02 (2).svg" alt="Trade Show">
+                                        <div class="card-body news-card-body">
+                                            <h5 class="news-card-title" style="color: #011327;">Upcoming trade shows and
+                                                exhibitions
+                                            </h5>
+                                            <p class="news-card-text" style="color: #011327;">Meet us ➝</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item ">
+                            <div class="row" id="mdflex">
+                                <div class=" col-12 col-md-6 col-lg-6">
+                                    <div class="card news-card">
+                                        <img src="img/new-update01.svg" alt="Trade Show">
+                                        <div class="card-body news-card-body">
+                                            <h5 class="news-card-title" style="color: #011327;">New product launch</h5>
+                                            <p class="news-card-text" style="color: #011327;">Advanced high-strength
+                                                shrink
+                                                films!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="card news-card">
+                                        <img src="img/new-update02 (2).svg" alt="Trade Show">
+                                        <div class="card-body news-card-body">
+                                            <h5 class="news-card-title" style="color: #011327;">Upcoming trade shows and
+                                                exhibitions
+                                            </h5>
+                                            <p class="news-card-text" style="color: #011327;">Meet us ➝</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <!-- <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#hero-carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a> -->
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="projectSec">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <h1 class="contact-heading" style="color: #ffffff;">Get in Touch with Us!</h1>
+
+                    <div class="contact-info">
+                        <div class="mb-4">
+                            <h3 class="fw-medium contact-heading-text" style="color: #ffffff;">Mundada Polymers</h3>
+                            <div class="d-flex align-items-start gap-3" style="display: flex;">
+                                <i class="fas fa-map-marker-alt contact-icon mt-1"></i>
+                                <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa, Latur -
+                                    413520 Maharashtra,
+                                    India</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3 mb-4" style="display: flex;">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span class="contact-text mb-0">+91 93229 05378, +91 8956754341</span>
+                        </div>
+
+                        <div class="d-flex align-items-center" style="display: flex;">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span class="contact-text">pranav@mundadapolymers.com, aba@mundadapolymers.com</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <h2 class="fs-2 mb-4" style="color: #ffffff;">Inquiry Form</h2>
+
+                    <form action="your_backend_script.php" method="post">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Enter Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        </div>
+
+                        <div style="display: flex; justify-content: end">
+
+                            <button type="submit" class="btn btn-callback" style="background-color: #1ba34b;">Request a
+                                Call
+                                Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--=========Footer Start============-->
+
+
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Search</h3>
+                    <div class="search-form">
+                        <input type="text" class="search_lightbox_input" placeholder="Search...">
+                        <input type="text" class="search_lghtbox_btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========Footer end============-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/responsive_bootstrap_carousel.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const counters = document.querySelectorAll(".counter-box");
+
+            counters.forEach(counter => {
+                counter.innerText = "0";
+                const target = parseInt(counter.getAttribute("data-target"));
+                let current = 0;
+                const interval = setInterval(() => {
+                    if (current < target) {
+                        current++;
+                        counter.innerText = current;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 30); // Ultra slow (30ms per increment)
+            });
+        });
+    </script>
+    <script>function checkZoomLevel() {
+            let zoomLevel = Math.round(window.devicePixelRatio * 100); // Get zoom percentage
+            let styleTag = document.getElementById("disableMediaQuery");
+
+            if (zoomLevel >= 110) {
+                if (!styleTag) {
+                    styleTag = document.createElement("style");
+                    styleTag.id = "disableMediaQuery";
+                    styleTag.innerHTML = "@media screen { body { all: unset !important; } }";
+                    document.head.appendChild(styleTag);
+                }
+            } else {
+                if (styleTag) {
+                    styleTag.remove(); // Remove the style tag to enable media queries again
+                }
+            }
+        }
+
+        // Run checkZoomLevel on page load and on resize
+        window.addEventListener("resize", checkZoomLevel);
+        window.addEventListener("load", checkZoomLevel);
+    </script>
+</body>
+
+
+</html>

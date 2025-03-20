@@ -51,6 +51,11 @@
             min-width: 300px;
         }
 
+        .course-content h5 {
+            color: white;
+            text-align: center;
+        }
+
         section {
             background-color: #ffffff;
         }
@@ -69,6 +74,20 @@
 
         .home6 h1 {
             color: white;
+        }
+
+        .line-text::before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            /* Adjust length of the line */
+            height: 3px;
+            /* Adjust thickness of the line */
+            background-color: #1D274E;
+            /* Match the text color */
+            margin-right: 10px;
+            /* Space between line and text */
+            vertical-align: middle;
         }
 
         .value-text {
@@ -282,8 +301,13 @@
             border-radius: 15px;
         }
 
+        .product-card {
+            transition: transform 0.5s ease-in-out;
+        }
+
         .product-card:hover {
-            transform: scale(1.05);
+            transform: scale(min(1.1, 1.05));
+            /* Smaller items scale up to 110%, larger ones only to 105% */
         }
 
         .product-card img {
@@ -362,7 +386,11 @@
             background-color: #f9f9f9;
         }
 
-
+        .card-title {
+            color: #1d3557;
+            font-size: 16px;
+            margin: 10px 0px;
+        }
 
         .product-title {
             background-color: #1ba34b;
@@ -843,11 +871,24 @@
             text-align: center;
         }
 
+        .card-title {
+            font-size: 16px;
+            text-align: left;
+            color: #011327;
+        }
+
+
         @media (min-width: 360px) and (max-width: 800px) {
             .new-pak {
                 margin: 20px 0px;
                 margin-left: 0px;
                 font-size: 18px;
+            }
+
+            .card-title {
+                font-size: 16px;
+                text-align: left;
+                color: #011327;
             }
 
             .about-text-head {
@@ -1047,16 +1088,6 @@
                 font-size: 29px;
             }
 
-            .product-card {
-                height: 367px;
-                width: 333px;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3sease-in-out;
-                /* background-color: black; */
-            }
 
             .card-body p {
                 font-size: 14px;
@@ -1127,6 +1158,11 @@
                 z-index: 10;
                 text-align: center;
             }
+
+            .card-title {
+                font-size: 16px;
+            }
+
         }
 
         @media (min-width: 375px) and (max-width: 667px) {
@@ -1261,6 +1297,10 @@
                 padding: 10px 10px;
             }
 
+            .card-title {
+                font-size: 16px;
+            }
+
             .product-card-title {
                 color: var(--primary-bg);
                 font-size: 22px;
@@ -1328,8 +1368,8 @@
             }
 
             .product-card {
-                height: 364px;
-                width: 343px;
+                height: 400px;
+                width: 290px;
                 background-repeat: no-repeat;
                 border-radius: 10px;
                 overflow: hidden;
@@ -1378,16 +1418,68 @@
                 display: inline-block;
             }
 
+            .course-title {
+                text-align: center;
+                color: white;
+            }
+
+            .course-content h5 {
+                color: white;
+            }
+
             .product-card {
-                flex-direction: row;
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
             }
 
-            .product-img {
-                width: 50%;
+            .product-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
             }
 
-            .product-info {
-                width: 50%;
+            .product-card .card-body {
+                padding: 15px;
+            }
+
+            .product-card .card-body p {
+                color: #1d3557;
+                text-align: left;
+            }
+
+            .product-card .btn {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
+                margin: 20px 0px;
+            }
+
+            .btn-view-product {
+                background: #1C1C50;
+                color: white;
+                border-radius: 5px;
+                padding: 14px 26px;
+                font-weight: bold;
+
+            }
+
+            .btn-view-product:hover {
+                background: #1ba34b;
+                color: white;
+            }
+
+            .btn-div {
+                margin: 40px 0px;
+            }
+
+            .home6 h5,
+            .home6 p+h5 {
+                text-align: left;
+                color: #1d3557;
             }
 
             .course-card-why {
@@ -1504,12 +1596,22 @@
                 padding-top: 50px;
                 height: 50vh;
             }
+
+            .card-title {
+                font-size: 16px;
+                text-align: left;
+                color: #011327;
+            }
         }
 
         /* Media Queries for Responsive Design */
 
         /* Mobile devices (less than 576px) */
         @media (max-width: 575.98px) {
+            .course-title {
+                color: white;
+            }
+
             .new-pak {
                 margin: 20px 0px;
                 margin-left: 0px;
@@ -1604,67 +1706,59 @@
 
 
 
-
             .product-card {
-                flex-direction: row;
-            }
-
-            .product-img {
-                width: 50%;
-            }
-
-            .product-info {
-                width: 100%;
-            }
-
-            .portfolio-item {
-                margin: 20px 0px;
-
-            }
-
-
-            .product-img {
-                flex: 1;
-                background-size: cover;
-                background-position: center;
-                min-height: 200px;
-            }
-
-            .product-info {
-                flex: 1;
-                /* padding: 15px; */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            .product-title {
-                background: #198754;
-                color: #ffffff;
-                padding: 5px 10px;
-                font-weight: bold;
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 text-align: center;
             }
 
-            .product-info>p {
-                text-align: left;
-                padding-left: 10px;
+            .product-card img {
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+                border-radius: 15px;
             }
 
-            .product-info>ul>li {
-                color: #011327;
-                text-align: left;
-                text-decoration: none;
+            .product-card .card-body {
+                padding: 15px;
             }
 
-            .about-text-head {
+            .product-card .card-body p {
+                color: #1d3557;
                 text-align: left;
-                border-left: 6px solid green;
-                margin: 33px 33px 33px 0px;
-                font-size: 28px;
-                height: 30px;
-                padding-left: 10px;
+            }
 
+            .product-card .btn {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
+                margin: 20px 0px;
+            }
+
+            .btn-view-product {
+                background: #1C1C50;
+                color: white;
+                border-radius: 5px;
+                padding: 14px 26px;
+                font-weight: bold;
+
+            }
+
+            .btn-view-product:hover {
+                background: #1ba34b;
+                color: white;
+            }
+
+            .btn-div {
+                margin: 40px 0px;
+            }
+
+            .home6 h5,
+            .home6 p+h5 {
+                text-align: left;
+                color: #1d3557;
             }
 
             .btn-know-more {
@@ -1804,12 +1898,21 @@
                 /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
                 position: relative;
                 padding-top: 50px;
-                height: 50vh;
+                height: 65vh;
             }
         }
 
         /* Tablets (576px to 991px) */
         @media (min-width: 576px) and (max-width: 991px) {
+            .card-title {
+                font-size: 16px;
+                text-align: left;
+                color: #011327;
+            }
+
+            .course-title {
+                color: white;
+            }
 
             .nav-item .active {
                 border-bottom: 1px solid green;
@@ -1952,65 +2055,58 @@
             }
 
             .product-card {
-                flex-direction: row;
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
             }
 
-            .product-img {
-                width: 50%;
-            }
-
-            .product-info {
+            .product-card img {
                 width: 100%;
+                height: 50%;
+                object-fit: cover;
+                border-radius: 15px;
             }
 
-            .portfolio-item {
+            .product-card .card-body {
+                padding: 15px;
+            }
+
+            .product-card .card-body p {
+                color: #1d3557;
+                text-align: left;
+            }
+
+            .product-card .btn {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
                 margin: 20px 0px;
-
             }
 
-
-            .product-img {
-                flex: 1;
-                background-size: cover;
-                background-position: center;
-                min-height: 200px;
-            }
-
-            .product-info {
-                flex: 1;
-                /* padding: 15px; */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            .product-title {
-                background: #198754;
-                color: #ffffff;
-                padding: 5px 10px;
+            .btn-view-product {
+                background: #1C1C50;
+                color: white;
+                border-radius: 5px;
+                padding: 14px 26px;
                 font-weight: bold;
-                text-align: left;
+
             }
 
-            .product-info>p {
-                text-align: left;
-                padding-left: 10px;
+            .btn-view-product:hover {
+                background: #1ba34b;
+                color: white;
             }
 
-            .product-info>ul>li {
-                color: #011327;
-                text-align: left;
-                text-decoration: none;
+            .btn-div {
+                margin: 40px 0px;
             }
 
-            .about-text-head {
+            .home6 h5,
+            .home6 p+h5 {
                 text-align: left;
-                border-left: 6px solid green;
-                margin: 33px 33px 33px 0px;
-                font-size: 28px;
-                height: 30px;
-                padding-left: 10px;
-
+                color: #1d3557;
             }
 
             .btn-know-more {
@@ -2175,6 +2271,16 @@
                 font-size: 45px;
                 color: #f9f9f9;
                 margin-bottom: 100px;
+            }
+
+            .card-title {
+                font-size: 16px;
+                text-align: left;
+                color: #011327;
+            }
+
+            .course-title {
+                color: white;
             }
 
             .new-pak {
@@ -2362,59 +2468,52 @@
             }
 
             .product-card {
-                flex-direction: row;
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
             }
 
-            .product-img {
-                width: 50%;
+            .product-card img {
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+                border-radius: 15px;
             }
 
-            .product-info {
-                width: 50%;
+            .product-card .card-body {
+                padding: 15px;
             }
 
-            .portfolio-item {
+            .product-card .card-body p {
+                color: #1d3557;
+                text-align: left;
+            }
+
+            .product-card .btn {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
                 margin: 20px 0px;
-
             }
 
-
-            .product-img {
-                flex: 1;
-                background-size: cover;
-                background-position: center;
-                min-height: 200px;
-            }
-
-            .product-info {
-                flex: 1;
-                /* padding: 15px; */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            .product-title {
-                background: #198754;
-                color: #ffffff;
-                padding: 5px 10px;
+            .btn-view-product {
+                background: #1C1C50;
+                color: white;
+                border-radius: 5px;
+                padding: 14px 26px;
                 font-weight: bold;
-                text-align: left;
+
             }
 
-            .product-info>p {
-                text-align: left;
-                padding-left: 10px;
+            .btn-view-product:hover {
+                background: #1ba34b;
+                color: white;
             }
 
-            .product-info>ul>li {
-                margin-left: 25px;
-            }
-
-            .product-info>ul>li {
-                color: #011327;
-                text-align: left;
-                text-decoration: none;
+            .btn-div {
+                margin: 40px 0px;
             }
 
             .btn-know-more {
@@ -2540,9 +2639,19 @@
                 text-align: center;
             }
 
+            .card-title {
+                color: #1d3557;
+                font-size: 16px;
+                margin: 10px 0px;
+            }
+
         }
 
         @media (min-width: 1024px) and (max-width: 1366px) {
+            .course-title {
+                color: white;
+            }
+
             .card-body p {
                 font-size: 14px;
                 color: var(--primary-bg);
@@ -2646,55 +2755,58 @@
             }
 
             .product-card {
-                flex-direction: row;
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
             }
 
-            .product-img {
-                width: 50%;
+            .product-card img {
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+                border-radius: 15px;
             }
 
-            .product-info {
-                width: 50%;
+            .product-card .card-body {
+                padding: 15px;
             }
 
-            .portfolio-item {
+            .product-card .card-body p {
+                color: #1d3557;
+                text-align: left;
+            }
+
+            .product-card .btn {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
                 margin: 20px 0px;
-
             }
 
-
-            .product-img {
-                flex: 1;
-                background-size: cover;
-                background-position: center;
-                min-height: 200px;
-            }
-
-            .product-info {
-                flex: 1;
-                /* padding: 15px; */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            .product-title {
-                background: #198754;
-                color: #ffffff;
-                padding: 5px 10px;
+            .btn-view-product {
+                background: #1C1C50;
+                color: white;
+                border-radius: 5px;
+                padding: 14px 26px;
                 font-weight: bold;
-                text-align: left;
+
             }
 
-            .product-info>p {
-                text-align: left;
-                padding-left: 10px;
+            .btn-view-product:hover {
+                background: #1ba34b;
+                color: white;
             }
 
-            .product-info>ul>li {
-                color: #011327;
+            .btn-div {
+                margin: 40px 0px;
+            }
+
+            .home6 h5,
+            .home6 p+h5 {
                 text-align: left;
-                text-decoration: none;
+                color: #1d3557;
             }
 
             .btn-know-more {
@@ -2815,6 +2927,10 @@
         /* HD (1366 × 768) */
         @media screen and (min-width: 1366px) {
             @media (min-width: 992px) {
+                .course-title {
+                    color: white;
+                }
+
                 .packing-title {
                     font-weight: bolder;
                     font-size: 45px;
@@ -2888,6 +3004,12 @@
                     font-size: 14px;
                     color: var(--primary-white);
                     /* border-radius: 15px; */
+                }
+
+                .card-title {
+                    color: #1d3557;
+                    font-size: 16px;
+                    margin: 10px 0px;
                 }
 
                 .product-card-title {
@@ -2982,58 +3104,14 @@
                 }
             }
 
-            .product-card {
-                flex-direction: row;
-            }
-
-            .product-img {
-                width: 50%;
-            }
-
-            .product-info {
-                width: 50%;
-            }
-
-            .portfolio-item {
-                margin: 20px 0px;
-
-            }
-
-
-            .product-img {
-                flex: 1;
-                background-size: cover;
-                background-position: center;
-                min-height: 200px;
-            }
-
-            .product-info {
-                flex: 1;
-                /* padding: 15px; */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                background-color: #d8ebff;
-            }
-
-            .product-title {
-                background: #198754;
-                color: #ffffff;
-                padding: 5px 10px;
-                font-weight: bold;
+            .card-title {
+                font-size: 16px;
                 text-align: left;
-            }
-
-            .product-info>p {
-                text-align: left;
-                padding-left: 10px;
-            }
-
-            .product-info>ul>li {
                 color: #011327;
-                text-align: left;
-                text-decoration: none;
             }
+
+
+
 
             .btn-know-more {
                 width: 110px;
@@ -3189,10 +3267,70 @@
                 font-size: 0.9rem;
                 opacity: 0.85;
             }
+
+            .product-card {
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .product-card img {
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            .product-card .card-body {
+                padding: 15px;
+            }
+
+            .product-card .card-body p {
+                color: #1d3557;
+                text-align: left;
+            }
+
+            .product-card .btn {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
+                margin: 20px 0px;
+            }
+
+            .btn-view-product {
+                background: #1C1C50;
+                color: white;
+                border-radius: 5px;
+                padding: 14px 26px;
+                font-weight: bold;
+
+            }
+
+            .btn-view-product:hover {
+                background: #1ba34b;
+                color: white;
+            }
+
+            .btn-div {
+                margin: 40px 0px;
+            }
+
+
         }
 
         /* Full HD (1920 × 1080) */
         @media screen and (min-width: 1920px) {
+            .card-title {
+                color: #1d3557;
+                font-size: 16px;
+                margin: 10px 0px;
+            }
+
+            .course-title {
+                color: white;
+            }
 
             .portfolio-wrap {
                 display: flex;
@@ -3338,71 +3476,8 @@
                 text-align: left;
             }
 
-            .product-card {
-                flex-direction: row;
-            }
-
-            .product-img {
-                width: 50%;
-            }
-
-            .product-info {
-                width: 50%;
-            }
-
-            .portfolio-item {
-                margin: 20px 0px;
-
-            }
 
 
-            .product-img {
-                flex: 1;
-                background-size: cover;
-                background-position: center;
-                min-height: 200px;
-            }
-
-            .product-info {
-                flex: 1;
-                /* padding: 15px; */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                background-color: #d8ebff;
-            }
-
-            .portfolio-wrap {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .portfolio-wrap>.col-lg-6 {
-                display: flex;
-                flex-direction: column;
-                flex: 1;
-                /* Makes both columns equal height */
-            }
-
-
-            .product-title {
-                background: #198754;
-                color: #ffffff;
-                padding: 5px 10px;
-                font-weight: bold;
-                text-align: left;
-            }
-
-            .product-info>p {
-                text-align: left;
-                padding-left: 10px;
-            }
-
-            .product-info>ul>li {
-                color: #011327;
-                text-align: left;
-                text-decoration: none;
-            }
 
             .btn-know-more {
                 width: 110px;
@@ -3562,9 +3637,69 @@
                 text-align: center;
             }
 
+            .product-card {
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
 
+            .product-card img {
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            .product-card .card-body {
+                padding: 15px;
+            }
+
+            .product-card .card-body p {
+                color: #1d3557;
+                text-align: left;
+            }
+
+            .product-card .btn {
+                background-color: #28a745;
+                color: white;
+                border-radius: 5px;
+                margin: 20px 0px;
+            }
+
+            .btn-view-product {
+                background: #1C1C50;
+                color: white;
+                border-radius: 5px;
+                padding: 14px 26px;
+                font-weight: bold;
+
+            }
+
+            .btn-view-product:hover {
+                background: #1ba34b;
+                color: white;
+            }
+
+            .btn-div {
+                margin: 40px 0px;
+            }
+
+            .home6 h5,
+            .home6 p+h5 {
+                text-align: left;
+                color: #1d3557;
+            }
+
+            .card-title {
+                font-size: 16px;
+                text-align: left;
+                color: #011327;
+            }
         }
     </style>
+
 
 </head>
 
@@ -3652,7 +3787,7 @@
     <section class="news-section">
         <div class="container">
             <div class="news-header">
-                <h2 class="certifications-header" style="font-size: 2.5rem;">Our Product Range</h2>
+                <h3 class="certifications-header" style="font-size: 2.5rem;">Our Product Range</h3>
             </div>
 
             <div class="row">
@@ -3787,189 +3922,92 @@
 
     </section>
     <section>
-        <div class="inner-pages-bnr">
-            <div class="container " style="background-color:#fff;margin-top: 20px; ">
-                <div class="row my-lg-4 my-md-4 my-2">
-                    <div class="col-md-12 col-xs-12 experienceLeft">
-                        <div class="">
-                            <h3 class="about-text-head">Our Commitment to You</h3>
-                        </div>
-                        <div class="">
-                            <p class="ml-4" style="margin-left: 24px;text-align: left;">At Mundada Polymers, we view our
-                                clients as valued
-                                partners. Our mission extends
-                                beyond supplying
-                                packaging materials;
-                                we aim to foster collaborative relationships built on trust and mutual success. Our
-                                dedicated
-                                team
-                                of experts is always
-                                ready to provide personalized assistance, addressing your unique challenges with
-                                tailored
-                                solutions.</p>
-                        </div>
+        <div class="container py-5">
+            <h3 class="about-text-head ">Our Products</h3>
+            <p>At Mundada Polymers, we specialize in high-quality packaging films designed to protect, secure, and
+                package a wide range
+                of products.<br> Our advanced manufacturing techniques ensure durability, flexibility, and efficiency
+                for
+                various
+                industries.<br> Explore our premium product range below..</p>
 
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="img/product-page/p1.svg" alt="Stretch Hood Film">
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left; ;">Stretch Hood
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                            <a href="#" class="btn">Know More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row portfolio-container " data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <div class="col-lg-6" style="padding-right: 0;">
-                                <img src="img/product-page/p1.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-6" style="background-color: #d8ebff;">
-                                <div class="product-info">
-                                    <h6 class="product-title">Stretch Hood Film</h6>
-                                    <p><strong>Main Usage Areas</strong></p>
-                                    <ul>
-                                        <li>Pharmaceutical </li>
-                                        <li>Glass bottle etc</li>
-                                        <li>Textile / Yarn / Fiber</li>
-                                    </ul>
-                                    <button class=" btn-know-more">Know More</button>
-                                </div>
-                            </div>
-
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="img/product-page/p2.svg" alt="Stretch Hood Film">
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">LDPE Shrink Film
+                            </h5>
+                            <p class="card-text">Used in beverages, food and canned goods, packaging materials.</p>
+                            <a href="#" class="btn">Know More</a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <div class="col-lg-6" style="padding-right: 0;">
-                                <img src="img/product-page/p2.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-6" style="background-color: #d8ebff;">
-                                <div class="product-info">
-                                    <h6 class="product-title">LDPE Shrink Film</h6>
-                                    <p><strong>Main Usage Areas</strong></p>
-                                    <ul>
-                                        <li>Beverages </li>
-                                        <li>Food and canned goods</li>
-                                        <li>Packaging materials & paper etc</li>
-                                    </ul>
-                                    <button class=" btn-know-more">Know More</button>
-                                </div>
-                            </div>
+                </div>
 
-
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="img/product-page/p3.svg" alt="Stretch Hood Film">
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Surface Protection
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                            <a href="#" class="btn">Know More</a>
                         </div>
                     </div>
+                </div>
 
-
-
-                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <div class="col-lg-6" style="padding-right: 0;">
-                                <img src="img/product-page/p3.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-6" style="background-color: #d8ebff;">
-                                <div class="product-info .inner-pages-bnr img">
-                                    <h6 class="product-title">Surface Protection Film</h6>
-                                    <p><strong>Main Usage Areas</strong></p>
-                                    <ul>
-                                        <li>Stainless steel sheets
-                                        </li>
-                                        <li>Colour coated steel sheets</li>
-                                        <li>Glass</li>
-                                    </ul>
-                                    <button class=" btn-know-more">Know More</button>
-                                </div>
-                            </div>
-
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="img/product-page/p4.svg" alt="Stretch Hood Film">
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Stretch Wrap Film
+                            </h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                            <a href="#" class="btn">Know More</a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <div class="col-lg-6" style="padding-right: 0;">
-                                <img src="img/product-page/p4.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-6" style="background-color: #d8ebff;">
-                                <div class="product-info">
-                                    <h6 class="product-title">Stretch Wrap Film</h6>
-                                    <p><strong>Other Products</strong></p>
-                                    <ul>
-                                        <li>LDPE Tubing Film Roll</li>
-                                        <li>Carpet Protection Film</li>
-                                        <li>VCI - Stretch Film</li>
-                                    </ul>
-                                    <button class=" btn-know-more">Know More</button>
-                                </div>
-                            </div>
+                </div>
 
-
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="img/product-page/p5.svg" alt="Stretch Hood Film">
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Silage Stretch
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                            <a href="#" class="btn">Know More</a>
                         </div>
                     </div>
+                </div>
 
-
-                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <div class="col-lg-6" style="padding-right: 0;">
-                                <img src="img/product-page/p5.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-6" style="background-color: #d8ebff;">
-                                <div class="product-info img-fluid">
-                                    <h6 class="product-title">Surface Protection Film</h6>
-                                    <p><strong>Main Usage Areas</strong></p>
-                                    <ul>
-                                        <li>Stainless steel sheets
-                                        </li>
-                                        <li>Colour coated steel sheets</li>
-                                        <li>Glass</li>
-                                    </ul>
-                                    <button class=" btn-know-more">Know More</button>
-                                </div>
-                            </div>
-
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="img/product-page/p6.svg" alt="Stretch Hood Film">
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">VCI-Stretch Wrap
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                            <a href="#" class="btn">Know More</a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <div class="col-lg-6" style="padding-right: 0;">
-                                <img src="img/product-page/p6.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-6" style="background-color: #d8ebff;">
-                                <div class="product-info img-fluid">
-                                    <h6 class="product-title">Stretch Wrap Film
-                                    </h6>
-                                    <p><strong>Other Products</strong></p>
-                                    <ul>
-                                        <li>LDPE Tubing Film Roll
-
-
-
-                                        </li>
-                                        <li>Carpet Protection Film</li>
-                                        <li>VCI - Stretch Film</li>
-                                    </ul>
-                                    <button class=" btn-know-more">Know More</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-                    <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-               <div class="portfolio-wrap">
-                  <img src="Image/portfolio/Product9.JPG" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                     <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                        class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                     <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                  <div class="portfolio-info">
-                     <h4>Products</h4>
-                     <p>App</p>
-                  </div>
-               </div>
-            </div> -->
-
-
                 </div>
             </div>
 
+            <div class="text-center mt-lg-5 mt-md-4 mt-2 btn-div">
+                <button class="btn btn-view-product">View More</button>
+            </div>
         </div>
     </section>
 

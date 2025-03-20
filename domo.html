@@ -3,418 +3,304 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Values - Mundada Polymers</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root {
-            --navy-blue: #1e2756;
-            --light-blue: #f0f5ff;
-            --green-accent: #2a9d5c;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-        }
-
-        .section-title {
-            color: var(--navy-blue);
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            margin-bottom: 2.5rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 0.95rem;
-        }
-
-        .values-section {
-            padding: 4rem 0;
-            background-color: #fff;
-        }
-
-        .value-card {
-            height: 100%;
+        .product-card {
+            border: none;
             border-radius: 10px;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .value-header {
-            background-color: var(--navy-blue);
-            color: white;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .value-icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .value-title {
-            font-weight: 600;
-            margin: 0;
-        }
-
-        .value-body {
-            padding: 1.5rem;
-            background-color: white;
-            border: 1px solid #e0e0e0;
-            border-top: none;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-
-        .value-text {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        .leadership-section {
-            background-color: #f8f9fa;
-            padding: 4rem 0;
-        }
-
-        .leader-image {
+        .product-card img {
             width: 100%;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .leader-image img {
-            width: 100%;
-            height: auto;
+            height: 200px;
             object-fit: cover;
         }
 
-        .leader-name {
-            background-color: var(--light-blue);
-            color: var(--navy-blue);
-            padding: 0.5rem 1rem;
-            text-align: center;
-            font-weight: 600;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+        .product-card .card-body {
+            padding: 15px;
         }
 
-        .leadership-content {
-            background-color: var(--navy-blue);
+        .product-card .btn {
+            background-color: #28a745;
             color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            height: 100%;
-        }
-
-        .leadership-title {
-            position: relative;
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
-
-        .leadership-title::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 6px;
-            background-color: var(--green-accent);
-        }
-
-        .leadership-text {
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .sustainability-section {
-            padding: 4rem 0;
-        }
-
-        .sustainability-title {
-            color: var(--navy-blue);
-            font-weight: 600;
-            border-left: 3px solid var(--green-accent);
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .sustainability-text {
-            margin-bottom: 2rem;
-        }
-
-        .eco-icon {
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f0f5ff;
-            border-radius: 50%;
-            color: var(--navy-blue);
-            font-size: 1.8rem;
-        }
-
-        .eco-title {
-            font-size: 0.85rem;
-            text-align: center;
-            color: var(--navy-blue);
-            font-weight: 600;
-        }
-
-        /* Animation classes */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 991px) {
-            .leadership-content {
-                margin-top: 2rem;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .value-card {
-                max-width: 400px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .leadership-title {
-                font-size: 1.5rem;
-            }
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-    <!-- Values Section -->
-    <section class="values-section">
-        <div class="container">
-            <h2 class="section-title">Our Values</h2>
-            <p class="section-subtitle">Our core values define who we are and guide how we do business. Every team
-                member at Mundada Polymers embodies these principles.</p>
 
-            <div class="row">
-                <!-- Value Card 1 -->
-                <div class="col-md-6 fade-in">
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <h3 class="value-title">Customer Partnership</h3>
-                        </div>
-                        <div class="value-body">
-                            <p class="value-text">We view our customers as partners and put their success at the center
-                                of what we do. We believe in long-term relationships built on trust and mutual
-                                commitment to help our clients achieve their goals.</p>
-                        </div>
+    <div class="container py-5">
+        <h2 class="text-success">Our Products</h2>
+        <p>At <b>Mundada Polymers</b>, we specialize in high-quality packaging films designed to protect, secure, and
+            package a wide range of products.</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="image1.jpg" alt="Stretch Hood Film">
+                    <div class="card-body">
+                        <h5 class="card-title">Stretch Hood Film</h5>
+                        <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        <a href="#" class="btn">Know More</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Value Card 2 -->
-                <div class="col-md-6 fade-in" style="transition-delay: 0.2s;">
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon">
-                                <i class="bi bi-award"></i>
-                            </div>
-                            <h3 class="value-title">Excellence</h3>
-                        </div>
-                        <div class="value-body">
-                            <p class="value-text">We pursue excellence in all aspects of our work, from manufacturing to
-                                customer service. We maintain high-quality standards and continuously improve our
-                                processes. We strive for nothing less than the best in product performance and
-                                reliability.</p>
-                        </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="image2.jpg" alt="LDPE Shrink Film">
+                    <div class="card-body">
+                        <h5 class="card-title">LDPE Shrink Film</h5>
+                        <p class="card-text">Used in beverages, food and canned goods, packaging materials.</p>
+                        <a href="#" class="btn">Know More</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Value Card 3 -->
-                <div class="col-md-6 fade-in" style="transition-delay: 0.4s;">
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-                            <h3 class="value-title">Innovation</h3>
-                        </div>
-                        <div class="value-body">
-                            <p class="value-text">Innovation is in our DNA. We encourage creative thinking and invest in
-                                research and development to create forward-thinking solutions. Our entrepreneurial
-                                mindset and agile approach consistently yield breakthrough products and processes.</p>
-                        </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="image3.jpg" alt="Surface Protection Film">
+                    <div class="card-body">
+                        <h5 class="card-title">Surface Protection Film</h5>
+                        <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        <a href="#" class="btn">Know More</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Value Card 4 -->
-                <div class="col-md-6 fade-in" style="transition-delay: 0.6s;">
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon">
-                                <i class="bi bi-graph-up"></i>
-                            </div>
-                            <h3 class="value-title">Integrity</h3>
-                        </div>
-                        <div class="value-body">
-                            <p class="value-text">We pursue excellence in all aspects of our work, from maintaining
-                                high-quality standards and continuously improving our processes. We strive for nothing
-                                less than the best in product performance and reliability.</p>
-                        </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="image4.jpg" alt="Stretch Wrap Film">
+                    <div class="card-body">
+                        <h5 class="card-title">Stretch Wrap Film</h5>
+                        <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        <a href="#" class="btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="image5.jpg" alt="Silage Stretch Film">
+                    <div class="card-body">
+                        <h5 class="card-title">Silage Stretch Film</h5>
+                        <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        <a href="#" class="btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="image6.jpg" alt="VCI-Stretch Wrap Film">
+                    <div class="card-body">
+                        <h5 class="card-title">VCI-Stretch Wrap Film</h5>
+                        <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        <a href="#" class="btn">Know More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Leadership Section -->
-    <section class="leadership-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Leader Image -->
-                <div class="col-lg-4 fade-in">
-                    <div class="leader-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-27%20140752-SZDcyhplm5eyvLFuSJgNrZBUEnDNVq.png"
-                            alt="Mr. Pramod Mundada">
-                        <div class="leader-name">Mr. Pramod Mundada</div>
+        <div class="text-center mt-4">
+            <button class="btn btn-outline-success">View More</button>
+        </div>
+    </div>
+    <section>
+        <div class="inner-pages-bnr">
+            <div class="container " style="background-color:#fff;margin-top: 20px; ">
+                <div class="row my-lg-4 my-md-4 my-2">
+                    <div class="col-md-12 col-xs-12 experienceLeft">
+                        <div class="">
+                            <h3 class="about-text-head">Our Commitment to You</h3>
+                        </div>
+                        <div class="">
+                            <p class="ml-4" style="margin-left: 24px;text-align: left;">At Mundada Polymers, we view our
+                                clients as valued
+                                partners. Our mission extends
+                                beyond supplying
+                                packaging materials;
+                                we aim to foster collaborative relationships built on trust and mutual success. Our
+                                dedicated
+                                team
+                                of experts is always
+                                ready to provide personalized assistance, addressing your unique challenges with
+                                tailored
+                                solutions.</p>
+                        </div>
+
                     </div>
                 </div>
+                <div class="row portfolio-container " data-aos="fade-up" data-aos-delay="200">
 
-                <!-- Leadership Content -->
-                <div class="col-lg-8 fade-in" style="transition-delay: 0.3s;">
-                    <div class="leadership-content">
-                        <h2 class="leadership-title">Leadership</h2>
-                        <div class="leadership-text">
-                            <p>Mundada Polymers is guided by experienced leadership with a vision for excellence. The
-                                company is led by Mr. Pramod Mundada, whose entrepreneurial journey began in 2000 with
-                                the establishment of Bai-Kakaji Plastics. Under his guidance, the business has grown
-                                from a small-scale operation to a diversified group with a focus on innovation,
-                                sustainability, and customer service.</p>
-                            <p>With over two decades of industry experience, Mr. Mundada brings a wealth of knowledge
-                                and expertise to share with our repeat customers. Our leaders are driven by a commitment
-                                to quality, transparency, and the continuous improvement of both our products and the
-                                Our Values-making that makes customers trust our packaging solutions and partnerships.
-                            </p>
+                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <div class="col-lg-6" style="padding-right: 0;">
+                                <img src="img/product-page/p1.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6" style="background-color: #d8ebff;">
+                                <div class="product-info">
+                                    <h6 class="product-title">Stretch Hood Film</h6>
+                                    <p><strong>Main Usage Areas</strong></p>
+                                    <ul>
+                                        <li>Pharmaceutical </li>
+                                        <li>Glass bottle etc</li>
+                                        <li>Textile / Yarn / Fiber</li>
+                                    </ul>
+                                    <button class=" btn-know-more">Know More</button>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <div class="col-lg-6" style="padding-right: 0;">
+                                <img src="img/product-page/p2.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6" style="background-color: #d8ebff;">
+                                <div class="product-info">
+                                    <h6 class="product-title">LDPE Shrink Film</h6>
+                                    <p><strong>Main Usage Areas</strong></p>
+                                    <ul>
+                                        <li>Beverages </li>
+                                        <li>Food and canned goods</li>
+                                        <li>Packaging materials & paper etc</li>
+                                    </ul>
+                                    <button class=" btn-know-more">Know More</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <div class="col-lg-6" style="padding-right: 0;">
+                                <img src="img/product-page/p3.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6" style="background-color: #d8ebff;">
+                                <div class="product-info .inner-pages-bnr img">
+                                    <h6 class="product-title">Surface Protection Film</h6>
+                                    <p><strong>Main Usage Areas</strong></p>
+                                    <ul>
+                                        <li>Stainless steel sheets
+                                        </li>
+                                        <li>Colour coated steel sheets</li>
+                                        <li>Glass</li>
+                                    </ul>
+                                    <button class=" btn-know-more">Know More</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <div class="col-lg-6" style="padding-right: 0;">
+                                <img src="img/product-page/p4.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6" style="background-color: #d8ebff;">
+                                <div class="product-info">
+                                    <h6 class="product-title">Stretch Wrap Film</h6>
+                                    <p><strong>Other Products</strong></p>
+                                    <ul>
+                                        <li>LDPE Tubing Film Roll</li>
+                                        <li>Carpet Protection Film</li>
+                                        <li>VCI - Stretch Film</li>
+                                    </ul>
+                                    <button class=" btn-know-more">Know More</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <div class="col-lg-6" style="padding-right: 0;">
+                                <img src="img/product-page/p5.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6" style="background-color: #d8ebff;">
+                                <div class="product-info img-fluid">
+                                    <h6 class="product-title">Surface Protection Film</h6>
+                                    <p><strong>Main Usage Areas</strong></p>
+                                    <ul>
+                                        <li>Stainless steel sheets
+                                        </li>
+                                        <li>Colour coated steel sheets</li>
+                                        <li>Glass</li>
+                                    </ul>
+                                    <button class=" btn-know-more">Know More</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <div class="col-lg-6" style="padding-right: 0;">
+                                <img src="img/product-page/p6.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6" style="background-color: #d8ebff;">
+                                <div class="product-info img-fluid">
+                                    <h6 class="product-title">Stretch Wrap Film
+                                    </h6>
+                                    <p><strong>Other Products</strong></p>
+                                    <ul>
+                                        <li>LDPE Tubing Film Roll
+
+
+
+                                        </li>
+                                        <li>Carpet Protection Film</li>
+                                        <li>VCI - Stretch Film</li>
+                                    </ul>
+                                    <button class=" btn-know-more">Know More</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                   <div class="portfolio-wrap">
+                      <img src="Image/portfolio/Product9.JPG" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                         <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                            class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                         <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                      </div>
+                      <div class="portfolio-info">
+                         <h4>Products</h4>
+                         <p>App</p>
+                      </div>
+                   </div>
+                </div> -->
+
+
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Sustainability Section -->
-    <section class="sustainability-section">
-        <div class="container">
-            <h3 class="sustainability-title fade-in">Sustainability Commitment</h3>
-            <p class="sustainability-text fade-in">At Mundada Polymers, sustainability is at the core of our business.
-                We manufacture 100% recyclable polyethylene films, helping customers reduce their environmental impact.
-            </p>
 
-            <div class="row text-center fade-in">
-                <!-- Eco Initiative 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="eco-icon">
-                        <i class="bi bi-recycle"></i>
-                    </div>
-                    <p class="eco-title">Using efficient manufacturing to reduce emissions</p>
-                </div>
-
-                <!-- Eco Initiative 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="eco-icon">
-                        <i class="bi bi-droplet"></i>
-                    </div>
-                    <p class="eco-title">Conserving resources and minimizing waste</p>
-                </div>
-
-                <!-- Eco Initiative 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="eco-icon">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                    <p class="eco-title">Creating solutions to ensure recyclability</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Fade-in animation on scroll
-            const fadeElements = document.querySelectorAll('.fade-in');
-
-            function checkFade() {
-                fadeElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementVisible = 150;
-
-                    if (elementTop < window.innerHeight - elementVisible) {
-                        element.classList.add('active');
-                    }
-                });
-            }
-
-            // Initial check on page load
-            checkFade();
-
-            // Check on scroll
-            window.addEventListener('scroll', checkFade);
-
-            // Hover effect for value cards
-            const valueCards = document.querySelectorAll('.value-card');
-
-            valueCards.forEach(card => {
-                card.addEventListener('mouseenter', function () {
-                    this.style.transform = 'translateY(-10px)';
-                    this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.1)';
-                });
-
-                card.addEventListener('mouseleave', function () {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
-                });
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
