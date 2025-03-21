@@ -30,12 +30,93 @@
       }
 
       .company_mission-number {
-         background-image: url('img/about-page/get-quate.jpg');
-         height: 100vh;
+         background-image: url('img/product-page/Get-quate-hero.svg');
+         width: 100%;
 
+         height: 400px;
          background-repeat: no-repeat;
          background-size: cover;
 
+      }
+
+      .subheadtext {
+         text-align: center;
+         font-size: 24px;
+      }
+
+      .static-section .container .row h1 {
+         margin-top: 50px;
+      }
+
+      .quote-section {
+         text-align: center;
+         padding: 50px 20px;
+      }
+
+      .quote-title {
+         font-weight: bold;
+         color: #1e9d46;
+      }
+
+      .quote-description {
+         font-size: 18px;
+         color: #333;
+         margin-bottom: 40px;
+      }
+
+      .info-card {
+         background: #ebf5ff;
+         padding: 25px;
+         border-radius: 10px;
+         text-align: center;
+         aspect-ratio: 6/4;
+         margin: 20px 0px;
+      }
+
+      .info-card i {
+         font-size: 30px;
+         color: #1e9d46;
+         margin-bottom: 15px;
+      }
+
+      .info-card h5 {
+         font-weight: bold;
+         color: #333;
+      }
+
+
+
+      .contact-section {
+         padding: 50px 20px;
+      }
+
+      .form-control {
+         border-radius: 5px;
+         border: 1px solid #ccc;
+         padding: 10px;
+      }
+
+      .form-label {
+         color: #565656;
+      }
+
+      .submit-btn {
+         background-color: #1e9d46;
+         color: white;
+         padding: 10px;
+         border: none;
+         border-radius: 5px;
+         font-size: 16px;
+         cursor: pointer;
+         width: 100%;
+      }
+
+      .from-row .col-12 {
+         padding: 0px 15px;
+      }
+
+      .submit-btn:hover {
+         background-color: #168737;
       }
    </style>
 </head>
@@ -95,21 +176,101 @@
    </header>
    <section class="static-section home3-static  company_mission-number">
 
-      <div class="container" style="z-index: 999; position: absolute;margin-left: 7%; margin-top: 5%;">
+      <div class="container" style=" display: flex;justify-content: center;">
          <div class="row text-white">
-            <h1 class="text-white" style="color: #ffffff"> Get A Quate</h1>
+            <h1 class="text-white text-center  " style="color: #ffffff"> <img
+                  src="img/product-page/logo-get-quate.svg" />
+            </h1>
 
-            <p class="subheadtext text-white" style="color:white">High-performance films
-               for diverse
-               industries –
-               food, pharma, industrial, and <br> more. Engineered for durability,
-               sustainability, and superior protection.</p>
+            <p class="subheadtext text-white" style="color:white">Your Packaging, Our Commitment</p>
 
          </div>
-         <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
+      </div>
+   </section>
+   <section>
+      <div class="container">
+         <div class="quote-section">
+            <h2 class="quote-title">Get a Quote</h2>
+            <p class="quote-description">Looking for high-quality polymer films tailored to your needs? Fill out the
+               form,
+               and
+               our team will provide you with a customized quote.</p>
+
+            <div class="row g-4">
+               <div class="col-md-4">
+                  <div class="info-card">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <h5>Office</h5>
+                     <p>Mundada Polymers<br>Plot No.: C-46, Near Latur Packing, MIDC Ausa, Latur -
+                        413520<br>Maharashtra,
+                        India</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="info-card">
+                     <i class="fas fa-phone-alt"></i>
+                     <h5>Contact</h5>
+                     <p>+91 93229 05378<br>+91 89567 54341</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="info-card">
+                     <i class="fas fa-envelope"></i>
+                     <h5>Email</h5>
+                     <p>pranav@mundadapolymers.com<br>aba@mundadapolymers.com</p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    </section>
 
+   <section class="contact-section" style="background-color: white;">
+      <div class="container">
+
+
+         <div class="row">
+            <!-- Map Section -->
+            <div class="col-md-6">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121191.91052825916!2d76.44452002645008!3d18.33600330555353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcf86b25f8bce69%3A0xccf29f051e82201e!2sMundada%20Polymer!5e0!3m2!1sen!2sin!4v1742551860862!5m2!1sen!2sin"
+                  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+               <form>
+                  <div class="row g-3 from-row">
+                     <div class="col-md-6">
+                        <label class="form-label">Name*</label>
+                        <input type="text" class="form-control" required>
+                     </div>
+                     <div class="col-md-6">
+                        <label class="form-label">Company Name</label>
+                        <input type="text" class="form-control">
+                     </div>
+                     <div class="col-12 ">
+                        <label class="form-label">Email Address*</label>
+                        <input type="email" class="form-control" required>
+                     </div>
+                     <div class="col-12">
+                        <label class="form-label">Phone Number*</label>
+                        <input type="text" class="form-control" required>
+                     </div>
+                     <div class="col-12">
+                        <label class="form-label">Enquiry For</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                     </div>
+                     <div class="col-12">
+                        <button type="submit" class="submit-btn">Submit</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
 
    <!--=========Footer Start============-->
    <section class="projectSec">
