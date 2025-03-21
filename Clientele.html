@@ -72,6 +72,10 @@
             display: block;
         }
 
+        .industry-card img {
+            width: 100%;
+        }
+
         .course-content {
             position: absolute;
             bottom: 0;
@@ -719,7 +723,6 @@
         }
 
         .Industries-Served {
-            color: white;
             font-size: 20px;
             font-weight: 800;
             margin-left: 100px;
@@ -728,8 +731,8 @@
             z-index: 1;
             font-size: 20px;
             font-weight: 800;
-            margin-left: 100px;
-            color: #ffffff;
+            margin-left: 30px;
+            color: #1d3557;
             padding: 2px;
             border-left: 6px solid #34a853;
         }
@@ -958,14 +961,101 @@
             margin: 0px 0px;
         }
 
+        #Esteemed-Clientele {
+            color: #011327;
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 4px;
+            /* margin-top: 50px; */
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            font-weight: 800;
+            margin: 40px 0px 0px 40px;
+            padding: 2px;
+            border-left: 6px solid #34a853;
+
+        }
+
+
+        .value-text18 {
+            font-size: 18px;
+        }
+
+        .stats-section {
+            background-color: #1a2744;
+            /* Adjust based on your color scheme */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .stats-box {
+            border-right: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stats-box:last-child {
+            border-right: none;
+        }
+
+        .stats-number {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .stats-label {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        /* .Clientele-hero {
+            background-color: #d8ebff;
+            margin-top: 80px;
+            height: 100vh;
+        } */
+
+        .hero-subtext {
+            font-size: 18px;
+            margin: 40px 0px 0px 0px;
+        }
+
+        .text16 {
+            font-size: 16px;
+        }
+
+        .text18 {
+            font-size: 18px;
+
+        }
+
+        .text20 {
+            font-size: 20px;
+
+        }
+
+        .text24 {
+            font-size: 24px;
+        }
+
+        .section-titles {
+            font-size: 4rem;
+            color: #1d3557;
+            font-weight: bold;
+        }
 
         @media (min-width: 375px) and (max-width: 414px) {
 
-            /* .reviews-container {
-                    display: none;
-                    justify-content: none;
-                    gap: 20px;
-                } */
+            .Clientele-hero {
+                background-color: #d8ebff;
+                margin-top: 80px;
+                height: 100vh;
+            }
+
+            .hero-subtext {
+                font-size: 18px;
+                margin: 0px 0px 0px 0px;
+            }
+
             #new-carousel {
                 position: relative;
                 width: 100%;
@@ -1360,6 +1450,16 @@
         @media (min-width: 414) and (max-width: 667px) {
 
 
+            .Clientele-hero {
+                background-color: #d8ebff;
+                margin-top: 80px;
+                height: 100vh;
+            }
+
+            .hero-subtext {
+                font-size: 18px;
+                margin: 40px 0px 0px 0px;
+            }
 
             .product-subtitle {
                 color: #333333;
@@ -1748,6 +1848,17 @@
 
         /* Tablets (576px to 991px) */
         @media (min-width: 576px) and (max-width: 991px) {
+            .Clientele-hero {
+                background-color: #d8ebff;
+                margin-top: 80px;
+                height: 75vh;
+            }
+
+            .hero-subtext {
+                font-size: 18px;
+                margin: 40px 0px 0px 0px;
+            }
+
             #hero-carousel .item {
                 height: 72vh;
             }
@@ -2023,6 +2134,11 @@
         }
 
         @media screen and (min-width: 1366px) {
+            .Clientele-hero {
+                background-color: #d8ebff;
+                margin-top: 80px;
+                height: 75vh;
+            }
 
             .carousel-control .glyphicon-chevron-left,
             .carousel-control .icon-prev {
@@ -2662,12 +2778,13 @@
                 padding: 0 20px;
             }
         }
-    </style>
 
-
-    <style>
         @media screen and (min-width: 1366px) and (max-width: 1920px) {
-
+            .Clientele-hero {
+                background-color: #d8ebff;
+                margin-top: 80px;
+                height: 50vh;
+            }
 
             #h1-text {
                 line-height: 1.2;
@@ -2916,23 +3033,28 @@
 
         }
 
-        @media screen and (min-width: 1024px) and (max-width: 1365px) {
+        @media screen and (min-width: 1024px) and (max-width: 1366px) {
 
+            .Clientele-hero {
+                background-color: #d8ebff;
+                margin-top: 80px;
+                height: 50vh;
+            }
 
             #hero-carousel {
                 position: relative;
-                width: 100%;
+                width: 75%;
                 /* height: 100vh; */
             }
 
             #carousel-indicators-lg {
 
-                position: absolute;
+                /* position: absolute; */
                 bottom: 10px;
                 left: 50%;
                 z-index: 15;
                 width: 60%;
-                top: 100px;
+                top: 380px;
                 padding-left: 0;
                 margin-left: -30%;
                 text-align: center;
@@ -3086,7 +3208,7 @@
                 /* left: 50%;  */
                 transform: translateX(-50%);
                 margin-bottom: 10px;
-                margin-left: 240px;
+                margin-left: 70px;
             }
 
             .review-card img {
@@ -3250,7 +3372,7 @@
                 background: #1d3557;
                 color: #fff;
                 padding: 6px 8px;
-                font-size: 14px;
+                font-size: 12px;
                 /* border-radius: 4px; */
                 white-space: nowrap;
             }
@@ -3460,7 +3582,7 @@
                 top: -18px;
                 transform: translateX(-50%);
                 margin-bottom: 10px;
-                margin-left: 207px;
+                margin-left: 74px;
             }
 
             .contact-heading {
@@ -3570,53 +3692,7 @@
             }
 
 
-        }
 
-        #Esteemed-Clientele {
-            color: #011327;
-            font-size: 20px;
-            font-weight: 800;
-            margin-left: 4px;
-            /* margin-top: 50px; */
-            position: relative;
-            z-index: 1;
-            font-size: 20px;
-            font-weight: 800;
-            margin: 40px 0px 0px 40px;
-            padding: 2px;
-            border-left: 6px solid #34a853;
-
-        }
-
-
-        .value-text18 {
-            font-size: 18px;
-        }
-
-        .stats-section {
-            background-color: #1a2744;
-            /* Adjust based on your color scheme */
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .stats-box {
-            border-right: 2px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .stats-box:last-child {
-            border-right: none;
-        }
-
-        .stats-number {
-            font-size: 4rem;
-            font-weight: bold;
-        }
-
-        .stats-label {
-            font-size: 1.5rem;
-            opacity: 0.9;
         }
     </style>
 </head>
@@ -3663,7 +3739,7 @@
                             <i class="fa fa-chevron-down"></i>
                         </li>
                         <li>
-                            <a href="#">Download Brochure</a>
+                            <a href="Documents/mundada-polymers-brochure.pdf" download>Download Brochure</a>
                         </li>
                         <li>
                             <a href="request-quote.html" class="btn btn-custom"
@@ -3677,7 +3753,7 @@
     </header>
 
     <section>
-        <div class="container h-100" style="background-color:#d8ebff;margin-top: 80px; height: 75vh;">
+        <div class="container h-100 Clientele-hero ">
             <p id="Esteemed-Clientele"> Our Esteemed Clientele</p>
             <div class="container" style="margin-top: 20px;">
 
@@ -3704,7 +3780,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="container " style="font-size: 18px; margin: 40px ;">
+                <p class="container hero-subtext">
                     We believe in long-term partnerships and strive to deliver tailor-made solutions that enhance our
                     clients’ operational
                     efficiency.
@@ -3802,13 +3878,13 @@
             <div class="container position-relative">
                 <div class="row mb-5">
                     <!-- Text Content -->
-                    <div class="col-lg-4 col-md-5 text-white " style="margin-top: 30px;">
+                    <div class="col-lg-4 col-md-4 text-white " style="margin-top: 30px;">
                         <h2 class="mb-4 packing-title ">Hear What OurSatisfied Clients Have to Say About Our Packaging
                             Solutions
                         </h2>
                         <button class="btn btn-custom w-50 mx-auto" fdprocessedid="c4zd8g">Read More Updates</button>
                     </div>
-                    <div class="col-lg-8 col-md-7 text-white" style="margin-top: 50px;">
+                    <div class="col-lg-8 col-md-8 text-white" style="margin-top: 50px;">
 
                         <div id="new-carousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
@@ -3823,7 +3899,7 @@
                                 <div class="item active">
                                     <div class="reviews-container">
                                         <div class="row">
-                                            <div class="col-md-6 col-lg-6">
+                                            <div class=" col-sm-6 col-md-6 col-lg-6">
                                                 <div class="review-card">
                                                     <p class="clinetname">Rahul Mehta</p>
                                                     <p>"Mundada Polymers' stretch hood films have significantly improved
@@ -3836,7 +3912,7 @@
                                                     <div class="company-tag">@TexFab Exports</div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-lg-6">
+                                            <div class="col-sm-6 col-md-6 col-lg-6">
                                                 <div class="review-card">
                                                     <p class="clinetname">Arun Joshi</p>
                                                     <p>"Their surface protection films have helped us prevent scratches
@@ -3861,7 +3937,7 @@
                                 <div class="item ">
                                     <div class="reviews-container">
                                         <div class="row">
-                                            <div class="col-md-6 col-lg-6">
+                                            <div class="col-sm-6 col-md-6 col-lg-6">
                                                 <div class="review-card">
                                                     <p class="clinetname">Rahul Mehta</p>
                                                     <p>"Mundada Polymers' stretch hood films have significantly improved
@@ -3874,7 +3950,7 @@
                                                     <div class="company-tag">@TexFab Exports</div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-lg-6">
+                                            <div class="col-sm-6 col-md-6 col-lg-6">
                                                 <div class="review-card">
                                                     <p class="clinetname">Arun Joshi</p>
                                                     <p>"Their surface protection films have helped us prevent scratches
@@ -3924,9 +4000,9 @@
 
         </div><!-- End Section Title -->
 
-        <div class="container py-2" id="Mindful-Beginnings">
+        <div class="container py-2">
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class=" col-sm-6 col-md-4">
                     <div class="industry-card">
                         <img src="img/client-page/1.svg" alt="Pharmaceuticals">
                         <div class="industry-overlay">
@@ -3936,7 +4012,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <div class="industry-card">
                         <img src="img/client-page/2.svg" alt="Food & Beverage">
                         <div class="industry-overlay">
@@ -3946,7 +4022,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <div class="industry-card">
                         <img src="img/client-page/3.svg" alt="Textiles & Garments">
                         <div class="industry-overlay">
@@ -3956,7 +4032,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <div class="industry-card">
                         <img src="img/client-page/4.svg" alt="Automotive and Engineering">
                         <div class="industry-overlay">
@@ -3966,7 +4042,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <div class="industry-card">
                         <img src="img/client-page/5.svg" alt="Construction and Glass">
                         <div class="industry-overlay">
@@ -3976,7 +4052,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <div class="industry-card">
                         <img src="img/client-page/6.svg" alt="Electronics and Appliances">
                         <div class="industry-overlay">
