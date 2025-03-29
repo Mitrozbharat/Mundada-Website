@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/aos.css" />
+    <link rel="script" href="js/formSubmit.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -54,14 +56,19 @@
             transition: transform 0.4s ease-in-out;
         }
 
+        .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+            color: black;
+            border-bottom: 3px solid #34a853;
+        }
 
         .course-card {
             position: relative;
             color: white;
-            border-radius: 12px;
+            /* border-radius: 12px; */
             overflow: hidden;
             transition: transform 0.2s;
             margin: 20px 0px;
+            aspect-ratio: 6/11;
         }
 
         .course-card img {
@@ -83,7 +90,7 @@
         }
 
         .course-title {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 600;
             margin-top: 15px;
             margin-bottom: 5px;
@@ -112,11 +119,11 @@
             font-family: Arial, sans-serif;
         }
 
-        /* #hero-carousel {
+        #hero-carousel {
             position: relative;
             width: 100%;
             height: 100vh;
-        } */
+        }
 
 
 
@@ -173,7 +180,8 @@
         }
 
         .custom-btn {
-            margin-bottom: 20px;
+            margin-bottom: 25%;
+            margin-left: 50px;
             background: #34a853;
             color: white;
             padding: 10px 20px;
@@ -556,7 +564,7 @@
             border-left: 5px solid #2BA84A;
             padding-left: 10px;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 20px;
         }
 
         .text-certification-heading {
@@ -761,7 +769,7 @@
         } */
 
         .static-section.home3-static h2 {
-            font-size: 32px;
+            font-size: 42px;
         }
 
         .product-card-01 {
@@ -1005,7 +1013,7 @@
 
         .course-card img {
             width: 88%;
-            height: 260px;
+            height: 233px;
             display: block;
         }
 
@@ -1065,6 +1073,12 @@
             }
 
 
+
+            .certifications-section {
+                background: #e2e7ff;
+                padding: 10px;
+                /* border-radius: 10px; */
+            }
 
             .company_mission-number {
                 background-image: url(img/index-page/Hero01.svg);
@@ -1270,6 +1284,7 @@
             }
 
             .bgimg {
+                margin-top: 40px;
                 height: 220px;
                 width: 100%;
             }
@@ -1293,10 +1308,9 @@
             .let-btn {
                 /* position: absolute; */
                 margin: 0px 0px;
-                /* padding: 12px; */
                 color: #ffffff;
                 background-color: #34a853;
-                bottom: -76px;
+                bottom: -35px;
             }
 
             #h1-text+p {
@@ -1305,6 +1319,23 @@
                 color: #1ba34b;
             }
 
+            .carousel-indicators .active {
+                width: 12px;
+                height: 12px;
+                border-radius: 15px;
+                margin: 0;
+                background-color: white;
+                /* border-radius: 1px solid var(--primary-white); */
+            }
+
+            .carousel-indicators>li {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                border-radius: 1px solid var(--primary-white);
+                border-radius: 15px;
+                background-color: #1d3557;
+            }
 
 
             .quality-assurance-section {
@@ -1486,10 +1517,14 @@
 
             #h1-text {
                 line-height: 1.2;
-                font-size: 30px;
-                margin-top: 45px;
+                font-size: 24px;
+                margin-top: 10px;
                 color: white;
                 padding: 0 0px;
+            }
+
+            .reverse-hero {
+                flex-direction: column-reverse;
             }
         }
 
@@ -1960,6 +1995,10 @@
                 font-size: 16px;
                 font-weight: 200;
             }
+
+            .reverse-hero {
+                flex-direction: column-reverse;
+            }
         }
 
         /* Tablets (576px to 991px) */
@@ -1989,13 +2028,13 @@
             }
 
             #hero-carousel .item {
-                height: 72vh;
+                height: 100vh;
             }
 
             #hero-carousel {
                 position: relative;
                 width: 100%;
-                height: 78vh;
+                /* height: 78vh; */
             }
 
             .nav-item .active {
@@ -2256,7 +2295,9 @@
                 color: white;
             }
 
-
+            .reverse-hero {
+                flex-direction: column-reverse;
+            }
 
 
         }
@@ -2420,6 +2461,7 @@
             .bgimg {
                 height: 100%;
                 width: 100%;
+                margin-top: 30px;
             }
 
 
@@ -2442,18 +2484,18 @@
 
             .let-btn {
                 position: absolute;
-                margin: 10px 80px;
+                margin: 10px 0px;
                 padding: 20px;
                 color: #ffffff;
                 background-color: #34a853;
-                bottom: -200px;
+                bottom: -100px;
             }
 
             #h1-text {
                 padding: 30px 0px 0px 0px;
                 margin-top: 10px;
                 color: white;
-                font-size: 51px;
+                font-size: 42px;
             }
 
             #h1-text+p {
@@ -2597,6 +2639,10 @@
                 color: white;
             }
 
+            .reverse-hero {
+                flex-direction: column-reverse;
+            }
+
 
 
 
@@ -2605,15 +2651,51 @@
 
         @media (min-width: 1024px) and (max-width: 1366px) {
             .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
-                color: #ffffff;
+                /* color: #ffffff; */
             }
 
+            .carousel-inner{
+margin-top: -25px;
+            }
 
+            .carousel-control .glyphicon-chevron-left{
+                margin-left: -70px;
+            }
+
+            .carousel-control .glyphicon-chevron-right{
+                margin-right: -70px;
+            }
+
+            .texthero{
+                margin-left: 50px;
+            
+            }
+
+            .course-description {
+            font-size: 12px;
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 10px;
+            color: #5c5e6b;
+        }
+
+.sec2{
+    margin-top: -100px;
+}
+           
+
+            .h125{
+font-size: 24px;
+            }
+            .text125{
+font-size: 20px;
+            }
+            
             #hero-carousel {
                 position: relative;
                 width: 100%;
-                /* height: 100vh; */
-                margin: 100px 0px 0px 0px;
+                height: 70vh;
+                margin: 55px 0px 0px 0px;
 
             }
 
@@ -2660,7 +2742,7 @@
 
             #Industries-Served {
                 color: white;
-                font-size: 20px;
+                font-size: 2.5rem;
                 font-weight: 800;
                 margin-left: 4px;
                 /* margin-top: 50px; */
@@ -2669,7 +2751,7 @@
                 font-size: 20px;
                 font-weight: 800;
                 margin-left: 60px;
-                color: #ffffff;
+                color: black;
                 padding: 2px;
                 border-left: 6px solid #34a853;
             }
@@ -2713,7 +2795,14 @@
             .img-responsive {
                 margin: 16px auto;
                 width: 60%;
+                /* margin-top: 17%; */
             }
+            header.header4 #main-navigation-wrapper .nav>li {
+
+                padding: 10px 0px;
+            }
+
+
 
             .product-title {
                 font-size: 1.8rem;
@@ -2725,6 +2814,9 @@
                 font-size: 16px;
             }
 
+
+
+           
             /* cards */
 
 
@@ -2903,7 +2995,7 @@
             .carousel-indicators .active {
                 border: 1px solid black;
                 background-color: white;
-                margin-bottom: 35px;
+                margin-bottom: 34px;
             }
 
             #h1-text {
@@ -2968,7 +3060,7 @@
 
                 #Industries-Served {
                     color: #242c56;
-                    font-size: 20px;
+                    font-size: 2.5rem;
                     font-weight: 800;
                     margin-left: 4px;
                     /* margin-top: 50px; */
@@ -3250,7 +3342,7 @@
 
             #Industries-Served {
                 color: #242c56;
-                font-size: 20px;
+                font-size: 2.5rem;
                 font-weight: 800;
                 margin-left: 4px;
                 /* margin-top: 50px; */
@@ -3326,7 +3418,7 @@
                 font-size: 18px;
                 color: #ffffff;
                 background-color: #34a853;
-                bottom: -75px;
+                bottom: 120px;
             }
 
             #h1-text {
@@ -3716,6 +3808,11 @@
             margin: 20px 0px;
             font-size: 28px;
         }
+
+        .reverse-hero {
+            display: flex;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 
@@ -3783,18 +3880,17 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="background-color:#242c56;">
             <div class="item active">
                 <div class="container-fluid h-100">
-                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
-                        style="background-color:#242c56;">
+                    <div class="row reverse-hero w-100 h-100 d-flex align-items-center justify-content-center">
 
                         <!-- Left Text Section -->
                         <div
                             class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Your Packaging,<br> Our
+                            <h2 class="fw-bold text-white texthero h125" id="h1-text" style="color: #ffffff;">Your Packaging,<br> Our
                                 Commitment</h2>
-                            <h1 class="new-pak" style="color: #ffffff;">
+                            <h1 class="new-pak texthero text125" style="color: #ffffff;">
 
                                 Manufacturers and Exporters of <br>
                                 Speciality Films
@@ -3819,16 +3915,16 @@
 
             <div class="item ">
                 <div class="container-fluid h-100">
-                    <div class="row w-100 h-100 d-flex align-items-center justify-content-center"
+                    <div class="row reverse-hero w-100 h-100 d-flex align-items-center justify-content-center"
                         style="background-color:#242c56;">
 
                         <!-- Left Text Section -->
                         <div
                             class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white" id="h1-text" style="color: #ffffff;">Cutting-Edge
+                            <h2 class="fw-bold text-white texthero h125 " id="h1-text" style="color: #ffffff;">Cutting-Edge
                                 <br> Film Manufacturing
                             </h2>
-                            <h1 class="new-pak" style="color: #ffffff;">
+                            <h1 class="new-pak texthero text125" style="color: #ffffff;">
 
                                 Using state-of-the-art technology for unmatched quality and durability.
 
@@ -3860,11 +3956,11 @@
         </a>
     </section>
 
-    <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
+    <section id=" sec2 Take-Your-Pick " class="section why-us light-background" data-builder="section"
         style="background-color: #ffffff;">
         <div class="container section-title" data-aos="fade-up">
             <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;font-size: 34px;">Our <span
-                    class="text-success">Products</span></h1>
+                    class="text-success ">Products</span></h1>
             <p class="product-subtitle subheadtext">
                 At Mundada Polymers, we offer a wide range of specialty films
                 designed for various industrial and commercial applications.
@@ -3888,8 +3984,11 @@
                                 industries.
 
                             </p>
-                            <h4><a href="STRETCH-HOOD-FILM.html"> Read More <i class="fas fa-long-arrow-right"
-                                        style="font-size: 17px; padding-left: 15px;padding-top: 20px;"></i> </a></h4>
+                            <h4>
+                                <a href="STRETCH-HOOD-FILM.html"> Read More <i class="fas fa-long-arrow-right"
+                                        style="font-size: 17px; padding-left: 15px;padding-top: 20px;"></i>
+                                </a>
+                            </h4>
 
                         </div>
                     </div>
@@ -3898,7 +3997,7 @@
                 <!-- Card 2 -->
                 <div class="col-sm-6 col-md-6 col-lg-3 my-2 card-course" id="Letting-go">
                     <div class="course-card bg-dark text-white">
-                        <img src="img/index-page/idpe1.svg" alt="Art of Letting Go">
+                        <img src="img/index-page/LDPE Shrink Film.png" alt="Art of Letting Go">
                         <div class="course-content">
                             <h5 class="course-title" style="color: #242c56;">LDPE Shrink Film</h5>
                             <p class="course-description ">
@@ -3916,7 +4015,10 @@
                 <!-- Card 3 -->
                 <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
                     <div class="course-card bg-dark text-white">
-                        <img src="img/index-page/Surface-Protection-Film.png" alt="Mindful Beginnings">
+                        <a href="SURFACE-PROTECTION-FILM.html">
+                            <img src="img/index-page/Surface Protection Film , Masking Film.png"
+                                alt="Mindful Beginnings">
+                        </a>
                         <div class="course-content">
                             <h5 class="course-title" style="color: #242c56;">Surface Protection Film</h5>
                             <p class="course-description ">
@@ -3934,7 +4036,7 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
                     <div class="course-card bg-dark text-white">
-                        <img src="img/index-page/ARMOR-stretchfilm-image5.svg" alt="Mindful Beginnings">
+                        <img src="img/index-page/Stretch_wrapfilm.png" alt="Mindful Beginnings">
                         <div class="course-content">
                             <h5 class="course-title" style="color: #242c56;">Stretch wrap film</h5>
                             <p class="course-description " style="color: #242c56;"> Designed for superior corrosion
@@ -3947,7 +4049,84 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row">
+            <div class="row d-flex justify-content-center align-items-center "> <!-- Card 1 -->
+
+
+                <!-- Card 3 -->
+                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
+                    <div class="course-card bg-dark text-white">
+                        <a href="SURFACE-PROTECTION-FILM.html">
+                            <img src="img/index-page/meat_chicken.png" alt="Mindful Beginnings">
+                        </a>
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #242c56;">Meat / Chicken Wrap Film</h5>
+                            <p class="course-description ">
+
+                                Used for wrapping meat and poultry to maintain freshness and prevent contamination.
+
+                            </p>
+                            <h4><a href="Meat-Chicken-Wrap-Film.html"> Read More <i class="fas fa-long-arrow-right"
+                                        style="font-size: 17px;
+                padding-left: 15px;padding-top: 20px;"></i> </a></h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2" id="Mindful-Beginnings">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/index-page/Cling film 1.png" alt="Mindful Beginnings">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #242c56;">Allfreshy– Food Wrap Cling film</h5>
+                            <p class="course-description " style="color: #242c56;"> Designed for superior corrosion
+                                Used Wraps fresh food to keep it safe and extend shelf life
+                            </p>
+                            <h4><a href="Allfreshy–Food-Wrap-Cling-film.html"> Read More <i
+                                        class="fas fa-long-arrow-right" style="font-size: 17px;
+                padding-left: 15px;padding-top: 20px;"></i> </a></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Silage Stretch Film Card -->
+                <div class="col-sm-6 col-md-6 col-lg-3 card-course my-2">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/product-page/SilageStretchFilm/slide2 (1).svg" alt="Silage Stretch Film">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #242c56;">Silage Stretch Film</h5><br>
+                            <p class="course-description">
+                                Durable and UV-resistant wrap used for silage preservation. Ensures airtight sealing and
+                                long-lasting
+                                protection.
+                            </p>
+
+                            <br>
+                            <h4><a href="SILAGE-STRETCH-FILM.html">Read More <i class="fas fa-long-arrow-right"></i></a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VCI Stretch Wrap Film Card -->
+                <div class="col-sm-6 col-md-6 col-lg-3 my-2 card-course">
+                    <div class="course-card bg-dark text-white">
+                        <img src="img/product-page/VCIStretchWrapFilm/slide1 (1).svg" alt="VCI Stretch Wrap Film">
+                        <div class="course-content">
+                            <h5 class="course-title" style="color: #242c56;">VCI Stretch Wrap Film</h5>
+                            <br>
+                            <p class="course-description">
+                                Anti-corrosion stretch film for protecting metal parts from moisture, rust, and
+                                oxidation during storage
+                                and transport.
+                            </p>
+
+                            <br>
+                            <h4><a href="VCI-STRETCH-WRAP-FILM.html">Read More <i
+                                        class="fas fa-long-arrow-right"></i></a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
                 <div class="col-lg-12 text-center" style="display: flex; justify-content: center;">
                     <p class="text-white Industry-Applications text-center"
                         style=" font-size: 20px; font-weight: 600; 
@@ -3957,9 +4136,9 @@
                                                                        border-left: 6px solid #34a853;margin-top: 50px;width: 350px;">
                         <a href="Product.html" style="color: #ffffff;"> See All Products >></a>
                     </p>
-                </div> -->
+                </div>
 
-        </div>
+            </div>
         </div>
 
 
@@ -4089,8 +4268,7 @@
 
         <!--=========Statistics Start============-->
 
-        <div class="container" style="z-index: 999;
-    position: absolute;margin-left: 7%;">
+        <div class="container" style="position: absolute;margin-left: 7%;">
             <div class="row text-white">
                 <center>
                     <h3 style="margin-bottom: 10px !important;
@@ -4126,7 +4304,7 @@
     </section>
 
     <section class=" bg-white">
-        <p id="Industries-Served" class="Our-Clients"> Our Clients</p>
+        <p id="Industries-Served" class="Industries-Served"> Our Clients</p>
         <div class="container" style="margin-top: 20px;">
 
             <div class="row">
@@ -4318,7 +4496,7 @@
 
     <section class="news-section">
         <div class="news-header">
-            <h2 class="certifications-header" style="font-size: 2.5rem;">News and Updates</h2>
+            <h2 class="certifications-header">News and Updates</h2>
         </div>
 
         <div class="row">
@@ -4486,7 +4664,7 @@
                 <div class="col-md-6">
                     <h2 class="fs-2 mb-4" style="color: #ffffff;">Inquiry Form</h2>
 
-                    <form action="your_backend_script.php" method="post">
+                    <form id="inquiryForm">
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="fullName" name="fullName" required>
@@ -4498,16 +4676,16 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Contact</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <label for="contact" class="form-label">Contact</label>
+                            <input type="text" class="form-control" id="contact" name="contact" required>
                         </div>
+
                         <div class="mb-4">
                             <label for="message" class="form-label">Enter Message</label>
                             <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                         </div>
 
                         <div style="display: flex; justify-content: end">
-
                             <button type="submit" class="btn btn-callback" style="background-color: #1ba34b;">Request a
                                 Call
                                 Back</button>
@@ -4551,48 +4729,40 @@
         AOS.init({
             easing: 'ease-in-out-sine'
         });
-    </script>
-    <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const counters = document.querySelectorAll(".counter-box");
-
-            counters.forEach(counter => {
-                counter.innerText = "0";
-                const target = parseInt(counter.getAttribute("data-target"));
-                let current = 0;
-                const interval = setInterval(() => {
-                    if (current < target) {
-                        current++;
-                        counter.innerText = current;
-                    } else {
-                        clearInterval(interval);
+            function animateValue(element, start, end, duration) {
+                let range = end - start;
+                let current = start;
+                let increment = end > start ? 1 : -1;
+                let stepTime = Math.abs(Math.floor(duration / range));
+                let timer = setInterval(function () {
+                    current += increment;
+                    element.textContent = current;
+                    if (current == end) {
+                        clearInterval(timer);
                     }
-                }, 0); // Ultra slow (30ms per increment)
+                }, stepTime);
+            }
+
+            let stats = [
+                { selector: ".stat-capacity", value: 9000 },
+                { selector: ".stat-years", value: 3 },
+                { selector: ".stat-clients", value: 300 },
+                { selector: ".stat-products", value: 10 }
+            ];
+
+            stats.forEach(stat => {
+                let element = document.querySelector(stat.selector);
+                if (element) {
+                    animateValue(element, 0, stat.value, 2000);
+                }
             });
         });
     </script>
-    <script>function checkZoomLevel() {
-            let zoomLevel = Math.round(window.devicePixelRatio * 100); // Get zoom percentage
-            let styleTag = document.getElementById("disableMediaQuery");
 
-            if (zoomLevel >= 110) {
-                if (!styleTag) {
-                    styleTag = document.createElement("style");
-                    styleTag.id = "disableMediaQuery";
-                    styleTag.innerHTML = "@media screen { body { all: unset !important; } }";
-                    document.head.appendChild(styleTag);
-                }
-            } else {
-                if (styleTag) {
-                    styleTag.remove(); // Remove the style tag to enable media queries again
-                }
-            }
-        }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-        // Run checkZoomLevel on page load and on resize
-        window.addEventListener("resize", checkZoomLevel);
-        window.addEventListener("load", checkZoomLevel);
-    </script>
 </body>
 
 

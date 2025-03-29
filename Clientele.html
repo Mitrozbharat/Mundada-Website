@@ -3339,7 +3339,7 @@
             .Clientele-hero {
                 background-color: #d8ebff;
                 margin-top: 80px;
-                height: 50vh;
+                height: 62vh;
             }
 
             .industry-card .industry-title {
@@ -3935,6 +3935,173 @@
             /* Keeps the background tight around the text */
         }
     </style>
+    <style>
+        .clientele-hero-section {
+            overflow: hidden;
+        }
+
+        .Clientele-hero {
+            background-color: #f0f7ff;
+            /* margin-top: 80px; */
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .Clientele-hero:before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(36, 44, 86, 0.05);
+            z-index: 0;
+        }
+
+        .Clientele-hero:after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: rgba(26, 163, 75, 0.05);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 60px 0;
+        }
+
+        .hero-text-container {
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .accent-line {
+            width: 6px;
+            height: 60px;
+            background-color: #1ba34b;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+
+        .Trusted-clients {
+            color: #242c56;
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        .hero-stats {
+            display: flex;
+            margin-top: 30px;
+            gap: 40px;
+        }
+
+        .hero-stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #1ba34b;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: #242c56;
+            font-weight: 500;
+        }
+
+        .hero-description {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 2;
+        }
+
+        .value-text18 {
+            color: #242c56;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtext {
+            color: #777;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+
+        .hero-cta {
+            background-color: #242c56;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid #242c56;
+        }
+
+        .hero-cta:hover {
+            background-color: #1ba34b;
+            border-color: #1ba34b;
+            color: white;
+        }
+
+        @media (max-width: 991px) {
+            .Clientele-hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+
+                padding: 40px 0;
+            }
+
+            .Trusted-clients {
+                font-size: 2rem;
+            }
+
+            .hero-description {
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-stats {
+                gap: 20px;
+            }
+
+            .hero-content {
+                margin-top: 100px;
+                padding: 40px 0;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .Trusted-clients {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="home6">
@@ -3992,64 +4159,67 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container-fluid h-100 Clientele-hero ">
-            <!-- <p id="Esteemed-Clientele"> Our Esteemed Clientele</p> -->
-            <div class="container" style="margin-top: 20px;">
-
-                <div class="row">
+    <section class="clientele-hero-section">
+        <div class="container-fluid Clientele-hero">
+            <div class="container">
+                <div class="row align-items-center hero-content">
                     <div class="col-md-6">
-                        <div class="grid-item">
-                            <h1 class="Trusted-clients">Trusted by Industry <br> Leaders, Driven by<br> Quality and
-                                Innovation
+                        <div class="hero-text-container">
+                            <div class="accent-line"></div>
+                            <h1 class="Trusted-clients">Trusted by Industry Leaders, Driven by Quality and Innovation
                             </h1>
-
+                            <div class="hero-stats">
+                                <div class="hero-stat-item">
+                                    <span class="stat-number">300+</span>
+                                    <span class="stat-label">Satisfied Clients</span>
+                                </div>
+                                <div class="hero-stat-item">
+                                    <span class="stat-number">25+</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="grid-item">
-                            <h2 class="Trusted-clientshidden" style="color: #d8ebff;">Trusted by 300+
-                                clients.</h2>
-                            <p class="value-text18" style="color: #000;">
+                        <div class="hero-description">
+                            <p class="value-text18">
                                 At Mundada Polymers, we take pride in serving some of the most renowned brands across
-                                various industries. Our commitment
-                                to quality, innovation, and reliability has earned us the trust of leading companies in
-                                pharmaceuticals, packaging, food
-                                & beverage, textiles, and industrial manufacturing.
+                                various industries. Our commitment to quality, innovation, and reliability has earned us
+                                the trust of leading companies in
+                                pharmaceuticals, packaging, food & beverage, textiles, and industrial manufacturing.
                             </p>
+                            <p class="hero-subtext">
+                                We believe in long-term partnerships and strive to deliver tailor-made solutions that
+                                enhance our
+                                clients' operational efficiency.
+                            </p>
+                            <a href="request-quote.html" class="btn hero-cta">Get A Quote</a>
                         </div>
                     </div>
                 </div>
-                <p class="container hero-subtext">
-                    We believe in long-term partnerships and strive to deliver tailor-made solutions that enhance our
-                    clients’ operational
-                    efficiency.
-                </p>
-
-
-
             </div>
-
         </div>
-        <div class="container">
-            <div class="text-center mb-4" style="margin: 60px 0px;">
-                <h1 class="title product-title our-productTtile" style="margin-bottom: 10px;">Trusted by Industry
-                    Leaders</h1>
 
-            </div>
-            <div class="clients">
-                <img src="img/partners/client01.svg" class="client-logo">
-                <img src="img/partners/client02.svg" class="client-logo">
-                <img src="img/partners/client03.svg" class="client-logo">
-                <img src="img/partners/client04.svg" class="client-logo">
-                <img src="img/partners/client05.svg" class="client-logo">
-                <img src="img/partners/client06.svg" class="client-logo">
+    </section>
 
-                <img src="img/partners/client07.svg" class="client-logo">
-                <img src="img/partners/client08.svg" class="client-logo">
-                <img src="img/partners/client09.svg" class="client-logo">
+    <div class="container">
+        <div class="text-center mb-4" style="margin: 60px 0px;">
+            <h2 class="title product-title our-productTtile" style="margin-bottom: 10px;">Trusted by Industry Leaders
+            </h2>
+        </div>
+        <div class="clients">
+            <img src="img/partners/client01.svg" class="client-logo">
+            <img src="img/partners/client02.svg" class="client-logo">
+            <img src="img/partners/client03.svg" class="client-logo">
+            <img src="img/partners/client04.svg" class="client-logo">
+            <img src="img/partners/client05.svg" class="client-logo">
+            <img src="img/partners/client06.svg" class="client-logo">
 
-                <!-- 
+            <img src="img/partners/client07.svg" class="client-logo">
+            <img src="img/partners/client08.svg" class="client-logo">
+            <img src="img/partners/client09.svg" class="client-logo">
+
+            <!-- 
                             <img src="img/partners/client10.jpg" class="client-logo">
                             <img src="img/partners/client11.jpg" class="client-logo">
                             <img src="img/partners/client12.jpg" class="client-logo">
@@ -4067,10 +4237,8 @@
                             <img src="img/partners/client24.jpg" class="client-logo">
              -->
 
-            </div>
         </div>
-    </section>
-
+    </div>
 
     <section class="values-section">
         <div class="container"
@@ -4105,128 +4273,6 @@
         </div>
         </div>
     </section>
-
-    <!-- <section class=" company_mission " data-aos="fade-up" data-aos-duration="3000">
-        <p class="Industries-Served" id="Industries-Served">
-            Clients Reviews
-        </p>
-
-
-
-        <div class="container-fluid">
-
-
-            <div class="container position-relative">
-                <div class="row mb-5">
-                    <div class="col-lg-4 col-md-4 text-white " style="margin-top: 30px;">
-                        <h2 class="mb-4 packing-title ">Hear What OurSatisfied Clients Have to Say About Our Packaging
-                            Solutions
-                        </h2>
-                        <button class="btn btn-custom w-50 mx-auto" fdprocessedid="c4zd8g">Read More Updates</button>
-                    </div>
-                    <div class="col-lg-8 col-md-8 text-white" style="margin-top: 50px;">
-
-                        <div id="new-carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators" id="carousel-indicators-lg">
-                                <li data-target="#new-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#new-carousel" data-slide-to="1"></li>
-                                <li data-target="#new-carousel" data-slide-to="2"></li>
-                            </ol>
-
-                            <div class="carousel-inner" id="carousel-inner-lg">
-                                <div class="item active">
-                                    <div class="reviews-container">
-                                        <div class="row">
-                                            <div class=" col-sm-6 col-md-6 col-lg-6">
-                                                <div class="review-card">
-                                                    <p class="clinetname">Rahul Mehta</p>
-                                                    <p>"Mundada Polymers' stretch hood films have significantly improved
-                                                        our packaging
-                                                        efficiency. The
-                                                        durability
-                                                        and flexibility are unmatched!"</p>
-                                                    <img src="img/client/client01.svg" alt="Rahul Mehta"
-                                                        class="review-image">
-                                                    <div class="company-tag">@TexFab Exports</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                                <div class="review-card">
-                                                    <p class="clinetname">Arun Joshi</p>
-                                                    <p>"Their surface protection films have helped us prevent scratches
-                                                        on high-value glass
-                                                        sheets
-                                                        during
-                                                        transportation. Highly recommended!"</p>
-                                                    <img src="img/client/client02.svg" alt="Rahul Mehta"
-                                                        class="review-image">
-                                                    <div class="company-tag">@GlassTech Industries</div>
-                                                </div>
-                                            </div>
-
-
-
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="item ">
-                                    <div class="reviews-container">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                                <div class="review-card">
-                                                    <p class="clinetname">Rahul Mehta</p>
-                                                    <p>"Mundada Polymers' stretch hood films have significantly improved
-                                                        our packaging
-                                                        efficiency. The
-                                                        durability
-                                                        and flexibility are unmatched!"</p>
-                                                    <img src="img/client/client01.svg" alt="Rahul Mehta"
-                                                        class="review-image">
-                                                    <div class="company-tag">@TexFab Exports</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                                <div class="review-card">
-                                                    <p class="clinetname">Arun Joshi</p>
-                                                    <p>"Their surface protection films have helped us prevent scratches
-                                                        on high-value glass
-                                                        sheets
-                                                        during
-                                                        transportation. Highly recommended!"</p>
-                                                    <img src="img/client/client02.svg" alt="Rahul Mehta"
-                                                        class="review-image">
-                                                    <div class="company-tag">@GlassTech Industries</div>
-                                                </div>
-                                            </div>
-
-
-
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-
-                                <a class="left carousel-control" href="#hero-carousel" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#hero-carousel" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-    </section> -->
 
     <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
         style="background-color: #ffffff;">
@@ -4326,7 +4372,7 @@
                             <h3 class="fw-medium contact-heading-text" style="color: #ffffff;">Mundada Polymers</h3>
                             <div class="d-flex align-items-start gap-3" style="display: flex;">
                                 <i class="fas fa-map-marker-alt contact-icon mt-1"></i>
-                                <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa, Latur -
+                                <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa,<br> Latur -
                                     413520 Maharashtra,
                                     India</span>
                             </div>
@@ -4339,8 +4385,7 @@
 
                         <div class="d-flex align-items-center" style="display: flex;">
                             <i class="fas fa-envelope contact-icon"></i>
-                            <span class="contact-text">pranav@mundadapolymers.com<br>
-                                aba@mundadapolymers.com</span>
+                            <span class="contact-text">pranav@mundadapolymers.com,<br> aba@mundadapolymers.com</span>
                         </div>
                     </div>
                 </div>

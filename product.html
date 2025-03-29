@@ -71,7 +71,7 @@
             /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
             position: relative;
             padding-top: 50px;
-            height: 75vh;
+            height: 80vh;
         }
 
         .home6 h1 {
@@ -874,6 +874,17 @@
                 font-size: 18px;
             }
 
+            .product-card {
+                height: 400px;
+                width: 290px;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3sease-in-out;
+                /* background-color: black; */
+            }
+
             .card-title {
                 font-size: 16px;
                 text-align: left;
@@ -893,6 +904,17 @@
                 margin-top: 20px;
                 margin-left: 10px;
                 text-align: left;
+            }
+
+            .product-card {
+                height: 420px;
+                width: 300px;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3sease -in-out;
+                /* background-color: black; */
             }
 
             .btn {
@@ -1357,8 +1379,8 @@
             }
 
             .product-card {
-                height: 400px;
-                width: 290px;
+                height: 420px;
+                width: 300px;
                 background-repeat: no-repeat;
                 border-radius: 10px;
                 overflow: hidden;
@@ -1441,7 +1463,7 @@
             }
 
             .product-card .btn {
-                background-color: #28a745;
+                background-color: #1d3557;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -1585,6 +1607,13 @@
                 text-align: left;
                 color: #011327;
             }
+
+            .row .product-card a img {
+                width: 100%;
+                
+                object-fit: cover;
+                display: block;
+            }
         }
 
         /* Media Queries for Responsive Design */
@@ -1593,6 +1622,17 @@
         @media (max-width: 575.98px) {
             .course-title {
                 color: white;
+            }
+
+            .product-card {
+                height: 400px;
+                width: 300px;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3sease-in-out;
+                /* background-color: black; */
             }
 
             .new-pak {
@@ -1714,7 +1754,7 @@
             }
 
             .product-card .btn {
-                background-color: #28a745;
+                background-color: #1d3557;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -1878,6 +1918,13 @@
                 padding-top: 50px;
                 height: 65vh;
             }
+
+            #Contact-Us {
+                background-color: #242c56;
+                color: white;
+                padding: 10px 10px;
+                border-radius: 8px;
+            }
         }
 
         /* Tablets (576px to 991px) */
@@ -2033,12 +2080,17 @@
             }
 
             .product-card {
-                border: none;
+                height: 496px;
+                width: 300px;
+                background-repeat: no-repeat;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+                border: none;
                 text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             }
+
 
             .product-card img {
                 width: 100%;
@@ -2057,7 +2109,7 @@
             }
 
             .product-card .btn {
-                background-color: #28a745;
+                background-color: #1d3557;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -2239,6 +2291,16 @@
                 text-align: center;
             }
 
+            .card-title {
+                font-size: 16px;
+            }
+
+            #Contact-Us {
+                background-color: #242c56;
+                color: white;
+                padding: 10px 00px;
+                border-radius: 8px;
+            }
 
         }
 
@@ -2446,11 +2508,13 @@
             }
 
             .product-card {
+                margin-top: 20px;
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                 text-align: center;
+                aspect-ratio: 6/11;
             }
 
             .product-card img {
@@ -2470,7 +2534,7 @@
             }
 
             .product-card .btn {
-                background-color: #28a745;
+                background-color: #1d3557;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -2619,8 +2683,15 @@
 
             .card-title {
                 color: #1d3557;
-                font-size: 16px;
+                font-size: 15px;
                 margin: 10px 0px;
+            }
+
+            #Contact-Us {
+                background-color: #242c56;
+                color: white;
+                padding: 40px 20px;
+                border-radius: 8px;
             }
 
         }
@@ -2631,7 +2702,7 @@
             }
 
             .card-body p {
-                font-size: 14px;
+                font-size: 12px;
                 color: var(--primary-bg);
                 /* border-radius: 15px; */
             }
@@ -2736,8 +2807,11 @@
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                 text-align: center;
+                /* border: 1px solid red; */
+
+                aspect-ratio: 6/11;
             }
 
             .product-card img {
@@ -2757,7 +2831,7 @@
             }
 
             .product-card .btn {
-                background-color: #28a745;
+                background-color: #1d3557;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -2823,7 +2897,7 @@
             }
 
             .Innovative {
-                margin: 100px 0px 20px 30px;
+                margin: 122px 0px 20px 30px;
                 font-size: 42px;
                 color: #eee;
             }
@@ -2834,7 +2908,7 @@
             }
 
             .let-btn {
-                margin: 50px 38px 40px 20px;
+                margin: 8px 38px 40px 12px;
                 padding: 16px 20px;
                 color: #ffffff;
                 background-color: green;
@@ -2848,9 +2922,11 @@
                 /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
                 position: relative;
                 padding-top: 50px;
-                height: 50vh;
+                height: 73vh;
             }
-
+            .static-section.home3-static {
+    padding:0px 0px;
+}
             .course-card-why {
                 display: flex;
                 flex-direction: column;
@@ -2892,13 +2968,24 @@
                 /* Adds spacing between the cards */
             }
 
-
+            #Contact-Us {
+                background-color: #242c56;
+                color: white;
+                padding: 40px 10px 40px 50px;
+                border-radius: 8px;
+            }
 
             .why-product-title {
                 padding-left: 10px;
                 font-weight: bold;
                 font-size: 3rem;
                 width: 100%;
+            }
+
+            .sustainability-icon {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
             }
         }
 
@@ -3250,8 +3337,10 @@
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                 text-align: center;
+                margin-top: 20px;
+
             }
 
             .product-card img {
@@ -3271,7 +3360,7 @@
             }
 
             .product-card .btn {
-                background-color: #28a745;
+                background-color: #1d3557;
                 color: white;
                 border-radius: 5px;
                 margin: 25px 0px 0px 0px;
@@ -3295,6 +3384,19 @@
                 margin: 40px 0px;
             }
 
+            #Contact-Us {
+                background-color: #242c56;
+                color: white;
+                padding: 40px 10px 40px 50px;
+                border-radius: 8px;
+            }
+
+            .sustainability-icon {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+
 
         }
 
@@ -3304,6 +3406,14 @@
                 color: #1d3557;
                 font-size: 16px;
                 margin: 10px 0px;
+            }
+
+
+            #Contact-Us {
+                background-color: #242c56;
+                color: white;
+                padding: 40px 10px 40px 50px;
+                border-radius: 8px;
             }
 
             .course-title {
@@ -3619,8 +3729,9 @@
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                 text-align: center;
+                aspect-ratio: 6/11;
             }
 
             .product-card img {
@@ -3640,7 +3751,7 @@
             }
 
             .product-card .btn {
-                background-color: #28a745;
+                background-color: #1d3557;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -3675,15 +3786,45 @@
                 text-align: left;
                 color: #011327;
             }
+
+            .sustainability-icon {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
         }
-
-
 
         .row .product-card a img {
             width: 100%;
-            height: 350px;
+            height: 250px;
             object-fit: cover;
             display: block;
+        }
+
+        .overlay {
+
+            position: relative;
+            width: 100%;
+            background: rgba(29, 53, 87, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+
+        }
+
+        .sustainability-title {
+            color: #1e2756;
+            font-weight: bold;
+            border-left: 6px solid #2a9d5c;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+            color: black;
+            border-bottom: 3px solid #34a853;
         }
     </style>
 
@@ -3903,8 +4044,6 @@
 
     </section> -->
 
-
-
     <section>
         <div class="container py-5">
             <h3 class="about-text-head ">Our Products</h3>
@@ -3916,6 +4055,247 @@
                 industries.<br> Explore our premium product range below..</p>
 
             <div class="row g-4">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="STRETCH-HOOD-FILM.html"><img src="img/product-page/product01.png">
+                        </a>
+                        <div class="card-body mb-3 ">
+                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left;">Stretch Hood
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
+                                fiber.<br><br>
+                            </p>
+                            <a href="STRETCH-HOOD-FILM.html" class="btn">View Detail</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="LDPE-SHRINK-FILM.html"><img src="img/product-page/product02.png"
+                                class="img-card-4"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">LDPE Shrink Film
+                            </h5>
+                            <p class="card-text">Used in beverages, food and canned goods, packaging materials.
+                            </p>
+                            <a href="LDPE-SHRINK-FILM.html" class="btn">View Detail</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="SURFACE-PROTECTION-FILM.html"><img
+                                src="img/product-page/SurfaceProtectionFilm/Surface Protection Film , Masking Film.png"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Surface Protection
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
+                                fiber.<br><br></p><a href="SURFACE-PROTECTION-FILM.html" class="btn">View Detail</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="STRETCH-WRAP-FILM.html"><img
+                                src="img/product-page/StretchWrapFilm/stretch-wrap-films 2.png"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Stretch Wrap Film
+                            </h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
+                                fiber.<br><br></p><a href="STRETCH-WRAP-FILM.html" class="btn">View Detail</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="SILAGE-STRETCH-FILM.html"><img src="img/product-page/product05.jpg"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Silage Stretch
+                                Film </h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
+                                fiber.
+                            </p>
+                            <a href="SILAGE-STRETCH-FILM.html" class="btn">View Detail</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="VCI-STRETCH-WRAP-FILM.html"><img src="img/product-page/product06.jpg"></a>
+                        <div class="card-body">
+                            <h5 class=" card-title line-text" style="color: #1d3557;text-align: left;margin-top: 20px;">
+                                VCI-Stretch Wrap
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
+                                fiber.
+
+                            </p><a href="VCI-STRETCH-WRAP-FILM.html" class="btn">View Detail</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="Allfreshy–Food-Wrap-Cling-Film.html"><img
+                                src="img/index-page/Cling film 1.png">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left; ;">Allfreshy–
+                                Food Wrap Cling film
+
+                            </h5>
+                            <p class="card-text">Used Wraps fresh food to keep it safe and extend shelf life</p>
+                            <a href="Allfreshy–Food-Wrap-Cling-Film.html" class="btn ">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="Meat-Chicken-Wrap-Film.html"><img src="img/product-page/product08.svg"
+                                class="img-fluid img-card-2"></a>
+                        <div class=" card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;"> Meat / Chicken
+                                Wrap Film
+                            </h5>
+                            <p class="card-text">Used for wrapping meat and poultry to maintain freshness and prevent
+                                contamination.</p>
+                            <a href="Meat-Chicken-Wrap-Film.html" class="btn">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row g-4">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="#"><img src="img/product-page/product09.svg"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Shrink Hood /
+                                Tubular Film</h5>
+                            <p class="card-text">Used for pallet covering, providing tamper-proof and weather-resistant
+                                packaging.</p>
+                            <!-- <a href="#" class="btn">View Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="#"><img src="img/product-page/product10.png" class="img-card-3"></a>
+                        <div class=" card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">PE Milk Film
+
+                            </h5>
+                            <p class="card-text">Used for packaging liquid dairy products, ensuring hygiene and
+                                freshness. </p>
+                            <!-- <a href="#" class="btn">View Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="#"><img src="img/product-page/product11.png"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Mulching Film</h5>
+                            <p class="card-text">Used in Controls weeds, retains moisture, and boosts crop yield.</p>
+                            <!-- <a href="#" class="btn">View Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card">
+                        <a href="#"><img src="img/product-page/product12.svg" class="img-card-1"></a>
+                        <div class="card-body" style=" margin-bottom: 20px;">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Anti-Static
+                                Film</h5>
+                            <p class="card-text">Used for Protects electronic components from static damage.</p>
+
+                            <!-- <a href="#" class="btn">View Detail</a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- 
+    <section>
+        <div class="container py-5">
+            <h3 class="about-text-head ">Our Products</h3>
+            <p>At Mundada Polymers, we specialize in high-quality packaging films designed to protect, secure, and
+                package a wide range
+                of products.<br> Our advanced manufacturing techniques ensure durability, flexibility, and efficiency
+                for
+                various
+                industries.<br> Explore our premium product range below..</p>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card product-card">
+                        <a href="STRETCH-HOOD-FILM.html"><img src="img/product-page/StretchHoodFilm1.jpg">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left;">Stretch Hood
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="card product-card">
+                        <a href="LDPE-SHRINK-FILM.html"><img src="img/product-page/LPDE_SHRIN_FILM1.jpeg"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">LDPE Shrink Film
+                            </h5>
+                            <p class="card-text">Used in beverages, food and canned goods, packaging materials.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="card product-card">
+                        <a href="SURFACE-PROTECTION-FILM.html"><img src="img/product-page/surface-protection-film-1.jpg"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Surface Protection
+                                Film</h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="card product-card">
+                        <a href="STRETCH-WRAP-FILM.html"><img src="img/product-page/stretch_wrap_film1.jpg"></a>
+                        <div class="card-body">
+                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Stretch Wrap Film
+                            </h5>
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-sm-6 col-md-4">
                     <div class="card product-card">
@@ -3924,182 +4304,29 @@
                             <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Silage Stretch
                                 Film</h5>
                             <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
-                            <!-- <a href="SILAGE-STRETCH-FILM.html" class="btn">Know More</a> -->
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-6 col-md-4">
                     <div class="card product-card">
-                        <a href="STRETCH-WRAP-FILM.html"><img src="img/product-page/p11.svg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Stretch Wrap Film
-                            </h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
-                            <!-- <a href="STRETCH-WRAP-FILM.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="LDPE-SHRINK-FILM.html">
-                            <img src="img/product-page/LPDE_SHRIN_FILM1.jpeg" class="LDPE">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">LDPE Shrink Film
-                            </h5>
-                            <p class="card-text">Used for bundling and securing products, providing a tight and secure
-                                wrap upon heat application.
-                            </p> <!-- <a href="LDPE-SHRINK-FILM.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="SURFACE-PROTECTION-FILM.html"><img src="img/product-page/p3.svg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Surface Protection
-                                Film</h5>
-                            <p class="card-text">Used to protect surfaces from scratches, dust, and damage during
-                                handling and processing.</p>
-                            <!-- <a href="SURFACE-PROTECTION-FILM.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="STRETCH-HOOD-FILM.html">
-                            <img src="img/product-page/StretchHoodFilm1.jpg">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left; ;">Stretch Hood
-                                Film</h5>
-                            <p class="card-text">Used for securing and protecting goods during transportation and
-                                storage.</p>
-
-                            <!-- <a href="STRETCH-HOOD-FILM.html" class="btn ">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="VCI-STRETCH-WRAP-FILM.html"><img
-                                src="img/product-page/VCI_Shrink_Wrap_Film_Rolls1.jpg"></a>
+                        <a href="VCI-STRETCH-WRAP-FILM.html"><img src="img/product-page/VCI_Shrink_Wrap_Film_Rolls1.jpg"></a>
                         <div class="card-body">
                             <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">VCI-Stretch Wrap
                                 Film</h5>
-                            <p class="card-text">Used for corrosion protection of metal products during storage and
-                                transportation.</p>
-                            <!-- <a href="VCI-STRETCH-WRAP-FILM.html" class="btn">Know More</a> -->
+                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row g-4">
-
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="Allfreshy–Food-Wrap-Cling-Film.html"><img src="img/product-page/p7.webp">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left; ;">Allfreshy –
-                                Food - Wrap Cling film
-
-                            </h5>
-                            <p class="card-text">Used for wrapping fresh food items, keeping them safe and extending
-                                shelf life.</p>
-                            <!-- <a href="Allfreshy–Food-Wrap-Cling-Film.html" class="btn ">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="Shrink-Hood-Tubular-Film.html"><img src="img/product-page/sddefault 1.svg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Shrink Hood /
-                                Tubular Film</h5>
-                            <p class="card-text">Used for pallet covering, providing tamper-proof and weather-resistant
-                                packaging.</p>
-                            <!-- <a href="Shrink-Hood-Tubular-Film.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="PE-Milk-Film.html"><img src="img/product-page/p10.svg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">PE Milk Film
-
-                            </h5>
-                            <p class="card-text">Used for packaging liquid dairy products, ensuring hygiene and
-                                freshness.</p> <!-- <a href="PE-Milk-Film.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="Anti-Static-Film.html"><img src="img/product-page/p12.svg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Anti-Static
-                                Film</h5>
-                            <p class="card-text">Used for packaging electronic components, preventing static damage.</p>
-
-                            <!-- <a href="Anti-Static-Film.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="Mulching-Film.html"><img src="img/product-page/p9.svg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Mulching Film</h5>
-                            <p class="card-text">Used in agriculture to control weed growth, retain soil moisture, and
-                                improve crop yield.</p> <!-- <a href="Mulching-Film.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="Meat-Chicken-Wrap-Film.html"><img src="img/product-page/p8.svg"></a>
-                        <div class=" card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;"> Meat / Chicken
-                                Wrap Film
-                            </h5>
-                            <p class="card-text">Used for wrapping meat and poultry to maintain freshness and prevent
-                                contamination.</p>
-                            <!-- <a href="LDPE-SHRINK-FILM.html" class="btn">Know More</a> -->
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- <div class="text-center mt-lg-5 mt-md-4 mt-2 btn-div">
-                <button class="btn btn-view-product">View More</button>
-            </div> -->
         </div>
-    </section>
+    </section> -->
+
     <section class="values-section">
-        <div class="container"
-            style="background-color: #242c56; color: white;padding: 40px 10px 40px 50px;; border-radius: 8px;">
+        <div class="container" id="Contact-Us">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="" style="padding-left: 50px;">
+                    <div class="">
                         <h3 class="text-white" style="color: white; margin-bottom: 20px;">
                             We are trusted by over 300+ clients. Join them by using our services and grow your business.
                         </h3>
@@ -4108,7 +4335,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="text-center">
-                        <a href="#" class="btn btn-default"
+                        <a href="request-quote.html" class="btn btn-default"
                             style="background-color: white; color: #242c56; border-radius: 50px; padding: 10px 20px;margin: 20px 0px 0px 0px;">
                             Contact Us
                         </a>
@@ -4195,7 +4422,7 @@
                             <h3 class="fw-medium contact-heading-text" style="color: #ffffff;">Mundada Polymers</h3>
                             <div class="d-flex align-items-start gap-3" style="display: flex;">
                                 <i class="fas fa-map-marker-alt contact-icon mt-1"></i>
-                                <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa, Latur -
+                                <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa,<br> Latur -
                                     413520 Maharashtra,
                                     India</span>
                             </div>
@@ -4208,8 +4435,7 @@
 
                         <div class="d-flex align-items-center" style="display: flex;">
                             <i class="fas fa-envelope contact-icon"></i>
-                            <span class="contact-text">pranav@mundadapolymers.com<br>
-                                aba@mundadapolymers.com</span>
+                            <span class="contact-text">pranav@mundadapolymers.com,<br> aba@mundadapolymers.com</span>
                         </div>
                     </div>
                 </div>

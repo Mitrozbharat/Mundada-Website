@@ -118,6 +118,22 @@
       .submit-btn:hover {
          background-color: #168737;
       }
+
+      .info-card {
+         background: #ebf5ff;
+         padding: 25px;
+         border-radius: 10px;
+         text-align: center;
+         aspect-ratio: 10/6;
+         margin: 20px 0px;
+      }
+
+      .contact-text {
+         margin: 0px 0px 12px 7px;
+         font-size: 16px;
+         color: #ffffff;
+         line-height: 1.5;
+      }
    </style>
 </head>
 
@@ -154,7 +170,7 @@
                      <i class="fa fa-chevron-down"></i>
                   </li>
                   <li class="dropdown">
-                     <a class=" nav-item active" href="Product.html">Products</a>
+                     <a class=" nav-item " href="Product.html">Products</a>
                      <i class="fa fa-chevron-down"></i>
                   </li>
                   <li class="dropdown">
@@ -165,7 +181,7 @@
                      <a href="Documents/mundada-polymers-brochure.pdf" download>Download Brochure</a>
                   </li>
                   <li>
-                     <a href="request-quote.html" class="btn btn-custom"
+                     <a id="get-quate-btn" href="request-quote.html" class="btn btn-custom active"
                         style="background-color: var(--hover-navy); color: #ffffff; border-radius: 18px; font-family: 'Montserrat', sans-serif;  text-align: center; height: inherit; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 15px;">Get
                         a Quote</a>
                   </li>
@@ -187,39 +203,42 @@
          </div>
       </div>
    </section>
-   <div style="background-color: white;">
-      <div class="container">
-         <div class="quote-section">
 
-            <div class="row g-4">
-               <div class="col-md-4">
-                  <div class="info-card">
-                     <i class="fas fa-map-marker-alt"></i>
-                     <h5>Office</h5>
-                     <p>Mundada Polymers<br>Plot No.: C-46, Near Latur Packing, MIDC Ausa, Latur -
-                        413520<br>Maharashtra,
-                        India</p>
+   <section>
+      <div style="background-color: white;">
+         <div class="container">
+            <div class="">
+
+               <div class="row g-4">
+                  <div class="col-md-4">
+                     <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h5>Office</h5>
+                        <p>Mundada Polymers<br>Plot No.: C-46, Near Latur Packing, MIDC Ausa, Latur -
+                           413520<br>Maharashtra,
+                           India</p>
+                     </div>
                   </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="info-card">
-                     <i class="fas fa-phone-alt"></i>
-                     <h5>Contact</h5>
-                     <p>+91 93229 05378<br>+91 89567 54341</p>
+                  <div class="col-md-4">
+                     <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h5>Contact</h5>
+                        <p>+91 93229 05378<br>+91 89567 54341</p>
+                     </div>
                   </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="info-card">
-                     <i class="fas fa-envelope"></i>
-                     <h5>Email</h5>
-                     <p>pranav@mundadapolymers.com<br>aba@mundadapolymers.com</p>
+                  <div class="col-md-4">
+                     <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p>pranav@mundadapolymers.com<br>aba@mundadapolymers.com</p>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
 
+   </section>
    <section class="contact-section" style="background-color: white;">
       <div class="container">
          <div class="row">
@@ -272,15 +291,103 @@
          </div>
       </div>
    </section>
-   <section style="margin: 0px; padding: 0px; background-color: #242c56;">
-      <div class="container" style="background-color: #242c56;">
 
-         <p style="color: #ffffff; text-align: center;">Copyright © 2025 mundada polymer. All Rights
+
+   <section class="projectSec">
+      <div class="container">
+         <div class="row gy-4">
+            <!-- Left Column -->
+            <div class="col-md-6">
+               <h1 class="contact-heading" style="color: #ffffff;">Get in Touch with Us!</h1>
+
+               <div class="contact-info">
+                  <div class="mb-4">
+                     <h3 class="fw-medium contact-heading-text" style="color: #ffffff;">Mundada Polymers</h3>
+                     <div class="d-flex align-items-start gap-3" style="display: flex;">
+                        <i class="fas fa-map-marker-alt contact-icon mt-1"></i>
+                        <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa,<br> Latur -
+                           413520 Maharashtra,
+                           India</span>
+                     </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 mb-4" style="display: flex;">
+                     <i class="fas fa-phone contact-icon"></i>
+                     <span class="contact-text mb-0">+91 93229 05378, +91 8956754341</span>
+                  </div>
+
+                  <div class="d-flex align-items-center" style="display: flex;">
+                     <i class="fas fa-envelope contact-icon"></i>
+                     <span class="contact-text">pranav@mundadapolymers.com,<br> aba@mundadapolymers.com</span>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-md-6">
+               <div class="row">
+                  <div class="col-6 col-lg-6">
+                     <h2 class="fs-2 mb-4 text-white" style="font-size: 2.5rem; color: #ffffff;">Links</h2>
+                     <nav>
+                        <ul>
+                           <li class="mb-3 my-lg-2" style="margin-top: 10px "><a href="index.html"
+                                 style="color: white; list-style: none;margin-bottom: 10;">Home</a></li>
+                           <li class="my-2 my-lg-2" style="margin-top: 10px "><a href="about.html"
+                                 style="color: white; list-style: none;">About Us</a>
+                           </li>
+                           <li style="margin-top: 10px "><a class="nav-item active" href="Product.html"
+                                 style="color: white; list-style: none;">Products</a></li>
+                           <li style="margin-top: 10px "><a href="Clientele.html"
+                                 style="color: white; list-style: none;">Clientele</a></li>
+                           <li style="margin-top: 10px ">
+                              <a href="Documents/mundada-polymers-brochure.pdf" download
+                                 style="color: white; list-style: none;">Download
+                                 Brochure</a>
+                           </li>
+                           <li style="margin-top: 10px ">
+                              <a href="request-quote.html" style="color: white;">
+                                 Get a Quote
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <div class="col-6 col-lg-6">
+                     <h2 class="fs-2 mb-4 text-white" style="font-size: 2.5rem; color: #ffffff;">Products</h2>
+                     <nav>
+                        <ul>
+                           <li class="mb-3 my-lg-2" style="margin-top: 10px "><a href="STRETCH-HOOD-FILM.html"
+                                 style="color: white; list-style: none;margin-bottom: 10;">STRETCH HOOD FILM </a>
+                           </li>
+                           <li class="my-2 my-lg-2" style="margin-top: 10px "><a href="LDPE-SHRINK-FILM.html"
+                                 style="color: white; list-style: none;">LDPE SHRINK FILM</a>
+                           </li>
+                           <li style="margin-top: 10px "><a class="nav-item active" href="SURFACE-PROTECTION-FILM.html"
+                                 style="color: white; list-style: none;">SURFACE PROTECTION FILM</a></li>
+                           <li style="margin-top: 10px "><a href="STRETCH-WRAP-FILM.html"
+                                 style="color: white; list-style: none;">STRETCH WRAP FILM</a>
+                           </li>
+                           <li style="margin-top: 10px ">
+                              <a href="SILAGE-STRETCH-FILM.html" style="color: white; list-style: none;">SILAGE
+                                 STRETCH FILM
+                              </a>
+                           </li>
+                           <li style="margin-top: 10px ">
+                              <a href="VCI-STRETCH-WRAP-FILM.html" style="color: white;">
+                                 VCI STRETCH WRAP FILM
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p style="color: #ffffff; text-align: center; margin: 0px;">Copyright © 2025 Mundada Polymer. All Rights
             Reserved</p>
-
-
       </div>
    </section>
+
 
 
 
