@@ -61,15 +61,15 @@
             border-bottom: 3px solid #34a853;
         }
 
-        .course-card {
+        /* .course-card {
             position: relative;
             color: white;
-            /* border-radius: 12px; */
+            border-radius: 12px;
             overflow: hidden;
             transition: transform 0.2s;
             margin: 20px 0px;
-            aspect-ratio: 6/11;
-        }
+            aspect-ratio: 6/9;
+        } */
 
         .course-card img {
             width: 100%;
@@ -287,7 +287,7 @@
 
         .client-logo {
             height: 170px;
-            max-width: 170px;
+            width: 33%;
         }
 
 
@@ -728,7 +728,7 @@
         }
 
         .Industries-Served {
-            color: white;
+            color: #1d3557;
             font-size: 20px;
             font-weight: 800;
             margin-left: 100px;
@@ -738,7 +738,7 @@
             font-size: 20px;
             font-weight: 800;
             margin-left: 30px;
-            color: #ffffff;
+
             padding: 2px;
             border-left: 6px solid #34a853;
         }
@@ -1063,9 +1063,19 @@
         .static-section ul li {
             flex: 1;
             /* Make them evenly spaced */
-            min-width: 150px;
+            min-width: 130px;
             /* Adjust as needed */
         }
+
+
+        @media only screen and (max-width: 430px) and (min-width: 320px) {
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+            }
+        }
+
 
         @media (min-width: 375px) and (max-width: 411.98px) {
             .static-section.home3-static {
@@ -1527,6 +1537,485 @@
                 flex-direction: column-reverse;
             }
         }
+
+
+        @media only screen and (max-width: 430px) {
+
+            .static-section.home3-static {
+                height: 512px;
+            }
+
+            .client-logo {
+                height: 170px;
+                max-width: 130px;
+            }
+
+            .course-card {
+                position: relative;
+                color: white;
+                /* border-radius: 12px; */
+                overflow: hidden;
+                transition: transform 0.2s;
+                margin: 20px 0px;
+                aspect-ratio: 6/9;
+            }
+
+
+            .certifications-section {
+                background: #e2e7ff;
+                padding: 10px;
+                /* border-radius: 10px; */
+            }
+
+            .company_mission-number {
+                background-image: url(img/index-page/Hero01.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+                position: relative;
+                padding-top: 50px;
+                height: 250px;
+            }
+
+            .news-title {
+                margin: 20px 0px;
+                font-size: 24px;
+                font-weight: bold;
+                color: #1a1a1a;
+            }
+
+            .static-section.home3-static h2 {
+                font-size: 32px;
+            }
+
+            .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+                color: #ffffff;
+            }
+
+            #new-carousel {
+                position: relative;
+                width: 100%;
+                height: 75vh;
+            }
+
+            .carousel-indicators .active {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                background-color: #000;
+            }
+
+            .carousel-indicators>li {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+
+                border-radius: 1px solid var(--dark-blue);
+                background-color: #ffffff;
+            }
+
+            .carousel-inner {
+                position: relative;
+                width: 100%;
+                overflow: visible;
+            }
+
+
+            .btn {
+                font-size: 11px;
+                padding: 10px 10px;
+
+            }
+
+            .cert-icon {
+                background: #1C1C50;
+                color: white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+            }
+
+            .cert-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                padding-left: 0px;
+            }
+
+            .Committed {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            .news-card-text {
+                font-size: 14px;
+                color: #444;
+                margin-top: 0px;
+            }
+
+            .text-certification-heading {
+                font-size: 2rem;
+                color: #242c56;
+                font-weight: bold;
+            }
+
+            .contact-heading {
+                font-size: 28px;
+            }
+
+            .home6 h1 {
+                color: var(--primary-bg);
+            }
+
+            #productimg01 {
+                background-image: url('img/our-product-01.svg');
+
+            }
+
+            #productimg02 {
+                background-image: url('img/our-product-02.svg');
+
+            }
+
+            #productimg03 {
+                background-image: url('img/our-product-03.svg');
+
+            }
+
+            .product-subtitle {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 30px;
+                margin: 0px 0px;
+                margin-bottom: 12px;
+            }
+
+
+
+
+            .company_mission {
+                background-image: url(img/bg-img.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat:
+                    no-repeat;
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+                position: relative;
+                padding-top: 50px;
+                min-height: 600px;
+            }
+
+
+            .packing-title {
+                font-weight: bolder;
+                font-size: 28px;
+                color: #f9f9f9;
+            }
+
+            .header-section {
+                margin-top: 20px;
+            }
+
+            .packing-title {
+                margin: -44px 0px;
+            }
+
+            .static-section.home3-static h2 {
+                font-size: 24px;
+            }
+
+
+            .Latest-Innovations {
+                padding: 10px 10px;
+            }
+
+            .product-card-title {
+                color: var(--primary-bg);
+                font-size: 22px;
+                font-weight: 600;
+                padding: 10px;
+                margin-top: 180px;
+                font-family: 'Poppins', sans-serif;
+                /* border-left: 10px solid #34a853; */
+            }
+
+
+
+            .Trusted-clients {
+                color: #242c56;
+                margin-top: 0px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+            .Trusted-clientshidden {
+                display: none;
+            }
+
+            .product-title {
+                color: #242c56;
+                font-size: 38px;
+                font-weight: 700;
+                font-family: 'Poppins', sans-serif;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .mil-banner-personal {
+                margin-top: 20px;
+            }
+
+            .bgimg {
+                margin-top: 40px;
+                height: 220px;
+                width: 100%;
+            }
+
+            #h1-text {
+                line-height: 1.2;
+                font-size: 20px;
+                margin-top: 45px;
+                padding: 0 -5px;
+                color: #1ba34b;
+                padding: 0px 0px;
+                font-size: 28px;
+            }
+
+            .new-pak {
+                margin: 20px 0px;
+                margin-left: 0px;
+                font-size: 16px;
+            }
+
+            .let-btn {
+                /* position: absolute; */
+                margin: 0px 0px;
+                color: #ffffff;
+                background-color: #34a853;
+                bottom: -35px;
+            }
+
+            #h1-text+p {
+                font-size: 12px;
+                padding: 20px 0px;
+                color: #1ba34b;
+            }
+
+            .carousel-indicators .active {
+                width: 12px;
+                height: 12px;
+                border-radius: 15px;
+                margin: 0;
+                background-color: white;
+                /* border-radius: 1px solid var(--primary-white); */
+            }
+
+            .carousel-indicators>li {
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                border-radius: 1px solid var(--primary-white);
+                border-radius: 15px;
+                background-color: #1d3557;
+            }
+
+
+            .quality-assurance-section {
+                background-color: var(--primary-bg);
+            }
+
+            .certifications-header {
+                color: var(--primary-bg);
+                font-size: 29px;
+            }
+
+            .product-card {
+                height: 367px;
+                width: 333px;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3sease-in-out;
+                /* background-color: black; */
+            }
+
+            .card-body p {
+                font-size: 14px;
+                color: var(--primary-white);
+                /* border-radius: 15px; */
+            }
+
+            #Our-Clients {
+                font-size: 20px;
+                font-weight: 800;
+                margin-left: 10px;
+                color: #242c56;
+                padding: 2px;
+                border-left:
+                    6px solid #34a853;
+            }
+
+            .certifications-section {
+                background: #e2e7ff;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            #hero-carousel .item {
+                height: 100vh;
+            }
+
+
+            #hero-carousel {
+                position: relative;
+                width: 100%;
+                height: 80vh;
+            }
+
+
+
+            .review-card {
+                border: 1px solid #242c56;
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                text-align: center;
+                position: relative;
+                /* Needed for absolute positioning */
+                /* width: 330px; */
+                /* Adjust as needed */
+                border-radius: 10px;
+                min-height: 250px;
+                /* Ensures consistent height */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 20px 0px;
+            }
+
+            .review-card .clinetname {
+                background: #28a745;
+                color: #fff;
+                /* display: inline-block; */
+                padding: 4px 5px;
+                border-radius: 0px 0px 0px 0px;
+                font-size: 18px;
+                /* position: absolute; */
+                top: -18px;
+                /* left: 50%;  */
+                transform: translateX(-50%);
+                margin-bottom: 10px;
+                margin-left: 78px;
+            }
+
+            .contact-heading {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 29px;
+                color: #ffffff;
+            }
+
+            .contact-info {
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+            .product-subtitle {
+                color: #333333;
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                padding: 0 15px 30px 15px;
+                margin: 0px 0px;
+            }
+
+            .packaging-card {
+                width: 100%;
+                background: linear-gradient(to top right, #a0a1a1 50%, #373d50 50%);
+                /* Gradient fills from gray to dark */
+                background-size: 200% 200%;
+                background-position: bottom left;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-position 0.5s ease-in-out, transform 0.3s ease-in-out;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .packaging-card:hover {
+                background-position: top right;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            .packaging-card:hover {
+                transform: translateY(-5px);
+            }
+
+
+            .packaging-img {
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .packaging-img img {
+                width: 40px;
+                height: 40px;
+                color: #000;
+
+            }
+
+            .packing-card-title {
+                text-align: left;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .packing-card-text {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+            }
+
+            .packaging-card:hover .packing-card-title {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+            .packaging-card:hover .packing-card-text {
+                transition-delay: 0.3s;
+                color: white;
+            }
+
+
+
+
+
+            #h1-text {
+                line-height: 1.2;
+                font-size: 24px;
+                margin-top: 10px;
+                color: white;
+                padding: 0 0px;
+            }
+
+            .reverse-hero {
+                flex-direction: column-reverse;
+            }
+
+        }
+
 
         @media (min-width: 412) and (max-width: 667px) {
             .static-section.home3-static {
@@ -2649,48 +3138,52 @@
 
         }
 
+
+
+
         @media (min-width: 1024px) and (max-width: 1366px) {
             .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
                 /* color: #ffffff; */
             }
 
-            .carousel-inner{
-margin-top: -25px;
+            .carousel-inner {
+                margin-top: -25px;
             }
 
-            .carousel-control .glyphicon-chevron-left{
+            .carousel-control .glyphicon-chevron-left {
                 margin-left: -70px;
             }
 
-            .carousel-control .glyphicon-chevron-right{
+            .carousel-control .glyphicon-chevron-right {
                 margin-right: -70px;
             }
 
-            .texthero{
+            .texthero {
                 margin-left: 50px;
-            
+
             }
 
             .course-description {
-            font-size: 12px;
-            font-weight: 300;
-            text-align: left;
-            margin-bottom: 10px;
-            color: #5c5e6b;
-        }
-
-.sec2{
-    margin-top: -100px;
-}
-           
-
-            .h125{
-font-size: 24px;
+                font-size: 12px;
+                font-weight: 300;
+                text-align: left;
+                margin-bottom: 10px;
+                color: #5c5e6b;
             }
-            .text125{
-font-size: 20px;
+
+            .sec2 {
+                margin-top: -100px;
             }
-            
+
+
+            .h125 {
+                font-size: 24px;
+            }
+
+            .text125 {
+                font-size: 20px;
+            }
+
             #hero-carousel {
                 position: relative;
                 width: 100%;
@@ -2770,10 +3263,7 @@ font-size: 20px;
             }
 
 
-            .clients {
-                flex-direction: column;
-                align-items: center;
-            }
+
 
             .contact-section {
                 padding: 40px 0;
@@ -2797,6 +3287,7 @@ font-size: 20px;
                 width: 60%;
                 /* margin-top: 17%; */
             }
+
             header.header4 #main-navigation-wrapper .nav>li {
 
                 padding: 10px 0px;
@@ -2816,7 +3307,7 @@ font-size: 20px;
 
 
 
-           
+
             /* cards */
 
 
@@ -3888,7 +4379,8 @@ font-size: 20px;
                         <!-- Left Text Section -->
                         <div
                             class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white texthero h125" id="h1-text" style="color: #ffffff;">Your Packaging,<br> Our
+                            <h2 class="fw-bold text-white texthero h125" id="h1-text" style="color: #ffffff;">Your
+                                Packaging,<br> Our
                                 Commitment</h2>
                             <h1 class="new-pak texthero text125" style="color: #ffffff;">
 
@@ -3921,7 +4413,8 @@ font-size: 20px;
                         <!-- Left Text Section -->
                         <div
                             class="col-12 col-md-6 col-lg-6 text-white d-flex flex-column  align-items-center  min-vh-100 container">
-                            <h2 class="fw-bold text-white texthero h125 " id="h1-text" style="color: #ffffff;">Cutting-Edge
+                            <h2 class="fw-bold text-white texthero h125 " id="h1-text" style="color: #ffffff;">
+                                Cutting-Edge
                                 <br> Film Manufacturing
                             </h2>
                             <h1 class="new-pak texthero text125" style="color: #ffffff;">
