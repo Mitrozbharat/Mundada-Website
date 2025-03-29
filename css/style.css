@@ -1,28 +1,3 @@
-@charset "utf-8";
-/* CSS Document */
-@import url('font-awesome.min.css');
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800);
-/*----------------------------------------------------*/
-/*===================================================================== 
-Table of Content: 
-01 - Global Style Start 
-02 - Header 
-03 - Banner
-04 - Services
-05 - Recent-Project
-06 - Testimonial Section
-07 - Latest News 
-08 - Image Hover Effect
-09 - Home 6 
-10 - Home 7
-11 - Home 8
-=====================================================================*/
-/*----------------------------------------------------*/
-
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-/*01 - Global Style Start */
-/*-------------------------------------------------------------------------------------------------------------------------------*/
-
 body {
     margin: 0px;
     padding: 0px;
@@ -32,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 body.yellow-body {
-    background: url(../images/coming-page-bg.jpg) no-repeat center -100px;
+    /* background: url(../images/coming-page-bg.jpg) no-repeat center -100px; */
     background-size: cover;
 }
 body.maintenance-body {
@@ -580,7 +555,7 @@ a.header-requestbtn:before {
 .search-column:before {
     width: 1px;
     height: 26px;
-    background: url(../images/btn-left-divider.jpg) no-repeat;
+    /* background: url(../images/btn-left-divider.jpg) no-repeat; */
     left: 0px;
     top: 0px;
     position: absolute;
@@ -589,7 +564,7 @@ a.header-requestbtn:before {
 .search-btn {
     width: 40px;
     height: 26px;
-    background: url(../images/white-search-btn.png) no-repeat center center;
+    /* background: url(../images/white-search-btn.png) no-repeat center center; */
     border: 0px;
     float: left;
     padding: 0px;
@@ -608,9 +583,9 @@ a.header-requestbtn:before {
 .search-column.search-fl:before {
     display: none;
 }
-.search-btn.black-search-btn {
+/* .search-btn.black-search-btn {
     background: url(../images/search-btn.png) no-repeat center center;
-}
+} */
 .modal {
     padding-right: 0px;
     background-color: rgba(4, 4, 4, 0.8);
@@ -670,7 +645,7 @@ a.header-requestbtn:before {
 .search_lghtbox_btn {
     position: absolute;
     right: 0px;
-    background: url(../images/search_popup_icon.png) no-repeat;
+    /* background: url(../images/search_popup_icon.png) no-repeat; */
     width: 18px;
     height: 18px;
     border: 0;
@@ -797,9 +772,9 @@ header.header4 {
 .hdr3-right.hdr4-right .search-column {
     margin: 6px 0px;
 }
-.hdr3-right.hdr4-right .search-column .search-btn {
+/* .hdr3-right.hdr4-right .search-column .search-btn {
     background: url(../images/search-btn.png) no-repeat center center;
-}
+} */
 header.header4 .logo {
     float: left;
     margin: 22px 0px;
@@ -908,7 +883,7 @@ a.header-requestbtn.contactus-btn:hover {
     width: 100%;
     float: left;
     padding: 80px 0px 0px;
-    background: url(../images/footer-bg.jpg) no-repeat center top;
+    /* background: url(../images/footer-bg.jpg) no-repeat center top; */
     background-size: cover;
 }
 .ftr-section h6 {
@@ -1135,7 +1110,7 @@ a.header-requestbtn.learn-more.btn-center {
 .service-column:hover .read-more-link {
     color: #000;
 }
-.service-manufactureicon {
+/* .service-manufactureicon {
     background: url(../images/manufacture-icon.png) no-repeat 0px 0px;
 }
 .service-cncicon {
@@ -1152,7 +1127,7 @@ a.header-requestbtn.learn-more.btn-center {
 }
 .service-materialicon {
     background: url(../images/material-icon.png) no-repeat 0px 0px;
-}
+} */
 /*======services end=======*/
 /*======bestthing-section=======*/
 .bestthing-section {
@@ -1331,7 +1306,7 @@ a.header-requestbtn.learn-more.btn-center {
 .testimonial-rght-head h2 {
     font-size: 50px;
     color: #000;
-    background: url(../images/testi-quotes.png) no-repeat center top;
+    /* background: url(../images/testi-quotes.png) no-repeat center top; */
     padding: 146px 0px 0px;
     float: left;
     font-family: 'Montserrat', sans-serif;
@@ -1481,7 +1456,7 @@ ul.whychoose-list li {
     padding: 0px 0px 0px 94px;
     margin-bottom: 50px;
 }
-ul.whychoose-list li.delivery-icon {
+/* ul.whychoose-list li.delivery-icon {
     background: url(../images/delivery-icon.png) no-repeat 10px 0px;
 }
 ul.whychoose-list li.technology-icon {
@@ -1500,7 +1475,7 @@ ul.whychoose-list li:last-child {
     background-size: cover;
     background-attachment: fixed;
     position: static;
-}
+} */
 .home2 .bestthing-text-column h2 {
     color: #fff;
 }
@@ -1508,7 +1483,7 @@ ul.whychoose-list li:last-child {
     color: #fff;
 }
 .home2.recent-project-section {
-    background: url(../images/home2-images/project_bg.jpg) no-repeat center top;
+    /* background: url(../images/home2-images/project_bg.jpg) no-repeat center top; */
     background-size: cover;
     background-attachment: fixed;
     padding-bottom: 150px !important;
@@ -1528,7 +1503,7 @@ ul.whychoose-list li:last-child {
 }
 .home4.recent-project-section {
     background: #1c1c1c;
-    background: url(../images/home2-images/project_bg.jpg) no-repeat center top;
+    /* background: url(../images/home2-images/project_bg.jpg) no-repeat center top; */
     background-size: cover;
 }
 .home4.recent-project-section .nav-tabs>li>a {
@@ -1610,7 +1585,7 @@ ul.whychoose-list li:last-child {
     color: #000;
 }
 .home3.recent-project-section {
-    background: url(../images/home3-images/home-project-bg.jpg) no-repeat center top;
+    /* background: url(../images/home3-images/home-project-bg.jpg) no-repeat center top; */
     padding-bottom: 70px !important;
     background-size: cover;
     background-attachment: fixed;
@@ -1798,7 +1773,7 @@ a.header-requestbtn.contactus-btn.more-info {
 .banner-bottom-boxes.index5-boxes {
     margin: 2px 0px;
 }
-.banner-bottom-boxes.index5-boxes ul li.first-box {
+/* .banner-bottom-boxes.index5-boxes ul li.first-box {
     background: url(../images/home5-delivery-img.jpg) no-repeat center top;
     background-size: cover;
 }
@@ -1809,7 +1784,7 @@ a.header-requestbtn.contactus-btn.more-info {
 .banner-bottom-boxes.index5-boxes ul li.third-box {
     background: url(../images/home5-labour-img.jpg) no-repeat center top;
     background-size: cover;
-}
+} */
 .home2.home4.home5.bestthing-section {
     background: #fff;
 }
@@ -1847,7 +1822,7 @@ a.header-requestbtn.contactus-btn.more-info {
     margin-bottom: 30px;
 }
 .home5-service1 {
-    background: url(../images/home5-service1.jpg) no-repeat center top;
+    /* background: url(../images/home5-service1.jpg) no-repeat center top; */
     background-size: cover;
     padding: 100px 100px 101px;
     transition: all .3s ease-out;
@@ -1863,7 +1838,7 @@ a.header-requestbtn.contactus-btn.more-info {
     color: #fff;
     margin-bottom: 10px;
 }
-.home5-service1.home5-service2 {
+/* .home5-service1.home5-service2 {
     background: url(../images/home5-service2.jpg) no-repeat center top;
     background-size: cover;
 }
@@ -1882,7 +1857,7 @@ a.header-requestbtn.contactus-btn.more-info {
 .home5-service1.home5-service6 {
     background: url(../images/home5-service6.jpg) no-repeat center top;
     background-size: cover;
-}
+} */
 header.header5 .header-socials i:hover {
     color: #fff;
     border: 1px solid #fff;
@@ -1957,7 +1932,7 @@ ul.choose-list li {
     width: 50%;
     font-size: 16px;
     color: #575757;
-    background: url(../images/choose-arrow.png) no-repeat 0px center;
+    /* background: url(../images/choose-arrow.png) no-repeat 0px center; */
     padding: 3px 5px 3px 20px;
 }
 .bestthing-img.whychoos-img {
@@ -2248,7 +2223,7 @@ ul.choose-list li {
     padding: 20px 0px 0px;
 }
 .client-testimonial p {
-    background: url(../images/client-quote-img.png) no-repeat 0px 0px;
+    /* background: url(../images/client-quote-img.png) no-repeat 0px 0px; */
     padding-left: 18px;
     float: left;
 }
@@ -2299,7 +2274,7 @@ ul.choose-list li {
     background-size: 47px;
     background-position: 20px center;
 }
-.service-list-column:hover .service-manufactureicon {
+/* .service-list-column:hover .service-manufactureicon {
     background: url(../images/manufacture-icon-hover.png) no-repeat 0px 0px;
     background-size: 47px;
     background-position: 20px center;
@@ -2328,7 +2303,7 @@ ul.choose-list li {
     background: url(../images/material-icon-hover.png) no-repeat 0px 0px;
     background-size: 47px;
     background-position: 20px center;
-}
+} */
 .left-column {
     width: 28.8%;
     float: left;
@@ -2418,7 +2393,7 @@ ul.office-information li .info-txt.fnt_17 {
     width: 100%;
     float: left;
     padding: 40px 0px 0px 20px;
-    background: url(../images/contact-help-bg.jpg) no-repeat center top;
+    /* background: url(../images/contact-help-bg.jpg) no-repeat center top; */
     border-bottom: 17px solid #ffae13;
     background-size: cover;
     position: relative;
@@ -2433,7 +2408,7 @@ ul.office-information li .info-txt.fnt_17 {
     padding: 3px 86px 52px 0px;
 }
 .contact-help:after {
-    background: url(../images/contact-help-cal.png) no-repeat right top;
+    /* background: url(../images/contact-help-cal.png) no-repeat right top; */
     position: absolute;
     right: 0px;
     bottom: -1px;
@@ -2448,7 +2423,7 @@ a.pdf-button {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    background: url(../images/pdf-icon.jpg) no-repeat 0px 0px;
+    /* background: url(../images/pdf-icon.jpg) no-repeat 0px 0px; */
     text-transform: uppercase;
     padding: 20px 0px 21px 80px;
     width: 100%;
@@ -2656,7 +2631,7 @@ a.pdf-button:hover {
 .blog-list-cl ul li:last-child {
     border-right: 0px;
 }
-.date_icon {
+/* .date_icon {
     background: url(../images/blog-icons-list.png) no-repeat 0px -2px;
 }
 .author_icon {
@@ -2664,7 +2639,7 @@ a.pdf-button:hover {
 }
 .blog_icon {
     background: url(../images/blog-icons-list.png) no-repeat 0px -220px;
-}
+} */
 .pagination {
     width: 100%;
     float: left;
@@ -2808,7 +2783,7 @@ ul.tag-cloud li a:hover {
     list-style: none;
     float: left;
     width: 50%;
-    background: url(../images/blog-graybg-arrow.png) no-repeat 0px 9px;
+    /* background: url(../images/blog-graybg-arrow.png) no-repeat 0px 9px; */
     font-size: 16px;
     color: #000;
     border-right: 0px;
@@ -2818,7 +2793,7 @@ ul.tag-cloud li a:hover {
 .blog-testimonial {
     width: 100%;
     float: left;
-    background: url(../images/blog-testimonial-quote.png) no-repeat 0px 0px;
+    /* background: url(../images/blog-testimonial-quote.png) no-repeat 0px 0px; */
     padding: 0px 0px 0px 82px;
     margin-bottom: 50px;
 }
@@ -4603,7 +4578,7 @@ a.header-contctbtn i {
     padding-top: 180px
 }
 .home6 .ftr-section {
-    background: url(../images/home6-images/footer-bg.jpg) no-repeat center center;
+    /* background: url(../images/home6-images/footer-bg.jpg) no-repeat center center; */
     background-size: cover;
 }
 .home6 .ftr-section p,
@@ -4831,14 +4806,14 @@ a.header-contctbtn i {
 .signLeftCol p span {
     font-size: 18px;
 }
-.company_mission {
+/* .company_mission {
     background: url(../images/home6-images/welcm-lft-bg.jpg) no-repeat;
     position: relative;
 }
 .home6 .serviceSection {
     background: url(../images/home6-images/service-bg-1.jpg) no-repeat center center;
     background-size: cover;
-}
+} */
 .home6 .singleService {
     border: 1px solid #ccc;
     padding: 0 25px 24px 25px;
@@ -4887,7 +4862,7 @@ a.header-contctbtn i {
 }
 .emergencySec {
     text-align: center;
-    background: url(../images/home6-images/emergency-call-bg.jpg) no-repeat center center;
+    /* background: url(../images/home6-images/emergency-call-bg.jpg) no-repeat center center; */
     background-size: cover;
     padding-bottom: 170px;
 }
@@ -4940,7 +4915,7 @@ section.success_story {
 }
 
 .formSec {
-    background: url(../images/home6-images/form-bg.png) no-repeat center center;
+    /* background: url(../images/home6-images/form-bg.png) no-repeat center center; */
     background-size: cover;
     padding: 89px 50px;
 }
@@ -5264,7 +5239,7 @@ img.proImg {
     background: #fff;
 }
 .testimonialArea {
-    background: url(../images/home6-images/testimonial-bg.jpg) no-repeat;
+    /* background: url(../images/home6-images/testimonial-bg.jpg) no-repeat; */
 }
 .testimonialRightSec {
     width: 30%;
@@ -5456,7 +5431,7 @@ img.nwsImg {
                              Home 7
 *****************************************************************************************/
 .home7 .ftr-section {
-    background: url(../images/home7-images/footer-bg.jpg) no-repeat center center;
+    /* background: url(../images/home7-images/footer-bg.jpg) no-repeat center center; */
     background-size: cover;
 }
 .home7 .ftr-section p,
@@ -5544,7 +5519,7 @@ header.header7 #main-navigation-wrapper.navbar-default.sticky_header .nav>li {
     background: #011327;
 }
 .home7Banner .slide-1 {
-    background: url(../images/home7-images/slider-bg.png) no-repeat center center;
+    /* background: url(../images/home7-images/slider-bg.png) no-repeat center center; */
     background-size: cover;
 }
 .home7Banner h4 {
@@ -5770,7 +5745,7 @@ header.header7 #main-navigation-wrapper.navbar-default.sticky_header .nav>li {
     padding-top: 30px;
 }
 .home7Services {
-    background: url(../images/home7-images/services-bg.jpg) no-repeat center center;
+    /* background: url(../images/home7-images/services-bg.jpg) no-repeat center center; */
     background-size: cover;
     padding-bottom: 160px;
 }
@@ -5796,10 +5771,10 @@ header.header7 #main-navigation-wrapper.navbar-default.sticky_header .nav>li {
     line-height: 24px;
 }
 .companyMissionSec {
-    background: url(../images/home7-images/bg-icons.png) no-repeat;
+    /* background: url(../images/home7-images/bg-icons.png) no-repeat; */
 }
 .home7Accordian {
-    background: url(../images/home7-images/fectory-bg.png) no-repeat right;
+    /* background: url(../images/home7-images/fectory-bg.png) no-repeat right; */
     background-size: contain;
     padding-top: 130px;
 }
@@ -6071,7 +6046,7 @@ header.header7 #main-navigation-wrapper.navbar-default.sticky_header .nav>li {
 }
 
 .home7Testimonial {
-    background: url(../images/home7-images/testimonial-sec-bg.jpg) no-repeat center center;
+    /* background: url(../images/home7-images/testimonial-sec-bg.jpg) no-repeat center center; */
     background-size: cover;
     padding-bottom: 130px;
 }
@@ -6222,7 +6197,7 @@ header.header7 #main-navigation-wrapper.navbar-default.sticky_header .nav>li {
     padding: 120px 0;
 }
 .home8 .ftr-section {
-    background: url(../images/home8-images/footer-bg.jpg) no-repeat center center;
+    /* background: url(../images/home8-images/footer-bg.jpg) no-repeat center center; */
     background-size: cover;
 }
 .home8 .ftr-section p,
@@ -6272,14 +6247,14 @@ header.header8 .logo {
 header.header8 #main-navigation-wrapper .nav>li {
     padding: 30px 0px;
 }
-.home8Banner .slide-1 {
+/* .home8Banner .slide-1 {
     background: url(../images/home8-images/slider-1.jpg) no-repeat center center;
     background-size: cover;
 }
 .home8Banner .slide-2 {
     background: url(../images/home8-images/slider-2.jpg) no-repeat center center;
     background-size: cover;
-}
+} */
 .home8Banner h4 {
     line-height: 25px;
     font-size: 16px;
@@ -6362,7 +6337,7 @@ header.header8 #main-navigation-wrapper .nav>li {
     font-size: 16px;
     line-height: 25px;
 }
-.hm8WelconeCenter {
+/* .hm8WelconeCenter {
     background: url(../images/home8-images/box2-bg.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -6373,7 +6348,7 @@ header.header8 #main-navigation-wrapper .nav>li {
 .hm8WelconeRight {
     background: url(../images/home8-images/box3-bg.jpg) no-repeat center center;
     background-size: cover;
-}
+} */
 .hm8WelconeLeft p,
 .hm8WelconeRight p {
     font-weight: normal;
@@ -6559,7 +6534,7 @@ section.experienceSec {
     margin-bottom: 0;
 }
 .videoServiceRight {
-    background: url(../images/home8-images/service-bg.jpg) no-repeat center center;
+    /* background: url(../images/home8-images/service-bg.jpg) no-repeat center center; */
     background-size: cover;
     padding-right: 20px;
     padding-top: 100px;
@@ -6607,14 +6582,14 @@ section.experienceSec {
 .hm8ProjectSection .black-hover:hover .tour-layer {
     background: rgba(0, 0, 0, 0.6);
 }
-.home8-testi-bg {
+/* .home8-testi-bg {
     background: url(../images/home8-images/testimonial-bg.png) no-repeat right;
     background-size: cover;
 }
 .hm8CounterCol {
     background: url(../images/home8-images/counter-bg.png) no-repeat center center;
     background-size: cover;
-}
+} */
 .hm8CounterCol .icon_counter {
     padding-bottom: 35px;
 }
@@ -6822,7 +6797,6 @@ section.experienceSec {
 
 /*************************************End Home8****************************************************/
 
-@charset "utf-8";
 /* CSS Document */
 @media(min-width:992px) and (max-width:1200px) {
     .faq_04 h3.marbtm30 {
@@ -7064,9 +7038,9 @@ section.experienceSec {
     header.header2 .search-column {
         display: none;
     }
-    header.header1 .search-btn {
+    /* header.header1 .search-btn {
         background: url(../images/search-btn.png) no-repeat center center;
-    }
+    } */
     header.header2 .navbar-header {
         background: #131313;
     }
@@ -8966,10 +8940,10 @@ section.experienceSec {
 
 }
 @media(max-width: 991px) {
-    .home6 ul.header-info .search-btn,
+    /* .home6 ul.header-info .search-btn,
     .home8 .search-btn {
         background: url(../images/zoom_icon.jpg) no-repeat center center
-    }
+    } */
     .home6 ul.header-info .ic-bar,
     .home8 .ic-bar {
         background: #000;
@@ -9176,9 +9150,9 @@ section.experienceSec {
     .header8 .header-socials {
         float: left;
     }
-    .header4.header7.header8 .hdr3-right.hdr4-right .search-column .search-btn {
+    /* .header4.header7.header8 .hdr3-right.hdr4-right .search-column .search-btn {
         background: url(assets/images/allmix/search-btn.html) no-repeat center center !important;
-    }
+    } */
     .home8 a.home8Button {
         float: left;
         margin-bottom: 30px;
@@ -10713,7 +10687,7 @@ a.view-all.slide_learn_btn.view_project_btn:hover {
 .isotopeSelector.project_img .lens_icon {
     width: 66px;
     height: 66px;
-    background: url(../images/zoom_icon.jpg) no-repeat center center #fff;
+    /* background: url(../images/zoom_icon.jpg) no-repeat center center #fff; */
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
@@ -11768,7 +11742,7 @@ section {
     transform: translate(-50%, -50%);
     width: 122px;
     height: 66px;
-    background: url(../img/section-title-bg.png) no-repeat;
+    /* background: url(../img/section-title-bg.png) no-repeat; */
     z-index: -1;
 }
 
