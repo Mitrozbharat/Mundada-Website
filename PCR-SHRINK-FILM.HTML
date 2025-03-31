@@ -56,26 +56,48 @@
             text-align: center;
         }
 
+        .padding-x-20 {
+            padding: 20px 20px 0px 20px;
+        }
+
         section {
             background-color: #ffffff;
         }
 
 
+        .col-md-4 {
+            width: 33.33333333%;
+            margin-top: 10px;
+        }
 
         .company_mission-number {
-            background-image: url(img/product-page/products-Hero.svg);
+            background-color: #e5f2ff;
+            width: 100%;
+            color: #1d3557;
+            height: 400px;
+            background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
-            background-repeat:
-                no-repeat;
-            /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
-            position: relative;
-            padding-top: 50px;
-            height: 80vh;
+
         }
+
+
 
         .home6 h1 {
             color: white;
+        }
+
+        .line-text::before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            /* Adjust length of the line */
+            height: 3px;
+            /* Adjust thickness of the line */
+            background-color: #1D274E;
+            /* Match the text color */
+            margin-right: 10px;
+            /* Space between line and text */
+            vertical-align: middle;
         }
 
         .value-text {
@@ -400,6 +422,10 @@
             margin: 0px 220px;
         }
 
+        .product-card {
+            padding: 10px;
+            margin-top: 10px;
+        }
 
         .product-card-title {
             color: whitesmoke;
@@ -862,46 +888,22 @@
             color: #011327;
         }
 
-        .row .product-card a img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .overlay {
-
-            position: relative;
-            width: 100%;
-            background: rgba(29, 53, 87, 0.5);
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            display: inline-block;
-
-        }
-
-        .sustainability-title {
-            color: #1e2756;
-            font-weight: bold;
-            border-left: 6px solid #2a9d5c;
-            padding-left: 15px;
-            margin-bottom: 20px;
-        }
-
-        .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
-            color: black;
-            border-bottom: 3px solid #34a853;
+        .static-section .container .row h1 {
+            margin-top: 150px;
         }
 
         @media (min-width: 360px) and (max-width: 800px) {
+            .strech-title {
+                /* margin-top: 150px; */
+                padding-top: 18%;
+                font-size: 2.5rem;
+            }
+
             .new-pak {
                 margin: 20px 0px;
                 margin-left: 0px;
                 font-size: 18px;
             }
-
 
             .card-title {
                 font-size: 16px;
@@ -922,17 +924,6 @@
                 margin-top: 20px;
                 margin-left: 10px;
                 text-align: left;
-            }
-
-            .product-card {
-                height: 440px;
-                /* width: 300px; */
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3sease -in-out;
-                /* background-color: black; */
             }
 
             .btn {
@@ -1397,8 +1388,8 @@
             }
 
             .product-card {
-                /* height: 420px; */
-                width: 300px;
+                height: 400px;
+                width: 290px;
                 background-repeat: no-repeat;
                 border-radius: 10px;
                 overflow: hidden;
@@ -1481,7 +1472,7 @@
             }
 
             .product-card .btn {
-                background-color: #1d3557;
+                background-color: #28a745;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -1526,15 +1517,16 @@
 
 
             .course-card-why h5 {
-                background-color: #1d3557;
+                /* background-color: #1d3557; */
                 /* Dark blue header */
-                color: white;
+                color: #1d3557;
                 padding: 15px;
                 margin: 0;
                 width: 100%;
             }
 
             .course-card-why p {
+                text-align: left;
                 padding: 25px 0px 56px 0px;
 
             }
@@ -1553,18 +1545,6 @@
                 font-weight: bold;
                 font-size: 3rem;
                 width: 100%;
-            }
-
-            .Innovative {
-                margin: 30px 0px 20px 0px;
-                font-size: 32px;
-                color: #ffffff;
-            }
-
-            .let-btn {
-                color: white;
-                margin: 20px 0px 0px 0px;
-                padding: 10px;
             }
 
             .course-card {
@@ -1609,29 +1589,10 @@
                 text-align: center;
             }
 
-            .company_mission-number {
-                background-image: url(img/product-page/products-Hero.svg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
-                position: relative;
-                padding-top: 50px;
-                height: 50vh;
-            }
-
             .card-title {
                 font-size: 16px;
-                text-align: left;
-                color: #011327;
             }
 
-            .row .product-card a img {
-                width: 100%;
-
-                object-fit: cover;
-                display: block;
-            }
         }
 
         /* Media Queries for Responsive Design */
@@ -1642,16 +1603,11 @@
                 color: white;
             }
 
-            /* 
-            .product-card {
-                height: 400px;
-                width: 300px;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3sease-in-out;
-            } */
+            .strech-title {
+                /* margin-top: 150px; */
+                padding-top: 18%;
+                font-size: 2.5rem;
+            }
 
             .new-pak {
                 margin: 20px 0px;
@@ -1772,7 +1728,7 @@
             }
 
             .product-card .btn {
-                background-color: #1d3557;
+                background-color: #28a745;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -1843,15 +1799,16 @@
 
 
             .course-card-why h5 {
-                background-color: #1d3557;
+                /* background-color: #1d3557; */
                 /* Dark blue header */
-                color: white;
+                color: #1d3557;
                 padding: 15px;
                 margin: 0;
                 width: 100%;
             }
 
             .course-card-why p {
+                text-align: left;
                 padding: 25px 0px 56px 0px;
 
             }
@@ -1927,21 +1884,27 @@
             }
 
             .company_mission-number {
-                background-image: url(img/product-page/products-Hero.svg);
+                background-color: #e5f2ff;
+                color: #1d3557;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
                 position: relative;
-                padding-top: 50px;
-                height: 64vh;
+
+                height: 50vh;
             }
 
-            #Contact-Us {
-                background-color: #242c56;
-                color: white;
-                padding: 10px 10px;
-                border-radius: 8px;
+            .card-title {
+                font-size: 16px;
+                text-align: left;
+                color: #011327;
+            }
+
+            .strech-title {
+                /* margin-top: 150px; */
+                padding-top: 18%;
+                font-size: 2.5rem;
             }
         }
 
@@ -2098,18 +2061,12 @@
             }
 
             .product-card {
-                height: 450px;
-                width: 310px;
-                background-repeat: no-repeat;
+                border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                transition: transform 0.3s ease-in-out;
-                border: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 text-align: center;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
             }
-
 
             .product-card img {
                 width: 100%;
@@ -2128,7 +2085,7 @@
             }
 
             .product-card .btn {
-                background-color: #1d3557;
+                background-color: #28a745;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -2207,7 +2164,8 @@
             }
 
             .company_mission-number {
-                background-image: url(img/product-page/products-Hero.svg);
+                background-color: #e5f2ff;
+                color: #1d3557;
                 background-size: cover;
                 background-position: center;
                 background-repeat:
@@ -2239,17 +2197,17 @@
 
 
             .course-card-why h5 {
-                background-color: #1d3557;
+                /* background-color: #1d3557; */
                 /* Dark blue header */
-                color: white;
+                color: #1d3557;
                 padding: 15px;
                 margin: 0;
                 width: 100%;
             }
 
             .course-card-why p {
-                padding: 25px 0px 56px 0px;
-
+                text-align: left;
+                padding: 25px 20px 56px 20px;
             }
 
 
@@ -2312,13 +2270,6 @@
 
             .card-title {
                 font-size: 16px;
-            }
-
-            #Contact-Us {
-                background-color: #242c56;
-                color: white;
-                padding: 10px 00px;
-                border-radius: 8px;
             }
 
         }
@@ -2527,13 +2478,11 @@
             }
 
             .product-card {
-                margin-top: 20px;
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 text-align: center;
-                aspect-ratio: 6/10;
             }
 
             .product-card img {
@@ -2553,7 +2502,7 @@
             }
 
             .product-card .btn {
-                background-color: #1d3557;
+                background-color: #28a745;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -2629,17 +2578,19 @@
 
 
             .course-card-why h5 {
-                background-color: #1d3557;
+                /* background-color: #1d3557; */
                 /* Dark blue header */
-                color: white;
+                color: #1d3557;
                 padding: 15px;
                 margin: 0;
+                font-size: 14px;
+                text-align: left;
                 width: 100%;
             }
 
             .course-card-why p {
-                padding: 25px 0px 56px 0px;
-
+                text-align: left;
+                padding: 25px 20px 56px 20px;
             }
 
 
@@ -2702,20 +2653,11 @@
 
             .card-title {
                 color: #1d3557;
-                font-size: 15px;
+                font-size: 16px;
                 margin: 10px 0px;
             }
 
-            #Contact-Us {
-                background-color: #242c56;
-                color: white;
-                padding: 40px 20px;
-                border-radius: 8px;
-            }
-
         }
-
-
 
         @media (min-width: 1024px) and (max-width: 1366px) {
             .course-title {
@@ -2723,7 +2665,7 @@
             }
 
             .card-body p {
-                font-size: 12px;
+                font-size: 14px;
                 color: var(--primary-bg);
                 /* border-radius: 15px; */
             }
@@ -2828,9 +2770,8 @@
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 text-align: center;
-                aspect-ratio: 6/11;
             }
 
             .product-card img {
@@ -2850,7 +2791,7 @@
             }
 
             .product-card .btn {
-                background-color: #1d3557;
+                background-color: #28a745;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -2916,7 +2857,7 @@
             }
 
             .Innovative {
-                margin: 160px 0px 20px 30px;
+                margin: 100px 0px 20px 30px;
                 font-size: 42px;
                 color: #eee;
             }
@@ -2927,25 +2868,22 @@
             }
 
             .let-btn {
-                margin: 8px 38px 40px 12px;
+                margin: 50px 38px 40px 20px;
                 padding: 16px 20px;
                 color: #ffffff;
                 background-color: green;
             }
 
             .company_mission-number {
-                background-image: url(img/product-page/products-Hero.svg);
+                background-color: #e5f2ff;
+                color: #1d3557;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 /* box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); */
                 position: relative;
                 padding-top: 50px;
-                height: 90vh;
-            }
-
-            .static-section.home3-static {
-                padding: 0px 0px;
+                height: 50vh;
             }
 
             .course-card-why {
@@ -2969,17 +2907,18 @@
 
 
             .course-card-why h5 {
-                background-color: #1d3557;
+                /* background-color: #1d3557; */
                 /* Dark blue header */
-                color: white;
+                color: #1d3557;
+                text-align: left;
                 padding: 15px;
+                font-size: 16px;
                 margin: 0;
                 width: 100%;
             }
 
             .course-card-why p {
-                padding: 25px 0px 56px 0px;
-
+                padding: 25px 20px 56px 20px;
             }
 
 
@@ -2989,12 +2928,7 @@
                 /* Adds spacing between the cards */
             }
 
-            #Contact-Us {
-                background-color: #242c56;
-                color: white;
-                padding: 40px 10px 40px 50px;
-                border-radius: 8px;
-            }
+
 
             .why-product-title {
                 padding-left: 10px;
@@ -3003,11 +2937,52 @@
                 width: 100%;
             }
 
-            .sustainability-icon {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
+            .course-card {
+                position: relative;
+                color: white;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.2s;
             }
+
+            .course-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+            .course-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 20px 0px;
+                bottom: 59px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .why-content {
+                background-color: #1d3557;
+                position: absolute;
+                padding: 30px 0px;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                z-index: 10;
+                text-align: center;
+            }
+
+            .card-title {
+                font-size: 16px;
+            }
+
         }
 
         /* HD (1366 × 768) */
@@ -3147,7 +3122,7 @@
                 }
 
                 .let-btn {
-                    margin: 30px 38px 80px 45px;
+                    margin: 149px 38px 80px 45px;
                     padding: 16px 20px;
                     color: #ffffff;
                     background-color: green;
@@ -3278,17 +3253,18 @@
 
 
             .course-card-why h5 {
-                background-color: #1d3557;
+                /* background-color: #1d3557; */
                 /* Dark blue header */
-                color: white;
+                color: #1d3557;
                 padding: 15px;
+                text-align: left;
                 margin: 0;
+                font-size: 16px;
                 width: 100%;
             }
 
             .course-card-why p {
-                padding: 25px 0px 56px 0px;
-
+                padding: 25px 20px 56px 20px;
             }
 
 
@@ -3358,10 +3334,8 @@
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 text-align: center;
-                margin-top: 20px;
-
             }
 
             .product-card img {
@@ -3381,7 +3355,7 @@
             }
 
             .product-card .btn {
-                background-color: #1d3557;
+                background-color: #28a745;
                 color: white;
                 border-radius: 5px;
                 margin: 25px 0px 0px 0px;
@@ -3405,36 +3379,15 @@
                 margin: 40px 0px;
             }
 
-            #Contact-Us {
-                background-color: #242c56;
-                color: white;
-                padding: 40px 10px 40px 50px;
-                border-radius: 8px;
-            }
-
-            .sustainability-icon {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
-            }
-
 
         }
 
         /* Full HD (1920 × 1080) */
         @media screen and (min-width: 1920px) {
             .card-title {
-                color: #1d3557;
+
                 font-size: 16px;
                 margin: 10px 0px;
-            }
-
-
-            #Contact-Us {
-                background-color: #242c56;
-                color: white;
-                padding: 40px 10px 40px 50px;
-                border-radius: 8px;
             }
 
             .course-title {
@@ -3614,7 +3567,9 @@
             }
 
             .company_mission-number {
-                background-image: url(img/product-page/products-Hero.svg);
+                background-color: #e5f2ff;
+
+                color: #1d3557;
                 background-size: cover;
                 background-position: center;
                 background-repeat:
@@ -3675,17 +3630,20 @@
 
 
             .course-card-why h5 {
-                background-color: #1d3557;
+                /* background-color: #1d3557; */
                 /* Dark blue header */
-                color: white;
+                color: #1d3557;
                 padding: 15px;
+                text-align: left;
                 margin: 0;
+                font-size: 18px;
                 width: 100%;
             }
 
             .course-card-why p {
-                padding: 25px 0px 56px 0px;
+                text-align: left;
 
+                padding: 25px 20px 56px 20px;
             }
 
 
@@ -3750,9 +3708,8 @@
                 border: none;
                 border-radius: 10px;
                 overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 text-align: center;
-                aspect-ratio: 6/11;
             }
 
             .product-card img {
@@ -3772,7 +3729,7 @@
             }
 
             .product-card .btn {
-                background-color: #1d3557;
+                background-color: #28a745;
                 color: white;
                 border-radius: 5px;
                 margin: 20px 0px;
@@ -3807,12 +3764,902 @@
                 text-align: left;
                 color: #011327;
             }
+        }
 
-            .sustainability-icon {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
+        .hero-section {
+            background: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .applications,
+        .usage,
+        .specifications {
+            padding: 50px 0;
+        }
+
+        .contact-section {
+
+            padding-bottom: 0px;
+        }
+
+        .contact-section .container {
+            background: #28a745;
+            color: white;
+            border-radius: 50px 50px 0px 0px;
+            padding: 30px 0px 0px 0px;
+            text-align: center;
+        }
+
+        .static-section .container .row h1 {
+            margin-top: 50px;
+        }
+
+        .applications-row .col-md-3 p {
+            color: #ffffff;
+            text-align: left;
+            padding: 10px 0px;
+        }
+
+        /* Enhanced Product Hero Section Styles */
+        .product-hero-section {
+            padding: 120px 0 80px;
+            background-color: #f8faff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background-color: rgba(29, 53, 87, 0.03);
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+            z-index: 1;
+        }
+
+        .product-hero-content {
+            position: relative;
+            z-index: 2;
+            padding-right: 20px;
+        }
+
+        .product-badge {
+            display: inline-block;
+            background-color: #1ba34b;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-hero-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1d3557;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .product-hero-subtitle {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1d3557;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .product-hero-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .product-cta-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-primary-custom {
+            background-color: #1d3557;
+            color: white;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: 2px solid #1d3557;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #1ba34b;
+            border-color: #1ba34b;
+            color: white;
+        }
+
+        .btn-outline-custom {
+            background-color: transparent;
+            color: #1d3557;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 5px;
+            border: 2px solid #1d3557;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: #1d3557;
+            color: white;
+        }
+
+        .product-hero-image-slider {
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Product Overview Section Styles */
+        .product-overview-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .product-overview-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .section-indicator {
+            width: 6px;
+            height: 36px;
+            background-color: #1ba34b;
+            margin-right: 15px;
+            border-radius: 3px;
+        }
+
+        .section-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1d3557;
+            margin: 0;
+        }
+
+        .product-description p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .key-features {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            width: calc(33.33% - 14px);
+            background-color: #f8faff;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-icon {
+            color: #1ba34b;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .feature-text h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1d3557;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .feature-text p {
+            font-size: 14px;
+            color: #555;
+            margin: 0;
+        }
+
+        @media (max-width: 991px) {
+            .product-hero-title {
+                font-size: 36px;
             }
+
+            .product-hero-section {
+                padding: 100px 0 60px;
+            }
+
+            .feature-item {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product-hero-content {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .product-hero-title {
+                font-size: 32px;
+            }
+
+            .product-hero-subtitle {
+                font-size: 18px;
+            }
+
+            .product-overview-card {
+                padding: 25px;
+            }
+
+            .feature-item {
+                width: 100%;
+            }
+
+            .product-cta-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .btn-primary-custom,
+            .btn-outline-custom {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Applications Section Styles */
+        .applications-section {
+            padding: 80px 0;
+            background-color: #f8faff;
+        }
+
+        .section-header {
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1d3557;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .applications-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .application-card {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .application-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .application-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(29, 53, 87, 0.1);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .application-icon i {
+            font-size: 26px;
+            color: #1d3557;
+        }
+
+        .application-icon img {
+            width: 100%;
+            height: auto;
+        }
+
+        .application-content h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d3557;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .application-content p {
+            font-size: 14px;
+            color: #555;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Advantages Section Styles */
+        .advantages-section {
+            padding: 80px 0;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .advantages-section::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30%;
+            height: 300px;
+            background-color: rgba(29, 53, 87, 0.03);
+            clip-path: polygon(0 100%, 0 0, 100% 100%);
+            z-index: 1;
+        }
+
+        .advantages-content {
+            position: relative;
+            z-index: 2;
+            padding-right: 30px;
+        }
+
+        .advantages-description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .advantage-stats {
+            display: flex;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1ba34b;
+            line-height: 1;
+        }
+
+        .stat-text {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .btn-advantages {
+            background-color: #1d3557;
+            color: white;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-advantages:hover {
+            background-color: #1ba34b;
+            color: white;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .advantage-card {
+            background-color: #f8faff;
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .advantage-icon {
+            font-size: 24px;
+            color: #1ba34b;
+            margin-bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(26, 163, 75, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .advantage-icon i {
+            font-size: 22px;
+        }
+
+        .advantage-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d3557;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .advantage-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 991px) {
+            .advantages-grid {
+                grid-template-columns: 1fr;
+                margin-top: 40px;
+            }
+
+            .advantages-content {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .application-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .application-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .advantage-stats {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .stat-item {
+                align-items: center;
+            }
+        }
+
+        /* Specifications Section Styles */
+        .specifications-section {
+            padding: 80px 0;
+            background-color: #f8faff;
+        }
+
+        .specifications-section .row {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .specs-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .specs-description {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .specs-table-container {
+            margin: 0 auto;
+            /*             max-width: 600px; */
+        }
+
+        .specs-table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: left;
+        }
+
+        .specs-table th {
+            font-weight: 600;
+            color: #1d3557;
+            width: 40%;
+        }
+
+        .specs-table td {
+            color: #444;
+        }
+
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .section-indicator {
+            width: 50px;
+            height: 3px;
+            background-color: #1ba34b;
+            margin-bottom: 15px;
+        }
+
+        .specs-description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .specs-table-container {
+            margin: 30px 0;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .specs-table tr {
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .specs-table tr:hover {
+            background-color: rgba(29, 53, 87, 0.05);
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .specs-table th {
+            font-weight: 600;
+            color: #1d3557;
+            width: 40%;
+        }
+
+        .specs-table td {
+            color: #444;
+        }
+
+        .certifications {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .certification-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(26, 163, 75, 0.08);
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .certification-item:hover {
+            background-color: rgba(26, 163, 75, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .certification-item i {
+            font-size: 22px;
+            color: #1ba34b;
+        }
+
+        .certification-item span {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d3557;
+        }
+
+        .specs-image-container {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .specs-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .specs-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(29, 53, 87, 0.9);
+            padding: 25px;
+            color: white;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .specs-image-container:hover .specs-image-overlay {
+            transform: translateY(0);
+        }
+
+        .overlay-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .overlay-content p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .specs-link {
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .specs-link:hover {
+            color: #1ba34b;
+        }
+
+        /* CTA Section Styles */
+        .cta-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .cta-card {
+            background-color: #1d3557;
+            border-radius: 10px;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(26, 163, 75, 0.2);
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .cta-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-cta-primary {
+            background-color: #1ba34b;
+            color: white;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-cta-primary:hover {
+            background-color: #27c563;
+            transform: translateY(-3px);
+        }
+
+        .btn-cta-secondary {
+            background-color: transparent;
+            color: white;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-cta-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        @media (max-width: 991px) {
+            .cta-card {
+                padding: 30px;
+            }
+
+            .cta-buttons {
+                margin-top: 20px;
+                justify-content: center;
+            }
+
+            .specs-content {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .cta-title {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .cta-description {
+                text-align: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .certifications {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* Make the specifications title match the dark blue color in the screenshot */
+        .specifications-section h2 {
+            color: #1d3557 !important;
+            font-size: 32px !important;
+            font-weight: 700 !important;
+            margin-bottom: 15px !important;
+            text-align: center !important;
+        }
+
+        /* Force dark colors on the product hero titles */
+        .product-hero-title,
+        h1.product-hero-title {
+            color: #1d3557 !important;
+            text-shadow: none !important;
+        }
+
+        .product-hero-subtitle,
+        h2.product-hero-subtitle {
+            color: #1d3557 !important;
+            text-shadow: none !important;
+        }
+
+        /* Center the certification items properly */
+        .certifications {
+            display: flex;
+            gap: 20px;
+            margin: 30px auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .certification-item {
+            display: inline-flex;
+            align-items: center;
+            background-color: #f0f8f2;
+            padding: 12px 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(26, 163, 75, 0.2);
+        }
+
+        .certification-item i {
+            color: #1ba34b !important;
+            font-size: 20px !important;
+            margin-right: 8px !important;
+        }
+
+        .certification-item span {
+            font-weight: 600;
+            color: #1d3557;
+            font-size: 14px;
+        }
+
+        /* Make sure the hero section has a light background */
+        .product-hero-section {
+            background-color: #f8faff !important;
+            background-image: none !important;
         }
     </style>
 
@@ -3876,526 +4723,491 @@
     </header>
     <!--=========header end============-->
 
-    <section class="static-section home3-static  company_mission-number">
+    <!-- Product Hero Section - Enhanced -->
+    <section class="product-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="product-hero-content">
+                        <div class="product-badge">Premium Product</div>
+                        <h1 class="product-hero-title">PCR SHRINK Film</h1>
+                        <p class="product-hero-description">
+                            Precision-engineered protective film ensuring pristine surface quality and damage-free
+                            preservation for critical industrial and manufacturing applications.
+                        </p>
+                        <div class="product-cta-buttons">
+                            <a href="request-quote.html" class="btn btn-primary-custom">Request a Quote</a>
+                            <a href="Documents/mundada-polymers-brochure.pdf" class="btn btn-outline-custom"
+                                download>Download Specs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-hero-image-slider">
+                        <div id="product-slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#product-slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#product-slider" data-slide-to="1"></li>
+                                <li data-target="#product-slider" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="img/product-page/SilageStretchFilm/slide2 (1).svg "
+                                        alt="Stretch Hood Film" class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/product-page/SilageStretchFilm/slide2 (2).svg"
+                                        alt="Stretch Hood Film Application" class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/product-page/SilageStretchFilm/slide2 (3).svg"
+                                        alt="Stretch Hood Film Usage" class="img-responsive">
+                                </div>
 
-        <div class="container" style="position: absolute;margin-left: 7%;">
-            <div class="row text-white">
-
-                <h1 class="Innovative">Innovative
-                    Packaging Solutions
-                    <br>for
-                    Every
-                    Industry
-                </h1>
-                <p class="subheadtext text-white" style="color:white">High-performance films
-                    for diverse
-                    industries –
-                    food, pharma, industrial, and <br> more. Engineered for durability,
-                    sustainability, and superior protection.</p>
-
+                            </div>
+                            <a class="left carousel-control" href="#product-slider" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#product-slider" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="btn custom-btn text-white let-btn">Let's Collaborate →</a>
         </div>
     </section>
 
-
-
-    <!-- 
-    <section class="news-section">
+    <!-- Product Overview Section - Enhanced -->
+    <section class="product-overview-section">
         <div class="container">
-            <div class="news-header">
-                <h3 class="certifications-header" style="font-size: 2.5rem;">Our Product Range</h3>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product-overview-card">
+                        <div class="section-header">
+                            <div class="section-indicator"></div>
+                            <h2>Product Overview</h2>
+                        </div>
+                        <div class="product-description">
+                            <p>
+                                Our Silage Stretch Film is engineered to provide superior
+                                preservation and protection for your silage, ensuring
+                                high-quality feed for your livestock. With excellent cling properties and high
+                                puncture resistance, it minimizes
+                                spoilage by maintaining low permeability to water and oxygen. The film's high
+                                load retention ensures that bale shapes
+                                remain intact throughout their storage life. </p>
+
+                            <div class="key-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h5>Versatile Application</h5>
+                                        <p>Suitable for both vertical and horizontal usage</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h5>Cost-Effective</h5>
+                                        <p>Reduces material usage and operational costs</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h5>Enhanced Protection</h5>
+                                        <p>Provides dust, moisture and UV protection</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!--     <section class="static-section home3-static  company_mission-number">
+
+        <div class="container" style=" display: flex;justify-content: center;">
+            <div class="row text-white">
+                <h1 class="text-white text-center strech-title " style="color: #1d3557;"> STRETCH HOOD FILM / HOODER
+                    FILM / GUSSETED
+                    <br>
+                    FILM / TUBULAR ROLL
+                </h1>
+
+            </div>
+        </div>
+    </section> -->
+    <!--  <section class="news-section">
+        <div class="container">
+
 
             <div class="row">
 
                 <div class=" col-12 col-md-12 col-lg-12">
-
+                 
                     <div id="new-carousel" class="carousel slide" data-ride="carousel">
+                     
                         <ol class="carousel-indicators" id="carousel-indicators-lg" style="bottom: -45px;">
                             <li data-target="#new-carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#new-carousel" data-slide-to="1"></li>
                             <li data-target="#new-carousel" data-slide-to="2"></li>
                         </ol>
+     <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row d-flex justify-content-center align-items-center ">
 
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="row d-flex justify-content-center align-items-center ">
+                                     <div class="col-md-4 col-lg-3 card-course my-2">
+                                        <div class="course-card bg-dark text-white">
+                                            <img src="img/product-imgs/product(21).svg" alt="Art of Letting Go">
 
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/product-page/slide1.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: white; text-align: center;">
-                                Stretch Hood Film</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 card-course my-2">
+                                        <div class="course-card bg-dark text-white">
+                                            <img src="img/product-imgs/product(23).svg" alt="Art of Letting Go">
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/product-page/slide2.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: white; text-align: center;">LDPE
-                                Shrink Film</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 card-course my-2">
+                                        <div class="course-card bg-dark text-white">
+                                            <img src="img/product-imgs/product(24).svg" alt="Art of Letting Go">
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/product-page/slide3.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: white; text-align: center;">
-                                Surface Protection Film
-                            </h5>
+                                        </div>
+                                    </div>
 
-                        </div>
-                    </div>
-                </div>
+                                    <div class="col-md-4 col-lg-3 card-course my-2">
+                                        <div class="course-card bg-dark text-white">
+                                            <img src="img/product-imgs/product(25).svg" alt="Art of Letting Go">
 
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/product-page/p4.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title" style="color: white; text-align: center;">
-                                Stretch surface films
-                            </h5>
+                                        </div>
+                                    </div>
 
-                        </div>
-                    </div>
-                </div>
+                                </div>
 
-            </div>
+                                <div class="row">
+                                    <p class="padding-x-20">A stretch hood is a tube of film sealed on one end, which is
+                                        stretched over a
+                                        palletized load to secure the contents to
+                                        the pallet. The film is cut to the appropriate length, heat sealed on the top
+                                        end, This type of packaging method for
+                                        pallet provides many advantagesranging from cost reductions to handling and
+                                        marketing potential Stretch hoods films are
+                                        applicable in a wide range of industries such as; Chemical & Polymer, Building &
+                                        Construction, Food & Drink and Logistic
+                                        & Transport. Vertical or horizontal usage.</p>
+                                </div>
 
-        </div>
-        <div class="item ">
-            <div class="row d-flex justify-content-center align-items-center ">
+                            </div>
 
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/product-page/slide1.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title">Stretch Hood Film</h5>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/product-page/slide2.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title">LDPE Shrink Film</h5>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white">
-                        <img src="img/product-page/slide3.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title">Surface Protection Film</h5>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-3 card-course my-2">
-                    <div class="course-card bg-dark text-white" style="background-color: #1d3557;">
-                        <img src="img/product-page/p4.svg" alt="Art of Letting Go">
-                        <div class="course-content">
-                            <h5 class="course-title">Stretch Wrap Film</h5>
 
                         </div>
 
+
                     </div>
+
+
+
+
                 </div>
 
             </div>
-
         </div>
-
-
-    </div>
-
-
-    </div>
-
-
-
-
-    </div>
-
-    </div>
-    </div>
 
 
     </section> -->
 
-    <section>
-        <div class="container py-5">
-            <h3 class="about-text-head ">Our Products</h3>
-            <p>At Mundada Polymers, we specialize in high-quality packaging films designed to protect, secure, and
-                package a wide range
-                of products.<br> Our advanced manufacturing techniques ensure durability, flexibility, and efficiency
-                for
-                various
-                industries.<br> Explore our premium product range below..</p>
+    <!-- Applications Section - Enhanced -->
+    <section class="applications-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Industry Applications</h2>
+                <p class="section-subtitle">Our Silage Stretch Film provide excellent performance across multiple
+                    industries</p>
+            </div>
 
-            <div class="row g-4">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="STRETCH-HOOD-FILM.html"><img src="img/product-page/product01.png">
-                        </a>
-                        <div class="card-body mb-3 ">
-                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left;">Stretch Hood
-                                Film</h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
-                                fiber.<br><br>
-                            </p>
-                            <a href="STRETCH-HOOD-FILM.html" class="btn">View Detail</a>
+            <div class="row applications-grid">
 
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-cow"></i>
+                        </div>
+                        <div class="application-content">
+                            <h4>Dairy Farming</h4>
+                            <p>Preserves high-quality cattle feed</p>
+                            <p>Extends forage storage duration</p>
+                            <p>Maintains nutritional value of silage</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="LDPE-SHRINK-FILM.html"><img src="img/product-page/product02.png"
-                                class="img-card-4"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">LDPE Shrink Film
-                            </h5>
-                            <p class="card-text">Used in beverages, food and canned goods, packaging materials.
-                            </p>
-                            <a href="LDPE-SHRINK-FILM.html" class="btn">View Detail</a>
-
+                <div class="col-md-6 col-sm-6">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <div class="application-content">
+                            <h4>Livestock Management</h4>
+                            <p>Protects animal feed resources</p>
+                            <p>Ensures consistent feed quality</p>
+                            <p>Reduces feed wastage</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="application-content">
+                            <h4>Crop Preservation</h4>
+                            <p>Supports optimal fermentation process</p>
+                            <p>Prevents crop spoilage</p>
+                            <p>Maintains nutritional integrity of harvested crops</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <div class="application-content">
+                            <h4>Agricultural Enterprises</h4>
+                            <p>Enables large-scale crop storage</p>
+                            <p>Optimizes harvesting processes</p>
+                            <p>Improves overall agricultural efficiency</p>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="SURFACE-PROTECTION-FILM.html"><img
-                                src="img/product-page/SurfaceProtectionFilm/Surface Protection Film , Masking Film.png"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Surface Protection
-                                Film</h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
-                                fiber.<br><br></p><a href="SURFACE-PROTECTION-FILM.html" class="btn">View Detail</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="STRETCH-WRAP-FILM.html"><img
-                                src="img/product-page/StretchWrapFilm/stretch-wrap-films 2.png"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Stretch Wrap Film
-                            </h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
-                                fiber.<br><br></p><a href="STRETCH-WRAP-FILM.html" class="btn">View Detail</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="SILAGE-STRETCH-FILM.html"><img src="img/product-page/product05.jpg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Silage Stretch
-                                Film </h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
-                                fiber.
-                            </p>
-                            <a href="SILAGE-STRETCH-FILM.html" class="btn">View Detail</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="VCI-STRETCH-WRAP-FILM.html"><img src="img/product-page/product06.jpg"></a>
-                        <div class="card-body">
-                            <h5 class=" card-title line-text" style="color: #1d3557;text-align: left;margin-top: 20px;">
-                                VCI-Stretch Wrap
-                                Film</h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and
-                                fiber.
-
-                            </p><a href="VCI-STRETCH-WRAP-FILM.html" class="btn">View Detail</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="Allfreshy–Food-Wrap-Cling-Film.html"><img src="img/index-page/Cling film 1.png">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left; ;">Allfreshy–
-                                Food Wrap Cling film
-
-                            </h5>
-                            <p class="card-text">Used Wraps fresh food to keep it safe and extend shelf life</p>
-                            <a href="Allfreshy–Food-Wrap-Cling-Film.html" class="btn ">View Detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="Meat-Chicken-Wrap-Film.html"><img src="img/product-page/product08.svg"
-                                class="img-fluid img-card-2"></a>
-                        <div class=" card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;"> Meat / Chicken
-                                Wrap Film
-                            </h5>
-                            <p class="card-text">Used for wrapping meat and poultry to maintain freshness and prevent
-                                contamination.</p>
-                            <a href="Meat-Chicken-Wrap-Film.html" class="btn">View Detail</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="#"><img src="img/product-page/product09.svg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Shrink Hood /
-                                Tubular Film</h5>
-                            <p class="card-text">Used for pallet covering, providing tamper-proof and weather-resistant
-                                packaging.</p>
-                            <!-- <a href="#" class="btn">View Detail</a> -->
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="#"><img src="img/product-page/product10.png" class="img-card-3"></a>
-                        <div class=" card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">PE Milk Film
-
-                            </h5>
-                            <p class="card-text">Used for packaging liquid dairy products, ensuring hygiene and
-                                freshness. </p>
-                            <!-- <a href="#" class="btn">View Detail</a> -->
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="#"><img src="img/product-page/product11.png"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Mulching Film</h5>
-                            <p class="card-text">Used in Controls weeds, retains moisture, and boosts crop yield.</p>
-                            <!-- <a href="#" class="btn">View Detail</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-card">
-                        <a href="#"><img src="img/product-page/product12.1.png" class="img-card-1"></a>
-                        <div class="card-body" style=" margin-bottom: 20px;">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Anti-Static
-                                Film</h5>
-                            <p class="card-text">Used for Protects electronic components from static damage.</p>
-
-                            <!-- <a href="#" class="btn">View Detail</a> -->
-                        </div>
-                    </div>
-                </div>
 
 
             </div>
-
         </div>
-
-
     </section>
-    <!-- 
-    <section>
-        <div class="container py-5">
-            <h3 class="about-text-head ">Our Products</h3>
-            <p>At Mundada Polymers, we specialize in high-quality packaging films designed to protect, secure, and
-                package a wide range
-                of products.<br> Our advanced manufacturing techniques ensure durability, flexibility, and efficiency
-                for
-                various
-                industries.<br> Explore our premium product range below..</p>
 
-            <div class="row g-4">
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="STRETCH-HOOD-FILM.html"><img src="img/product-page/StretchHoodFilm1.jpg">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557; text-align: left;">Stretch Hood
-                                Film</h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="LDPE-SHRINK-FILM.html"><img src="img/product-page/LPDE_SHRIN_FILM1.jpeg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">LDPE Shrink Film
-                            </h5>
-                            <p class="card-text">Used in beverages, food and canned goods, packaging materials.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="SURFACE-PROTECTION-FILM.html"><img src="img/product-page/surface-protection-film-1.jpg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Surface Protection
-                                Film</h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="STRETCH-WRAP-FILM.html"><img src="img/product-page/stretch_wrap_film1.jpg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Stretch Wrap Film
-                            </h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="SILAGE-STRETCH-FILM.html"><img src="img/product-page/silage-bales-1.jpg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">Silage Stretch
-                                Film</h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card product-card">
-                        <a href="VCI-STRETCH-WRAP-FILM.html"><img src="img/product-page/VCI_Shrink_Wrap_Film_Rolls1.jpg"></a>
-                        <div class="card-body">
-                            <h5 class="card-title line-text" style="color: #1d3557;text-align: left;">VCI-Stretch Wrap
-                                Film</h5>
-                            <p class="card-text">Used in pharmaceuticals, glass bottles, textiles, yarn, and fiber.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="values-section">
-        <div class="container" id="Contact-Us">
+    <!-- Advantages Section - Enhanced -->
+    <section class="advantages-section">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-9">
-                    <div class="">
-                        <h3 class="text-white" style="color: white; margin-bottom: 20px;">
-                            We are trusted by over 300+ clients. Join them by using our services and grow your business.
-                        </h3>
+                <div class="col-lg-4">
+                    <div class="advantages-content">
+                        <div class="section-header">
+                            <div class="section-indicator"></div>
+                            <h2>Key Advantages</h2>
+                        </div>
+                        <p class="advantages-description">
+                            Our Silage Stretch Film are engineered to provide multiple benefits that enhance your
+                            packaging efficiency, reduce costs,Maximizes storage space,Minimizes product movement and
+                            increase product protection.
+                        </p>
+                        <div class="advantage-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-text">UV Resistance</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5x</span>
+                                <span class="stat-text">Load Stability</span>
+                            </div>
+                        </div>
+                        <a href="request-quote.html" class="btn btn-advantages">Get a Custom Solution</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="advantages-grid">
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <h4>Nutritional Preservation</h4>
+                            <p>Maintains crop protein and energy content</p>
+                            <p>Prevents nutritional degradation</p>
+                            <p>Supports animal health and productivity</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Extended Storage Life</h4>
+                            <p>Up to 12-18 months preservation</p>
+                            <p>Minimizes feed spoilage</p>
+                            <p>Reduces economic losses</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Advanced Oxygen Barrier</h4>
+                            <p>Prevents oxygen penetration</p>
+                            <p>Supports optimal fermentation</p>
+                            <p>Maintains crop quality</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <h4>Economic Efficiency</h4>
+                            <p>Reduces packaging and feed waste</p>
+                            <p>Minimizes storage and transportation losses</p>
+                            <p>Cost-effective preservation solution</p>
+                        </div>
+
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fa fa-sun-o"></i>
+                            </div>
+                            <h4>Weather & UV Protection</h4>
+                            <p>Shields products from moisture, dust, and harmful UV radiation, extending shelf life.</p>
+                        </div>
+
+
+
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fa fa-recycle"></i>
+                            </div>
+                            <h4>Eco-Friendly</h4>
+                            <p>100% recyclable material designed with environmental sustainability in mind.</p>
+                        </div>
+
+
+
 
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="text-center">
-                        <a href="request-quote.html" class="btn btn-default"
-                            style="background-color: white; color: #242c56; border-radius: 50px; padding: 10px 20px;margin: 20px 0px 0px 0px;">
-                            Contact Us
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
-    <section class="sustainability-section">
+
+    <!-- Specifications Section - Enhanced -->
+    <section class="specifications-section">
         <div class="container">
-            <div class="col-md-6 col-lg-6">
-                <h3 class="sustainability-title">Sustainability Commitment</h3>
-                <p class="sustainability-text">
-                    At Mundada Polymers, sustainability is at the core of our business. We manufacture 100% recyclable
-                    polyethylene films,
-                    helping customers reduce their environmental impact.
-                </p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="specs-content">
+                        <div class="section-header">
+                            <div class="section-indicator"></div>
+                            <h2>Technical Specifications</h2>
+                        </div>
+                        <p class="specs-description">
+                            Our Silage Stretch Film are manufactured to exacting standards, ensuring optimal performance
+                            for various applications. Available in customizable dimensions to meet your specific
+                            requirements.
+                        </p>
 
-            </div>
+                        <div class="specs-table-container">
+                            <table class="specs-table">
+                                <tbody>
+                                    <tr>
+                                        <th>Width</th>
+                                        <td>500 - 750 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Thickness</th>
+                                        <td>25 - 80 Microns</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Material</th>
+                                        <td>High-quality Linear Low-Density Polyethylene (LLDPE)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Colors</th>
+                                        <td>Black, White, Green</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Stretch Capability</th>
+                                        <td>250-300%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>UV Resistance</th>
+                                        <td>High-grade protection</td>
+                                    </tr>
 
-            <!-- Right Icons Section -->
-            <div class="col-md-6 col-lg-6">
-                <div class="row my-lg-5">
-                    <div class="col-md-4 text-center">
-                        <img src="img/icons/Eneergy.svg" alt="Energy Efficient" class="sustainability-icon">
-                        <p class="icon-text">Energy-efficient manufacturing to reduce emissions.</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="img/icons/sustainaible.svg" alt="Sustainable Materials" class="sustainability-icon">
-                        <p class="icon-text">Sustainable materials that support global recycling goals.</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img src="img/icons/wast.svg" alt="Waste Reduction" class="sustainability-icon">
-                        <p class="icon-text">Waste reduction initiatives to ensure minimal resource wastage.</p>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="certifications">
+                            <div class="certification-item">
+                                <i class="fa fa-certificate"></i>
+                                <span>ISO 9001:2015</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fa fa-leaf"></i>
+                                <span>Eco-Friendly</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
-    <!-- 
-    <section class="news-section">
+
+    <!-- Call to Action Section - Enhanced -->
+    <section class="cta-section">
         <div class="container">
-            <div class="text-center mb-4">
-                <h2 class="why-product-title fs-1">We are trusted by over 300+ clients and </h2>
+            <div class="cta-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="cta-title">Need a Customized Packaging Solution?</h2>
+                        <p class="cta-description">
+                            Our team of experts is ready to help you find the perfect packaging solution for your
+                            specific requirements. Contact us today for a consultation and personalized quote.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-right text-center">
+                        <div class="cta-buttons">
+                            <a href="request-quote.html" class="btn btn-cta-primary">Get a Quote</a>
+                            <a href="tel:+919999999999" class="btn btn-cta-secondary">
+                                <i class="fa fa-phone"></i> Call Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-sm-6 col-md-6 col-lg-3 course-card-why my-3 ">
-                    <h5 class="course-title">Stretch Hood Film</h5>
-                    <p>Our products are 100% recyclable and designed with sustainability in mind.</p>
+        </div>
+    </section>
+
+    <!--  <section class=" contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="text-left pl-4" style="padding: 20px;color: #ffffff;font-weight: 400;">Have questions or
+                        need a customized
+                        solution
+                        for your packaging needs?
+                    </h3>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 course-card-why my-3 ">
-                    <h5 class="course-title">LDPE Shrink Film</h5>
-                    <p>We leverage cutting-edge manufacturing techniques to ensure premium quality and performance.</p>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 course-card-why my-3 ">
-                    <h5 class="course-title">Surface Protection Film</h5>
-                    <p>We adhere to strict international benchmarks and quality standards, ensuring exceptional
-                        reliability and consistent
-                        performance.</p>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 course-card-why my-3 ">
-                    <h5 class="course-title">Surface Protection Film</h5>
-                    <p>We have 9000 MT production capacity annually, ensuring a reliable supply for national and
-                        international markets.</p>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <h3 class="text-center pl-4" style="padding-top: 40px;color: #ffffff;font-weight: 400;">
+                        <a href="request-quote.html" class="btn "
+                            style="background-color: white; color: var(--secondary-color);border: none;">Contact
+                            Us</a>
+                    </h3>
+
                 </div>
             </div>
 
         </div>
     </section> -->
-
 
     <!--=========Footer Start============-->
-    <section class="projectSec">
+    <section class=" projectSec">
         <div class="container">
             <div class="row gy-4">
                 <!-- Left Column -->
@@ -4404,10 +5216,12 @@
 
                     <div class="contact-info">
                         <div class="mb-4">
-                            <h3 class="fw-medium contact-heading-text" style="color: #ffffff;">Mundada Polymers</h3>
+                            <h3 class="fw-medium contact-heading-text" style="color: #ffffff;">Mundada
+                                Polymers</h3>
                             <div class="d-flex align-items-start gap-3" style="display: flex;">
                                 <i class="fas fa-map-marker-alt contact-icon mt-1"></i>
-                                <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC Ausa,<br> Latur -
+                                <span class="contact-text">Plot No. : C-46, Near Latur Packing, MIDC
+                                    Ausa, Latur -
                                     413520 Maharashtra,
                                     India</span>
                             </div>
@@ -4420,7 +5234,8 @@
 
                         <div class="d-flex align-items-center" style="display: flex;">
                             <i class="fas fa-envelope contact-icon"></i>
-                            <span class="contact-text">pranav@mundadapolymers.com,<br> aba@mundadapolymers.com</span>
+                            <span class="contact-text">pranav@mundadapolymers.com,
+                                aba@mundadapolymers.com</span>
                         </div>
                     </div>
                 </div>
