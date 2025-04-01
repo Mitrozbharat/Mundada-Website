@@ -4252,45 +4252,6 @@
             margin: 20px 0px
         }
 
-        @media (max-width: 991px) {
-            .advantages-grid {
-                grid-template-columns: 1fr;
-                margin-top: 40px;
-            }
-
-            .advantages-content {
-                padding-right: 0;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .applications-grid .col-md-6 {
-                margin: 10px 0px
-            }
-
-            .application-card {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .application-icon {
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
-
-            .advantage-stats {
-                flex-direction: column;
-                gap: 15px;
-                align-items: center;
-            }
-
-            .stat-item {
-                align-items: center;
-            }
-        }
-
-        /* Specifications Section Styles */
         .specifications-section {
             padding: 80px 0;
             background-color: #f8faff;
@@ -4574,43 +4535,7 @@
             color: white;
         }
 
-        @media (max-width: 991px) {
-            .cta-card {
-                padding: 30px;
-            }
 
-            .cta-buttons {
-                margin-top: 20px;
-                justify-content: center;
-            }
-
-            .specs-content {
-                padding-right: 0;
-                margin-bottom: 40px;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .cta-title {
-                font-size: 24px;
-                text-align: center;
-            }
-
-            .cta-description {
-                text-align: center;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .certifications {
-                flex-direction: column;
-                gap: 15px;
-            }
-        }
-
-        /* Make the specifications title match the dark blue color in the screenshot */
         .specifications-section h2 {
             color: #1d3557 !important;
             font-size: 32px !important;
@@ -4667,6 +4592,76 @@
         .product-hero-section {
             background-color: #f8faff !important;
             background-image: none !important;
+        }
+
+        @media (max-width: 991px) {
+            .advantages-grid {
+                grid-template-columns: 1fr;
+                margin-top: 40px;
+            }
+
+            .advantages-content {
+                padding-right: 0;
+            }
+
+            .cta-card {
+                padding: 30px;
+            }
+
+            .cta-buttons {
+                margin-top: 20px;
+                justify-content: center;
+            }
+
+            .specs-content {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .applications-grid .col-md-6 {
+                margin: 10px 0px
+            }
+
+            .application-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .application-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .advantage-stats {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .stat-item {
+                align-items: center;
+            }
+
+            .cta-title {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .cta-description {
+                text-align: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .certifications {
+                flex-direction: column;
+                gap: 15px;
+            }
         }
     </style>
 
