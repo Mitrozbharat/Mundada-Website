@@ -4290,7 +4290,8 @@ header.bg-black-o {
 }
 
 .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a:hover {
-    color: #cd006e;
+    color: green;
+
     /* Using the existing pink color from your theme */
 }
 
