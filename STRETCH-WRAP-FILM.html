@@ -4068,6 +4068,10 @@
             flex-wrap: wrap;
         }
 
+        .applications-grid .col-md-6 {
+            margin: 20px 0px
+        }
+
         .application-card {
             display: flex;
             align-items: flex-start;
@@ -4261,6 +4265,16 @@
         }
 
         @media (max-width: 767px) {
+            .applications-grid .col-md-6 {
+                margin: 10px 0px
+            }
+
+            .applications-grid {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
             .application-card {
                 flex-direction: column;
                 align-items: center;
