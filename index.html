@@ -5354,8 +5354,33 @@
         });
     </script>
 
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function applyActiveStyles() {
+                if ($(window).width() < 1024) {
+                    $(".nav-item.active").css({
+                        "background-color": "black",
+                        "color": "white"
+                    });
+                } else {
+                    $(".nav-item.active").css({
+                        "background-color": "",
+                        "color": ""
+                    });
+                }
+            }
+
+            applyActiveStyles(); // Apply on page load
+
+            $(window).resize(function () {
+                applyActiveStyles(); // Apply on window resize
+            });
+        });
+    </script>
 
 </body>
 

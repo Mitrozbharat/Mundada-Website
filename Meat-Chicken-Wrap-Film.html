@@ -46,6 +46,16 @@
             font-family: Arial, sans-serif;
         }
 
+        .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a.active {
+            color: black;
+            border-bottom: 3px solid #34a853;
+        }
+
+        .home6 #main-navigation-wrapper.navbar-default .navbar-nav>li>a:hover {
+            color: #34a853;
+            background-color: white;
+        }
+
         .container {
             max-width: 90%;
             min-width: 300px;
@@ -5263,6 +5273,31 @@
     <script src="js/custom.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/slick.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function applyActiveStyles() {
+                if ($(window).width() < 1024) {
+                    $(".nav-item.active").css({
+                        "background-color": "black",
+                        "color": "white"
+                    });
+                } else {
+                    $(".nav-item.active").css({
+                        "background-color": "",
+                        "color": ""
+                    });
+                }
+            }
+
+            applyActiveStyles(); // Apply on page load
+
+            $(window).resize(function () {
+                applyActiveStyles(); // Apply on window resize
+            });
+        });
+    </script>
+
 </body>
 
 
